@@ -1,0 +1,370 @@
+/* ============================================
+   SocialProofV2 — Premium Reviews Section
+   ============================================ */
+
+.section {
+  padding: var(--section-py) 0;
+  overflow: hidden;
+  transition: background-color 0.1s linear;
+}
+
+.container {
+  max-width: var(--max-content);
+  margin: 0 auto;
+  padding: 0 var(--content-px);
+}
+
+/* ── Header ── */
+.titleArea {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.headerTop {
+  margin-bottom: 20px;
+}
+
+.headerLabel {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+
+.counterRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.counterSuffix {
+  font-family: var(--font-heading);
+  font-size: clamp(22px, 2.8vw, 32px);
+  font-weight: 400;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.ratingRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.ratingText {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-body);
+}
+
+/* ══════════════════════════════════════
+   Reviews layout: featured 3×2 center
+   + scroll columns in viewport margins
+   ══════════════════════════════════════ */
+.reviewsLayout {
+  position: relative;
+  max-width: var(--max-content);
+  margin: 0 auto;
+  padding: 0 var(--content-px);
+}
+
+/* Full-width border lines (viewport edge to edge) */
+.reviewsLayout::before,
+.reviewsLayout::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.08);
+  z-index: 2;
+}
+
+.reviewsLayout::before {
+  top: 0;
+}
+
+.reviewsLayout::after {
+  bottom: 0;
+}
+
+/* ── Center: 6 featured cards (3×2 grid) ── */
+.featuredCenter {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 24px 0;
+}
+
+.reviewCard {
+  position: relative;
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.reviewCard:hover {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.authorName {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.authorDate {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.reviewStars {
+  display: flex;
+  gap: 1px;
+}
+
+.categoryBadge {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--gold-dark);
+  background: rgba(200, 165, 73, 0.08);
+  padding: 3px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.02em;
+  margin-left: auto;
+}
+
+.reviewText {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--text-body);
+}
+
+.highlight {
+  color: var(--gold-dark);
+  font-weight: 700;
+}
+
+/* ── Scroll columns (positioned in viewport margins) ── */
+.scrollCol {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 260px;
+  overflow: hidden;
+}
+
+/* Left scroll — just outside the content area */
+.scrollCol:first-child {
+  right: calc(100% + 24px);
+}
+
+/* Right scroll — just outside the content area */
+.scrollCol:last-child {
+  left: calc(100% + 24px);
+}
+
+
+.scrollTrack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  will-change: transform;
+}
+
+/* Left: scrolls up */
+.scrollUp {
+  animation: scrollVertUp 40s linear infinite;
+}
+
+/* Right: scrolls down */
+.scrollDown {
+  animation: scrollVertDown 45s linear infinite;
+}
+
+@keyframes scrollVertUp {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+@keyframes scrollVertDown {
+  0% { transform: translateY(-50%); }
+  100% { transform: translateY(0); }
+}
+
+/* ── Scroll card (compact) ── */
+.scrollCard {
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  padding: 14px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.03);
+  flex-shrink: 0;
+}
+
+.scrollCardTop {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+
+.scrollAuthor {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.scrollDate {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.scrollStars {
+  display: flex;
+  gap: 1px;
+}
+
+.scrollCategory {
+  font-family: var(--font-ui);
+  font-size: 9px;
+  font-weight: 500;
+  color: var(--gold-dark);
+  background: rgba(200, 165, 73, 0.08);
+  padding: 2px 6px;
+  border-radius: 12px;
+  margin-left: auto;
+}
+
+.scrollText {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-body);
+}
+
+/* ── CTA link (below the grid) ── */
+.ctaRow {
+  text-align: center;
+  padding: 32px 0 0;
+}
+
+.ctaLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gold-dark);
+  text-decoration: none;
+  padding: 10px 24px;
+  border: 1px solid var(--gold);
+  border-radius: 24px;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.ctaLink:hover {
+  background: var(--gold);
+  color: #ffffff;
+}
+
+/* ── Tablet: hide scroll columns, 2-col featured ── */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .scrollCol {
+    display: none;
+  }
+
+  .featuredCenter {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ── Mobile: hide featured, show scroll columns as 2-col ── */
+@media (max-width: 767px) {
+  .featuredCenter {
+    display: none;
+  }
+
+  .reviewsLayout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding: 0 var(--content-px);
+  }
+
+  .scrollCol {
+    position: relative;
+    width: auto;
+    height: 420px;
+    overflow: hidden;
+  }
+
+  .scrollCol:first-child {
+    right: auto;
+  }
+
+  .scrollCol:last-child {
+    left: auto;
+  }
+
+  .scrollTrack {
+    gap: 10px;
+  }
+
+  .scrollCard {
+    padding: 12px;
+  }
+
+  .scrollText {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .counterSuffix {
+    font-size: 20px;
+  }
+
+  .ctaLink {
+    font-size: 13px;
+    padding: 8px 20px;
+  }
+}

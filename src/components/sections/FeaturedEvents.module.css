@@ -1,0 +1,262 @@
+/* ── Category Header with Nav ── */
+.categoryHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.categoryLabel {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* ── Page Navigation ── */
+.pageNav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text-body);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.arrow:hover:not(:disabled) {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.arrow:disabled {
+  opacity: 0.25;
+  cursor: default;
+}
+
+.pageInfo {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  min-width: 40px;
+  text-align: center;
+}
+
+.pageSep {
+  margin: 0 2px;
+  opacity: 0.4;
+}
+
+/* ── Bento Grid (Corporate) ── */
+.bentoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 160px;
+  gap: 8px;
+  max-width: var(--max-content);
+  margin: 0 auto;
+}
+
+/* First 2 cards span 2 columns and 2 rows */
+.bentoGrid > *:nth-child(1),
+.bentoGrid > *:nth-child(2) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* ── VIP Strip ── */
+.vipStrip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  max-width: var(--max-content);
+  margin: 0 auto;
+}
+
+/* ── Card ── */
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 160px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cardLarge {
+  min-height: 328px;
+}
+
+.cardImage {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card:hover .cardImage {
+  transform: scale(1.08);
+}
+
+.cardOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.15) 40%,
+    rgba(0, 0, 0, 0) 60%
+  );
+  transition: background 0.4s;
+}
+
+.card:hover .cardOverlay {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.25) 50%,
+    rgba(0, 0, 0, 0.05) 70%
+  );
+}
+
+.cardInfo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  transform: translateY(8px);
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card:hover .cardInfo {
+  transform: translateY(0);
+}
+
+.cardYear {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  margin-bottom: 4px;
+}
+
+.cardClient {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.cardLarge .cardClient {
+  font-size: 20px;
+}
+
+.cardDesc {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 4px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.4s 0.1s, transform 0.4s 0.1s;
+}
+
+.card:hover .cardDesc {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Tablet ── */
+@media (max-width: 1199px) {
+  .bentoGrid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 180px;
+  }
+
+  .bentoGrid > *:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .bentoGrid > *:nth-child(2) {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  .cardLarge {
+    min-height: 368px;
+  }
+
+  .vipStrip {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 767px) {
+  .bentoGrid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 120px;
+  }
+
+  .bentoGrid > *:nth-child(1),
+  .bentoGrid > *:nth-child(2) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .cardLarge {
+    min-height: 120px;
+  }
+
+  .vipStrip {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card {
+    min-height: 120px;
+  }
+
+  .cardInfo {
+    padding: 8px;
+    transform: translateY(0);
+  }
+
+  .cardYear {
+    font-size: 10px;
+    margin-bottom: 2px;
+  }
+
+  .cardClient {
+    font-size: 12px;
+  }
+
+  .cardLarge .cardClient {
+    font-size: 12px;
+  }
+
+  .cardDesc {
+    display: none;
+  }
+}

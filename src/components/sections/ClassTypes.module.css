@@ -1,0 +1,497 @@
+/* ========================
+   Grid
+   ======================== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+  max-width: var(--max-content);
+  margin: 0 auto;
+  align-items: start;
+}
+
+/* ========================
+   Card
+   ======================== */
+.card {
+  background: var(--white);
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.4s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================
+   Hero Title Card
+   ======================== */
+.heroCard {
+  position: relative;
+  padding: 36px 32px 32px;
+  overflow: hidden;
+}
+
+.heroCardA {
+  background: linear-gradient(135deg, #2c2520 0%, #3d3128 40%, #4a3a2e 100%);
+}
+
+.heroCardB {
+  background: linear-gradient(135deg, #1e2428 0%, #2a3036 40%, #343e46 100%);
+}
+
+.heroAccentLine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold) 0%, rgba(200, 165, 73, 0.2) 60%, transparent 100%);
+}
+
+.heroLabel {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  color: var(--gold);
+  border: 1px solid rgba(200, 165, 73, 0.3);
+  padding: 4px 12px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.heroTitle {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+
+.heroSub {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.03em;
+}
+
+.heroCorner {
+  position: absolute;
+  bottom: 12px;
+  right: 24px;
+  font-family: var(--font-heading);
+  font-size: 72px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.1);
+  line-height: 1;
+  user-select: none;
+}
+
+/* ========================
+   Body
+   ======================== */
+.body {
+  padding: 28px 28px 32px;
+}
+
+.desc {
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  font-weight: 400;
+  color: var(--text-body);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.descMobile {
+  display: none;
+}
+
+/* ========================
+   Features
+   ======================== */
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.featuresMobile {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-body);
+  line-height: 1.6;
+  padding: 7px 0;
+}
+
+.featureItemMobile {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  color: var(--text-body);
+  line-height: 1.5;
+  padding: 6px 0;
+}
+
+.bullet {
+  flex-shrink: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+  margin-top: 7px;
+}
+
+/* ========================
+   Curriculum Roadmap (full-width, below cards)
+   ======================== */
+.roadmap {
+  margin-top: 48px;
+  padding: 40px 48px;
+  max-width: var(--max-content);
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(135deg, #fafaf7 0%, #f5f3ee 100%);
+  border: 1px solid var(--gray-200);
+  border-radius: 4px;
+}
+
+.roadmapHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.roadmapLabel {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--gold);
+}
+
+.roadmapSub {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.roadmapTrack {
+  display: flex;
+  position: relative;
+}
+
+.roadmapLine {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  right: 40px;
+  height: 2px;
+  background: var(--gray-300);
+  border-radius: 1px;
+  z-index: 0;
+}
+
+.roadmapLineFill {
+  width: 35%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), rgba(200, 165, 73, 0.3));
+  border-radius: 1px;
+}
+
+.roadmapStep {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.stepDot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+
+.stepOpen .stepDot {
+  background: var(--gold);
+  box-shadow: 0 0 0 5px rgba(200, 165, 73, 0.12);
+}
+
+.stepOpen .stepDotInner {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--white);
+}
+
+.stepLocked .stepDot {
+  background: var(--white);
+  border: 2px solid var(--gray-300);
+}
+
+.stepLocked .stepDotInner {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gray-300);
+}
+
+.stepLevel {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.stepOpen .stepLevel {
+  color: var(--text-primary);
+}
+
+.stepLocked .stepLevel {
+  color: var(--text-muted);
+}
+
+.stepTitle {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+  line-height: 1.4;
+  word-break: keep-all;
+  margin-bottom: 2px;
+}
+
+.stepLocked .stepTitle {
+  color: var(--text-body);
+  font-weight: 400;
+}
+
+.stepDesc {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.4;
+  max-width: 140px;
+  word-break: keep-all;
+}
+
+.desktopBr {
+  display: block;
+}
+
+.mobileSep {
+  display: none;
+}
+
+.stepBadge {
+  font-family: var(--font-ui);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--gray-200);
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-top: 6px;
+  white-space: nowrap;
+}
+
+/* ========================
+   Tablet
+   ======================== */
+@media (max-width: 1023px) {
+  .grid {
+    gap: 28px;
+  }
+
+  .body {
+    padding: 24px 24px 28px;
+  }
+
+  .heroCard {
+    padding: 32px 28px 28px;
+  }
+
+  .heroTitle {
+    font-size: 24px;
+  }
+
+  .roadmap {
+    padding: 32px 28px;
+    margin-top: 36px;
+  }
+}
+
+/* ========================
+   Mobile — vertical timeline layout
+   ======================== */
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .body {
+    padding: 24px 20px 28px;
+  }
+
+  .heroCard {
+    padding: 28px 24px 24px;
+  }
+
+  .heroTitle {
+    font-size: 22px;
+  }
+
+  .heroCorner {
+    font-size: 48px;
+  }
+
+  /* Switch to mobile text */
+  .desc { display: none; }
+  .descMobile {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-body);
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  .features { display: none; }
+  .featuresMobile { display: block; }
+
+  .roadmap {
+    padding: 28px 24px;
+    margin-top: 32px;
+  }
+
+  .roadmapHeader {
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 24px;
+  }
+
+  /* Vertical track */
+  .roadmapTrack {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* Vertical line — stop at last dot center */
+  .roadmapLine {
+    top: 12px;
+    bottom: 44px;
+    left: 14px;
+    right: auto;
+    width: 2px;
+    height: auto;
+  }
+
+  .roadmapLineFill {
+    width: 100%;
+    height: 35%;
+  }
+
+  /* Each step = horizontal row with wrapping content */
+  .roadmapStep {
+    display: grid;
+    grid-template-columns: 28px 36px 1fr auto;
+    align-items: center;
+    gap: 0 12px;
+    padding: 12px 0;
+  }
+
+  .stepDot {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    margin-bottom: 0;
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .stepOpen .stepDotInner {
+    width: 10px;
+    height: 10px;
+  }
+
+  .stepLocked .stepDotInner {
+    width: 7px;
+    height: 7px;
+  }
+
+  .stepLevel {
+    font-size: 13px;
+    flex-shrink: 0;
+    text-align: left;
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .stepTitle {
+    font-size: 14px;
+    text-align: left;
+    grid-row: 1;
+    grid-column: 3;
+    align-self: center;
+  }
+
+  .stepDesc {
+    display: block;
+    font-size: 11px;
+    text-align: left;
+    max-width: none;
+    grid-row: 2;
+    grid-column: 3 / -1;
+    margin-top: 2px;
+  }
+
+  .desktopBr {
+    display: none;
+  }
+
+  .mobileSep {
+    display: inline;
+  }
+
+  .stepBadge {
+    font-size: 9px;
+    padding: 2px 8px;
+    flex-shrink: 0;
+    grid-row: 1;
+    grid-column: 4;
+    align-self: center;
+    margin-top: -3px;
+  }
+}

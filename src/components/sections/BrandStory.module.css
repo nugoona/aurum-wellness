@@ -1,0 +1,22 @@
+.wrap {
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: var(--text-h2);
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+  line-height: 1.3;
+}
+
+.body {
+  font-family: var(--font-body);
+  font-size: var(--text-body-lg);
+  font-weight: 400;
+  color: var(--text-body);
+  line-height: 1.8;
+  max-width: var(--max-narrow);
+  margin: 0 auto;
+}

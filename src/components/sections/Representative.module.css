@@ -1,0 +1,115 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: center;
+  max-width: var(--max-content);
+  margin: 0 auto;
+}
+
+.imageWrap {
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background-size: cover;
+  background-position: center;
+}
+
+.text {
+  /* spacer */
+}
+
+.label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+.name {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.role {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.quote {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-body);
+  line-height: 1.8;
+  border-left: 2px solid var(--gold);
+  padding-left: 20px;
+  margin-bottom: 32px;
+}
+
+.creds {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.credItem {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-body);
+  padding: 8px 0;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.expandBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gold);
+  margin-top: 16px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.expandBtn:hover {
+  color: var(--gold-dark);
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .imageWrap {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .image {
+    aspect-ratio: 1;
+  }
+
+  .name {
+    font-size: 26px;
+  }
+}

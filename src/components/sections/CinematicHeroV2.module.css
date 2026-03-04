@@ -1,0 +1,112 @@
+/* ============================================
+   CinematicHeroV2 — Video Carousel Hero
+   ============================================ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: calc(var(--header-height) * -1);
+}
+
+/* Video Container */
+.videoWrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  transform: translateZ(0);
+  will-change: opacity;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(0, 0, 0, 0.30) 40%,
+    rgba(0, 0, 0, 0.45) 70%,
+    rgba(0, 0, 0, 0.60) 100%
+  );
+  z-index: 1;
+}
+
+/* Phase dots */
+.dots {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.3);
+  transition: background 0.4s ease, width 0.4s ease;
+}
+
+.dotActive {
+  width: 28px;
+  background: var(--gold-light);
+}
+
+/* Text Build-up */
+.textWrap {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.line {
+  display: block;
+  font-family: 'Arita Buri', serif;
+  font-weight: 300;
+  font-size: clamp(32px, 5vw, 56px);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: color 0.6s ease;
+}
+
+.highlight {
+  color: var(--gold-light);
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .hero {
+    height: 100svh;
+    min-height: 500px;
+  }
+
+  .video:first-child {
+    object-position: 36% 30%;
+  }
+
+  .line {
+    font-size: clamp(26px, 7vw, 38px);
+  }
+
+  .dots {
+    display: none;
+  }
+}

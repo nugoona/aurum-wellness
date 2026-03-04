@@ -1,0 +1,316 @@
+/* ── Section override: trim bottom padding so quote is centered ── */
+.teamSection {
+  padding-bottom: 48px !important;
+}
+
+/* ── 5-Column Team Grid ── */
+.teamGrid {
+  display: grid;
+  grid-template-columns: 35fr 16fr 16fr 16fr 16fr;
+  gap: 1px;
+  align-items: stretch;
+}
+
+/* ── CEO Column: CEO photo + small group photo ── */
+.ceoCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+/* CEO photo: zoom in so face size/position matches therapists */
+.ceoCol > .photoCard .photoWrap img {
+  transform: scale(1.4);
+  transform-origin: 50% 3%;
+}
+
+.ceoCol > .photoCard:hover .photoWrap img {
+  transform: scale(1.47);
+}
+
+/* ── Therapist Column: single card fills full height ── */
+.therapistCol {
+  min-width: 0;
+}
+
+.therapistCol .photoCard {
+  height: 100%;
+}
+
+.therapistCol .photoWrap {
+  height: 100%;
+}
+
+.therapistCol .photoWrap img {
+  height: 100%;
+  aspect-ratio: unset;
+}
+
+/* ── Photo Card (shared) ── */
+.photoCard {
+  position: relative;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.photoWrap {
+  width: 100%;
+  line-height: 0;
+}
+
+.photoWrap img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.photoCard:hover .photoWrap img {
+  transform: scale(1.05);
+}
+
+/* ── 김준경: push image area down so she appears lower & smaller ── */
+.therapistSmaller .photoWrap {
+  padding-top: 40px;
+  background: #f8f8f8;
+}
+
+/* ── Dark Gradient Overlay with Text ── */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px 20px 20px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.72) 0%,
+    rgba(0, 0, 0, 0.45) 50%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.overlayName {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.overlayRole {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--gold);
+  margin-top: 8px;
+  letter-spacing: 0.02em;
+}
+
+/* ── Quote Block (below grid) ── */
+.quoteBlock {
+  position: relative;
+  text-align: center;
+  margin: 48px auto 0;
+  max-width: 680px;
+  padding: 0;
+  border: none;
+}
+
+.quoteOpen,
+.quoteClose {
+  width: 22px;
+  height: 22px;
+  color: var(--gold);
+  opacity: 0.5;
+  vertical-align: middle;
+  display: inline;
+}
+
+.quoteOpen {
+  margin-right: 4px;
+  transform: translateY(-2px);
+}
+
+.quoteClose {
+  margin-left: 4px;
+  transform: translateY(-2px);
+}
+
+.quoteText {
+  font-family: var(--font-body);
+  font-size: 19px;
+  font-weight: 400;
+  font-style: normal;
+  color: #222;
+  line-height: 1.9;
+  margin: 0;
+  word-break: keep-all;
+}
+
+.quoteCite {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-muted);
+  margin-top: 16px;
+}
+
+/* ── Group Photo (small, under CEO) ── */
+.groupWrap {
+  overflow: hidden;
+  line-height: 0;
+  flex-shrink: 0;
+}
+
+.groupWrap img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.groupWrap:hover img {
+  transform: scale(1.05);
+}
+
+/* ── Tablet ── */
+@media (max-width: 1024px) {
+  .teamGrid {
+    gap: 1px;
+  }
+
+  .overlayName {
+    font-size: 18px;
+  }
+
+  .overlayRole {
+    font-size: 12px;
+  }
+
+  .overlay {
+    padding: 16px 14px 14px;
+  }
+
+  .quoteBlock {
+    margin-top: 36px;
+  }
+
+  .quoteText {
+    font-size: 15px;
+  }
+}
+
+/* ── Mobile: CEO full width + 2×2 therapists below ── */
+@media (max-width: 767px) {
+  .teamGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+  }
+
+  .ceoCol {
+    grid-column: 1 / -1;
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .ceoCol > .photoCard {
+    flex: none;
+  }
+
+  .ceoCol > .photoCard .photoWrap {
+    overflow: hidden;
+  }
+
+  .ceoCol > .photoCard .photoWrap img {
+    aspect-ratio: 3 / 2;
+    transform: scale(1.05);
+    transform-origin: 50% 10%;
+  }
+
+  /* Hide group photo on mobile */
+  .ceoCol > .groupWrap {
+    display: none;
+  }
+
+  /* Darken photos for better text contrast on mobile */
+  .photoWrap img {
+    filter: brightness(0.85);
+  }
+
+  /* Fix 전나영 padding on mobile */
+  .therapistSmaller .photoWrap {
+    padding-top: 0;
+  }
+
+  .therapistCol .photoCard {
+    height: auto;
+  }
+
+  .therapistCol .photoWrap img {
+    height: auto;
+    aspect-ratio: 3 / 4;
+  }
+
+  .photoCard {
+    overflow: visible;
+  }
+
+  .overlay {
+    position: static;
+    padding: 8px 4px 0;
+    background: none;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+  }
+
+  .overlayName {
+    color: var(--text-primary, #222);
+    font-size: 14px;
+  }
+
+  .overlayRole {
+    display: inline;
+    color: var(--text-muted, #888);
+    font-size: 12px;
+    margin-top: 0;
+  }
+
+  .quoteBlock {
+    margin-top: 28px;
+    padding: 0 20px;
+  }
+
+  .quoteText {
+    font-size: 14.5px;
+    line-height: 1.8;
+  }
+
+  .quoteOpen {
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 0 auto 8px;
+    transform: none;
+  }
+
+  .quoteClose {
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 8px auto 0;
+    transform: none;
+  }
+}

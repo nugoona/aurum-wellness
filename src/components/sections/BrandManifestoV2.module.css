@@ -1,0 +1,106 @@
+/* ============================================
+   BrandManifestoV2 — Dark Word Reveal Section
+   ============================================ */
+
+.section {
+  position: relative;
+  background: #1a1a1a;
+  padding: var(--section-py) 0;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bgWrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.bgOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 18, 15, 0.82);
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max-narrow);
+  margin: 0 auto;
+  padding: 0 var(--content-px);
+  text-align: center;
+}
+
+.label {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  margin-bottom: 40px;
+}
+
+/* Main copy */
+.mainCopy {
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 300;
+  line-height: 1.4;
+  color: var(--cream);
+  margin-bottom: 40px;
+}
+
+.mainLine {
+  display: block;
+}
+
+.mainWord {
+  display: inline-block;
+  margin-right: 0.3em;
+  /* no CSS transition — GSAP scrub handles opacity */
+}
+
+/* Deco line */
+.decoLine {
+  width: 60px;
+  height: 1px;
+  background: var(--gold);
+  margin: 0 auto 40px;
+  transform-origin: center;
+}
+
+/* Body text */
+.body {
+  font-family: var(--font-body);
+  font-size: clamp(15px, 1.6vw, 18px);
+  font-weight: 400;
+  line-height: 2;
+  color: rgba(249, 247, 244, 0.7);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .section {
+    min-height: auto;
+    padding: 80px 0;
+  }
+
+  .mainCopy {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .label {
+    margin-bottom: 28px;
+  }
+
+  .body {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+}

@@ -1,0 +1,89 @@
+/* ============================================
+   SlotMachineDigit — Spinning Counter
+   ============================================ */
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.digits {
+  display: flex;
+  align-items: flex-end;
+  gap: 0;
+}
+
+.digitSlot {
+  width: 0.65em;
+  height: 1.1em;
+  overflow: hidden;
+  position: relative;
+  font-family: var(--font-heading);
+  font-size: clamp(48px, 6vw, 72px);
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1.1;
+}
+
+.digitTrack {
+  display: flex;
+  flex-direction: column;
+  transition: none;
+  transform: translateY(0);
+}
+
+.digitTrack.spinning {
+  animation: slotSpin 1.8s cubic-bezier(0.23, 1, 0.32, 1) var(--spin-delay, 0s) forwards;
+}
+
+.digitChar {
+  display: block;
+  height: 1.1em;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.suffix {
+  font-family: var(--font-heading);
+  font-size: clamp(36px, 4.5vw, 56px);
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1.1;
+  margin-left: 2px;
+}
+
+.label {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+@keyframes slotSpin {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    /* Move up by (20 + target) * digit height to land on target */
+    transform: translateY(calc(-1 * (20 + var(--target)) * 1.1em));
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .digitSlot {
+    font-size: 40px;
+  }
+
+  .suffix {
+    font-size: 32px;
+  }
+
+  .label {
+    font-size: 12px;
+  }
+}

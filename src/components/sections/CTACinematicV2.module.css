@@ -1,0 +1,143 @@
+/* ============================================
+   CTACinematicV2 — Ken Burns CTA Section
+   ============================================ */
+
+.section {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Background */
+.bgWrap {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.bgVideo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 60%;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* Content */
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 80px var(--content-px);
+  max-width: 700px;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(30px, 4.5vw, 48px);
+  font-weight: 300;
+  line-height: 1.4;
+  color: #ffffff;
+  margin-bottom: 48px;
+}
+
+.titleLine {
+  display: block;
+}
+
+.titleWord {
+  display: inline-block;
+  margin-right: 0.25em;
+}
+
+/* CTA buttons */
+.ctaGrid {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ctaBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 320px;
+  padding: 16px 0;
+  font-family: var(--font-ui);
+  border-radius: 2px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.3s ease;
+}
+
+.phoneBtn {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+}
+
+.phoneBtn:hover {
+  background: rgba(200, 165, 73, 0.1);
+}
+
+.bookingBtn {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.bookingBtn:hover {
+  border-color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .section {
+    min-height: 60vh;
+  }
+
+  .bgVideo {
+    object-position: center 85%;
+  }
+
+  .content {
+    padding: 60px 24px;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 36px;
+  }
+
+  .ctaGrid {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ctaBtn {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .phoneBtn,
+  .bookingBtn {
+    font-size: 16px;
+  }
+}

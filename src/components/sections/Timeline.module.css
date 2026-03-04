@@ -1,0 +1,152 @@
+/* --- Layout: 2-column (gallery + timeline) --- */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+  max-width: var(--max-content);
+  margin: 0 auto;
+}
+
+/* --- Image Gallery (left) --- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.galleryItem {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  position: relative;
+}
+
+.galleryImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.galleryItem:hover .galleryImage {
+  transform: scale(1.05);
+}
+
+/* --- Timeline (right) --- */
+.timelineWrap {
+  padding-top: 8px;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 32px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--gold-light);
+}
+
+.item {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.dot {
+  position: absolute;
+  left: -37px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--gold);
+  border: 2px solid var(--white);
+}
+
+.content {
+  padding: 0;
+}
+
+.company {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.desc {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-body);
+  line-height: 1.6;
+}
+
+/* --- Footer note --- */
+.footerNote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 48px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.footerLine {
+  display: inline-block;
+  width: 40px;
+  height: 1px;
+  background: var(--gray-300);
+}
+
+/* --- Mobile --- */
+@media (max-width: 767px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .gallery {
+    gap: 6px;
+  }
+
+  .timeline {
+    padding-left: 24px;
+  }
+
+  .dot {
+    left: -29px;
+  }
+
+  .company {
+    font-size: 15px;
+  }
+
+  .desc {
+    font-size: 13px;
+  }
+
+  .footerNote {
+    margin-top: 32px;
+    font-size: 13px;
+  }
+
+  .footerLine {
+    width: 24px;
+  }
+}

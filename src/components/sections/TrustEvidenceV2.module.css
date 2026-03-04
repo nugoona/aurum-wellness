@@ -1,0 +1,122 @@
+/* ============================================
+   TrustEvidenceV2 — Numbers + Logo Marquee
+   ============================================ */
+
+/* Numbers section — dark background */
+.section {
+  background: var(--dark);
+  padding: var(--section-py) 0;
+  overflow: hidden;
+}
+
+.numbersWrap {
+  max-width: var(--max-content);
+  margin: 0 auto;
+  padding: 0 var(--content-px);
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: var(--text-h2);
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 48px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+/* Logo section — white background */
+.logoSection {
+  background: #ffffff;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.marqueeWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.marqueeTrack {
+  overflow: hidden;
+  width: 100%;
+}
+
+.marqueeInner {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  will-change: transform;
+}
+
+/* CSS keyframe marquee — seamless infinite loop */
+.scrollLeft {
+  animation: marquee-left 60s linear infinite;
+}
+
+.scrollRight {
+  animation: marquee-right 60s linear infinite;
+}
+
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.logoItem {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 45px;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 24px;
+  }
+
+  .logoSection {
+    padding: 28px 0;
+  }
+
+  .marqueeInner {
+    gap: 14px;
+  }
+
+  .logoItem {
+    width: 72px;
+    height: 36px;
+  }
+
+  .scrollLeft {
+    animation-duration: 40s;
+  }
+
+  .scrollRight {
+    animation-duration: 40s;
+  }
+}

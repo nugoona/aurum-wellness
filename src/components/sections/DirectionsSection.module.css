@@ -1,0 +1,146 @@
+/* ── Directions Section ── */
+.section {
+  padding: var(--section-py) 0;
+  background: var(--white);
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* ── Left: Info Panel ── */
+.info {
+  padding: 16px 0;
+}
+
+.label {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: var(--text-h2);
+  font-weight: 400;
+  color: var(--text-primary);
+  margin: 0 0 36px;
+  line-height: 1.2;
+}
+
+/* ── Info blocks ── */
+.block {
+  margin-bottom: 28px;
+}
+
+.block:last-child {
+  margin-bottom: 0;
+}
+
+.blockTitle {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 8px;
+  letter-spacing: 0.01em;
+}
+
+.text {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text-body);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.muted {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list li {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--text-body);
+  line-height: 1.7;
+}
+
+.list li strong {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.phone {
+  font-family: var(--font-ui);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--gold-dark);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.phone:hover {
+  color: var(--gold);
+}
+
+/* ── Right: Map ── */
+.map {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border: 1px solid var(--gray-200);
+}
+
+/* ── Tablet ── */
+@media (max-width: 1024px) {
+  .wrap {
+    gap: 32px;
+  }
+
+  .title {
+    margin-bottom: 28px;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 767px) {
+  .wrap {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .info {
+    padding: 0;
+  }
+
+  .title {
+    margin-bottom: 24px;
+  }
+
+  .block {
+    margin-bottom: 24px;
+  }
+
+  .map {
+    aspect-ratio: 1 / 1;
+  }
+}

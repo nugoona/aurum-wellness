@@ -1,0 +1,256 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.itemReverse {
+  direction: rtl;
+}
+
+.itemReverse > * {
+  direction: ltr;
+}
+
+.imageWrap {
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s ease;
+}
+
+.item:hover .image {
+  transform: scale(1.05);
+}
+
+.text {
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--white);
+}
+
+.label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.desc {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text-body);
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+
+.descPara {
+  display: block;
+  margin-top: 12px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  display: inline-block;
+  background: var(--gold-subtle);
+  color: var(--gold-dark);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 2px;
+}
+
+/* ── CEO Profile Strip ── */
+.ceoStrip {
+  position: relative;
+  margin-top: 80px;
+  padding: 40px 40px 40px 260px;
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  overflow: visible;
+  min-height: 260px;
+}
+
+.ceoImageWrap {
+  position: absolute;
+  left: 30px;
+  bottom: 0;
+  width: 200px;
+}
+
+.ceoImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ceoInfo {
+  min-width: 0;
+}
+
+.ceoHeader {
+  margin-bottom: 16px;
+}
+
+.ceoName {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-right: 12px;
+}
+
+.ceoTitle {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gold);
+}
+
+.ceoLabel {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.credentials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.credentials li {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-body);
+  line-height: 1.6;
+  position: relative;
+  padding-left: 12px;
+}
+
+.credentials li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .item {
+    grid-template-columns: 1fr;
+  }
+
+  .itemReverse {
+    direction: ltr;
+  }
+
+  .image {
+    aspect-ratio: 16 / 9;
+  }
+
+  .text {
+    padding: 28px 20px;
+  }
+
+  .title {
+    font-size: 20px;
+    word-break: keep-all;
+  }
+
+  .desc {
+    font-size: 14px;
+    line-height: 1.4;
+    word-break: keep-all;
+  }
+
+  .ceoStrip {
+    position: static;
+    padding: 28px 20px;
+    margin-top: 32px;
+    min-height: auto;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .ceoImageWrap {
+    position: static;
+    width: 100%;
+    margin: 0 auto 24px;
+    padding: 20px 20px 0;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .ceoImage {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .ceoHeader {
+    text-align: center;
+  }
+
+  .ceoName {
+    display: block;
+    font-size: 20px;
+    margin-right: 0;
+    margin-bottom: 4px;
+  }
+
+  .ceoTitle {
+    display: block;
+  }
+
+  .credentials {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .credentials li {
+    font-size: 12.5px;
+    word-break: keep-all;
+  }
+}

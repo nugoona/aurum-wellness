@@ -1,0 +1,419 @@
+/* ══════════════════════════════════════════════════
+   ProgramGrid — Consistent 25% text card width
+   BODY: text 25% × 2rows + images 75% (2+3)
+   FACE: 4 equal cols (25% each)
+   SPECIAL: text 25% + 4 images in 75%
+   Gap: 2px (seamless)
+   ══════════════════════════════════════════════════ */
+
+.section {
+  padding: 80px 0 0;
+  background: var(--color-cream);
+}
+
+.categorySection {
+  margin-top: 1px;
+}
+
+/* ════════════════════════════════════════════
+   BODY: text left 25% (2-row span) + images 75%
+   ════════════════════════════════════════════ */
+
+.bodyLayout {
+  display: flex;
+  gap: 1px;
+  height: calc(340px * 2 + 1px);
+}
+
+.bodyLayout > :first-child {
+  flex: 0 0 25%;
+  min-width: 0;
+}
+
+/* Override .textCard height (340px) so it spans full 2-row height */
+.bodyLayout .textCard {
+  height: 100%;
+}
+
+.bodyImages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.bodyRow {
+  flex: 1;
+  display: grid;
+  gap: 1px;
+}
+
+.bodyRow:first-child {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.bodyRow:last-child {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.bodyRow > * {
+  min-width: 0;
+  min-height: 0;
+}
+
+.bodyRow .card {
+  height: 100%;
+}
+
+/* ════════════════════════════════════════════
+   FACE & SPECIAL: flat grid, text 25% fixed
+   ════════════════════════════════════════════ */
+
+.flatGrid {
+  display: grid;
+  gap: 1px;
+}
+
+/* FACE: text 25% + 3 images each ~25% */
+.flatGrid[data-count="4"] {
+  grid-template-columns: 25% repeat(3, 1fr);
+}
+
+/* SPECIAL: text 25% + 4 images split 75% */
+.flatGrid[data-count="5"] {
+  grid-template-columns: 25% repeat(4, 1fr);
+}
+
+/* ════════════════════════════════════════════
+   Text Card
+   ════════════════════════════════════════════ */
+
+.textCard {
+  height: 340px;
+  background: linear-gradient(160deg, #1c1916 0%, #262220 45%, #1e1a17 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.textCardLabel {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: var(--color-gold, #c8a549);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.textCardTitle {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 400;
+  color: #f5f0e8;
+  margin: 0 0 16px;
+  letter-spacing: 1px;
+}
+
+.textCardDivider {
+  width: 40px;
+  height: 1px;
+  background: var(--color-gold, #c8a549);
+  margin: 0 auto 16px;
+}
+
+.textCardDesc {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.8;
+  max-width: 280px;
+  margin: 0 auto;
+  word-break: keep-all;
+  white-space: pre-line;
+  text-align: left;
+}
+
+/* ════════════════════════════════════════════
+   Image Card
+   ════════════════════════════════════════════ */
+
+.card {
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+  height: 340px;
+}
+
+.imageWrap {
+  position: absolute;
+  inset: 0;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.7s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.08);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.15) 0%,
+    rgba(0, 0, 0, 0.30) 40%,
+    rgba(0, 0, 0, 0.48) 100%
+  );
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.card:hover .overlay {
+  opacity: 0.85;
+}
+
+.badge {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  pointer-events: none;
+  padding: 12px;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.badgeSvg {
+  width: 80%;
+  max-width: 220px;
+  height: auto;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 2px rgba(0, 0, 0, 0.25));
+}
+
+/* Hover: description slides up (desktop only) */
+.hoverPanel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  padding: 32px 16px 20px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.82) 0%,
+    rgba(0, 0, 0, 0.6) 35%,
+    rgba(0, 0, 0, 0.3) 65%,
+    rgba(0, 0, 0, 0.08) 85%,
+    transparent 100%
+  );
+  transform: translateY(100%);
+  transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card:hover .hoverPanel {
+  transform: translateY(0);
+}
+
+.card:hover .badge {
+  transform: translateY(-18px);
+  opacity: 0.92;
+}
+
+.desc {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.75;
+  word-break: keep-all;
+  margin: 0;
+}
+
+/* ══════════════════════════════════════════════════
+   Tablet (768–1023)
+   ══════════════════════════════════════════════════ */
+
+@media (max-width: 1023px) {
+  .section {
+    padding-top: 60px;
+  }
+
+  .categorySection {
+    margin-top: 1px;
+  }
+
+  .bodyLayout {
+    height: calc(280px * 2 + 1px);
+  }
+
+  .textCard {
+    height: 280px;
+    padding: 24px 18px;
+  }
+
+  .textCardTitle {
+    font-size: 22px;
+  }
+
+  .textCardDesc {
+    font-size: 13px;
+    max-width: 240px;
+  }
+
+  .card {
+    height: 280px;
+  }
+
+  /* FACE: 2×2 */
+  .flatGrid[data-count="4"] {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* SPECIAL: text full-width, images 2×2 */
+  .flatGrid[data-count="5"] {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flatGrid[data-count="5"] > :first-child {
+    grid-column: 1 / -1;
+  }
+
+  .flatGrid[data-count="5"] .textCard {
+    height: auto;
+    min-height: 120px;
+    padding: 24px 32px;
+  }
+
+  .hoverPanel {
+    padding: 20px 14px 16px;
+  }
+
+  .desc {
+    font-size: 12.5px;
+  }
+}
+
+/* ══════════════════════════════════════════════════
+   Mobile (<768)
+   ══════════════════════════════════════════════════ */
+
+@media (max-width: 767px) {
+  .section {
+    padding-top: 48px;
+  }
+
+  .categorySection {
+    margin-top: 1px;
+  }
+
+  /* ── BODY: stack vertically ── */
+  .bodyLayout {
+    flex-direction: column;
+    gap: 1px;
+    height: auto;
+  }
+
+  .bodyLayout > :first-child {
+    flex: none;
+  }
+
+  .bodyLayout .textCard {
+    height: auto;
+    min-height: 140px;
+    padding: 24px 20px;
+  }
+
+  .bodyImages {
+    gap: 1px;
+  }
+
+  .bodyRow {
+    gap: 1px;
+  }
+
+  .bodyRow:first-child,
+  .bodyRow:last-child {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bodyRow .card {
+    height: 180px;
+  }
+
+  /* 3rd row orphan: full-width featured card */
+  .bodyRow:last-child > :nth-child(3) {
+    grid-column: 1 / -1;
+  }
+
+  .bodyRow:last-child > :nth-child(3) .card {
+    height: 220px;
+  }
+
+  /* FACE grid orphan: last card full-width */
+  .flatGrid[data-count="4"] > :last-child {
+    grid-column: 1 / -1;
+  }
+
+  .flatGrid[data-count="4"] > :last-child .card {
+    height: 200px;
+  }
+
+  /* ── FACE & SPECIAL: text full-width, images 2-col ── */
+  .flatGrid {
+    gap: 1px;
+  }
+
+  .flatGrid[data-count="4"],
+  .flatGrid[data-count="5"] {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flatGrid > :first-child {
+    grid-column: 1 / -1;
+  }
+
+  .textCard {
+    height: auto;
+    min-height: 130px;
+    padding: 24px 20px;
+  }
+
+  .card {
+    height: 180px;
+  }
+
+  .textCardTitle {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .textCardDesc {
+    font-size: 12px;
+    line-height: 1.65;
+    max-width: none;
+  }
+
+  .badgeSvg {
+    width: 85%;
+  }
+
+  /* Mobile: NO description on cards */
+  .hoverPanel {
+    display: none;
+  }
+}
