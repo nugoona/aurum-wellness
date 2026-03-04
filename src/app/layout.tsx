@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Cormorant_Garamond, Gowun_Batang, Hahmlet } from 'next/font/google';
+import { Cormorant_Garamond, Gowun_Batang } from 'next/font/google';
 import localFont from 'next/font/local';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -21,13 +21,6 @@ const gowunBatang = Gowun_Batang({
   variable: '--font-body',
   display: 'swap',
   fallback: ['Georgia', 'serif'],
-});
-
-const hahmlet = Hahmlet({
-  subsets: ['latin'],
-  weight: ['200', '300', '400'],
-  variable: '--font-display',
-  display: 'swap',
 });
 
 const pretendard = localFont({
@@ -55,7 +48,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ko" className={`${cormorant.variable} ${gowunBatang.variable} ${hahmlet.variable} ${pretendard.variable}`}>
+    <html lang="ko" className={`${cormorant.variable} ${gowunBatang.variable} ${pretendard.variable}`}>
       <body>
         <SmoothScrollProvider>
           <ScrollToTop />

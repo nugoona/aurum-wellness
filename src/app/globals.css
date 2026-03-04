@@ -4,13 +4,6 @@
    ============================================ */
 
 @font-face {
-  font-family: 'ChosunGs';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGs.woff') format('woff');
-  font-weight: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'Arita Buri';
   src: url('https://cdn.jsdelivr.net/gh/taevel02/typeface-arita/Arita-buriL.woff2') format('woff2');
   font-weight: 300;
@@ -71,7 +64,7 @@
   /* Font Families */
   --font-heading: "Arita Buri", Georgia, serif;
   --font-body: "Gowun Batang", Georgia, serif;
-  --font-display: "Hahmlet", "Cormorant Garamond", Georgia, serif;
+  --font-display: "Cormorant Garamond", Georgia, serif;
   --font-ui: "Pretendard", -apple-system, "Noto Sans KR", sans-serif;
 
   /* Spacing */
