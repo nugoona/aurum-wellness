@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 import styles from './Hero.module.css';
 import { BOOKING_URL } from '@/data/siteData';
 
@@ -25,8 +26,15 @@ export default function Hero({ image, label, title, subtitle, mobileSubtitle, sh
   return (
     <section
       className={`${styles.hero} ${fullHeight ? styles.full : styles.sub}`}
-      style={{ backgroundImage: `url(${image})` }}
     >
+      <Image
+        src={image}
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        style={{ objectFit: 'cover', objectPosition: 'center' }}
+      />
       <div className={styles.overlay} />
       <div className={`${styles.content} ${visible ? styles.visible : ''}`}>
         <span className={styles.label}>{label}</span>

@@ -212,6 +212,7 @@ export default function CinematicHeroV2() {
             muted
             playsInline
             preload="auto"
+            poster={i === 0 ? '/videos/hero/hero1-poster.jpg' : undefined}
             style={{ opacity: i === 0 ? 1 : 0 }}
           />
         ))}
