@@ -35,6 +35,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.aurumwellness.co.kr'),
   verification: {
     google: 'I4CBd6hErR5hdGhIXfmwnbWYREhXF6A04oVFhKGcY7M',
+    other: {
+      'naver-site-verification': 'd5ce2c7287fb142a9c787c3a469176c783d98719',
+    },
   },
   title: {
     default: '아우름웰니스 | 인천 부평 프리미엄 뷰티 & 웰니스 스파',
