@@ -2,7 +2,7 @@
 
 export const B2B_STATS = [
   { value: 9, suffix: '+', label: '연간 경력' },
-  { value: 30, suffix: '+', label: '파트너 기업' },
+  { value: 200, suffix: '+', label: '파트너 기업' },
   { value: 4000, suffix: '+', label: '현장 기록' },
 ];
 

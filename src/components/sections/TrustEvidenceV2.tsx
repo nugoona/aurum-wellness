@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 const STATS = [
   { value: 9, suffix: '+', label: '연속 파트너십 연수' },
   { value: 144, suffix: '', label: '누적 행사 운영' },
-  { value: 30, suffix: '+', label: '재계약 기업 수' },
+  { value: 200, suffix: '+', label: '재계약 기업 수' },
   { value: 5000, suffix: '+', label: '누적 재방문 고객' },
 ];
 
