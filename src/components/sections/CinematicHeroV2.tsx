@@ -45,6 +45,9 @@ export default function CinematicHeroV2() {
     if (toVideo) { toVideo.currentTime = 0; toVideo.play().catch(() => {}); }
     if (fromVideo) fromVideo.style.opacity = '0';
     if (toVideo) toVideo.style.opacity = '1';
+    // Preload next video so mobile doesn't stall on transition
+    const nextVideo = videoRefs.current[(to + 1) % 3];
+    if (nextVideo) { nextVideo.load(); }
   }, []);
 
   const scrollToPhase = useCallback((targetPhase: number) => {
@@ -97,6 +100,9 @@ export default function CinematicHeroV2() {
   useEffect(() => {
     const v0 = videoRefs.current[0];
     if (v0) v0.play().catch(() => {});
+    // Preload video 2 so first transition is smooth on mobile
+    const v1 = videoRefs.current[1];
+    if (v1) v1.load();
     // Always start timer on mount (hero is visible at page load)
     isPinnedRef.current = true;
     startAutoTimerRef.current();

@@ -148,7 +148,7 @@ export default function FounderStoryV2() {
           {/* Row 1: 3 landscape images */}
           <div className={`${styles.bentoItem} ${styles.bentoTop1}`}>
             <Image src={BENTO_IMAGES[0].src} alt={BENTO_IMAGES[0].alt} fill sizes="33vw" style={{ objectFit: 'cover' }} />
-            <span className={`${styles.bentoLabel} ${styles.bentoLabelDark}`}>{BENTO_IMAGES[0].label}</span>
+            <span className={styles.bentoLabel}>{BENTO_IMAGES[0].label}</span>
           </div>
           <div className={`${styles.bentoItem} ${styles.bentoTop2}`}>
             <Image src={BENTO_IMAGES[1].src} alt={BENTO_IMAGES[1].alt} fill sizes="33vw" style={{ objectFit: 'cover' }} />
@@ -180,7 +180,7 @@ export default function FounderStoryV2() {
           </div>
           <div className={`${styles.bentoItem} ${styles.bentoConsult}`}>
             <Image src={BENTO_IMAGES[3].src} alt={BENTO_IMAGES[3].alt} fill sizes="33vw" style={{ objectFit: 'cover' }} />
-            <span className={`${styles.bentoLabel} ${styles.bentoLabelDark}`}>{BENTO_IMAGES[3].label}</span>
+            <span className={`${styles.bentoLabel} ${styles.bentoLabelMobileDark}`}>{BENTO_IMAGES[3].label}</span>
           </div>
 
           {/* Row 3: Square + Wide */}

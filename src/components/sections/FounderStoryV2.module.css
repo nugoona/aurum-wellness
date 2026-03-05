@@ -116,6 +116,8 @@
   text-shadow: none;
 }
 
+.bentoLabelMobileDark {}
+
 /* Deco line */
 .decoLine {
   width: 60px;
@@ -267,6 +269,20 @@
 
   .quote {
     font-size: 15px;
+  }
+
+  .bentoLabel {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 1), 0 0 3px rgba(0, 0, 0, 0.4);
+  }
+
+  .bentoLabelDark {
+    color: #1a1a1a;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.08);
+  }
+
+  .bentoLabelMobileDark {
+    color: #1a1a1a;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.12);
   }
 }
 
