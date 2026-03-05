@@ -8,7 +8,7 @@ export default function ClientLogos() {
     <section className={`section section--alt ${styles.section}`}>
       <div className="container">
         <ScrollReveal>
-          <p className={styles.text}>9년간 30개 이상의 기업과 함께합니다</p>
+          <p className={styles.text}>9년간 200개 이상의 기업과 함께합니다</p>
         </ScrollReveal>
         <ScrollReveal delay={0.15}>
           <div className={styles.grid}>

@@ -14,7 +14,7 @@ import {
 
 export const metadata = {
   title: '아우름웰니스',
-  description: '2018년부터 30개 이상의 기업과 함께한 프리미엄 복지 프로그램. 기업 임직원 복지부터 VIP 브랜드 이벤트까지.',
+  description: '2018년부터 200개 이상의 기업과 함께한 프리미엄 복지 프로그램. 기업 임직원 복지부터 VIP 브랜드 이벤트까지.',
 };
 
 export default function B2BPage() {
@@ -24,8 +24,8 @@ export default function B2BPage() {
         image="/images/hero/sub_vis02.jpg"
         label="B2B WELLNESS"
         title={'성장하는 기업,\n건강한 조직과 함께합니다'}
-        subtitle="2018년부터 30개 이상의 기업과 함께한 프리미엄 복지 프로그램"
-        mobileSubtitle={'2018년부터 30개 이상의 기업과 함께한\n프리미엄 복지 프로그램'}
+        subtitle="2018년부터 200개 이상의 기업과 함께한 프리미엄 복지 프로그램"
+        mobileSubtitle={'2018년부터 200개 이상의 기업과 함께한\n프리미엄 복지 프로그램'}
         fullHeight
       />
       <PhotoWall />

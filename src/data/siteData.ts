@@ -22,7 +22,7 @@ export const SERVICES = [
     href: '/b2b',
     label: 'B2B WELLNESS',
     title: 'B2B 웰니스',
-    description: '기업 임직원 복지부터 VIP 브랜드 이벤트까지, 9년간 30개 이상의 기업과 함께.',
+    description: '기업 임직원 복지부터 VIP 브랜드 이벤트까지, 9년간 200개 이상의 기업과 함께.',
     image: '/images/hero/main4_2.jpg',
   },
   {
