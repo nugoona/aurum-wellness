@@ -241,6 +241,7 @@
   .cardInfo {
     padding: 8px;
     transform: translateY(0);
+    overflow: hidden;
   }
 
   .cardYear {

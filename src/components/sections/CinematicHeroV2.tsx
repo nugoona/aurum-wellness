@@ -84,6 +84,7 @@ export default function CinematicHeroV2() {
 
   // Pause on user scroll within hero, resume after 3s idle
   const handleUserScroll = useCallback(() => {
+    if (!isDesktopRef.current) return; // Mobile: never pause, just play through
     if (programmaticScrollRef.current || !isPinnedRef.current) return;
     if (timerRef.current) { clearTimeout(timerRef.current); timerRef.current = null; }
     if (idleTimerRef.current) { clearTimeout(idleTimerRef.current); idleTimerRef.current = null; }
