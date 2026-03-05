@@ -33,6 +33,9 @@ const pretendard = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.aurumwellness.co.kr'),
+  verification: {
+    google: 'I4CBd6hErR5hdGhIXfmwnbWYREhXF6A04oVFhKGcY7M',
+  },
   title: {
     default: '아우름웰니스 | 인천 부평 프리미엄 뷰티 & 웰니스 스파',
     template: '%s | 아우름웰니스',
