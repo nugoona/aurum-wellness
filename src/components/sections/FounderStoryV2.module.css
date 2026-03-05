@@ -154,6 +154,7 @@
   font-size: 1.4em;
   color: var(--gold);
   font-weight: 300;
+  line-height: 0;
 }
 
 .quoteAuthor {
