@@ -43,6 +43,21 @@ export const metadata: Metadata = {
     description: '진정한 휴식을 만나는 곳, 당신만을 위한 맞춤 치유가 시작됩니다.',
     locale: 'ko_KR',
     type: 'website',
+    url: 'https://www.aurumwellness.co.kr',
+    images: [
+      {
+        url: 'https://www.aurumwellness.co.kr/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: '아우름웰니스 - 프리미엄 뷰티 & 웰니스 스파',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '아우름웰니스 | 프리미엄 뷰티 & 웰니스 스파',
+    description: '진정한 휴식을 만나는 곳, 당신만을 위한 맞춤 치유가 시작됩니다.',
+    images: ['https://www.aurumwellness.co.kr/og-image.png'],
   },
 };
 
