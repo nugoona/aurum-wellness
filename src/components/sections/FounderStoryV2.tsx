@@ -156,7 +156,7 @@ export default function FounderStoryV2() {
           </div>
           <div className={`${styles.bentoItem} ${styles.bentoTop3}`}>
             <Image src={BENTO_IMAGES[2].src} alt={BENTO_IMAGES[2].alt} fill sizes="33vw" style={{ objectFit: 'cover' }} />
-            <span className={styles.bentoLabel}>{BENTO_IMAGES[2].label}</span>
+            <span className={`${styles.bentoLabel} ${styles.bentoLabelDark}`}>{BENTO_IMAGES[2].label}</span>
           </div>
 
           {/* Row 2: Text + Portrait image */}
@@ -186,7 +186,7 @@ export default function FounderStoryV2() {
           {/* Row 3: Square + Wide */}
           <div className={`${styles.bentoItem} ${styles.bentoDetail}`}>
             <Image src={BENTO_IMAGES[4].src} alt={BENTO_IMAGES[4].alt} fill sizes="25vw" style={{ objectFit: 'cover' }} />
-            <span className={styles.bentoLabel}>{BENTO_IMAGES[4].label}</span>
+            <span className={`${styles.bentoLabel} ${styles.bentoLabelDark}`}>{BENTO_IMAGES[4].label}</span>
           </div>
           <div className={`${styles.bentoItem} ${styles.bentoSpace}`}>
             <Image src={BENTO_IMAGES[5].src} alt={BENTO_IMAGES[5].alt} fill sizes="66vw" style={{ objectFit: 'cover' }} />
