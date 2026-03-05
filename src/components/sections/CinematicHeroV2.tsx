@@ -42,12 +42,26 @@ export default function CinematicHeroV2() {
   const switchVideo = useCallback((from: number, to: number) => {
     const fromVideo = videoRefs.current[from];
     const toVideo = videoRefs.current[to];
-    if (toVideo) { toVideo.currentTime = 0; toVideo.play().catch(() => {}); }
-    if (fromVideo) fromVideo.style.opacity = '0';
-    if (toVideo) toVideo.style.opacity = '1';
-    // Preload next video so mobile doesn't stall on transition
-    const nextVideo = videoRefs.current[(to + 1) % 3];
-    if (nextVideo) { nextVideo.load(); }
+
+    const doSwitch = () => {
+      if (toVideo) { toVideo.currentTime = 0; toVideo.play().catch(() => {}); }
+      if (fromVideo) fromVideo.style.opacity = '0';
+      if (toVideo) toVideo.style.opacity = '1';
+      // Preload next video
+      const nextVideo = videoRefs.current[(to + 1) % 3];
+      if (nextVideo) { nextVideo.load(); }
+    };
+
+    // If next video is ready, switch immediately; otherwise wait up to 2s
+    if (toVideo && toVideo.readyState >= 3) {
+      doSwitch();
+    } else if (toVideo) {
+      const onReady = () => { toVideo.removeEventListener('canplaythrough', onReady); doSwitch(); };
+      toVideo.addEventListener('canplaythrough', onReady);
+      toVideo.load();
+      // Fallback: don't wait more than 2 seconds
+      setTimeout(() => { toVideo.removeEventListener('canplaythrough', onReady); doSwitch(); }, 2000);
+    }
   }, []);
 
   const scrollToPhase = useCallback((targetPhase: number) => {
@@ -100,9 +114,12 @@ export default function CinematicHeroV2() {
   useEffect(() => {
     const v0 = videoRefs.current[0];
     if (v0) v0.play().catch(() => {});
-    // Preload video 2 so first transition is smooth on mobile
+    // Aggressively preload video 2 — play muted then pause to force buffering
     const v1 = videoRefs.current[1];
-    if (v1) v1.load();
+    if (v1) {
+      v1.load();
+      v1.play().then(() => { v1.pause(); v1.currentTime = 0; }).catch(() => {});
+    }
     // Always start timer on mount (hero is visible at page load)
     isPinnedRef.current = true;
     startAutoTimerRef.current();
