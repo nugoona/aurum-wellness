@@ -129,6 +129,7 @@
   color: var(--text-body);
   margin-bottom: 12px;
   position: relative;
+  text-wrap: balance;
 }
 
 .quoteLine {

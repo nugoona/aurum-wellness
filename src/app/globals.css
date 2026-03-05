@@ -356,7 +356,7 @@ body {
 }
 
 /* 텍스트 줄 너비 균등 분배 */
-p, .section-header__title, .section-header__sub {
+h1, h2, h3, h4, h5, h6, p, blockquote {
   text-wrap: balance;
 }
 

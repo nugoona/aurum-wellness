@@ -249,11 +249,14 @@
   }
 
   .cardClient {
-    font-size: 12px;
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .cardLarge .cardClient {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .cardDesc {
