@@ -16,6 +16,7 @@ export interface FeaturedEvent {
 
 export const EVENT_HISTORY: Record<string, EventRecord[]> = {
   '2026': [
+    { client: '삼성화재서비스', category: '기업 복지' },
     { client: '신한은행', category: 'VIP 행사' },
   ],
   '2025': [
@@ -171,6 +172,7 @@ export const FEATURED_CORPORATE: FeaturedEvent[] = [
   // ── Page 1 ── 대형: 기업은행 2023, 한국사회적기업진흥원 2025
   { client: '기업은행', desc: '임직원 피지컬 힐링', year: '2023', image: `${F}/p0956.jpg` },
   { client: '한국사회적기업진흥원', desc: '체어 핸드 행사', year: '2025', image: `${F}/socialent2025.jpg` },
+  { client: '삼성화재서비스', desc: '임직원 힐링클래스', year: '2026', image: `${F}/samsungfire2026.png` },
   { client: '법무부', desc: '산하기관 힐링 케어', year: '2025', image: `${F}/lawmin2025.jpg` },
   { client: 'P&G', desc: '임직원 피지컬 케어', year: '2025', image: `${F}/pg2025.jpg` },
   { client: '네슬레', desc: '임직원 핸드 마사지', year: '2025', image: `${F}/nestle2025.jpg` },
