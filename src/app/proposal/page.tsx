@@ -152,8 +152,8 @@ export default function ProposalPage() {
               <div className="st">마사지를 넘어,<br />피지컬 케어와 힐링 프로그램으로</div>
             </div>
             <div className="intro-text">
-              <span className="intro-company">아우름웰니스는</span>
-              <span className="ip">마사지 테라피스트 및 필라테스, 요가, 메이크업 아티스트, 컬러 테라피 등 다양한 분야의 전문가들이</span>
+              <span className="intro-company">아우름웰니스는</span>{' '}
+              <span className="ip">마사지 테라피스트 및 필라테스, 요가, 메이크업 아티스트, 컬러 테라피 등 다양한 분야의 전문가들이</span>{' '}
               <span className="ip">맞춤형 테라피 서비스를 제공하는 <span className="intro-highlight">B2B 종합복지서비스 전문업체</span>입니다. 기업의 니즈에 맞춰 찾아가는 서비스로, 임직원 건강과 웰니스를 책임집니다.</span>
             </div>
 
@@ -326,7 +326,7 @@ export default function ProposalPage() {
                 <div className="pg-band-divider"></div>
               </div>
               <div className="pg-band-sep"></div>
-              <div className="pg-band-desc">해부학에 기반한 전문 바디 테라피. 피부와 근육을 동시에 케어하며,<br className="m" />단순 뷰티 관리를 넘어 체형 교정까지 아우르는 통합 바디 케어 프로그램.</div>
+              <div className="pg-band-desc">해부학에 기반한 전문 바디 테라피. 피부와 근육을 동시에 케어하며, <br className="m" />단순 뷰티 관리를 넘어 체형 교정까지 아우르는 통합 바디 케어 프로그램.</div>
             </div>
 
             <div className="pg-grid">
@@ -365,7 +365,7 @@ export default function ProposalPage() {
                   <div className="pg-band-divider"></div>
                 </div>
                 <div className="pg-band-sep"></div>
-                <div className="pg-band-desc">스트레칭과 코어 중심 근육 단련으로 유연성을 향상시키고,<br className="m" />몸의 밸런스를 맞추어 체형 교정에 도움을 주는 프로그램.</div>
+                <div className="pg-band-desc">스트레칭과 코어 중심 근육 단련으로 유연성을 향상시키고, <br className="m" />몸의 밸런스를 맞추어 체형 교정에 도움을 주는 프로그램.</div>
               </div>
               <div className="pg-image-row">
                 <div className="pg-card">
@@ -401,7 +401,7 @@ export default function ProposalPage() {
                   <div className="pg-band-divider"></div>
                 </div>
                 <div className="pg-band-sep"></div>
-                <div className="pg-band-desc">퍼스널 컬러를 찾는 메이크업 클래스부터 직원 간 유대감을 높이는<br className="m" />상호 테라피 특강까지, 기업 니즈에 맞춘 맞춤형 프로그램.</div>
+                <div className="pg-band-desc">퍼스널 컬러를 찾는 메이크업 클래스부터 직원 간 유대감을 높이는 <br className="m" />상호 테라피 특강까지, 기업 니즈에 맞춘 맞춤형 프로그램.</div>
               </div>
               <div className="pg-image-row">
                 <div className="pg-card">
