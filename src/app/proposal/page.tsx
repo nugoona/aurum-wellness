@@ -326,7 +326,7 @@ export default function ProposalPage() {
                 <div className="pg-band-divider"></div>
               </div>
               <div className="pg-band-sep"></div>
-              <div className="pg-band-desc">해부학에 기반한 전문 바디 테라피. 피부와 근육을 동시에 케어하며,<br className="d" />단순 뷰티 관리를 넘어 체형 교정까지 아우르는 통합 바디 케어 프로그램.</div>
+              <div className="pg-band-desc">해부학에 기반한 전문 바디 테라피. 피부와 근육을 동시에 케어하며,<br className="m" />단순 뷰티 관리를 넘어 체형 교정까지 아우르는 통합 바디 케어 프로그램.</div>
             </div>
 
             <div className="pg-grid">
@@ -365,7 +365,7 @@ export default function ProposalPage() {
                   <div className="pg-band-divider"></div>
                 </div>
                 <div className="pg-band-sep"></div>
-                <div className="pg-band-desc">스트레칭과 코어 중심 근육 단련으로 유연성을 향상시키고,<br className="d" />몸의 밸런스를 맞추어 체형 교정에 도움을 주는 프로그램.</div>
+                <div className="pg-band-desc">스트레칭과 코어 중심 근육 단련으로 유연성을 향상시키고,<br className="m" />몸의 밸런스를 맞추어 체형 교정에 도움을 주는 프로그램.</div>
               </div>
               <div className="pg-image-row">
                 <div className="pg-card">
@@ -401,7 +401,7 @@ export default function ProposalPage() {
                   <div className="pg-band-divider"></div>
                 </div>
                 <div className="pg-band-sep"></div>
-                <div className="pg-band-desc">퍼스널 컬러를 찾는 메이크업 클래스부터 직원 간 유대감을 높이는<br className="d" />상호 테라피 특강까지, 기업 니즈에 맞춘 맞춤형 프로그램.</div>
+                <div className="pg-band-desc">퍼스널 컬러를 찾는 메이크업 클래스부터 직원 간 유대감을 높이는<br className="m" />상호 테라피 특강까지, 기업 니즈에 맞춘 맞춤형 프로그램.</div>
               </div>
               <div className="pg-image-row">
                 <div className="pg-card">
@@ -714,11 +714,10 @@ export default function ProposalPage() {
                   <li>10~30분 / 인당</li>
                 </ul>
               </div>
-              <div className="rec-card featured">
-                <div className="rec-badge">Popular</div>
+              <div className="rec-card">
                 <div className="rec-name">Standard</div>
                 <div className="rec-top">
-                  <div className="rec-desc">가장 많이 선택하는 조합.<br />체어와 핸드를 함께 운영하여 만족도 극대화.</div>
+                  <div className="rec-desc">체어와 핸드를 함께 운영하여<br />만족도 극대화.</div>
                   <div className="rec-price">700,000원 <span>/ 4시간</span></div>
                 </div>
                 <ul className="rec-features">
@@ -728,7 +727,8 @@ export default function ProposalPage() {
                   <li>프로그램 자유 선택</li>
                 </ul>
               </div>
-              <div className="rec-card">
+              <div className="rec-card featured">
+                <div className="rec-badge">Popular</div>
                 <div className="rec-name">Premium</div>
                 <div className="rec-top">
                   <div className="rec-desc">VIP 행사 및 대규모 이벤트에 최적화된 프리미엄 구성.</div>

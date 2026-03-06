@@ -790,10 +790,11 @@
 .proposal-container #p10 .rec-card:first-child { border-left: 1px solid var(--proposal-border); }
 .proposal-container #p10 .rec-card.featured { border-top: 2px solid var(--proposal-gold); margin-top: -1px; }
 .proposal-container #p10 .rec-badge {
-  display: inline-block; background: var(--proposal-dark); color: #fff;
-  font-family: 'Inter Tight', sans-serif; font-size: 8px; font-weight: 600;
-  padding: 3px 10px; border-radius: 10px; letter-spacing: 0.08em;
-  position: absolute; top: -9px; left: 50%; transform: translateX(-50%);
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--proposal-gold); color: #fff;
+  font-family: 'Inter Tight', sans-serif; font-size: 11px; font-weight: 600;
+  padding: 3px 18px; border-radius: 0; letter-spacing: 0.08em;
+  position: absolute; top: -10px; left: 50%; transform: translateX(-50%);
 }
 .proposal-container #p10 .rec-name { font-family: 'Inter Tight', sans-serif; font-size: 18px; font-weight: 600; color: var(--proposal-text); margin-bottom: 8px; }
 .proposal-container #p10 .rec-desc { font-size: 11px; color: var(--proposal-text-muted); line-height: 1.5; }
@@ -813,7 +814,11 @@
 /* Mobile Responsive (browser only, not PDF) */
 /* ========================================= */
 @media screen and (max-width: 768px) {
-  .proposal-container { background: var(--proposal-cream); }
+  .proposal-container {
+    background: var(--proposal-cream);
+    --proposal-text-sub: #2a2a2a;
+    --proposal-text-muted: #4a4a4a;
+  }
 
   /* Mobile/Desktop conditional line breaks */
   .proposal-container br.d { display: none; }
@@ -850,6 +855,7 @@
   }
   .proposal-container #p2 .news-card { flex-direction: column; }
   .proposal-container #p2 .news-card img { height: 140px; flex: none; opacity: 1; filter: none; }
+  .proposal-container #p2 .news-card:nth-child(3) img { object-position: left 24%; }
   .proposal-container #p2 .news-body { flex: none; padding: 16px; }
   .proposal-container #p2 .news-title { font-size: 15px; }
   .proposal-container #p2 .news-hide-mobile { display: none; }
@@ -876,6 +882,8 @@
   .proposal-container #p4 .exp-title { font-size: 18px; }
   .proposal-container #p4 .activity-strip { flex-wrap: wrap; gap: 4px; min-height: auto; }
   .proposal-container #p4 .activity-strip .act-card { flex: 1 1 45%; height: 140px; }
+  .proposal-container #p4 .activity-strip .act-card:nth-child(3) img { transform: scale(1.0); object-position: center 28%; }
+  .proposal-container #p4 .activity-strip .act-card:nth-child(4) img { object-position: center 40%; }
 
   /* P5: Body Therapy */
   .proposal-container #p5 .pg-text-band { flex-direction: column; padding: 24px 20px; gap: 16px; }
@@ -884,12 +892,13 @@
   .proposal-container #p5 .pg-grid { grid-template-columns: 1fr 1fr; height: auto; gap: 4px; }
   .proposal-container #p5 .pg-card { height: 200px; }
 
-  /* P6: Exercise & Custom */
+  /* P6: Exercise & Custom — match P5 padding */
+  .proposal-container #p6 .pi { padding: 32px 20px; }
   .proposal-container #p6 .pg-text-band { flex-direction: column; padding: 24px 20px; gap: 16px; }
   .proposal-container #p6 .pg-band-left { min-width: 0; }
   .proposal-container #p6 .pg-band-sep { width: 100%; height: 1px; }
-  .proposal-container #p6 .pg-image-row { grid-template-columns: 1fr; height: auto; }
-  .proposal-container #p6 .pg-card { height: 200px; }
+  .proposal-container #p6 .pg-image-row { grid-template-columns: 1fr; height: auto; gap: 2px; }
+  .proposal-container #p6 .pg-card { height: 220px; }
 
   /* P8: Track Record */
   .proposal-container #p8 .big-stats { grid-template-columns: 1fr 1fr; }
@@ -899,7 +908,7 @@
   .proposal-container #p8 .partner-layout { flex-direction: column; }
   .proposal-container #p8 .partner-left { border-right: none; border-bottom: 1px solid var(--proposal-border); padding: 20px 0; }
   .proposal-container #p8 .partner-right { flex: none; padding: 20px 0; }
-  .proposal-container #p8 .logo-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  .proposal-container #p8 .logo-grid { grid-template-columns: repeat(5, 1fr); gap: 4px; }
 
   /* P9: Reviews */
   .proposal-container #p9 .review-grid { grid-template-columns: 1fr; gap: 10px; }

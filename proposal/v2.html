@@ -130,6 +130,7 @@ body {
   overflow: hidden;
 }
 img { display: block; width: 100%; object-fit: cover; }
+br.m { display: none; }
 .tag {
   display: inline-block;
   font-size: 9px;
@@ -161,9 +162,9 @@ img { display: block; width: 100%; object-fit: cover; }
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(0,0,0,0.55) 0%,
-    rgba(0,0,0,0.35) 40%,
-    rgba(0,0,0,0.55) 100%
+    rgba(0,0,0,0.75) 0%,
+    rgba(0,0,0,0.55) 40%,
+    rgba(0,0,0,0.75) 100%
   );
 }
 #p1 .cover-content {
@@ -199,8 +200,9 @@ img { display: block; width: 100%; object-fit: cover; }
 #p1 .cover-sub {
   font-size: 16px;
   font-weight: 300;
-  color: rgba(255,255,255,0.8);
+  color: #ffffff;
   letter-spacing: 0.05em;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 #p1 .cover-year {
   position: absolute;
@@ -388,7 +390,7 @@ img { display: block; width: 100%; object-fit: cover; }
 }
 #p2 .news-card img {
   width: 100%; flex: 4; object-fit: cover; object-position: left top; display: block;
-  min-height: 0; opacity: 0.8; filter: grayscale(100%);
+  min-height: 0; opacity: 0.9;
 }
 #p2 .news-body {
   flex: 6; padding: 14px 16px;
@@ -793,10 +795,11 @@ img { display: block; width: 100%; object-fit: cover; }
 #p10 .rec-card:first-child { border-left: 1px solid var(--border); }
 #p10 .rec-card.featured { border-top: 2px solid var(--gold); margin-top: -1px; }
 #p10 .rec-badge {
-  display: inline-block; background: var(--dark); color: #fff;
-  font-family: 'Inter Tight', sans-serif; font-size: 8px; font-weight: 600;
-  padding: 3px 10px; border-radius: 10px; letter-spacing: 0.08em;
-  position: absolute; top: -9px; left: 50%; transform: translateX(-50%);
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--gold); color: #fff;
+  font-family: 'Inter Tight', sans-serif; font-size: 11px; font-weight: 600;
+  padding: 3px 18px; border-radius: 0; letter-spacing: 0.08em;
+  position: absolute; top: -10px; left: 50%; transform: translateX(-50%);
 }
 #p10 .rec-name { font-family: 'Inter Tight', sans-serif; font-size: 18px; font-weight: 600; color: var(--text); margin-bottom: 8px; }
 #p10 .rec-desc { font-size: 11px; color: var(--text-muted); line-height: 1.5; }
@@ -810,6 +813,122 @@ img { display: block; width: 100%; object-fit: cover; }
 }
 #p10 .rec-features li::before {
   content: '·'; position: absolute; left: 0; color: var(--text-muted);
+}
+
+/* ========================================= */
+/* Mobile Responsive (browser only, not PDF) */
+/* ========================================= */
+@media screen and (max-width: 768px) {
+  body { background: var(--cream); }
+
+  /* Mobile/Desktop conditional line breaks */
+  br.d { display: none; }
+  br.m { display: inline; }
+
+  /* Page: full-width flow instead of fixed A4 */
+  .page {
+    width: 100%; height: auto; overflow: visible;
+    margin: 0; box-shadow: none;
+    border-bottom: 1px solid var(--border);
+  }
+  .page:last-child { border-bottom: none; }
+  .pi { padding: 32px 20px; }
+
+  /* Typography scale down */
+  .section-header { margin-bottom: 28px; }
+  .section-header .st { font-size: 24px; }
+  .section-header .sh-sub { font-size: 13px; }
+
+  /* P1: Cover — full viewport hero, centered */
+  #p1 { min-height: 100vh; overflow: hidden; position: relative; }
+  #p1 .cover-bg { position: absolute; inset: 0; }
+  #p1 .cover-content { padding: 0 24px; min-height: 100vh; }
+  #p1 .cover-logo { width: 90px; margin-bottom: 20px; }
+  #p1 .cover-title { font-size: 26px; letter-spacing: 0.12em; }
+  #p1 .cover-sub { font-size: 14px; }
+  #p1 .cover-year { bottom: 20px; right: 24px; font-size: 12px; }
+
+  /* P2: News grid — top 3 only, color images */
+  #p2 .section-header .st { font-size: 22px; }
+  #p2 .news-grid {
+    grid-template-columns: 1fr; grid-template-rows: auto;
+    row-gap: 12px; padding: 0;
+  }
+  #p2 .news-card { flex-direction: column; }
+  #p2 .news-card img { height: 140px; flex: none; opacity: 1; filter: none; }
+  #p2 .news-body { flex: none; padding: 16px; }
+  #p2 .news-title { font-size: 15px; }
+  #p2 .news-hide-mobile { display: none; }
+
+  /* P3: About — stack cards */
+  #p3 .intro-text { font-size: 14px; padding-left: 14px; line-height: 1.4; word-break: keep-all; }
+  #p3 .intro-company { font-size: 18px; display: block; margin-bottom: 12px; }
+  #p3 .intro-text .ip { display: block; margin-bottom: 12px; }
+  #p3 .intro-text .ip:last-child { margin-bottom: 0; }
+  #p3 .track-row { flex-direction: column; gap: 12px; margin-bottom: 20px; }
+  #p3 .track-card { width: 100%; }
+  #p3 .track-card img { height: 180px; }
+  #p3 .why-card { flex-direction: column; }
+  #p3 .why-thumb { width: 100%; height: 160px; }
+  #p3 .why-body { padding: 14px 16px; }
+  #p3 .why-num { font-size: 36px; }
+  #p3 .why-title { font-size: 16px; }
+  #p3 .why-desc { font-size: 13px; word-break: keep-all; text-wrap: balance; }
+
+  /* P4: Therapist — single column */
+  #p4 .therapist-top { grid-template-columns: 1fr; gap: 20px; }
+  #p4 .therapist-name { font-size: 24px; }
+  #p4 .therapist-photo { height: 250px; }
+  #p4 .exp-title { font-size: 18px; }
+  #p4 .activity-strip { flex-wrap: wrap; gap: 4px; min-height: auto; }
+  #p4 .activity-strip .act-card { flex: 1 1 45%; height: 140px; }
+
+  /* P5: Body Therapy */
+  #p5 .pg-text-band { flex-direction: column; padding: 24px 20px; gap: 16px; }
+  #p5 .pg-band-left { min-width: 0; }
+  #p5 .pg-band-sep { width: 100%; height: 1px; }
+  #p5 .pg-grid { grid-template-columns: 1fr 1fr; height: auto; gap: 4px; }
+  #p5 .pg-card { height: 200px; }
+
+  /* P6: Exercise & Custom */
+  #p6 .pg-text-band { flex-direction: column; padding: 24px 20px; gap: 16px; }
+  #p6 .pg-band-left { min-width: 0; }
+  #p6 .pg-band-sep { width: 100%; height: 1px; }
+  #p6 .pg-image-row { grid-template-columns: 1fr; height: auto; }
+  #p6 .pg-card { height: 200px; }
+
+  /* P8: Track Record */
+  #p8 .big-stats { grid-template-columns: 1fr 1fr; }
+  #p8 .big-stat { padding: 24px 8px; }
+  #p8 .big-stat .num { font-size: 36px; }
+  #p8 .big-stat .unit { font-size: 11px; }
+  #p8 .partner-layout { flex-direction: column; }
+  #p8 .partner-left { border-right: none; border-bottom: 1px solid var(--border); padding: 20px 0; }
+  #p8 .partner-right { flex: none; padding: 20px 0; }
+  #p8 .logo-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+
+  /* P9: Reviews */
+  #p9 .review-grid { grid-template-columns: 1fr; gap: 10px; }
+  #p9 .kakao-row { grid-template-columns: 1fr; gap: 12px; }
+  #p9 .survey-row { grid-template-columns: 1fr; gap: 12px; }
+  #p9 .satisfaction-row { flex-direction: column; gap: 10px; }
+  #p9 .sat-card { padding: 20px 12px; }
+  #p9 .sat-card .sat-num { font-size: 32px; }
+
+  /* P10: Pricing */
+  #p10 .pi { padding: 32px 16px; }
+  #p10 .price-table { font-size: 11px; }
+  #p10 .price-table thead th { padding: 10px 6px; font-size: 10px; }
+  #p10 .price-table tbody td { padding: 10px 6px; font-size: 11px; }
+  #p10 .recommend-row { flex-direction: column; }
+  #p10 .rec-card { border-left: 1px solid var(--border); }
+  #p10 .rec-card.featured { margin-top: 0; }
+
+  /* P11: Thank You — centered */
+  #p11 { min-height: 60vh; }
+  #p11 .thankyou-content { padding: 60px 24px; min-height: 60vh; }
+  #p11 .thankyou-main { font-size: 28px; }
+  #p11 .thankyou-phone { font-size: 18px; }
 }
 </style>
 </head>
@@ -891,7 +1010,7 @@ img { display: block; width: 100%; object-fit: cover; }
       <div class="news-card">
         <img src="news/news1.png" alt="뉴스1">
         <div class="news-body">
-          <div class="news-title">직원 위해 마사지사 6명 고용한 회사…MZ 몰리는 이유 있었네</div>
+          <div class="news-title">직원 위해 마사지사 6명 고용한 회사…<br class="m">MZ 몰리는 이유 있었네</div>
           <div class="news-src">머니투데이</div>
         </div>
       </div>
@@ -909,21 +1028,21 @@ img { display: block; width: 100%; object-fit: cover; }
           <div class="news-src">LG경영연구원</div>
         </div>
       </div>
-      <div class="news-card">
+      <div class="news-card news-hide-mobile">
         <img src="news/news4.png" alt="뉴스4">
         <div class="news-body">
           <div class="news-title">웰니스 복지 : 건강에 대한 임직원의 관심 증대</div>
           <div class="news-src">HR 인사이트</div>
         </div>
       </div>
-      <div class="news-card">
+      <div class="news-card news-hide-mobile">
         <img src="news/news5.png" alt="뉴스5">
         <div class="news-body">
           <div class="news-title">건강 지능이 경쟁력 된다,<br>몸 관리의 경영화</div>
           <div class="news-src">이비즈타임즈</div>
         </div>
       </div>
-      <div class="news-card">
+      <div class="news-card news-hide-mobile">
         <img src="news/news6.png" alt="뉴스6">
         <div class="news-body">
           <div class="news-title">'번아웃',<br>혼자서 버티지 마세요</div>
@@ -946,9 +1065,8 @@ img { display: block; width: 100%; object-fit: cover; }
     </div>
     <div class="intro-text">
       <span class="intro-company">아우름웰니스는</span>
-      마사지 테라피스트 및 필라테스, 요가, 메이크업 아티스트, 컬러 테라피 등 다양한 분야의<br>
-      전문가들이 맞춤형 테라피 서비스를 제공하는 <span class="intro-highlight">B2B 종합복지서비스 전문업체</span>입니다.<br>
-      기업의 니즈에 맞춰 찾아가는 서비스로, 임직원 건강과 웰니스를 책임집니다.
+      <span class="ip">마사지 테라피스트 및 필라테스, 요가, 메이크업 아티스트, 컬러 테라피 등 다양한 분야의 전문가들이</span>
+      <span class="ip">맞춤형 테라피 서비스를 제공하는 <span class="intro-highlight">B2B 종합복지서비스 전문업체</span>입니다. 기업의 니즈에 맞춰 찾아가는 서비스로, 임직원 건강과 웰니스를 책임집니다.</span>
     </div>
 
     <div class="track-row">
@@ -1029,7 +1147,7 @@ img { display: block; width: 100%; object-fit: cover; }
     <div class="section-header">
       <div class="sl">LEAD THERAPIST</div>
       <div class="sh-line"></div>
-      <div class="st">글로벌 기업이 선택한 과학적 테라피<br>아우름 웰니스</div>
+      <div class="st">글로벌 기업이 선택한<br class="m"> 과학적 테라피<br class="d"> 아우름 웰니스</div>
     </div>
 
     <div class="therapist-top">
@@ -1159,7 +1277,7 @@ img { display: block; width: 100%; object-fit: cover; }
         <div class="pg-band-divider"></div>
       </div>
       <div class="pg-band-sep"></div>
-      <div class="pg-band-desc">해부학에 기반한 전문 바디 테라피. 피부와 근육을 동시에 케어하며,<br>단순 뷰티 관리를 넘어 체형 교정까지 아우르는 통합 바디 케어 프로그램.</div>
+      <div class="pg-band-desc">해부학에 기반한 전문 바디 테라피. 피부와 근육을 동시에 케어하며,<br class="d">단순 뷰티 관리를 넘어 체형 교정까지 아우르는 통합 바디 케어 프로그램.</div>
     </div>
 
     <!-- 3×2 Image Grid (6 cards) -->
@@ -1249,7 +1367,7 @@ img { display: block; width: 100%; object-fit: cover; }
           <div class="pg-band-divider"></div>
         </div>
         <div class="pg-band-sep"></div>
-        <div class="pg-band-desc">스트레칭과 코어 중심 근육 단련으로 유연성을 향상시키고,<br>몸의 밸런스를 맞추어 체형 교정에 도움을 주는 프로그램.</div>
+        <div class="pg-band-desc">스트레칭과 코어 중심 근육 단련으로 유연성을 향상시키고,<br class="d">몸의 밸런스를 맞추어 체형 교정에 도움을 주는 프로그램.</div>
       </div>
       <div class="pg-image-row">
         <div class="pg-card">
@@ -1286,7 +1404,7 @@ img { display: block; width: 100%; object-fit: cover; }
           <div class="pg-band-divider"></div>
         </div>
         <div class="pg-band-sep"></div>
-        <div class="pg-band-desc">퍼스널 컬러를 찾는 메이크업 클래스부터 직원 간 유대감을 높이는<br>상호 테라피 특강까지, 기업 니즈에 맞춘 맞춤형 프로그램.</div>
+        <div class="pg-band-desc">퍼스널 컬러를 찾는 메이크업 클래스부터 직원 간 유대감을 높이는<br class="d">상호 테라피 특강까지, 기업 니즈에 맞춘 맞춤형 프로그램.</div>
       </div>
       <div class="pg-image-row">
         <div class="pg-card">
@@ -1427,7 +1545,7 @@ img { display: block; width: 100%; object-fit: cover; }
     <div class="section-header">
       <div class="sl">CLIENT REVIEWS</div>
       <div class="sh-line"></div>
-      <div class="st">고객이 증명하는 아우름웰니스의 전문성</div>
+      <div class="st">고객이 증명하는<br class="m"> 아우름웰니스의 전문성</div>
     </div>
 
     <div class="review-grid">
@@ -1671,11 +1789,10 @@ img { display: block; width: 100%; object-fit: cover; }
           <li>10~30분 / 인당</li>
         </ul>
       </div>
-      <div class="rec-card featured">
-        <div class="rec-badge">Popular</div>
+      <div class="rec-card">
         <div class="rec-name">Standard</div>
         <div class="rec-top">
-          <div class="rec-desc">가장 많이 선택하는 조합.<br>체어와 핸드를 함께 운영하여 만족도 극대화.</div>
+          <div class="rec-desc">체어와 핸드를 함께 운영하여<br>만족도 극대화.</div>
           <div class="rec-price">700,000원 <span>/ 4시간</span></div>
         </div>
         <ul class="rec-features">
@@ -1685,7 +1802,8 @@ img { display: block; width: 100%; object-fit: cover; }
           <li>프로그램 자유 선택</li>
         </ul>
       </div>
-      <div class="rec-card">
+      <div class="rec-card featured">
+        <div class="rec-badge">Popular</div>
         <div class="rec-name">Premium</div>
         <div class="rec-top">
           <div class="rec-desc">VIP 행사 및 대규모 이벤트에 최적화된 프리미엄 구성.</div>
