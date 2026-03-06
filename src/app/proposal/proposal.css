@@ -855,7 +855,7 @@
   }
   .proposal-container #p2 .news-card { flex-direction: column; }
   .proposal-container #p2 .news-card img { height: 140px; flex: none; opacity: 1; filter: none; }
-  .proposal-container #p2 .news-card:nth-child(3) img { object-position: left 24%; }
+  .proposal-container #p2 .news-card:nth-child(3) img { object-position: left 17%; }
   .proposal-container #p2 .news-body { flex: none; padding: 16px; }
   .proposal-container #p2 .news-title { font-size: 15px; }
   .proposal-container #p2 .news-hide-mobile { display: none; }
