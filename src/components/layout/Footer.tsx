@@ -26,7 +26,16 @@ const SOCIALS = [
 export default function Footer() {
   const pathname = usePathname();
   const isTherapy = pathname === '/therapy';
+  const isB2B = pathname === '/b2b';
   const logoText = isTherapy ? 'AURUME THERAPY' : 'AURUME WELLNESS';
+
+  const footerSocials = isB2B
+    ? SOCIALS.map((s) =>
+        s.label === 'KakaoTalk'
+          ? { label: '제안서', href: '/AurumWellness_Proposal_2026.pdf', src: '' }
+          : s
+      )
+    : SOCIALS;
 
   return (
     <footer className={styles.footer}>
@@ -61,19 +70,31 @@ export default function Footer() {
             <span className={styles.bizNum}>사업자번호 124-88-02938</span>
           </p>
           <div className={styles.socials}>
-            {SOCIALS.map((s) => (
-              <a
-                key={s.label}
-                href={s.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.socialLink}
-                aria-label={s.label}
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={s.src} alt={s.label} className={styles.socialIcon} />
-              </a>
-            ))}
+            {footerSocials.map((s) =>
+              s.label === '제안서' ? (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  download="AurumWellness_Proposal_2026.pdf"
+                  className={styles.proposalLink}
+                  aria-label={s.label}
+                >
+                  제안서
+                </a>
+              ) : (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.socialLink}
+                  aria-label={s.label}
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={s.src} alt={s.label} className={styles.socialIcon} />
+                </a>
+              )
+            )}
           </div>
         </div>
       </div>

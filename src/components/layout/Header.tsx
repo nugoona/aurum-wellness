@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
-import { Menu, X, Calendar } from 'lucide-react';
+import { Menu, X, Calendar, FileDown } from 'lucide-react';
 import { BOOKING_URL } from '@/data/siteData';
 import styles from './Header.module.css';
 
@@ -17,6 +17,7 @@ const NAV_ITEMS = [
 
 export default function Header() {
   const pathname = usePathname();
+  const isB2B = pathname === '/b2b';
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -91,16 +92,28 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Booking button */}
-          <a
-            href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.bookingBtn}
-          >
-            <Calendar size={16} />
-            <span>예약하기</span>
-          </a>
+          {/* Action buttons */}
+          <div className={styles.headerActions}>
+            {isB2B && (
+              <a
+                href="/AurumWellness_Proposal_2026.pdf"
+                download="AurumWellness_Proposal_2026.pdf"
+                className={styles.proposalBtn}
+              >
+                <FileDown size={16} />
+                <span>제안서</span>
+              </a>
+            )}
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.bookingBtn}
+            >
+              <Calendar size={16} />
+              <span>예약하기</span>
+            </a>
+          </div>
         </div>
       </header>
 

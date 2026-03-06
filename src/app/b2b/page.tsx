@@ -37,7 +37,7 @@ export default function B2BPage() {
         title="B2B 프로그램이 궁금하신가요?"
         subtitle="맞춤 상담을 통해 최적의 프로그램을 안내해드립니다"
         phoneLabel="전화 문의하기"
-        kakaoLabel="카카오톡 문의"
+        proposalMode
       />
     </>
   );

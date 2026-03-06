@@ -108,6 +108,50 @@
   font-weight: 600;
 }
 
+/* Action buttons wrapper */
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Proposal button */
+.proposalBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  padding: 10px 20px;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.header:not(.scrolled) .proposalBtn {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header:not(.scrolled) .proposalBtn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.scrolled .proposalBtn {
+  color: #ffffff;
+  background: var(--dark, #2c2c2c);
+  border: 1px solid var(--dark, #2c2c2c);
+}
+
+.scrolled .proposalBtn:hover {
+  background: #444;
+  border-color: #444;
+}
+
 /* Booking button */
 .bookingBtn {
   display: inline-flex;
@@ -296,6 +340,10 @@
 
   .logoImg {
     height: 24px;
+  }
+
+  .proposalBtn {
+    display: none;
   }
 
   .bookingBtn {
