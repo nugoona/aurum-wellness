@@ -17,6 +17,7 @@ const NAV_ITEMS = [
 
 export default function Header() {
   const pathname = usePathname();
+  const isProposal = pathname === '/proposal';
   const isB2B = pathname === '/b2b';
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -35,6 +36,8 @@ export default function Header() {
     document.body.style.overflow = mobileOpen ? 'hidden' : '';
     return () => { document.body.style.overflow = ''; };
   }, [mobileOpen]);
+
+  if (isProposal) return null;
 
   return (
     <>
@@ -94,16 +97,14 @@ export default function Header() {
 
           {/* Action buttons */}
           <div className={styles.headerActions}>
-            {isB2B && (
-              <a
-                href="/AurumWellness_Proposal_2026.pdf"
-                download="AurumWellness_Proposal_2026.pdf"
-                className={styles.proposalBtn}
-              >
-                <FileDown size={16} />
-                <span>제안서</span>
-              </a>
-            )}
+            <a
+              href="/proposal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.proposalBtn}
+            >
+              <span>제안서 보기</span>
+            </a>
             <a
               href={BOOKING_URL}
               target="_blank"

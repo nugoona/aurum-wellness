@@ -21,12 +21,12 @@ export default function DarkCTA({
 }: DarkCTAProps) {
   const secondaryButton = proposalMode ? (
     <a
-      href="/AurumWellness_Proposal_2026.pdf"
-      download="AurumWellness_Proposal_2026.pdf"
+      href="/proposal"
+      target="_blank"
+      rel="noopener noreferrer"
       className={styles.kakaoBtn}
     >
-      <FileDown size={18} />
-      제안서 다운로드
+      제안서 보기
     </a>
   ) : (
     <a
@@ -60,12 +60,12 @@ export default function DarkCTA({
             </a>
             {proposalMode ? (
               <a
-                href="/AurumWellness_Proposal_2026.pdf"
-                download="AurumWellness_Proposal_2026.pdf"
+                href="/proposal"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn--white-outline btn--fullwidth-mobile"
               >
-                <FileDown size={18} />
-                제안서 다운로드
+                제안서 보기
               </a>
             ) : (
               <a

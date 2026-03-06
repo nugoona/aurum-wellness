@@ -25,17 +25,12 @@ const SOCIALS = [
 
 export default function Footer() {
   const pathname = usePathname();
+  if (pathname === '/proposal') return null;
   const isTherapy = pathname === '/therapy';
   const isB2B = pathname === '/b2b';
   const logoText = isTherapy ? 'AURUME THERAPY' : 'AURUME WELLNESS';
 
-  const footerSocials = isB2B
-    ? SOCIALS.map((s) =>
-        s.label === 'KakaoTalk'
-          ? { label: '제안서', href: '/AurumWellness_Proposal_2026.pdf', src: '' }
-          : s
-      )
-    : SOCIALS;
+  const footerSocials = [...SOCIALS, { label: '제안서 보기', href: '/proposal', src: '' }];
 
   return (
     <footer className={styles.footer}>
@@ -71,15 +66,16 @@ export default function Footer() {
           </p>
           <div className={styles.socials}>
             {footerSocials.map((s) =>
-              s.label === '제안서' ? (
+              s.label === '제안서 보기' ? (
                 <a
                   key={s.label}
                   href={s.href}
-                  download="AurumWellness_Proposal_2026.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={styles.proposalLink}
                   aria-label={s.label}
                 >
-                  제안서
+                  제안서 보기
                 </a>
               ) : (
                 <a
