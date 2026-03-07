@@ -177,11 +177,6 @@ export default function ThreePathwaysV2() {
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </a>
-              {p.id === 'b2b' && (
-                <a href="/proposal" target="_blank" rel="noopener noreferrer" className={styles.proposalBtn}>
-                  제안서 보기
-                </a>
-              )}
             </div>
             <div className={styles.cardVideoGrid}>
               <div className={`${styles.cardVideoWrap} ${styles.videoWide}`}>

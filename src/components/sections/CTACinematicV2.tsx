@@ -116,14 +116,6 @@ export default function CTACinematicV2() {
           >
             예약하기
           </a>
-          <a
-            href="/proposal"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`${styles.ctaBtn} ${styles.proposalBtn}`}
-          >
-            제안서 보기
-          </a>
         </div>
       </div>
     </section>

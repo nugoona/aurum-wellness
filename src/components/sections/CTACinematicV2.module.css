@@ -63,8 +63,9 @@
 /* CTA buttons */
 .ctaGrid {
   display: flex;
-  gap: 12px;
+  gap: 16px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .ctaBtn {
@@ -72,7 +73,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 220px;
+  width: 320px;
   padding: 16px 0;
   font-family: var(--font-ui);
   border-radius: 2px;
@@ -104,20 +105,6 @@
 .bookingBtn:hover {
   border-color: #ffffff;
   background: rgba(255, 255, 255, 0.1);
-}
-
-.proposalBtn {
-  font-size: 15px;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-.proposalBtn:hover {
-  border-color: var(--gold);
-  color: var(--gold);
-  background: rgba(200, 165, 73, 0.1);
 }
 
 /* Mobile */

@@ -25,12 +25,8 @@ const SOCIALS = [
 
 export default function Footer() {
   const pathname = usePathname();
-  if (pathname === '/proposal') return null;
   const isTherapy = pathname === '/therapy';
-  const isB2B = pathname === '/b2b';
   const logoText = isTherapy ? 'AURUME THERAPY' : 'AURUME WELLNESS';
-
-  const footerSocials = [...SOCIALS, { label: '제안서 보기', href: '/proposal', src: '' }];
 
   return (
     <footer className={styles.footer}>
@@ -65,32 +61,19 @@ export default function Footer() {
             <span className={styles.bizNum}>사업자번호 124-88-02938</span>
           </p>
           <div className={styles.socials}>
-            {footerSocials.map((s) =>
-              s.label === '제안서 보기' ? (
-                <a
-                  key={s.label}
-                  href={s.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.proposalLink}
-                  aria-label={s.label}
-                >
-                  제안서 보기
-                </a>
-              ) : (
-                <a
-                  key={s.label}
-                  href={s.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.socialLink}
-                  aria-label={s.label}
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={s.src} alt={s.label} className={styles.socialIcon} />
-                </a>
-              )
-            )}
+            {SOCIALS.map((s) => (
+              <a
+                key={s.label}
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.socialLink}
+                aria-label={s.label}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={s.src} alt={s.label} className={styles.socialIcon} />
+              </a>
+            ))}
           </div>
         </div>
       </div>
