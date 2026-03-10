@@ -43,8 +43,8 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
   {
     key: 'body',
     labelEn: 'Body',
-    labelKo: '바디 케어',
-    intro: '해부학에 기반한 전문 테라피,\n피부와 근육을 동시에 케어.\n\n단순 뷰티 관리를 넘어서\n체형 교정까지 아우르는\n통합 바디 케어 프로그램.',
+    labelKo: '피지컬 케어',
+    intro: '해부학에 기반한 전문 테라피,\n피부와 근육을 동시에 케어.\n\n단순 뷰티 관리를 넘어서\n체형 교정까지 아우르는\n통합 피지컬 케어 프로그램.',
     programs: [
       {
         nameKo: '건식 스포츠 테라피',

@@ -54,6 +54,7 @@ body {
   print-color-adjust: exact;
 }
 
+
 /* === Page Base === */
 .page {
   width: 210mm;
@@ -99,8 +100,9 @@ body {
   font-family: 'Gowun Batang', Georgia, serif; line-height: 1.4;
 }
 /* dark pages */
-.dark-page .section-header .st { color: var(--white); text-shadow: 1px 1px 0 rgba(0,0,0,0.7), 2px 2px 0 rgba(0,0,0,0.3); }
-.dark-page .section-header .sh-sub { color: rgba(255,255,255,0.85); }
+.dark-page .section-header .st { color: var(--white); text-shadow: 1px 1px 0 rgba(0,0,0,0.7), 2px 2px 0 rgba(0,0,0,0.3), 0 1px 6px rgba(0,0,0,0.6); }
+.dark-page .section-header .sh-sub { color: rgba(255,255,255,0.92); font-weight: 400; text-shadow: 0 1px 4px rgba(0,0,0,0.7); }
+.dark-page .section-header .sl { text-shadow: 0 1px 4px rgba(0,0,0,0.7); }
 /* light pages */
 .light-page .section-header .st { color: var(--text); }
 .light-page .section-header .sl { color: var(--gold-dark); }
@@ -190,6 +192,7 @@ br.m { display: none; }
   color: var(--gold);
   letter-spacing: 0.2em;
   line-height: 1.2;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.8);
 }
 #p1 .cover-line {
   width: 50px;
@@ -202,7 +205,7 @@ br.m { display: none; }
   font-weight: 300;
   color: #ffffff;
   letter-spacing: 0.05em;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  text-shadow: 0 1px 6px rgba(0,0,0,0.8);
 }
 #p1 .cover-year {
   position: absolute;
@@ -210,9 +213,10 @@ br.m { display: none; }
   right: 44px;
   font-family: var(--fh);
   font-size: 14px;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.6);
   letter-spacing: 0.1em;
   z-index: 1;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
 }
 
 /* === P4: Lead Therapist (2-col: Instructor | Experience) === */
@@ -309,7 +313,8 @@ br.m { display: none; }
   position: absolute; bottom: 0; left: 0; right: 0; padding: 8px 8px 6px;
   background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.1) 70%, transparent 100%);
   padding-top: 30px;
-  font-size: 9px; color: rgba(255,255,255,0.85); font-weight: 500; letter-spacing: 0.03em;
+  font-size: 9px; color: rgba(255,255,255,0.85); font-weight: 600; letter-spacing: 0.03em;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
 }
 
 /* === P11: Thank You === */
@@ -332,8 +337,8 @@ br.m { display: none; }
 }
 #p11 .thankyou-company {
   font-size: 11px;
-  font-weight: 400;
-  color: rgba(255,255,255,0.5);
+  font-weight: 500;
+  color: rgba(255,255,255,0.7);
   letter-spacing: 0.1em;
   margin-bottom: 40px;
 }
@@ -343,11 +348,12 @@ br.m { display: none; }
   font-weight: 300;
   color: var(--white);
   margin-bottom: 10px;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.7);
 }
 #p11 .thankyou-sub {
   font-size: 13px;
-  font-weight: 400;
-  color: rgba(255,255,255,0.5);
+  font-weight: 500;
+  color: rgba(255,255,255,0.75);
   letter-spacing: 0.03em;
   margin-bottom: 24px;
 }
@@ -364,12 +370,14 @@ br.m { display: none; }
   color: var(--gold);
   letter-spacing: 0.05em;
   margin-bottom: 14px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
 }
 #p11 .thankyou-contact {
   font-size: 13px;
   font-weight: 400;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255,255,255,0.75);
   line-height: 2;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
 }
 #p11 .thankyou-contact .gold {
   color: var(--gold);
@@ -398,12 +406,13 @@ br.m { display: none; }
   text-align: center; background: var(--dark-surface);
 }
 #p2 .news-title {
-  font-size: 17px; font-weight: 300; color: var(--white); line-height: 1.4;
+  font-size: 17px; font-weight: 500; color: var(--white); line-height: 1.4;
   margin-bottom: 8px;
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
 }
 #p2 .news-src {
-  font-size: 13px; color: var(--gold); font-weight: 400;
+  font-size: 13px; color: var(--gold); font-weight: 500;
   background: transparent; border: 1px solid rgba(200,165,73,0.4);
   padding: 4px 14px; border-radius: 0; display: inline-block;
   letter-spacing: 0.03em;
@@ -476,7 +485,8 @@ br.m { display: none; }
 
 /* === P5: Service Programs — Body Therapy === */
 #p5 { background: var(--white); }
-#p5 .section-header { margin-bottom: 28px; }
+#p5 .pi { padding: 24px 44px; display: flex; flex-direction: column; height: 100%; box-sizing: border-box; }
+#p5 .section-header { margin-bottom: 16px; }
 
 /* Dark text band (horizontal, full width) */
 #p5 .pg-text-band {
@@ -488,47 +498,54 @@ br.m { display: none; }
   flex: 0 0 auto; text-align: center; min-width: 220px;
 }
 #p5 .pg-band-label {
-  font-size: 10px; font-weight: 500; letter-spacing: 4px; color: var(--gold);
+  font-size: 10px; font-weight: 600; letter-spacing: 4px; color: var(--gold);
   text-transform: uppercase; margin-bottom: 6px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
 }
 #p5 .pg-band-title {
-  font-family: 'Arita Buri', serif; font-size: 18px; font-weight: 300;
+  font-family: 'Arita Buri', serif; font-size: 18px; font-weight: 400;
   color: #f5f0e8; margin-bottom: 8px; letter-spacing: 0.5px;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.8);
 }
 #p5 .pg-band-divider { width: 36px; height: 1px; background: var(--gold); margin: 0 auto; }
 #p5 .pg-band-sep { width: 1px; background: rgba(200,165,73,0.25); align-self: stretch; }
 #p5 .pg-band-desc {
   flex: 1; font-family: 'Gowun Batang', Georgia, serif; font-size: 12.5px;
-  font-weight: 400; color: rgba(255,255,255,0.55); line-height: 1.7;
+  font-weight: 400; color: rgba(255,255,255,0.8); line-height: 1.7;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.35);
 }
 
 /* Image grid (3×2, fills remaining space) */
-#p5 .pg-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr);
-  gap: 2px; height: 800px;
-}
-#p5 .pg-card { position: relative; overflow: hidden; min-width: 0; }
-#p5 .pg-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
-#p5 .pg-overlay {
+/* === P5 / P5b: Service Row Layout === */
+.svc-row { display: grid; grid-template-columns: 2fr 3fr; gap: 2px; }
+.svc-row-main { position: relative; overflow: hidden; min-height: 0; }
+.svc-row-main img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.svc-row-main .pg-overlay {
   position: absolute; inset: 0; pointer-events: none;
   background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.50) 40%, rgba(0,0,0,0.65) 100%);
 }
-#p5 .pg-badge {
+.svc-row-main .pg-badge {
   position: absolute; inset: 0; display: flex; flex-direction: column;
   align-items: center; justify-content: center; z-index: 2; pointer-events: none; padding: 10px;
 }
-#p5 .pg-badge-deco { display: flex; align-items: center; gap: 6px; margin-bottom: 5px; }
-#p5 .pg-badge-deco .line { width: 24px; height: 1px; background: rgba(200,165,73,0.5); }
-#p5 .pg-badge-deco .diamond { width: 5px; height: 5px; background: rgba(200,165,73,0.7); transform: rotate(45deg); }
-#p5 .pg-badge-cat { font-size: 9px; font-weight: 500; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 6px; }
-#p5 .pg-badge-name { font-family: 'Arita Buri', serif; font-size: 16px; font-weight: 300; color: var(--white); margin-bottom: 5px; }
-#p5 .pg-badge-sep { display: flex; align-items: center; gap: 5px; margin-bottom: 5px; }
-#p5 .pg-badge-sep .line { width: 22px; height: 1px; background: rgba(255,255,255,0.35); }
-#p5 .pg-badge-sep .dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(200,165,73,0.6); }
-#p5 .pg-badge-en { font-family: 'Gowun Batang', Georgia, serif; font-size: 10px; font-weight: 400; color: rgba(255,255,255,0.7); letter-spacing: 0.5px; }
+.svc-row-thumbs { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 1px; min-height: 0; }
+.svc-row-thumbs img { width: 100%; height: 100%; object-fit: cover; display: block; min-height: 0; }
+.svc-badge-deco { display: flex; align-items: center; gap: 6px; margin-bottom: 5px; }
+.svc-badge-deco .line { width: 24px; height: 1px; background: rgba(200,165,73,0.5); }
+.svc-badge-deco .diamond { width: 5px; height: 5px; background: rgba(200,165,73,0.7); transform: rotate(45deg); }
+.svc-badge-cat { font-size: 9px; font-weight: 600; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 6px; text-shadow: 0 1px 4px rgba(0,0,0,0.7); }
+.svc-badge-name { font-family: 'Arita Buri', serif; font-size: 17px; font-weight: 400; color: var(--white); margin-bottom: 5px; text-shadow: 0 1px 6px rgba(0,0,0,0.8); }
+.svc-badge-sep { display: flex; align-items: center; gap: 5px; margin-bottom: 5px; }
+.svc-badge-sep .line { width: 22px; height: 1px; background: rgba(255,255,255,0.35); }
+.svc-badge-sep .dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(200,165,73,0.6); }
+.svc-badge-en { font-family: 'Gowun Batang', Georgia, serif; font-size: 10.5px; font-weight: 500; color: rgba(255,255,255,0.8); letter-spacing: 0.5px; text-shadow: 0 1px 4px rgba(0,0,0,0.7); }
 
-/* Mini strip removed — space given to section header */
+#p5 .svc-rows { display: flex; flex-direction: column; gap: 2px; flex: 1; min-height: 0; }
+#p5 .svc-rows .svc-row { flex: 1; min-height: 0; overflow: hidden; }
+#p5b { background: var(--cream); }
+#p5b .pi { padding: 24px 44px; display: flex; flex-direction: column; height: 100%; box-sizing: border-box; }
+#p5b .svc-rows { display: flex; flex-direction: column; gap: 2px; flex: 1; min-height: 0; }
+#p5b .svc-rows .svc-row { flex: 1; min-height: 0; overflow: hidden; }
 
 /* === P6: Exercise & Custom Therapy === */
 #p6 { background: var(--cream); }
@@ -542,11 +559,11 @@ br.m { display: none; }
   padding: 32px 28px; gap: 24px; flex-shrink: 0;
 }
 #p6 .pg-band-left { flex: 0 0 auto; text-align: center; min-width: 220px; }
-#p6 .pg-band-label { font-size: 10px; font-weight: 500; letter-spacing: 4px; color: var(--gold); text-transform: uppercase; margin-bottom: 6px; }
-#p6 .pg-band-title { font-family: 'Arita Buri', serif; font-size: 18px; font-weight: 300; color: #f5f0e8; margin-bottom: 8px; letter-spacing: 0.5px; }
+#p6 .pg-band-label { font-size: 10px; font-weight: 600; letter-spacing: 4px; color: var(--gold); text-transform: uppercase; margin-bottom: 6px; text-shadow: 0 1px 4px rgba(0,0,0,0.7); }
+#p6 .pg-band-title { font-family: 'Arita Buri', serif; font-size: 18px; font-weight: 400; color: #f5f0e8; margin-bottom: 8px; letter-spacing: 0.5px; text-shadow: 0 1px 6px rgba(0,0,0,0.8); }
 #p6 .pg-band-divider { width: 36px; height: 1px; background: var(--gold); margin: 0 auto; }
 #p6 .pg-band-sep { width: 1px; background: rgba(200,165,73,0.25); align-self: stretch; }
-#p6 .pg-band-desc { flex: 1; font-family: 'Gowun Batang', Georgia, serif; font-size: 12.5px; font-weight: 400; color: rgba(255,255,255,0.55); line-height: 1.7; }
+#p6 .pg-band-desc { flex: 1; font-family: 'Gowun Batang', Georgia, serif; font-size: 12.5px; font-weight: 400; color: rgba(255,255,255,0.8); line-height: 1.7; text-shadow: 0 1px 2px rgba(0,0,0,0.35); }
 
 /* Image row (fills remaining space) */
 #p6 .pg-image-row {
@@ -565,12 +582,12 @@ br.m { display: none; }
 #p6 .pg-badge-deco { display: flex; align-items: center; gap: 6px; margin-bottom: 5px; }
 #p6 .pg-badge-deco .line { width: 24px; height: 1px; background: rgba(200,165,73,0.5); }
 #p6 .pg-badge-deco .diamond { width: 5px; height: 5px; background: rgba(200,165,73,0.7); transform: rotate(45deg); }
-#p6 .pg-badge-cat { font-size: 9px; font-weight: 500; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 6px; }
-#p6 .pg-badge-name { font-family: 'Arita Buri', serif; font-size: 16px; font-weight: 300; color: var(--white); margin-bottom: 5px; }
+#p6 .pg-badge-cat { font-size: 9px; font-weight: 600; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 6px; text-shadow: 0 1px 4px rgba(0,0,0,0.7); }
+#p6 .pg-badge-name { font-family: 'Arita Buri', serif; font-size: 17px; font-weight: 400; color: var(--white); margin-bottom: 5px; text-shadow: 0 1px 6px rgba(0,0,0,0.8); }
 #p6 .pg-badge-sep { display: flex; align-items: center; gap: 5px; margin-bottom: 5px; }
 #p6 .pg-badge-sep .line { width: 22px; height: 1px; background: rgba(255,255,255,0.35); }
 #p6 .pg-badge-sep .dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(200,165,73,0.6); }
-#p6 .pg-badge-en { font-family: 'Gowun Batang', Georgia, serif; font-size: 10px; font-weight: 400; color: rgba(255,255,255,0.7); letter-spacing: 0.5px; }
+#p6 .pg-badge-en { font-family: 'Gowun Batang', Georgia, serif; font-size: 10.5px; font-weight: 500; color: rgba(255,255,255,0.8); letter-spacing: 0.5px; text-shadow: 0 1px 4px rgba(0,0,0,0.7); }
 
 /* === P8: Track Record === */
 #p8 { background: var(--white); }
@@ -579,8 +596,8 @@ br.m { display: none; }
   text-align: center; padding: 40px 8px;
   background: linear-gradient(160deg, #1c1916 0%, #262220 45%, #1e1a17 100%);
 }
-#p8 .big-stat .num { font-family: var(--fh); font-size: 54px; font-weight: 300; color: var(--gold); line-height: 1; margin-bottom: 10px; }
-#p8 .big-stat .unit { font-size: 13px; color: rgba(255,255,255,0.5); letter-spacing: 1.5px; }
+#p8 .big-stat .num { font-family: var(--fh); font-size: 54px; font-weight: 300; color: var(--gold); line-height: 1; margin-bottom: 10px; text-shadow: 0 1px 6px rgba(0,0,0,0.7); }
+#p8 .big-stat .unit { font-size: 13px; color: rgba(255,255,255,0.8); font-weight: 500; letter-spacing: 1.5px; text-shadow: 0 1px 4px rgba(0,0,0,0.7); }
 
 /* 2-column: left text + right logos */
 #p8 .partner-layout { display: flex; gap: 0; flex: 1 1 0; min-height: 0; border-top: 1px solid var(--border); overflow: hidden; }
@@ -815,6 +832,52 @@ br.m { display: none; }
   content: '·'; position: absolute; left: 0; color: var(--text-muted);
 }
 
+
+/* === P7: Portfolio === */
+#p7 { background: var(--dark); }
+#p7 .pi { padding: 24px 20px; }
+#p7 .section-header { margin-bottom: 12px; }
+#p7 .pf-cat { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+#p7 .pf-cat-label {
+  font-size: 9px; font-weight: 600; letter-spacing: 3px; color: var(--gold);
+  text-transform: uppercase; white-space: nowrap;
+}
+#p7 .pf-cat-line { flex: 1; height: 1px; background: rgba(200,165,73,0.25); }
+#p7 .pf-bento {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 78px; gap: 2px; margin-bottom: 10px;
+}
+#p7 .pf-bento .pf-hero { grid-column: span 2; grid-row: span 2; }
+#p7 .pf-flat {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 92px; gap: 2px;
+}
+#p7 .pf-card { position: relative; overflow: hidden; }
+#p7 .pf-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+#p7 .pf-card-ov {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.1) 45%, transparent 65%);
+}
+#p7 .pf-card-info { position: absolute; bottom: 0; left: 0; right: 0; padding: 5px 7px; }
+#p7 .pf-card-yr {
+  font-size: 9px; font-weight: 600; letter-spacing: 0.1em;
+  color: #fff; display: block; line-height: 1;
+  font-family: var(--fh); margin-bottom: 2px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+}
+#p7 .pf-card-cl {
+  font-size: 10px; font-weight: 500; color: #fff; display: block;
+  line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+}
+#p7 .pf-hero .pf-card-info { padding: 10px 14px; }
+#p7 .pf-hero .pf-card-yr { font-size: 11px; margin-bottom: 3px; font-weight: 600; }
+#p7 .pf-hero .pf-card-cl { font-size: 15px; font-weight: 500; white-space: normal; }
+#p7 .pf-hero .pf-card-desc {
+  font-size: 10px; color: rgba(255,255,255,0.8); margin-top: 2px;
+  display: block; font-family: 'Gowun Batang', Georgia, serif;
+}
+
 /* ========================================= */
 /* Mobile Responsive (browser only, not PDF) */
 /* ========================================= */
@@ -929,13 +992,19 @@ br.m { display: none; }
   #p11 .thankyou-content { padding: 60px 24px; min-height: 60vh; }
   #p11 .thankyou-main { font-size: 28px; }
   #p11 .thankyou-phone { font-size: 18px; }
+
+  /* P7: Portfolio */
+  #p7 .pi { padding: 20px 12px; }
+  #p7 .pf-bento { grid-template-columns: repeat(3, 1fr); grid-auto-rows: 90px; }
+  #p7 .pf-bento .pf-hero { grid-column: span 1; grid-row: span 1; }
+  #p7 .pf-flat { grid-template-columns: repeat(3, 1fr); grid-auto-rows: 90px; }
+  #p7 .pf-hero .pf-card-cl { font-size: 11px; }
+  #p7 .pf-hero .pf-card-desc { display: none; }
 }
 </style>
 </head>
 <body>
 
-<!-- ============================================================ -->
-<!-- P1: COVER — 표지                                              -->
 <!-- ============================================================ -->
 <div class="page" id="p1">
   <div class="cover-bg">
@@ -993,68 +1062,6 @@ br.m { display: none; }
   </div>
 </div>
 
-<!-- ============================================================ -->
-<!-- P2: WHY WELLNESS — 뉴스 헤드라인 스타일                        -->
-<!-- ============================================================ -->
-<div class="page dark-page" id="p2">
-  <div class="pi">
-    <div class="section-header">
-      <div class="sl">WHY WELLNESS</div>
-      <div class="sh-line"></div>
-      <div class="st">기업 웰니스는 선택이 아닌 필수,<br>테라피가 그 핵심입니다</div>
-      <div class="sh-line"></div>
-      <div class="sh-sub">언론이 주목하는 기업 웰니스 트렌드</div>
-    </div>
-
-    <div class="news-grid">
-      <div class="news-card">
-        <img src="news/news1.png" alt="뉴스1">
-        <div class="news-body">
-          <div class="news-title">직원 위해 마사지사 6명 고용한 회사…<br class="m">MZ 몰리는 이유 있었네</div>
-          <div class="news-src">머니투데이</div>
-        </div>
-      </div>
-      <div class="news-card">
-        <img src="news/news2.png" alt="뉴스2">
-        <div class="news-body">
-          <div class="news-title">'직장인 스트레스'…번아웃 위험군 늘어나고 있다</div>
-          <div class="news-src">잡코리아</div>
-        </div>
-      </div>
-      <div class="news-card">
-        <img src="news/news3.png" alt="뉴스3">
-        <div class="news-body">
-          <div class="news-title">웰니스 프로그램,<br>기업과 구성원을 건강하게</div>
-          <div class="news-src">LG경영연구원</div>
-        </div>
-      </div>
-      <div class="news-card news-hide-mobile">
-        <img src="news/news4.png" alt="뉴스4">
-        <div class="news-body">
-          <div class="news-title">웰니스 복지 : 건강에 대한 임직원의 관심 증대</div>
-          <div class="news-src">HR 인사이트</div>
-        </div>
-      </div>
-      <div class="news-card news-hide-mobile">
-        <img src="news/news5.png" alt="뉴스5">
-        <div class="news-body">
-          <div class="news-title">건강 지능이 경쟁력 된다,<br>몸 관리의 경영화</div>
-          <div class="news-src">이비즈타임즈</div>
-        </div>
-      </div>
-      <div class="news-card news-hide-mobile">
-        <img src="news/news6.png" alt="뉴스6">
-        <div class="news-body">
-          <div class="news-title">'번아웃',<br>혼자서 버티지 마세요</div>
-          <div class="news-src">중부일보</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ============================================================ -->
-<!-- P3: ABOUT US — 회사 소개 + Why + Flow + Tracks 통합             -->
 <!-- ============================================================ -->
 <div class="page light-page" id="p3">
   <div class="pi">
@@ -1139,8 +1146,6 @@ br.m { display: none; }
   </div>
 </div>
 
-<!-- ============================================================ -->
-<!-- P4: LEAD THERAPIST — 대표 테라피스트                           -->
 <!-- ============================================================ -->
 <div class="page light-page" id="p4">
   <div class="pi">
@@ -1256,186 +1261,336 @@ br.m { display: none; }
 </div>
 
 <!-- ============================================================ -->
-<!-- P5: SERVICE PROGRAMS — 서비스 프로그램                          -->
+<!-- P7: PORTFOLIO                                                 -->
 <!-- ============================================================ -->
-<!-- ============================================================ -->
-<!-- P5: SERVICE PROGRAMS — 바디 테라피 (/therapy ProgramGrid 스타일) -->
-<!-- ============================================================ -->
-<div class="page light-page" id="p5">
+<div class="page dark-page" id="p7">
   <div class="pi">
     <div class="section-header">
-      <div class="sl">SERVICE PROGRAMS</div>
+      <div class="sl">PORTFOLIO</div>
       <div class="sh-line"></div>
-      <div class="st">기업 니즈에 따른 맞춤 테라피 서비스</div>
+      <div class="st">다양한 기업과 함께한 현장의 기록</div>
     </div>
 
-    <!-- Dark text band (horizontal, full width) -->
-    <div class="pg-text-band">
-      <div class="pg-band-left">
-        <div class="pg-band-label">BODY</div>
-        <div class="pg-band-title">바디 케어</div>
-        <div class="pg-band-divider"></div>
+    <div class="pf-cat">
+      <span class="pf-cat-label">Corporate Welfare</span>
+      <span class="pf-cat-line"></span>
+    </div>
+    <div class="pf-bento">
+      <div class="pf-card pf-hero">
+        <img src="../public/images/portfolio/featured/p0520.jpg" alt="한화">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2022</span>
+          <span class="pf-card-cl">한화</span>
+        </div>
       </div>
-      <div class="pg-band-sep"></div>
-      <div class="pg-band-desc">해부학에 기반한 전문 바디 테라피. 피부와 근육을 동시에 케어하며,<br class="d">단순 뷰티 관리를 넘어 체형 교정까지 아우르는 통합 바디 케어 프로그램.</div>
+      <div class="pf-card pf-hero">
+        <img src="../public/images/portfolio/featured/p1012.jpg" alt="스마일게이트">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2023</span>
+          <span class="pf-card-cl">스마일게이트</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/bcg2024.jpg" alt="BCG">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2024</span>
+          <span class="pf-card-cl">BCG</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/nestle2025.jpg" alt="네슬레">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2025</span>
+          <span class="pf-card-cl">네슬레</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/lawmin2025.jpg" alt="법무부">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2025</span>
+          <span class="pf-card-cl">법무부</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/p0900.jpg" alt="SK텔레콤">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2023</span>
+          <span class="pf-card-cl">SK텔레콤</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/p0956.jpg" alt="기업은행">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2023</span>
+          <span class="pf-card-cl">기업은행</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/samsungfire2026.png" alt="삼성화재서비스">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2026</span>
+          <span class="pf-card-cl">삼성화재서비스</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/kto_seoul2022.jpg" alt="한국관광공사">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2022</span>
+          <span class="pf-card-cl">한국관광공사</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/booking2025.jpg" alt="부킹닷컴">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2025</span>
+          <span class="pf-card-cl">부킹닷컴</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/incheonairport2022.jpg" alt="인천공항공사">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2022</span>
+          <span class="pf-card-cl">인천공항공사</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/pg2025.jpg" alt="P&G">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2025</span>
+          <span class="pf-card-cl">P&G</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/p0082.jpg" alt="KB국민카드">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2019</span>
+          <span class="pf-card-cl">KB국민카드</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/wonju2024.jpg" alt="원주시청">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2024</span>
+          <span class="pf-card-cl">원주시청</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/sh_housing2024.jpg" alt="서울주택도시공사">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2024</span>
+          <span class="pf-card-cl">서울주택도시공사</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/p0975.jpg" alt="농수산식품공사">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2023</span>
+          <span class="pf-card-cl">농수산식품공사</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/socialent2025.jpg" alt="한국사회적기업진흥원">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2025</span>
+          <span class="pf-card-cl">한국사회적기업진흥원</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/yangju2025.jpg" alt="양주시청">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2025</span>
+          <span class="pf-card-cl">양주시청</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/jeongseon2025.jpg" alt="정선군청">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2025</span>
+          <span class="pf-card-cl">정선군청</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/contentslab2024.jpg" alt="콘텐츠랩블루">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2024</span>
+          <span class="pf-card-cl">콘텐츠랩블루</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/signature2025.jpg" alt="더시그니처">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2025</span>
+          <span class="pf-card-cl">더시그니처</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/zentherm2025.jpg" alt="젠썸">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2025</span>
+          <span class="pf-card-cl">젠썸</span>
+        </div>
+      </div>
     </div>
 
-    <!-- 3×2 Image Grid (6 cards) -->
-    <div class="pg-grid">
-      <div class="pg-card">
-        <img src="../public/images/proposal/chair_therapy.png" alt="체어 테라피">
-        <div class="pg-overlay"></div>
-        <div class="pg-badge">
-          <div class="pg-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
-          <div class="pg-badge-cat">BODY</div>
-          <div class="pg-badge-name">체어 테라피</div>
-          <div class="pg-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
-          <div class="pg-badge-en">Chair Therapy</div>
+    <div class="pf-cat">
+      <span class="pf-cat-label">Brand &middot; VIP Event</span>
+      <span class="pf-cat-line"></span>
+    </div>
+    <div class="pf-flat">
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/p3540.jpg" alt="BMW Golf Cup">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2024</span>
+          <span class="pf-card-cl">BMW Golf Cup</span>
         </div>
       </div>
-      <div class="pg-card">
-        <img src="../public/images/proposal/relax_chair.png" alt="릴렉스 테라피">
-        <div class="pg-overlay"></div>
-        <div class="pg-badge">
-          <div class="pg-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
-          <div class="pg-badge-cat">BODY</div>
-          <div class="pg-badge-name">릴렉스 테라피</div>
-          <div class="pg-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
-          <div class="pg-badge-en">Relax Chair Therapy</div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/p2892.jpg" alt="페라리">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2020</span>
+          <span class="pf-card-cl">페라리</span>
         </div>
       </div>
-      <div class="pg-card">
-        <img src="../public/images/proposal/hand_therapy.png" alt="핸드 테라피">
-        <div class="pg-overlay"></div>
-        <div class="pg-badge">
-          <div class="pg-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
-          <div class="pg-badge-cat">BODY</div>
-          <div class="pg-badge-name">핸드 테라피</div>
-          <div class="pg-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
-          <div class="pg-badge-en">Hand Therapy</div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/p3320.jpg" alt="람보르기니">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2023</span>
+          <span class="pf-card-cl">람보르기니</span>
         </div>
       </div>
-      <div class="pg-card">
-        <img src="../public/images/proposal/foot_therapy.png" alt="풋 테라피">
-        <div class="pg-overlay"></div>
-        <div class="pg-badge">
-          <div class="pg-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
-          <div class="pg-badge-cat">BODY</div>
-          <div class="pg-badge-name">풋 테라피</div>
-          <div class="pg-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
-          <div class="pg-badge-en">Foot Therapy</div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/lgenergy2023.jpg" alt="LG에너지솔루션">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2023</span>
+          <span class="pf-card-cl">LG에너지솔루션</span>
         </div>
       </div>
-      <div class="pg-card">
-        <img src="../public/images/proposal/bed_therapy.png" alt="베드 테라피">
-        <div class="pg-overlay"></div>
-        <div class="pg-badge">
-          <div class="pg-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
-          <div class="pg-badge-cat">BODY</div>
-          <div class="pg-badge-name">베드 테라피</div>
-          <div class="pg-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
-          <div class="pg-badge-en">Bed Therapy</div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/porsche2025.jpg" alt="포르쉐 골프컵">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2025</span>
+          <span class="pf-card-cl">포르쉐 골프컵</span>
         </div>
       </div>
-      <div class="pg-card">
-        <img src="../public/images/proposal/clinical_therapy.png" alt="클리니컬 테라피">
-        <div class="pg-overlay"></div>
-        <div class="pg-badge">
-          <div class="pg-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
-          <div class="pg-badge-cat">BODY</div>
-          <div class="pg-badge-name">클리니컬 테라피</div>
-          <div class="pg-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
-          <div class="pg-badge-en">Clinical Therapy</div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/amore_hq2019.jpg" alt="아모레퍼시픽">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2019</span>
+          <span class="pf-card-cl">아모레퍼시픽</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/benz2022.jpg" alt="벤츠">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2022</span>
+          <span class="pf-card-cl">벤츠</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/shinhan2026.jpg" alt="신한은행">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2026</span>
+          <span class="pf-card-cl">신한은행</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/lexus2019.jpg" alt="렉서스">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2019</span>
+          <span class="pf-card-cl">렉서스</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/lottedept2019.jpg" alt="롯데백화점">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2019</span>
+          <span class="pf-card-cl">롯데백화점</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/hyundaidept2019.jpg" alt="현대백화점">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2019</span>
+          <span class="pf-card-cl">현대백화점</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/audi2024.jpg" alt="아우디 콰트로컵">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2024</span>
+          <span class="pf-card-cl">아우디 콰트로컵</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/loccitane2019.jpg" alt="록시땅">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2019</span>
+          <span class="pf-card-cl">록시땅</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/skhynix2018.jpg" alt="SK하이닉스">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2018</span>
+          <span class="pf-card-cl">SK하이닉스</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/canon2025.jpg" alt="캐논">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2025</span>
+          <span class="pf-card-cl">캐논</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="../public/images/portfolio/featured/samsung2018.jpg" alt="삼성전자">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2018</span>
+          <span class="pf-card-cl">삼성전자</span>
         </div>
       </div>
     </div>
-
   </div>
 </div>
 
-<!-- ============================================================ -->
-<!-- P6: EXERCISE & CUSTOM THERAPY — 운동 · 맞춤 테라피             -->
-<!-- ============================================================ -->
-<div class="page light-page" id="p6">
-  <div class="pi" style="gap: 2px;">
-    <!-- EXERCISE Section -->
-    <div class="pg-section">
-      <div class="pg-text-band">
-        <div class="pg-band-left">
-          <div class="pg-band-label">EXERCISE</div>
-          <div class="pg-band-title">운동 테라피</div>
-          <div class="pg-band-divider"></div>
-        </div>
-        <div class="pg-band-sep"></div>
-        <div class="pg-band-desc">스트레칭과 코어 중심 근육 단련으로 유연성을 향상시키고,<br class="d">몸의 밸런스를 맞추어 체형 교정에 도움을 주는 프로그램.</div>
-      </div>
-      <div class="pg-image-row">
-        <div class="pg-card">
-          <img src="../public/images/proposal/yoga.png" alt="요가 클래스">
-          <div class="pg-overlay"></div>
-          <div class="pg-badge">
-            <div class="pg-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
-            <div class="pg-badge-cat">EXERCISE</div>
-            <div class="pg-badge-name">요가 클래스</div>
-            <div class="pg-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
-            <div class="pg-badge-en">Yoga Class</div>
-          </div>
-        </div>
-        <div class="pg-card">
-          <img src="../public/images/proposal/pilates.png" alt="필라테스 클래스">
-          <div class="pg-overlay"></div>
-          <div class="pg-badge">
-            <div class="pg-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
-            <div class="pg-badge-cat">EXERCISE</div>
-            <div class="pg-badge-name">필라테스 클래스</div>
-            <div class="pg-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
-            <div class="pg-badge-en">Pilates Class</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CUSTOM Section -->
-    <div class="pg-section">
-      <div class="pg-text-band">
-        <div class="pg-band-left">
-          <div class="pg-band-label">CUSTOM</div>
-          <div class="pg-band-title">맞춤 테라피</div>
-          <div class="pg-band-divider"></div>
-        </div>
-        <div class="pg-band-sep"></div>
-        <div class="pg-band-desc">퍼스널 컬러를 찾는 메이크업 클래스부터 직원 간 유대감을 높이는<br class="d">상호 테라피 특강까지, 기업 니즈에 맞춘 맞춤형 프로그램.</div>
-      </div>
-      <div class="pg-image-row">
-        <div class="pg-card">
-          <img src="../public/images/proposal/makeup_color.png" alt="메이크업 컬러테라피">
-          <div class="pg-overlay"></div>
-          <div class="pg-badge">
-            <div class="pg-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
-            <div class="pg-badge-cat">CUSTOM</div>
-            <div class="pg-badge-name">메이크업 · 컬러테라피</div>
-            <div class="pg-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
-            <div class="pg-badge-en">Makeup &amp; Color Therapy</div>
-          </div>
-        </div>
-        <div class="pg-card">
-          <img src="../public/images/proposal/therapy_workshop.png" alt="테라피 특강">
-          <div class="pg-overlay"></div>
-          <div class="pg-badge">
-            <div class="pg-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
-            <div class="pg-badge-cat">CUSTOM</div>
-            <div class="pg-badge-name">테라피 특강</div>
-            <div class="pg-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
-            <div class="pg-badge-en">Therapy Workshop</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ============================================================ -->
-<!-- P8: TRACK RECORD — 실적 & 파트너                               -->
 <!-- ============================================================ -->
 <div class="page light-page" id="p8">
   <div class="pi">
@@ -1455,12 +1610,12 @@ br.m { display: none; }
         <div class="unit">Clients · 기업 고객</div>
       </div>
       <div class="big-stat">
-        <div class="num">5,000+</div>
+        <div class="num">500+</div>
         <div class="unit">Sessions · 현장 진행</div>
       </div>
       <div class="big-stat">
-        <div class="num">100%</div>
-        <div class="unit">Satisfaction · 만족도</div>
+        <div class="num">5,000+</div>
+        <div class="unit">Visitors · 누적 방문 고객</div>
       </div>
     </div>
 
@@ -1471,7 +1626,7 @@ br.m { display: none; }
         <div class="chip-group">
           <div class="chip-group-label">기업 임직원</div>
           <div class="chip-list">
-            <span class="chip">삼성전자</span><span class="chip">삼성화재</span><span class="chip">네이버</span><span class="chip">카카오</span><span class="chip">LG에너지솔루션</span><span class="chip">P&amp;G</span><span class="chip">BCG</span><span class="chip">SK하이닉스</span><span class="chip">KB국민카드</span><span class="chip">이마트</span><span class="chip">현대오일뱅크</span><span class="chip">워커힐</span><span class="chip">산업은행</span><span class="chip">국세청</span><span class="chip">인천공항공사</span><span class="chip">한국관광공사</span><span class="chip">서울주택도시공사</span><span class="chip">한국서부발전</span><span class="chip">인천시청</span><span class="chip">원주시청</span>
+            <span class="chip">삼성전자</span><span class="chip">삼성화재</span><span class="chip">삼성화재서비스</span><span class="chip">네이버</span><span class="chip">카카오</span><span class="chip">LG에너지솔루션</span><span class="chip">P&amp;G</span><span class="chip">BCG</span><span class="chip">SK하이닉스</span><span class="chip">KB국민카드</span><span class="chip">네슬레</span><span class="chip">스마일게이트</span><span class="chip">기업은행</span><span class="chip">한화</span><span class="chip">농수산식품공사</span><span class="chip">부킹닷컴</span><span class="chip">법무부</span><span class="chip">이마트</span><span class="chip">현대오일뱅크</span><span class="chip">워커힐</span><span class="chip">산업은행</span><span class="chip">국세청</span><span class="chip">금호석유화학</span><span class="chip">써모피셔</span><span class="chip">인천공항공사</span><span class="chip">한국관광공사</span><span class="chip">제주관광공사</span><span class="chip">서울주택도시공사</span><span class="chip">한국사회적기업진흥원</span><span class="chip">한국서부발전</span><span class="chip">콘텐츠랩블루</span><span class="chip">트랜스코스모스코리아</span><span class="chip">인천시청</span><span class="chip">원주시청</span><span class="chip">동두천시청</span><span class="chip">당진시청</span><span class="chip">양주시청</span><span class="chip">정선군청</span>
           </div>
         </div>
         <div class="chip-group">
@@ -1483,13 +1638,13 @@ br.m { display: none; }
         <div class="chip-group">
           <div class="chip-group-label">VIP · 브랜드</div>
           <div class="chip-list">
-            <span class="chip">BMW</span><span class="chip">벤츠</span><span class="chip">페라리</span><span class="chip">람보르기니</span><span class="chip">렉서스</span><span class="chip">폭스바겐</span><span class="chip">하나카드</span><span class="chip">잭니클라우스</span><span class="chip">파라다이스카지노</span><span class="chip">록시땅</span><span class="chip">KLPGA</span><span class="chip">롯데백화점</span><span class="chip">현대백화점</span>
+            <span class="chip">BMW</span><span class="chip">벤츠</span><span class="chip">포르쉐</span><span class="chip">아우디</span><span class="chip">페라리</span><span class="chip">람보르기니</span><span class="chip">렉서스</span><span class="chip">폭스바겐</span><span class="chip">기아자동차</span><span class="chip">신한은행</span><span class="chip">하나카드</span><span class="chip">한국투자증권</span><span class="chip">잭니클라우스</span><span class="chip">파라다이스카지노</span><span class="chip">록시땅</span><span class="chip">KLPGA</span><span class="chip">캐논</span><span class="chip">롯데백화점</span><span class="chip">현대백화점</span><span class="chip">롯데아울렛</span>
           </div>
         </div>
         <div class="chip-group">
           <div class="chip-group-label">신제품 · 세미나</div>
           <div class="chip-list">
-            <span class="chip">아모레퍼시픽</span><span class="chip">모로칸오일</span><span class="chip">세타필</span><span class="chip">연세 메디치 페스티발</span><span class="chip">롯데재단</span><span class="chip">시셰이도</span><span class="chip">SK텔레콤</span><span class="chip">HD현대오일뱅크</span><span class="chip">한국산업은행</span><span class="chip">SONY</span>
+            <span class="chip">아모레퍼시픽</span><span class="chip">모로칸오일</span><span class="chip">세타필</span><span class="chip">연세 메디치 페스티발</span><span class="chip">롯데재단</span><span class="chip">시셰이도</span><span class="chip">SK텔레콤</span><span class="chip">HD현대오일뱅크</span><span class="chip">한국산업은행</span><span class="chip">SONY</span><span class="chip">NHN</span><span class="chip">암웨이</span><span class="chip">레노보</span><span class="chip">맥도날드</span><span class="chip">메트라이프</span><span class="chip">페르노리카 코리아</span>
           </div>
         </div>
       </div>
@@ -1538,7 +1693,390 @@ br.m { display: none; }
 </div>
 
 <!-- ============================================================ -->
-<!-- P9: REVIEWS — 후기 & 만족도                                    -->
+<div class="page light-page" id="p10">
+  <div class="pi">
+    <div class="section-header">
+      <div class="sl">PRICING</div>
+      <div class="sh-line"></div>
+      <div class="st">투명한 단가, 합리적인 서비스</div>
+    </div>
+
+    <table class="price-table">
+      <thead>
+        <tr>
+          <th style="width:28%">프로그램</th>
+          <th style="width:14%">인당 시간</th>
+          <th style="width:14%">2시간</th>
+          <th style="width:14%">3시간</th>
+          <th style="width:14%">4시간</th>
+          <th style="width:16%">추가 1시간</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="cat-header">피지컬 케어</span><br>핸드 마사지</td>
+          <td class="time-col">8~15분</td>
+          <td>200,000</td>
+          <td>250,000</td>
+          <td>300,000</td>
+          <td>50,000</td>
+        </tr>
+        <tr>
+          <td>스파인/릴렉스 체어</td>
+          <td class="time-col">10~30분</td>
+          <td>300,000</td>
+          <td>350,000</td>
+          <td>400,000</td>
+          <td>50,000</td>
+        </tr>
+        <tr>
+          <td>베드 테라피, 풋 테라피</td>
+          <td class="time-col">30분~1시간</td>
+          <td>350,000</td>
+          <td>400,000</td>
+          <td>450,000</td>
+          <td>50,000</td>
+        </tr>
+        <tr>
+          <td>클리니컬 테라피</td>
+          <td class="time-col">30분~1시간</td>
+          <td>500,000</td>
+          <td>600,000</td>
+          <td>700,000</td>
+          <td>100,000</td>
+        </tr>
+        <tr>
+          <td><span class="cat-header">교육 · 운동 · 맞춤</span><br>특강/요가/필라테스/메이크업</td>
+          <td class="time-col">1~3시간</td>
+          <td>300,000</td>
+          <td>400,000</td>
+          <td>600,000</td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="price-notes">
+      · 금액은 테라피스트/강사 1인당 비용, 부가세 불포함 기준 (단위: 원)<br>
+      · 시간은 식사시간 제외, 휴식시간 포함 기준<br>
+      · 재료비 포함, 교통비·출장비는 지역에 따라 추가 및 별도 협의<br>
+      · 상기 단가표 외 시간 협의 및 비용 조정 가능
+    </div>
+
+    <div class="recommend-label">추천 조합</div>
+    <div class="recommend-row">
+      <div class="rec-card">
+        <div class="rec-name">Basic</div>
+        <div class="rec-top">
+          <div class="rec-desc">소규모 팀을 위한 기본 구성.<br>가장 인기 있는 체어 테라피 단독 운영.</div>
+          <div class="rec-price">350,000원 <span>/ 3시간</span></div>
+        </div>
+        <ul class="rec-features">
+          <li>체어 테라피 3시간</li>
+          <li>테라피스트 1인 배치</li>
+          <li>약 8~12명 케어</li>
+          <li>10~30분 / 인당</li>
+        </ul>
+      </div>
+      <div class="rec-card">
+        <div class="rec-name">Standard</div>
+        <div class="rec-top">
+          <div class="rec-desc">체어와 핸드를 함께 운영하여<br>만족도 극대화.</div>
+          <div class="rec-price">700,000원 <span>/ 4시간</span></div>
+        </div>
+        <ul class="rec-features">
+          <li>체어 + 핸드 테라피 4시간</li>
+          <li>테라피스트 2인 배치</li>
+          <li>약 15~20명 케어</li>
+          <li>프로그램 자유 선택</li>
+        </ul>
+      </div>
+      <div class="rec-card featured">
+        <div class="rec-badge">Popular</div>
+        <div class="rec-name">Premium</div>
+        <div class="rec-top">
+          <div class="rec-desc">VIP 행사 및 대규모 이벤트에 최적화된 프리미엄 구성.</div>
+          <div class="rec-price">별도 협의</div>
+        </div>
+        <ul class="rec-features">
+          <li>베드 + 체어 + 핸드 6시간</li>
+          <li>테라피스트 3인 이상</li>
+          <li>VIP 맞춤 프로그램</li>
+          <li>행사 기획·운영 포함</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<div class="page light-page" id="p5">
+  <div class="pi">
+    <div class="section-header">
+      <div class="sl">SERVICE PROGRAMS</div>
+      <div class="sh-line"></div>
+      <div class="st">기업 니즈에 따른 맞춤 테라피 서비스</div>
+    </div>
+
+    <!-- Dark text band -->
+    <div class="pg-text-band">
+      <div class="pg-band-left">
+        <div class="pg-band-label">PHYSICAL</div>
+        <div class="pg-band-title">피지컬 케어</div>
+        <div class="pg-band-divider"></div>
+      </div>
+      <div class="pg-band-sep"></div>
+      <div class="pg-band-desc">해부학에 기반한 전문 바디 테라피. 피부와 근육을 동시에 케어하며, 단순 뷰티 관리를 넘어 체형 교정까지 아우르는 통합 피지컬 케어 프로그램.</div>
+    </div>
+
+    <!-- 체어 테라피 + 릴렉스 테라피 rows -->
+    <div class="svc-rows">
+      <!-- 체어 테라피 -->
+      <div class="svc-row">
+        <div class="svc-row-main">
+          <img src="../public/images/proposal/chair_therapy.png" alt="체어 테라피">
+          <div class="pg-overlay"></div>
+          <div class="pg-badge">
+            <div class="svc-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+            <div class="svc-badge-cat">BODY</div>
+            <div class="svc-badge-name">체어 테라피</div>
+            <div class="svc-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
+            <div class="svc-badge-en">Chair Therapy</div>
+          </div>
+        </div>
+        <div class="svc-row-thumbs">
+          <img src="../public/images/proposal/thumbs/chair_1.jpg" alt="체어 현장1">
+          <img src="../public/images/proposal/thumbs/chair_2.jpg" alt="체어 현장2">
+          <img src="../public/images/proposal/thumbs/chair_3.png" alt="체어 현장3">
+          <img src="../public/images/proposal/thumbs/chair_4.jpg" alt="체어 현장4">
+        </div>
+      </div>
+      <!-- 릴렉스 테라피 -->
+      <div class="svc-row">
+        <div class="svc-row-main">
+          <img src="../public/images/proposal/relax_chair.png" alt="릴렉스 테라피">
+          <div class="pg-overlay"></div>
+          <div class="pg-badge">
+            <div class="svc-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+            <div class="svc-badge-cat">BODY</div>
+            <div class="svc-badge-name">릴렉스 테라피</div>
+            <div class="svc-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
+            <div class="svc-badge-en">Relax Chair Therapy</div>
+          </div>
+        </div>
+        <div class="svc-row-thumbs">
+          <img src="../public/images/proposal/thumbs/relax_1.png" alt="릴렉스 현장1">
+          <img src="../public/images/proposal/thumbs/relax_2.png" alt="릴렉스 현장2">
+          <img src="../public/images/proposal/thumbs/relax_3.jpg" alt="릴렉스 현장3">
+          <img src="../public/images/proposal/thumbs/relax_4.png" alt="릴렉스 현장4">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- P5b: SERVICE PROGRAMS 2 (핸드/풋/베드) -->
+<!-- ============================================================ -->
+<div class="page light-page" id="p5b">
+  <div class="pi">
+    <div class="svc-rows">
+      <!-- 핸드 테라피 -->
+      <div class="svc-row">
+        <div class="svc-row-main">
+          <img src="../public/images/proposal/hand_therapy.png" alt="핸드 테라피">
+          <div class="pg-overlay"></div>
+          <div class="pg-badge">
+            <div class="svc-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+            <div class="svc-badge-cat">BODY</div>
+            <div class="svc-badge-name">핸드 테라피</div>
+            <div class="svc-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
+            <div class="svc-badge-en">Hand Therapy</div>
+          </div>
+        </div>
+        <div class="svc-row-thumbs">
+          <img src="../public/images/proposal/thumbs/hand_new_1.jpg" alt="핸드 현장1">
+          <img src="../public/images/proposal/thumbs/hand_new_2.png" alt="핸드 현장2">
+          <img src="../public/images/proposal/thumbs/hand_new_3.png" alt="핸드 현장3">
+          <img src="../public/images/proposal/thumbs/hand_new_4.png" alt="핸드 현장4">
+        </div>
+      </div>
+      <!-- 풋 테라피 -->
+      <div class="svc-row">
+        <div class="svc-row-main">
+          <img src="../public/images/proposal/foot_therapy.png" alt="풋 테라피">
+          <div class="pg-overlay"></div>
+          <div class="pg-badge">
+            <div class="svc-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+            <div class="svc-badge-cat">BODY</div>
+            <div class="svc-badge-name">풋 테라피</div>
+            <div class="svc-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
+            <div class="svc-badge-en">Foot Therapy</div>
+          </div>
+        </div>
+        <div class="svc-row-thumbs">
+          <img src="../public/images/proposal/thumbs/foot_1.jpg" alt="풋 현장1">
+          <img src="../public/images/proposal/thumbs/foot_2.png" alt="풋 현장2">
+          <img src="../public/images/proposal/thumbs/foot_3.png" alt="풋 현장3">
+          <img src="../public/images/proposal/thumbs/foot_4.png" alt="풋 현장4">
+        </div>
+      </div>
+      <!-- 베드 테라피 -->
+      <div class="svc-row">
+        <div class="svc-row-main">
+          <img src="../public/images/proposal/bed_therapy.png" alt="베드 테라피">
+          <div class="pg-overlay"></div>
+          <div class="pg-badge">
+            <div class="svc-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+            <div class="svc-badge-cat">BODY</div>
+            <div class="svc-badge-name">베드 테라피</div>
+            <div class="svc-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
+            <div class="svc-badge-en">Bed Therapy</div>
+          </div>
+        </div>
+        <div class="svc-row-thumbs">
+          <img src="../public/images/proposal/thumbs/bed_1.png" alt="베드 현장1">
+          <img src="../public/images/proposal/thumbs/bed_2.jpg" alt="베드 현장2">
+          <img src="../public/images/proposal/thumbs/bed_3.png" alt="베드 현장3">
+          <img src="../public/images/proposal/thumbs/bed_4_new.png" alt="베드 현장4">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<div class="page light-page" id="p6">
+  <div class="pi" style="gap: 2px;">
+    <!-- EXERCISE Section -->
+    <div class="pg-section">
+      <div class="pg-text-band">
+        <div class="pg-band-left">
+          <div class="pg-band-label">EXERCISE</div>
+          <div class="pg-band-title">운동 테라피</div>
+          <div class="pg-band-divider"></div>
+        </div>
+        <div class="pg-band-sep"></div>
+        <div class="pg-band-desc">스트레칭과 코어 중심 근육 단련으로 유연성을 향상시키고, 몸의 밸런스를 맞추어 체형 교정에 도움을 주는 프로그램.</div>
+      </div>
+      <div class="pg-image-row">
+        <div class="pg-card">
+          <img src="../public/images/proposal/yoga.png" alt="요가 클래스">
+          <div class="pg-overlay"></div>
+          <div class="pg-badge">
+            <div class="pg-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+            <div class="pg-badge-cat">EXERCISE</div>
+            <div class="pg-badge-name">요가 클래스</div>
+            <div class="pg-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
+            <div class="pg-badge-en">Yoga Class</div>
+          </div>
+        </div>
+        <div class="pg-card">
+          <img src="../public/images/proposal/pilates.png" alt="필라테스 클래스">
+          <div class="pg-overlay"></div>
+          <div class="pg-badge">
+            <div class="pg-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+            <div class="pg-badge-cat">EXERCISE</div>
+            <div class="pg-badge-name">필라테스 클래스</div>
+            <div class="pg-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
+            <div class="pg-badge-en">Pilates Class</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CUSTOM Section -->
+    <div class="pg-section">
+      <div class="pg-text-band">
+        <div class="pg-band-left">
+          <div class="pg-band-label">CUSTOM</div>
+          <div class="pg-band-title">맞춤 테라피</div>
+          <div class="pg-band-divider"></div>
+        </div>
+        <div class="pg-band-sep"></div>
+        <div class="pg-band-desc">직원 간 유대감을 높이는 상호 테라피 특강.<br>기업 니즈에 맞춘 맞춤형 프로그램.</div>
+      </div>
+      <div class="pg-image-row" style="grid-template-columns: 1fr; height: auto;">
+        <div class="pg-card" style="height: 180px;">
+          <img src="../public/images/proposal/therapy_workshop.png" alt="테라피 특강" style="object-position: center 65%;">
+          <div class="pg-overlay"></div>
+          <div class="pg-badge">
+            <div class="pg-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+            <div class="pg-badge-cat">CUSTOM</div>
+            <div class="pg-badge-name">테라피 특강</div>
+            <div class="pg-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
+            <div class="pg-badge-en">Therapy Workshop</div>
+          </div>
+        </div>
+      </div>
+      <div class="pg-image-row" style="grid-template-columns: repeat(3, 1fr); height: auto; margin-top: 2px;">
+        <div class="pg-card" style="height: 200px;"><img src="../public/images/proposal/workshop1.png" alt="특강 현장 1"><div class="pg-overlay"></div></div>
+        <div class="pg-card" style="height: 200px;"><img src="../public/images/proposal/workshop2.jpg" alt="특강 현장 2"><div class="pg-overlay"></div></div>
+        <div class="pg-card" style="height: 200px;"><img src="../public/images/proposal/workshop3.jpg" alt="특강 현장 3"><div class="pg-overlay"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<div class="page dark-page" id="p2">
+  <div class="pi">
+    <div class="section-header">
+      <div class="sl">WHY WELLNESS</div>
+      <div class="sh-line"></div>
+      <div class="st">기업 웰니스는 선택이 아닌 필수,<br>테라피가 그 핵심입니다</div>
+      <div class="sh-line"></div>
+      <div class="sh-sub">언론이 주목하는 기업 웰니스 트렌드</div>
+    </div>
+
+    <div class="news-grid">
+      <div class="news-card">
+        <img src="news/news1.png" alt="뉴스1">
+        <div class="news-body">
+          <div class="news-title">직원 위해 마사지사 6명 고용한 회사.<br class="m">MZ 몰린다</div>
+          <div class="news-src">머니투데이</div>
+        </div>
+      </div>
+      <div class="news-card">
+        <img src="news/news2.png" alt="뉴스2">
+        <div class="news-body">
+          <div class="news-title">'직장인 스트레스'…번아웃 위험군 늘어나고 있다</div>
+          <div class="news-src">잡코리아</div>
+        </div>
+      </div>
+      <div class="news-card">
+        <img src="news/news3.png" alt="뉴스3">
+        <div class="news-body">
+          <div class="news-title">웰니스 프로그램,<br>기업과 구성원을 건강하게</div>
+          <div class="news-src">LG경영연구원</div>
+        </div>
+      </div>
+      <div class="news-card news-hide-mobile">
+        <img src="news/news4.png" alt="뉴스4">
+        <div class="news-body">
+          <div class="news-title">웰니스 복지 : 건강에 대한 임직원의 관심 증대</div>
+          <div class="news-src">HR 인사이트</div>
+        </div>
+      </div>
+      <div class="news-card news-hide-mobile">
+        <img src="news/news5.png" alt="뉴스5">
+        <div class="news-body">
+          <div class="news-title">건강 지능이 경쟁력 된다,<br>몸 관리의 경영화</div>
+          <div class="news-src">이비즈타임즈</div>
+        </div>
+      </div>
+      <div class="news-card news-hide-mobile">
+        <img src="news/news6.png" alt="뉴스6">
+        <div class="news-body">
+          <div class="news-title">'번아웃',<br>혼자서 버티지 마세요</div>
+          <div class="news-src">중부일보</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- ============================================================ -->
 <div class="page light-page" id="p9">
   <div class="pi">
@@ -1701,127 +2239,6 @@ br.m { display: none; }
   </div>
 </div>
 
-<!-- ============================================================ -->
-<!-- P10: PRICING — 단가표                                          -->
-<!-- ============================================================ -->
-<div class="page light-page" id="p10">
-  <div class="pi">
-    <div class="section-header">
-      <div class="sl">PRICING</div>
-      <div class="sh-line"></div>
-      <div class="st">투명한 단가, 합리적인 서비스</div>
-    </div>
-
-    <table class="price-table">
-      <thead>
-        <tr>
-          <th style="width:28%">프로그램</th>
-          <th style="width:14%">인당 시간</th>
-          <th style="width:14%">2시간</th>
-          <th style="width:14%">3시간</th>
-          <th style="width:14%">4시간</th>
-          <th style="width:16%">추가 1시간</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><span class="cat-header">피지컬 케어</span><br>핸드 마사지</td>
-          <td class="time-col">8~15분</td>
-          <td>200,000</td>
-          <td>250,000</td>
-          <td>300,000</td>
-          <td>50,000</td>
-        </tr>
-        <tr>
-          <td>스파인/릴렉스 체어</td>
-          <td class="time-col">10~30분</td>
-          <td>300,000</td>
-          <td>350,000</td>
-          <td>400,000</td>
-          <td>50,000</td>
-        </tr>
-        <tr>
-          <td>베드 테라피, 풋 테라피</td>
-          <td class="time-col">30분~1시간</td>
-          <td>350,000</td>
-          <td>400,000</td>
-          <td>450,000</td>
-          <td>50,000</td>
-        </tr>
-        <tr>
-          <td>클리니컬 테라피</td>
-          <td class="time-col">30분~1시간</td>
-          <td>500,000</td>
-          <td>600,000</td>
-          <td>700,000</td>
-          <td>100,000</td>
-        </tr>
-        <tr>
-          <td><span class="cat-header">교육 · 운동 · 맞춤</span><br>특강/요가/필라테스/메이크업</td>
-          <td class="time-col">1~3시간</td>
-          <td>300,000</td>
-          <td>400,000</td>
-          <td>600,000</td>
-          <td>—</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="price-notes">
-      · 금액은 테라피스트/강사 1인당 비용, 부가세 불포함 기준 (단위: 원)<br>
-      · 시간은 식사시간 제외, 휴식시간 포함 기준<br>
-      · 재료비 포함, 교통비·출장비는 지역에 따라 추가 및 별도 협의<br>
-      · 상기 단가표 외 시간 협의 및 비용 조정 가능
-    </div>
-
-    <div class="recommend-label">추천 조합</div>
-    <div class="recommend-row">
-      <div class="rec-card">
-        <div class="rec-name">Basic</div>
-        <div class="rec-top">
-          <div class="rec-desc">소규모 팀을 위한 기본 구성.<br>가장 인기 있는 체어 테라피 단독 운영.</div>
-          <div class="rec-price">350,000원 <span>/ 3시간</span></div>
-        </div>
-        <ul class="rec-features">
-          <li>체어 테라피 3시간</li>
-          <li>테라피스트 1인 배치</li>
-          <li>약 8~12명 케어</li>
-          <li>10~30분 / 인당</li>
-        </ul>
-      </div>
-      <div class="rec-card">
-        <div class="rec-name">Standard</div>
-        <div class="rec-top">
-          <div class="rec-desc">체어와 핸드를 함께 운영하여<br>만족도 극대화.</div>
-          <div class="rec-price">700,000원 <span>/ 4시간</span></div>
-        </div>
-        <ul class="rec-features">
-          <li>체어 + 핸드 테라피 4시간</li>
-          <li>테라피스트 2인 배치</li>
-          <li>약 15~20명 케어</li>
-          <li>프로그램 자유 선택</li>
-        </ul>
-      </div>
-      <div class="rec-card featured">
-        <div class="rec-badge">Popular</div>
-        <div class="rec-name">Premium</div>
-        <div class="rec-top">
-          <div class="rec-desc">VIP 행사 및 대규모 이벤트에 최적화된 프리미엄 구성.</div>
-          <div class="rec-price">별도 협의</div>
-        </div>
-        <ul class="rec-features">
-          <li>베드 + 체어 + 핸드 6시간</li>
-          <li>테라피스트 3인 이상</li>
-          <li>VIP 맞춤 프로그램</li>
-          <li>행사 기획·운영 포함</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ============================================================ -->
-<!-- P11: THANK YOU — 감사합니다                                    -->
 <!-- ============================================================ -->
 <div class="page" id="p11">
   <div class="thankyou-content">

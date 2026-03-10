@@ -321,12 +321,12 @@ export default function ProposalPage() {
 
             <div className="pg-text-band">
               <div className="pg-band-left">
-                <div className="pg-band-label">BODY</div>
-                <div className="pg-band-title">바디 케어</div>
+                <div className="pg-band-label">PHYSICAL</div>
+                <div className="pg-band-title">피지컬 케어</div>
                 <div className="pg-band-divider"></div>
               </div>
               <div className="pg-band-sep"></div>
-              <div className="pg-band-desc">해부학에 기반한 전문 바디 테라피. 피부와 근육을 동시에 케어하며, 단순 뷰티 관리를 넘어 체형 교정까지 아우르는 통합 바디 케어 프로그램.</div>
+              <div className="pg-band-desc">해부학에 기반한 전문 바디 테라피. 피부와 근육을 동시에 케어하며, 단순 뷰티 관리를 넘어 체형 교정까지 아우르는 통합 피지컬 케어 프로그램.</div>
             </div>
 
             <div className="pg-grid">
@@ -443,8 +443,8 @@ export default function ProposalPage() {
             <div className="big-stats">
               <div className="big-stat"><div className="num">15</div><div className="unit">Years &middot; 업력</div></div>
               <div className="big-stat"><div className="num">200+</div><div className="unit">Clients &middot; 기업 고객</div></div>
-              <div className="big-stat"><div className="num">5,000+</div><div className="unit">Sessions &middot; 현장 진행</div></div>
-              <div className="big-stat"><div className="num">100%</div><div className="unit">Satisfaction &middot; 만족도</div></div>
+              <div className="big-stat"><div className="num">500+</div><div className="unit">Sessions &middot; 현장 진행</div></div>
+              <div className="big-stat"><div className="num">5,000+</div><div className="unit">Visitors &middot; 누적 방문 고객</div></div>
             </div>
 
             <div className="partner-layout">

@@ -1,4 +1,4 @@
-/* B2B Portfolio data — 144 events (2018~2026), 4056 photos */
+/* B2B Portfolio data — 500+ events (2018~2026), 4056 photos */
 
 export interface EventRecord {
   client: string;

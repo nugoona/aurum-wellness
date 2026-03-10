@@ -81,8 +81,8 @@ export const HERO_SLIDES = [
 
 /* ── Impact Numbers ── */
 export const IMPACT_NUMBERS = [
-  { value: 9, suffix: '+', label: '년간의 경력' },
-  { value: 144, suffix: '', label: '행사 기록' },
+  { value: 15, suffix: '+', label: '년간의 경력' },
+  { value: 500, suffix: '+', label: '행사 기록' },
   { value: 200, suffix: '+', label: '파트너 기업' },
 ];
 

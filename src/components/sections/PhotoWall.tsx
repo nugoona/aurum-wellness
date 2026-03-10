@@ -68,7 +68,7 @@ export default function PhotoWall() {
       <div className={styles.overlay}>
         <div className={styles.titleBlock}>
           <span className={styles.label}>PORTFOLIO</span>
-          <h2 className={styles.title}>140<span className={styles.plus}>+</span></h2>
+          <h2 className={styles.title}>500<span className={styles.plus}>+</span></h2>
           <p className={styles.subtitle}>현장의 기록</p>
         </div>
       </div>
