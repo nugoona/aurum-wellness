@@ -11,10 +11,10 @@ import styles from './TrustEvidenceV2.module.css';
 gsap.registerPlugin(ScrollTrigger);
 
 const STATS = [
-  { value: 15, suffix: '+', label: '연속 파트너십 연수' },
-  { value: 500, suffix: '+', label: '누적 행사 운영' },
-  { value: 200, suffix: '+', label: '재계약 기업 수' },
-  { value: 5000, suffix: '+', label: '누적 재방문 고객' },
+  { value: 15, suffix: '+', label: 'Years. 업력' },
+  { value: 500, suffix: '+', label: 'Sessions. 현장 진행' },
+  { value: 200, suffix: '+', label: 'Clients. 기업고객' },
+  { value: 5000, suffix: '+', label: 'Visitors. 누적 방문 고객' },
 ];
 
 export default function TrustEvidenceV2() {
