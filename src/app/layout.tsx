@@ -6,6 +6,7 @@ import Footer from '@/components/layout/Footer';
 import MobileBookingBar from '@/components/layout/MobileBookingBar';
 import ScrollToTop from '@/components/layout/ScrollToTop';
 import SmoothScrollProvider from '@/providers/SmoothScrollProvider';
+import { REVIEW_DATA } from '@/data/reviewData';
 import './globals.css';
 
 const cormorant = Cormorant_Garamond({
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
     default: '아우름웰니스 | 인천 부평 프리미엄 뷰티 & 웰니스 스파',
     template: '%s | 아우름웰니스',
   },
-  description: '인천 부평 프리미엄 웰니스 스파. 아로마 스웨디시, 건식 스포츠 테라피, 경락 윤곽 관리, 딸고(THALGO) 인증 트리트먼트. 네이버 예약 평균 4.97점, 620건 리뷰. 부평시장역 3번 출구 20m.',
+  description: `인천 부평 프리미엄 웰니스 스파. 아로마 스웨디시, 건식 스포츠 테라피, 경락 윤곽 관리, 딸고(THALGO) 인증 트리트먼트. 네이버 예약 평균 4.97점, ${REVIEW_DATA.length}건 리뷰. 부평시장역 3번 출구 20m.`,
   keywords: '아우름웰니스, 인천 스파, 부평 마사지, 아로마 스웨디시, 건식 스포츠 마사지, 경락 윤곽, 딸고 케어, 산전 산후 케어, 웰니스 스파, 인천 부평',
   alternates: {
     canonical: 'https://www.aurumwellness.co.kr',
@@ -98,7 +99,7 @@ const jsonLd = {
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.97',
-    reviewCount: '620',
+    reviewCount: String(REVIEW_DATA.length),
     bestRating: '5',
   },
   openingHoursSpecification: [
