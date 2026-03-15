@@ -105,7 +105,9 @@ export default function Reviews({ reviews, categories }: ReviewsProps) {
 
   const filtered = useMemo(() => {
     if (!selected) return [];
-    return reviews.filter((r) => r.category === selected);
+    return reviews
+      .filter((r) => r.category === selected)
+      .sort((a, b) => b.visited.localeCompare(a.visited));
   }, [selected, reviews]);
 
   const visible = filtered.slice(0, visibleCount);
