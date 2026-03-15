@@ -105,9 +105,13 @@ export default function Reviews({ reviews, categories }: ReviewsProps) {
 
   const filtered = useMemo(() => {
     if (!selected) return [];
+    const toNum = (d: string) => {
+      const p = d.split('.').map(Number);
+      return (p[0] || 0) * 10000 + (p[1] || 0) * 100 + (p[2] || 0);
+    };
     return reviews
       .filter((r) => r.category === selected)
-      .sort((a, b) => b.visited.localeCompare(a.visited));
+      .sort((a, b) => toNum(b.visited) - toNum(a.visited));
   }, [selected, reviews]);
 
   const visible = filtered.slice(0, visibleCount);
