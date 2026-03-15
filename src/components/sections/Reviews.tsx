@@ -78,8 +78,8 @@ interface ReviewsProps {
 
 const THUMBNAIL_MAP: Record<string, string> = {
   '부분 집중 케어': '/images/reviews/thumb_18.jpg',
-  '아로마 스웨디시': '/images/reviews/thumb_17.jpg',
-  '건식 스포츠 마사지': '/images/reviews/thumb_19.jpg',
+  '아로마 스웨디시': '/images/reviews/thumb_19.jpg',
+  '건식 스포츠 마사지': '/images/reviews/thumb_17.jpg',
   '경락 윤곽 관리': '/images/reviews/thumb_15.jpg',
   '피부 관리': '/images/reviews/thumb_14.jpg',
   '스톤 테라피': '/images/reviews/thumb_13.jpg',
