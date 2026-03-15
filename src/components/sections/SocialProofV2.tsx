@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SlotMachineDigit from '@/components/ui/SlotMachineDigit';
+import { REVIEW_DATA } from '@/data/reviewData';
 import styles from './SocialProofV2.module.css';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -154,7 +155,7 @@ export default function SocialProofV2() {
             <span className={styles.headerLabel}>REAL REVIEWS</span>
           </div>
           <div className={styles.counterRow}>
-            <SlotMachineDigit value={620} suffix="" label="" delay={0} />
+            <SlotMachineDigit value={REVIEW_DATA.length} suffix="" label="" delay={0} />
             <span className={styles.counterSuffix}>건의 진심이 담긴 후기</span>
           </div>
           <div className={styles.ratingRow}>
