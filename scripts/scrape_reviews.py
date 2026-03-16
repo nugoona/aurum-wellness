@@ -78,8 +78,8 @@ def review_fingerprint(body: str, nickname: str, visited: str) -> str:
     return hashlib.md5(raw.encode('utf-8')).hexdigest()
 
 
-def load_existing() -> tuple[dict, set]:
-    """Load existing reviews_raw.json and build fingerprint set."""
+def load_existing() -> tuple[dict, dict]:
+    """Load existing reviews_raw.json and build fingerprint → index map."""
     if not os.path.exists(REVIEWS_PATH):
         data = {
             "place_id": PLACE_ID,
@@ -91,17 +91,17 @@ def load_existing() -> tuple[dict, set]:
             "keyword_frequency": {},
             "reviews": [],
         }
-        return data, set()
+        return data, {}
 
     with open(REVIEWS_PATH, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
-    fingerprints = set()
-    for r in data['reviews']:
+    fp_map = {}
+    for i, r in enumerate(data['reviews']):
         fp = review_fingerprint(r.get('body', ''), r.get('nickname', ''), r.get('visited', ''))
-        fingerprints.add(fp)
+        fp_map[fp] = i
 
-    return data, fingerprints
+    return data, fp_map
 
 
 def parse_apollo_state(html: str) -> tuple[list[dict], str | None]:
@@ -222,14 +222,17 @@ def fetch_page(sort: str = 'latest', cursor: str = '') -> tuple[list[dict], str 
     return reviews, last_cursor
 
 
-def scrape_new_reviews() -> list[dict]:
+def scrape_new_reviews() -> tuple[list[dict], list[tuple[int, dict]]]:
     """Scrape reviews newest-first, traverse all pages.
-    Stops after 2 consecutive empty pages (no new reviews at all).
+    Returns (new_reviews, updated_reviews) where updated_reviews
+    is a list of (index, scraped_review) for reply updates.
+    Stops after 2 consecutive empty pages.
     """
-    data, existing_fps = load_existing()
+    data, fp_map = load_existing()
     print(f"Existing reviews: {len(data['reviews'])}")
 
     new_reviews = []
+    updated_reviews = []  # (index_in_data, new_review_data)
     cursor = ''
     page = 0
     consecutive_empty_pages = 0
@@ -258,14 +261,26 @@ def scrape_new_reviews() -> list[dict]:
 
         consecutive_empty_pages = 0
         page_new = 0
+        page_updated = 0
         for r in reviews:
             fp = review_fingerprint(r['body'], r['nickname'], r['visited'])
-            if fp not in existing_fps:
-                existing_fps.add(fp)
+            if fp not in fp_map:
+                fp_map[fp] = -1  # mark as seen
                 new_reviews.append(r)
                 page_new += 1
+            else:
+                # Check if reply was added/changed
+                idx = fp_map[fp]
+                if idx >= 0 and r.get('reply'):
+                    existing = data['reviews'][idx]
+                    if existing.get('reply', '') != r['reply']:
+                        updated_reviews.append((idx, r))
+                        page_updated += 1
 
-        print(f"  Found {len(reviews)} reviews, {page_new} new")
+        msg = f"  Found {len(reviews)} reviews, {page_new} new"
+        if page_updated:
+            msg += f", {page_updated} reply updates"
+        print(msg)
 
         if not next_cursor:
             print("  No next cursor, last page reached.")
@@ -274,29 +289,42 @@ def scrape_new_reviews() -> list[dict]:
         cursor = next_cursor
         time.sleep(REQUEST_DELAY)
 
-    return new_reviews
+    return new_reviews, updated_reviews
 
 
-def merge_and_save(new_reviews: list[dict]):
-    """Merge new reviews into reviews_raw.json."""
+def merge_and_save(new_reviews: list[dict], updated_reviews: list[tuple[int, dict]]):
+    """Merge new reviews and apply reply updates to reviews_raw.json."""
     data, _ = load_existing()
 
-    if not new_reviews:
-        print("\nNo new reviews to add.")
+    if not new_reviews and not updated_reviews:
+        print("\nNo new reviews or reply updates.")
         return 0
 
-    # Assign IDs continuing from existing max
-    max_num = -1
-    for r in data['reviews']:
-        m = re.match(r'dom_(\d+)', r.get('id', ''))
-        if m:
-            max_num = max(max_num, int(m.group(1)))
+    # Apply reply updates to existing reviews
+    if updated_reviews:
+        for idx, scraped in updated_reviews:
+            existing = data['reviews'][idx]
+            existing['reply'] = scraped['reply']
+            # Also update votedKeywords if they changed
+            if scraped.get('votedKeywords'):
+                existing['votedKeywords'] = scraped['votedKeywords']
+        print(f"\nUpdated {len(updated_reviews)} reviews with new replies.")
 
-    for i, r in enumerate(new_reviews):
-        r['id'] = f"dom_{max_num + 1 + i}"
+    # Add new reviews
+    if new_reviews:
+        # Assign IDs continuing from existing max
+        max_num = -1
+        for r in data['reviews']:
+            m_id = re.match(r'dom_(\d+)', r.get('id', ''))
+            if m_id:
+                max_num = max(max_num, int(m_id.group(1)))
 
-    # Prepend new reviews (newest first)
-    data['reviews'] = new_reviews + data['reviews']
+        for i, r in enumerate(new_reviews):
+            r['id'] = f"dom_{max_num + 1 + i}"
+
+        # Prepend new reviews (newest first)
+        data['reviews'] = new_reviews + data['reviews']
+
     data['total_count'] = len(data['reviews'])
     data['collected_at'] = datetime.now(timezone.utc).isoformat()
 
@@ -319,9 +347,10 @@ def merge_and_save(new_reviews: list[dict]):
     with open(REVIEWS_PATH, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
+    total_changes = len(new_reviews) + len(updated_reviews)
     print(f"\nSaved {len(data['reviews'])} total reviews to {REVIEWS_PATH}")
-    print(f"  Added: {len(new_reviews)}, Photos: {with_photos}")
-    return len(new_reviews)
+    print(f"  New: {len(new_reviews)}, Reply updates: {len(updated_reviews)}, Photos: {with_photos}")
+    return total_changes
 
 
 def main():
@@ -333,11 +362,11 @@ def main():
     print(f"Reviews file: {REVIEWS_PATH}")
     print(f"Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
-    new_reviews = scrape_new_reviews()
-    print(f"\n=== Total new reviews: {len(new_reviews)} ===")
+    new_reviews, updated_reviews = scrape_new_reviews()
+    print(f"\n=== New: {len(new_reviews)}, Reply updates: {len(updated_reviews)} ===")
 
-    added = merge_and_save(new_reviews)
-    return added
+    changes = merge_and_save(new_reviews, updated_reviews)
+    return changes
 
 
 if __name__ == '__main__':
