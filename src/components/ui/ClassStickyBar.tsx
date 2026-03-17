@@ -42,7 +42,10 @@ export default function ClassStickyBar() {
     <a href="#recruitment" className={styles.bar}>
       <div className={styles.left}>
         <span className={styles.badge}>{isLive ? '진행중' : '모집중'}</span>
-        <span className={styles.title}>Therapy Class Lv.1 · 4월 개강</span>
+        <div className={styles.titleGroup}>
+          <span className={styles.title}>Therapy Class Lv.1</span>
+          <span className={styles.subtitle}>4.17(금) 오전 10시 개강</span>
+        </div>
       </div>
       {!isLive && time ? (
         <div className={styles.countdown}>
