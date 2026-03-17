@@ -15,7 +15,6 @@ export const metadata = {
 export default function ClassPage() {
   return (
     <>
-      <ClassStickyBar />
       <Hero
         image="/images/hero/class_hero.jpg"
         label="THERAPY CLASS"
@@ -23,6 +22,7 @@ export default function ClassPage() {
         subtitle="과학적 교육으로 산업의 기준을 높이는 기반 사업"
         fullHeight
       />
+      <ClassStickyBar />
       <InstructorSection
         name={INSTRUCTOR.name}
         role={INSTRUCTOR.role}
