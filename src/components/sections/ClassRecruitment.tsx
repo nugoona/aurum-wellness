@@ -20,27 +20,27 @@ const CURRICULUM = [
     num: '01',
     title: '마사지의 이해',
     desc: '마사지의 역사와 원리, 5단계 기본 원칙 (점·누르기·선·문지르기·반복)을 체계적으로 학습합니다.',
-    image: '/images/class-lv1/01_lecture_portrait.png',
+    image: '/images/class-lv1/01_lecture_portrait.webp',
   },
   {
     num: '02',
     title: '기초 표면 해부학',
     desc: '근골격계 구조를 이해하고, 주요 근육과 뼈의 위치를 촉진으로 파악하는 능력을 기릅니다.',
-    image: '/images/class-lv1/03_anatomy_portrait.png',
+    image: '/images/class-lv1/03_anatomy_portrait.webp',
   },
   {
     num: '03',
     title: '건식 기본 테크닉',
     desc: '부위별 건식 마사지 실습. 목·어깨·등·팔·손 순서로 올바른 자세와 손의 감각을 익힙니다.',
-    image: '/images/class-lv1/04_technique_portrait.png',
+    image: '/images/class-lv1/04_technique_portrait.webp',
   },
 ];
 
 const TARGETS = [
-  { image: '/images/class-lv1/07_need_square.png', strong: '마사지에 관심 있는 모든 분들', desc: '전공 무관, 누구나 시작 가능' },
-  { image: '/images/class-lv1/02_practice_square.png', strong: '초보자 및 기본기가 필요한 경력자', desc: '스킨케어 및 미용 전문가 포함' },
-  { image: '/images/class-lv1/08_fitness_square.png', strong: '피트니스 · 운동 · 재활 전문가', desc: '물리치료사 등 보건 전문가' },
-  { image: '/images/class-lv1/06_graduation_square.png', strong: '창업 · 이직을 생각하는 분들', desc: '미래의 먹거리를 찾는 모든 분들' },
+  { image: '/images/class-lv1/07_need_square.webp', strong: '마사지에 관심 있는 모든 분들', desc: '전공 무관, 누구나 시작 가능' },
+  { image: '/images/class-lv1/02_practice_square.webp', strong: '초보자 및 기본기가 필요한 경력자', desc: '스킨케어 및 미용 전문가 포함' },
+  { image: '/images/class-lv1/08_fitness_square.webp', strong: '피트니스 · 운동 · 재활 전문가', desc: '물리치료사 등 보건 전문가' },
+  { image: '/images/class-lv1/06_graduation_square.webp', strong: '창업 · 이직을 생각하는 분들', desc: '미래의 먹거리를 찾는 모든 분들' },
 ];
 
 export default function ClassRecruitment() {

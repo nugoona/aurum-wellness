@@ -39,7 +39,7 @@ export default function ClassPromoPopup() {
         <div className={styles.imageArea}>
           <div
             className={styles.bgImage}
-            style={{ backgroundImage: 'url(/images/class-lv1/01_lecture_square.png)' }}
+            style={{ backgroundImage: 'url(/images/class-lv1/01_lecture_square.webp)' }}
           />
           <button className={styles.closeBtn} onClick={close} aria-label="닫기">
             <X size={16} />
