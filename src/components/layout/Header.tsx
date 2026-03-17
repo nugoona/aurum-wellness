@@ -21,6 +21,11 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
+    // /class 페이지는 항상 scrolled 상태 (투명 헤더 없음)
+    if (pathname === '/class') {
+      setScrolled(true);
+      return;
+    }
     const onScroll = () => {
       const heroPinned = document.documentElement.hasAttribute('data-hero-pinned');
       setScrolled(!heroPinned && window.scrollY > 80);
@@ -28,7 +33,7 @@ export default function Header() {
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
     return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  }, [pathname]);
 
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? 'hidden' : '';
