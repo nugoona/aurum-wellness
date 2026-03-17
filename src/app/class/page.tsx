@@ -1,7 +1,9 @@
+import ClassStickyBar from '@/components/ui/ClassStickyBar';
 import Hero from '@/components/sections/Hero';
 import InstructorSection from '@/components/sections/InstructorSection';
 import ClassTypes from '@/components/sections/ClassTypes';
 import ClassReviews from '@/components/sections/ClassReviews';
+import ClassRecruitment from '@/components/sections/ClassRecruitment';
 import DarkCTA from '@/components/sections/DarkCTA';
 import { INSTRUCTOR, TIMELINE, TIMELINE_IMAGES, CLASSES, REVIEWS } from '@/data/classData';
 
@@ -13,6 +15,7 @@ export const metadata = {
 export default function ClassPage() {
   return (
     <>
+      <ClassStickyBar />
       <Hero
         image="/images/hero/class_hero.jpg"
         label="THERAPY CLASS"
@@ -29,6 +32,7 @@ export default function ClassPage() {
         timelineImages={TIMELINE_IMAGES}
       />
       <ClassTypes classes={CLASSES} />
+      <ClassRecruitment />
       <ClassReviews reviews={REVIEWS} />
       <DarkCTA
         title="클래스 수강에 관심이 있으신가요?"
