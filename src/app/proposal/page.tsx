@@ -153,7 +153,7 @@ export default function ProposalPage() {
             </div>
             <div className="intro-text">
               <span className="intro-company">아우름웰니스는</span>{' '}
-              <span className="ip">마사지 테라피스트 및 필라테스, 요가, 메이크업 아티스트, 컬러 테라피 등 다양한 분야의 전문가들이</span>{' '}
+              <span className="ip">마사지 테라피스트, 체형교정 전문가, 요가·필라테스 강사 등 피지컬 케어와 웰니스 분야의 전문가들이</span>{' '}
               <span className="ip">맞춤형 테라피 서비스를 제공하는 <span className="intro-highlight">B2B 종합복지서비스 전문업체</span>입니다. 기업의 니즈에 맞춰 찾아가는 서비스로, 임직원 건강과 웰니스를 책임집니다.</span>
             </div>
 
