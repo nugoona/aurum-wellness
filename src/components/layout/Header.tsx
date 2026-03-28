@@ -159,7 +159,7 @@ export default function Header() {
             </a>
             <div className={styles.mobileContact}>
               <a href="tel:010-2981-9989">010-2981-9989</a>
-              <p>인천 부평구 부평대로 71-1, 3층</p>
+              <p>인천 부평구 부평문화로 56, 3층</p>
             </div>
           </div>
         </div>

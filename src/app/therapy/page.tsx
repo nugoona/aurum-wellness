@@ -18,7 +18,7 @@ import { REVIEW_DATA, REVIEW_CATEGORIES } from '@/data/reviewData';
 
 export const metadata = {
   title: '아우르메 테라피',
-  description: '전문성과 품격을 동시에 갖춘 뷰티 & 웰니스 스파. 아로마 스웨디시, 건식 스포츠 테라피, 경락 윤곽 관리, 딸고(THALGO) 인증 트리트먼트.',
+  description: '전문성과 품격을 동시에 갖춘 뷰티 & 웰니스 테라피. 아로마 스웨디시, 건식 스포츠 테라피, 경락 윤곽 관리, 딸고(THALGO) 인증 트리트먼트.',
 };
 
 export default function TherapyPage() {
@@ -27,7 +27,7 @@ export default function TherapyPage() {
       <Hero
         image="/images/hero/vis.jpg"
         label="AURUME THERAPY"
-        title={'전문성과 품격을\n동시에 갖춘 스파'}
+        title={'전문성과 품격을\n동시에 갖춘 테라피'}
         subtitle="단순히 근육을 푸는 마사지가 아닌, 몸의 구조를 이해하고 설계하는 웰니스 뷰티 테라피"
         fullHeight
       />

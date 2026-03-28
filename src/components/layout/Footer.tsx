@@ -39,7 +39,7 @@ export default function Footer() {
         <div className={styles.contact}>
           <span className={styles.colLabel}>CONTACT</span>
           <a href="tel:010-2981-9989">010-2981-9989</a>
-          <p>인천 부평구 부평대로 71-1, 3층</p>
+          <p>인천 부평구 부평문화로 56, 3층</p>
           <p>1호선 부평시장역 3번 출구 20m</p>
           <a
             href={NAVER_MAP_URL}

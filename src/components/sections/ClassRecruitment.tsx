@@ -102,7 +102,7 @@ export default function ClassRecruitment() {
             <div className={styles.infoDivider} />
             <div className={styles.infoItem}>
               <span className={styles.infoLabel}>장소</span>
-              <span className={styles.infoValue}>인천 부평구 부평대로 71-1, 3층</span>
+              <span className={styles.infoValue}>인천 부평구 부평문화로 56, 3층</span>
             </div>
           </div>
         </ScrollReveal>

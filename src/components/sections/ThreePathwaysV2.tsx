@@ -65,7 +65,7 @@ const PATHWAYS = [
     id: 'therapy',
     title: 'AURUME THERAPY',
     enFont: true,
-    sub: '전문성과 품격을 동시에 갖춘 스파',
+    sub: '전문성과 품격을 동시에 갖춘 테라피',
     desc: '몸의 구조를 이해하고 설계하는 웰니스 뷰티 테라피',
     link: '/therapy',
     linkText: '프로그램 보기',

@@ -14,7 +14,7 @@ export const SERVICES = [
     href: '/therapy',
     label: 'THERAPY',
     title: 'AURUME THERAPY',
-    description: '전문성과 품격을 동시에 갖춘 뷰티 & 웰니스 스파. 바디, 페이스, 스페셜 프로그램.',
+    description: '전문성과 품격을 동시에 갖춘 뷰티 & 웰니스 테라피. 바디, 페이스, 스페셜 프로그램.',
     image: '/images/hero/main4_1.jpg',
   },
   {

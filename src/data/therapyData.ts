@@ -91,7 +91,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
       {
         nameKo: '딸고 시그니처 트리트먼트',
         nameEn: 'Thalgo Signature Facial',
-        desc: '프랑스 프리미엄 해양 테라피 브랜드 딸고(THALGO)의 인증 관리로, 인천 유일 딸고 인증점에서 제공하는 정통 페이셜 스파 케어.',
+        desc: '프랑스 프리미엄 해양 테라피 브랜드 딸고(THALGO)의 인증 관리로, 인천 유일 딸고 인증점에서 제공하는 정통 페이셜 케어.',
         image: '/images/therapy/sub010202_1.jpg',
       },
       {

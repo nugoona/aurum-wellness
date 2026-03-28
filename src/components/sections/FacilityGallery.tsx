@@ -22,7 +22,7 @@ const STORE_LABELS = [
   '아로마 오일',
   '바디 테라피',
   'AURUME therapy',
-  '족욕 스파',
+  '족욕 케어',
 ];
 
 export default function FacilityGallery({ staff, store }: FacilityGalleryProps) {
