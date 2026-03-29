@@ -1,0 +1,2309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>아우름 웰니스 서비스 제안서</title>
+<meta property="og:title" content="아우름 웰니스 서비스 제안서">
+<meta property="og:description" content="마사지를 넘어, 피지컬 케어와 힐링 프로그램으로 — B2B 종합복지서비스 전문업체">
+<meta property="og:url" content="https://nugoona.github.io/aurumwellness/">
+<meta property="og:image" content="https://nugoona.github.io/aurumwellness/images/hero/sub_vis02.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter+Tight:wght@300;400;500;600;700&family=Nanum+Pen+Script&family=Gaegu&family=Hi+Melody&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
+<style>
+@font-face {
+  font-family: 'Arita Buri';
+  src: url('https://cdn.jsdelivr.net/gh/taevel02/typeface-arita/Arita-buriL.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Arita Buri';
+  src: url('https://cdn.jsdelivr.net/gh/taevel02/typeface-arita/Arita-buriM.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+/* === Reset & Print === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+@media print {
+  body { background: none; }
+  .page { margin: 0; box-shadow: none; }
+}
+
+/* === Design Tokens === */
+:root {
+  --gold: #c8a549;
+  --gold-dark: #a08636;
+  --dark: #2c2c2c;
+  --dark-surface: #232323;
+  --text: #1a1a1a;
+  --text-sub: #3a3a3a;
+  --text-muted: #6a6a6a;
+  --cream: #f9f7f4;
+  --border: #e0ddd8;
+  --white: #ffffff;
+  --fh: 'Cormorant Garamond', serif;
+  --fb: 'Arita Buri', Georgia, serif;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  font-family: var(--fb);
+  word-break: keep-all;
+  -webkit-font-smoothing: antialiased;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+
+/* === Page Base === */
+.page {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: visible;
+  margin: 0;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--border);
+}
+.page:last-child { border-bottom: none; }
+
+/* === Page Inner === */
+.pi {
+  padding: 32px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* === Typography === */
+.section-header {
+  text-align: center;
+  display: flex; flex-direction: column; align-items: center;
+  margin-bottom: 28px;
+}
+.section-header .sl {
+  font-size: 10px; font-weight: 500; color: var(--gold);
+  letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 0;
+}
+.section-header .sh-line {
+  width: 60px; height: 1px; background: var(--gold); margin: 12px 0;
+}
+.section-header .st {
+  font-size: 24px; font-weight: 100; line-height: 1.3;
+  font-family: 'Arita Buri', serif; letter-spacing: -0.06em;
+  margin-bottom: 0;
+}
+.section-header .sh-sub {
+  font-size: 15px; font-weight: 400; margin-top: 12px;
+  font-family: 'Gowun Batang', Georgia, serif; line-height: 1.4;
+}
+/* dark pages */
+.dark-page .section-header .st { color: var(--white); text-shadow: 1px 1px 0 rgba(0,0,0,0.7), 2px 2px 0 rgba(0,0,0,0.3), 0 1px 6px rgba(0,0,0,0.6); }
+.dark-page .section-header .sh-sub { color: rgba(255,255,255,0.92); font-weight: 400; text-shadow: 0 1px 4px rgba(0,0,0,0.7); }
+.dark-page .section-header .sl { text-shadow: 0 1px 4px rgba(0,0,0,0.7); }
+/* light pages */
+.light-page .section-header .st { color: var(--text); }
+.light-page .section-header .sl { color: var(--gold-dark); }
+.light-page .section-header .sh-sub { color: var(--text-sub); }
+/* legacy standalone */
+.sl {
+  font-size: 10px; font-weight: 500; color: var(--gold);
+  letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 6px;
+}
+.st {
+  font-size: 22px; font-weight: 300; color: var(--text);
+  line-height: 1.35; margin-bottom: 16px;
+}
+.sn {
+  font-family: var(--fh);
+  font-weight: 300;
+  color: var(--gold);
+}
+
+/* === Components === */
+.gl { width: 50px; height: 1px; background: var(--gold); margin: 12px 0; }
+.gl-full { width: 100%; height: 1px; background: var(--gold); opacity: .25; margin: 14px 0; }
+.card {
+  border-radius: 0;
+  border: 1px solid var(--border);
+  background: var(--white);
+  overflow: hidden;
+}
+img { display: block; width: 100%; object-fit: cover; }
+br.m { display: inline; }
+.tag {
+  display: inline-block;
+  font-size: 9px;
+  font-weight: 500;
+  color: var(--gold-dark);
+  background: rgba(200,165,73,0.08);
+  padding: 3px 8px;
+  border-radius: 3px;
+  letter-spacing: 0.05em;
+}
+
+/* === P1: Cover === */
+#p1 {
+  background: #000;
+}
+#p1 .cover-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+#p1 .cover-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+}
+#p1 .cover-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.75) 0%,
+    rgba(0,0,0,0.55) 40%,
+    rgba(0,0,0,0.75) 100%
+  );
+}
+#p1 .cover-content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 24px;
+}
+#p1 .cover-logo {
+  width: 90px;
+  height: auto;
+  margin-bottom: 28px;
+}
+#p1 .cover-title {
+  font-family: var(--fh);
+  font-size: 26px;
+  font-weight: 300;
+  color: var(--gold);
+  letter-spacing: 0.2em;
+  line-height: 1.2;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.8);
+}
+#p1 .cover-line {
+  width: 50px;
+  height: 1px;
+  background: var(--gold);
+  margin: 22px 0;
+}
+#p1 .cover-sub {
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.8);
+}
+#p1 .cover-year {
+  position: absolute;
+  bottom: 30px;
+  right: 44px;
+  font-family: var(--fh);
+  font-size: 14px;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 0.1em;
+  z-index: 1;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
+}
+
+/* === P4: Lead Therapist (2-col: Instructor | Experience) === */
+#p4 { background: var(--cream); }
+#p4 .therapist-top {
+  display: grid; grid-template-columns: 1fr; gap: 20px; margin-bottom: 10px;
+}
+/* -- Left: Instructor -- */
+#p4 .instructor-col { display: flex; flex-direction: column; }
+#p4 .col-label {
+  font-size: 10px; font-weight: 300; letter-spacing: 0.15em; color: var(--gold-dark);
+  margin-bottom: 12px; text-transform: uppercase;
+}
+#p4 .therapist-name {
+  font-family: var(--fh); font-size: 28px; font-weight: 400;
+  color: var(--text); margin-bottom: 4px;
+}
+#p4 .therapist-role {
+  font-size: 13px; font-weight: 300; color: var(--gold-dark); margin-bottom: 10px;
+}
+#p4 .therapist-photo {
+  height: 200px; overflow: hidden; margin-top: 10px;
+  border: 1px solid var(--border); background: var(--cream);
+}
+#p4 .therapist-photo img {
+  width: 100%; height: 100%; object-fit: contain; object-position: center top;
+}
+#p4 .therapist-quote {
+  font-size: 12px; font-weight: 400; color: var(--text-sub); line-height: 1.6;
+  padding: 10px 14px; background: var(--white); border-left: 2px solid var(--gold);
+  margin-bottom: 14px; font-style: italic; font-family: 'Gowun Batang', Georgia, serif;
+}
+#p4 .cred-list {
+  list-style: none; padding: 0; margin: 0;
+}
+#p4 .cred-list li {
+  font-size: 11px; font-weight: 400; color: var(--text-sub); line-height: 1.4;
+  padding: 3px 0; border-bottom: 1px solid var(--border); padding-left: 14px;
+  position: relative; font-family: 'Gowun Batang', Georgia, serif;
+}
+#p4 .cred-list li:last-child { border-bottom: none; }
+#p4 .cred-list li::before {
+  content: ''; position: absolute; left: 0; top: 8px;
+  width: 5px; height: 5px; border-radius: 50%; background: var(--gold);
+}
+/* -- Right: Experience (timeline) -- */
+#p4 .experience-col { display: flex; flex-direction: column; }
+#p4 .exp-title {
+  font-size: 22px; font-weight: 300; color: var(--text); margin-bottom: 16px;
+  font-family: 'Arita Buri', serif;
+}
+#p4 .timeline { position: relative; padding-left: 24px; flex: 1; }
+#p4 .timeline::before {
+  content: ''; position: absolute; left: 3px; top: 6px; bottom: 6px;
+  width: 2px; background: rgba(200,165,73,0.3);
+}
+#p4 .timeline-item { position: relative; margin-bottom: 12px; }
+#p4 .timeline-item:last-child { margin-bottom: 0; }
+#p4 .timeline-dot {
+  position: absolute; left: -24px; top: 3px; width: 8px; height: 8px;
+  border-radius: 50%; background: var(--gold); border: 2px solid var(--cream);
+}
+#p4 .timeline-company {
+  font-size: 13px; font-weight: 500; color: var(--text); margin-bottom: 2px;
+}
+#p4 .timeline-desc {
+  font-size: 11px; font-weight: 400; color: var(--text-muted); line-height: 1.4;
+  font-family: 'Gowun Batang', Georgia, serif;
+}
+#p4 .timeline-footer {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  margin-top: auto; padding-top: 20px; font-size: 11px; color: var(--text-muted);
+}
+#p4 .timeline-footer span {
+  display: inline-block; width: 28px; height: 1px; background: var(--border);
+}
+/* -- Bottom: 4 images in a row -- */
+#p4 .activity-strip {
+  display: flex; gap: 4px; flex: 1; min-height: 0;
+}
+#p4 .activity-strip .act-card {
+  flex: 1; overflow: hidden; position: relative;
+}
+#p4 .activity-strip .act-card img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center center;
+}
+#p4 .activity-strip .act-card:nth-child(2) img {
+  transform: scale(1.6); object-position: center 60%;
+}
+#p4 .activity-strip .act-card:nth-child(3) img {
+  transform: scale(1.4); object-position: center 70%;
+}
+#p4 .activity-strip .act-card .act-label {
+  position: absolute; bottom: 0; left: 0; right: 0; padding: 8px 8px 6px;
+  background: linear-gradient(to top, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.2) 40%, rgba(0,0,0,0.05) 70%, transparent 100%);
+  padding-top: 30px;
+  font-size: 8px; color: rgba(255,255,255,0.9); font-weight: 400; letter-spacing: 0.03em;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+/* === P11: Thank You === */
+#p11 {
+  background: var(--dark);
+}
+#p11 .thankyou-content {
+  height: auto; min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 44px;
+}
+#p11 .thankyou-logo {
+  width: 110px;
+  height: auto;
+  margin-bottom: 16px;
+}
+#p11 .thankyou-company {
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 0.1em;
+  margin-bottom: 40px;
+}
+#p11 .thankyou-main {
+  font-family: var(--fh);
+  font-size: 28px;
+  font-weight: 300;
+  color: var(--white);
+  margin-bottom: 10px;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.7);
+}
+#p11 .thankyou-sub {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.75);
+  letter-spacing: 0.03em;
+  margin-bottom: 24px;
+}
+#p11 .thankyou-line {
+  width: 50px;
+  height: 1px;
+  background: var(--gold);
+  margin-bottom: 32px;
+}
+#p11 .thankyou-phone {
+  font-family: var(--fb);
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+  margin-bottom: 14px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
+}
+#p11 .thankyou-contact {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.75);
+  line-height: 2;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
+}
+#p11 .thankyou-contact .gold {
+  color: var(--gold);
+}
+
+/* === P2: Why Wellness — Newspaper Style === */
+#p2 { background: var(--dark); }
+#p2 .pi { color: var(--white); }
+#p2 .section-header .st { font-size: 34px; }
+#p2 .news-grid {
+  display: grid; grid-template-columns: 1fr; grid-template-rows: auto;
+  row-gap: 12px; flex: 1; padding: 0;
+}
+#p2 .news-card {
+  border-radius: 0; overflow: hidden;
+  background: var(--dark-surface); border: 1px solid rgba(255,255,255,0.12);
+  display: flex; flex-direction: column-reverse;
+}
+#p2 .news-card img {
+  width: 100%; flex: 4; object-fit: cover; object-position: left top; display: block;
+  min-height: 0; opacity: 0.9;
+}
+#p2 .news-body {
+  flex: 6; padding: 14px 16px;
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  text-align: center; background: var(--dark-surface);
+}
+#p2 .news-title {
+  font-size: 17px; font-weight: 500; color: var(--white); line-height: 1.4;
+  margin-bottom: 8px;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
+}
+#p2 .news-src {
+  font-size: 13px; color: var(--gold); font-weight: 500;
+  background: transparent; border: 1px solid rgba(200,165,73,0.4);
+  padding: 4px 14px; border-radius: 0; display: inline-block;
+  letter-spacing: 0.03em;
+}
+
+/* === P3: About Us — Combined === */
+#p3 { background: var(--white); }
+#p3 .section-header { margin-bottom: 36px; }
+
+/* Intro text — gold accent bar */
+#p3 .intro-text {
+  font-size: 16px; color: var(--text-sub); line-height: 1.6; margin-bottom: 28px;
+  padding-left: 18px; border-left: 3px solid var(--gold);
+  font-family: 'Gowun Batang', Georgia, serif;
+}
+#p3 .intro-company {
+  font-size: 22px; font-family: 'Arita Buri', Georgia, serif; font-weight: 300;
+  color: var(--text); display: block; margin-bottom: 2px; line-height: 1.2;
+}
+#p3 .intro-highlight {
+  font-family: 'Arita Buri', Georgia, serif; font-weight: 300;
+  color: #000000; text-shadow: 0.3px 0 0 #000000;
+}
+
+/* Track cards — image top + text below */
+#p3 .track-row { display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px; }
+#p3 .track-card {
+  width: 100%; border-radius: 0; overflow: hidden;
+  border: 1px solid var(--border); display: flex; flex-direction: column;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+#p3 .track-card img {
+  width: 100%; height: 200px; object-fit: cover; display: block;
+}
+#p3 .track-body { padding: 16px 18px; flex: 1; display: flex; flex-direction: column; }
+#p3 .track-title { font-size: 17px; font-weight: 500; color: var(--text); margin-bottom: 6px; }
+#p3 .track-desc { font-size: 13px; color: var(--text-muted); line-height: 1.4; margin-bottom: 10px; font-family: 'Gowun Batang', Georgia, serif; }
+#p3 .track-tags { display: flex; flex-wrap: nowrap; gap: 0; margin-top: auto; width: 100%; }
+#p3 .track-tags .tag {
+  border: 1px solid #ffffff; color: #ffffff; background: var(--dark);
+  border-radius: 0; padding: 3px 0; font-size: 10px; font-weight: 300; white-space: nowrap;
+  flex: 1; text-align: center;
+}
+
+/* Why cards — left gold accent + watermark number */
+/* Why — horizontal thumbnail cards */
+#p3 .why-row { display: flex; flex-direction: column; gap: 10px; margin-bottom: 0; }
+#p3 .why-card {
+  display: flex; flex-direction: column; align-items: stretch; border-radius: 0; overflow: hidden;
+  border: 1px solid var(--border); background: #fff;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+#p3 .why-thumb {
+  width: 100%; height: 160px; flex-shrink: 0; overflow: hidden;
+}
+#p3 .why-thumb img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+}
+#p3 .why-body {
+  flex: 1; padding: 14px 18px; display: flex; align-items: center; gap: 14px;
+  position: relative;
+}
+#p3 .why-num {
+  font-family: var(--fh); font-size: 44px; font-weight: 300; color: rgba(200,165,73,0.25);
+  line-height: 1; flex-shrink: 0;
+}
+#p3 .why-text { flex: 1; }
+#p3 .why-title { font-size: 18px; font-weight: 500; color: #000000; margin-bottom: 4px; }
+#p3 .why-desc { font-size: 14px; color: var(--text-muted); line-height: 1.5; font-family: 'Gowun Batang', Georgia, serif; }
+
+/* === P5: Service Programs — Body Therapy === */
+#p5 { background: var(--white); }
+#p5 .pi { padding: 24px 20px; display: flex; flex-direction: column; height: 100%; box-sizing: border-box; }
+#p5 .section-header { margin-bottom: 16px; }
+
+/* Dark text band (horizontal, full width) */
+#p5 .pg-text-band {
+  display: flex; flex-direction: column; align-items: center;
+  background: linear-gradient(160deg, #1c1916 0%, #262220 45%, #1e1a17 100%);
+  padding: 24px 20px; gap: 16px; margin-bottom: 1px; flex-shrink: 0;
+}
+#p5 .pg-band-left {
+  flex: 0 0 auto; text-align: center; min-width: 220px;
+}
+#p5 .pg-band-label {
+  font-size: 10px; font-weight: 600; letter-spacing: 4px; color: var(--gold);
+  text-transform: uppercase; margin-bottom: 6px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
+}
+#p5 .pg-band-title {
+  font-family: 'Arita Buri', serif; font-size: 18px; font-weight: 400;
+  color: #f5f0e8; margin-bottom: 8px; letter-spacing: 0.5px;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.8);
+}
+#p5 .pg-band-divider { width: 36px; height: 1px; background: var(--gold); margin: 0 auto; }
+#p5 .pg-band-sep { width: 1px; background: rgba(200,165,73,0.25); align-self: stretch; }
+#p5 .pg-band-desc {
+  flex: 1; font-family: 'Gowun Batang', Georgia, serif; font-size: 12.5px;
+  font-weight: 400; color: rgba(255,255,255,0.8); line-height: 1.7;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.35);
+}
+
+/* Image grid (3×2, fills remaining space) */
+/* === P5 / P5b: Service Row Layout === */
+.svc-row { display: grid; grid-template-columns: 2fr 3fr; gap: 2px; }
+.svc-row-main { position: relative; overflow: hidden; min-height: 0; }
+.svc-row-main img { width: 100%; height: 100%; object-fit: cover; object-position: left center; display: block; }
+.svc-row-main .pg-overlay {
+  position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.50) 40%, rgba(0,0,0,0.65) 100%);
+}
+.svc-row-main .pg-badge {
+  position: absolute; inset: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; z-index: 2; pointer-events: none; padding: 10px;
+}
+.svc-row-thumbs { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 1px; min-height: 0; }
+.svc-row-thumbs img { width: 100%; height: 100%; object-fit: cover; display: block; min-height: 0; }
+.svc-row-thumbs img:nth-child(1),
+.svc-row-thumbs img:nth-child(2) { object-position: left center; }
+.svc-badge-deco { display: flex; align-items: center; gap: 6px; margin-bottom: 5px; }
+.svc-badge-deco .line { width: 24px; height: 1px; background: rgba(200,165,73,0.5); }
+.svc-badge-deco .diamond { width: 5px; height: 5px; background: rgba(200,165,73,0.7); transform: rotate(45deg); }
+.svc-badge-cat { font-size: 9px; font-weight: 600; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 6px; text-shadow: 0 1px 4px rgba(0,0,0,0.7); }
+.svc-badge-name { font-family: 'Arita Buri', serif; font-size: 17px; font-weight: 400; color: var(--white); margin-bottom: 5px; text-shadow: 0 1px 6px rgba(0,0,0,0.8); }
+.svc-badge-sep { display: flex; align-items: center; gap: 5px; margin-bottom: 5px; }
+.svc-badge-sep .line { width: 22px; height: 1px; background: rgba(255,255,255,0.35); }
+.svc-badge-sep .dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(200,165,73,0.6); }
+.svc-badge-en { font-family: 'Gowun Batang', Georgia, serif; font-size: 10.5px; font-weight: 500; color: rgba(255,255,255,0.8); letter-spacing: 0.5px; text-shadow: 0 1px 4px rgba(0,0,0,0.7); }
+
+#p5 .svc-rows { display: flex; flex-direction: column; gap: 2px; flex: 1; min-height: 0; }
+#p5 .svc-rows .svc-row { flex: 1; min-height: 0; overflow: hidden; }
+#p5b { background: var(--cream); }
+#p5b .pi { padding: 24px 20px; display: flex; flex-direction: column; height: 100%; box-sizing: border-box; }
+#p5b .svc-rows { display: flex; flex-direction: column; gap: 2px; flex: 1; min-height: 0; }
+#p5b .svc-rows .svc-row { flex: 1; min-height: 0; overflow: hidden; }
+
+/* === P6: Exercise & Custom Therapy === */
+#p6 { background: var(--cream); }
+#p6 .pi { padding: 32px 20px; }
+#p6 .pg-section { flex: 0 0 auto; display: flex; flex-direction: column; min-height: 0; }
+
+/* Dark text band (horizontal) */
+#p6 .pg-text-band {
+  display: flex; flex-direction: column; align-items: center;
+  background: linear-gradient(160deg, #1c1916 0%, #262220 45%, #1e1a17 100%);
+  padding: 24px 20px; gap: 16px; flex-shrink: 0;
+}
+#p6 .pg-band-left { flex: 0 0 auto; text-align: center; min-width: 220px; }
+#p6 .pg-band-label { font-size: 10px; font-weight: 600; letter-spacing: 4px; color: var(--gold); text-transform: uppercase; margin-bottom: 6px; text-shadow: 0 1px 4px rgba(0,0,0,0.7); }
+#p6 .pg-band-title { font-family: 'Arita Buri', serif; font-size: 18px; font-weight: 400; color: #f5f0e8; margin-bottom: 8px; letter-spacing: 0.5px; text-shadow: 0 1px 6px rgba(0,0,0,0.8); }
+#p6 .pg-band-divider { width: 36px; height: 1px; background: var(--gold); margin: 0 auto; }
+#p6 .pg-band-sep { width: 1px; background: rgba(200,165,73,0.25); align-self: stretch; }
+#p6 .pg-band-desc { flex: 1; font-family: 'Gowun Batang', Georgia, serif; font-size: 12.5px; font-weight: 400; color: rgba(255,255,255,0.8); line-height: 1.7; text-shadow: 0 1px 2px rgba(0,0,0,0.35); }
+
+/* Image row (fills remaining space) */
+#p6 .pg-image-row {
+  display: grid; grid-template-columns: 1fr; gap: 2px; height: auto; width: 100%;
+}
+#p6 .pg-card { position: relative; overflow: hidden; min-width: 0; }
+#p6 .pg-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+#p6 .pg-overlay {
+  position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.50) 40%, rgba(0,0,0,0.65) 100%);
+}
+#p6 .pg-badge {
+  position: absolute; inset: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; z-index: 2; pointer-events: none; padding: 10px;
+}
+#p6 .pg-badge-deco { display: flex; align-items: center; gap: 6px; margin-bottom: 5px; }
+#p6 .pg-badge-deco .line { width: 24px; height: 1px; background: rgba(200,165,73,0.5); }
+#p6 .pg-badge-deco .diamond { width: 5px; height: 5px; background: rgba(200,165,73,0.7); transform: rotate(45deg); }
+#p6 .pg-badge-cat { font-size: 9px; font-weight: 600; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 6px; text-shadow: 0 1px 4px rgba(0,0,0,0.7); }
+#p6 .pg-badge-name { font-family: 'Arita Buri', serif; font-size: 17px; font-weight: 400; color: var(--white); margin-bottom: 5px; text-shadow: 0 1px 6px rgba(0,0,0,0.8); }
+#p6 .pg-badge-sep { display: flex; align-items: center; gap: 5px; margin-bottom: 5px; }
+#p6 .pg-badge-sep .line { width: 22px; height: 1px; background: rgba(255,255,255,0.35); }
+#p6 .pg-badge-sep .dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(200,165,73,0.6); }
+#p6 .pg-badge-en { font-family: 'Gowun Batang', Georgia, serif; font-size: 10.5px; font-weight: 500; color: rgba(255,255,255,0.8); letter-spacing: 0.5px; text-shadow: 0 1px 4px rgba(0,0,0,0.7); }
+
+/* === P8: Track Record === */
+#p8 { background: var(--white); }
+#p8 .big-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-bottom: 20px; background: rgba(255,255,255,0.08); }
+#p8 .big-stat {
+  text-align: center; padding: 40px 8px;
+  background: linear-gradient(160deg, #1c1916 0%, #262220 45%, #1e1a17 100%);
+}
+#p8 .big-stat .num { font-family: var(--fh); font-size: 54px; font-weight: 300; color: var(--gold); line-height: 1; margin-bottom: 10px; text-shadow: 0 1px 6px rgba(0,0,0,0.7); }
+#p8 .big-stat .unit { font-size: 13px; color: rgba(255,255,255,0.8); font-weight: 500; letter-spacing: 1.5px; text-shadow: 0 1px 4px rgba(0,0,0,0.7); }
+
+/* 2-column: left text + right logos */
+#p8 .partner-layout { display: flex; flex-direction: column; gap: 0; flex: 1 1 0; min-height: 0; border-top: 1px solid var(--border); overflow: hidden; }
+#p8 .partner-left {
+  flex: 1; padding: 20px 0;
+  border-right: none; border-bottom: 1px solid var(--border);
+  display: flex; flex-direction: column; gap: 14px;
+}
+#p8 .partner-left .partner-label {
+  font-size: 10px; font-weight: 500; letter-spacing: 3px; color: var(--gold);
+  text-transform: uppercase; margin-bottom: 6px;
+}
+#p8 .partner-left .partner-heading {
+  font-family: var(--fh); font-size: 20px; font-weight: 300; color: var(--text);
+  margin-bottom: 20px;
+}
+#p8 .partner-left .partner-group { margin-bottom: 14px; }
+#p8 .partner-left .partner-group-title {
+  font-size: 11px; font-weight: 600; color: var(--text-sub); margin-bottom: 4px;
+}
+#p8 .partner-left .partner-group-body {
+  font-size: 10px; color: var(--text-muted); line-height: 1.7;
+  font-family: 'Gowun Batang', Georgia, serif;
+}
+
+#p8 .partner-right { flex: none; padding: 20px 0; display: flex; flex-direction: column; }
+#p8 .chip-group { margin-bottom: 0; }
+#p8 .chip-group-label {
+  font-size: 9px; font-weight: 600; letter-spacing: 2px; color: var(--text-sub);
+  margin-bottom: 6px;
+}
+#p8 .chip-list { display: flex; flex-wrap: wrap; gap: 5px; }
+#p8 .chip {
+  font-size: 10px; font-weight: 400; color: var(--text-sub);
+  padding: 4px 10px; border: 1px solid var(--border); border-radius: 20px;
+  white-space: nowrap; line-height: 1.3;
+}
+#p8 .logo-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; flex: 1;
+}
+#p8 .logo-cell {
+  background: transparent; overflow: hidden;
+  display: flex; align-items: center; justify-content: center; padding: 3px;
+}
+#p8 .logo-cell img { width: 100%; height: 100%; object-fit: contain; }
+
+
+/* === P9: Reviews === */
+#p9 { background: var(--cream); }
+#p9 .section-header { margin-bottom: 40px; }
+#p9 .review-grid { display: grid; grid-template-columns: 1fr; gap: 8px; }
+#p9 .review-card { padding: 14px 16px; background: var(--white); border-radius: 0; border: 1px solid var(--border); display: flex; flex-direction: column; }
+#p9 .review-stars { color: var(--gold); font-size: 11px; margin-bottom: 8px; letter-spacing: 2px; }
+#p9 .review-text { font-size: 12px; color: var(--text-sub); line-height: 1.7; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid var(--border); font-family: 'Gowun Batang', Georgia, serif; }
+#p9 .review-author { font-size: 10px; color: var(--text); font-weight: 500; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+#p9 .review-author span { font-weight: 400; color: var(--text-muted); }
+#p9 .review-tag {
+  display: inline-block; font-size: 9px; color: #fff !important; background: var(--dark);
+  padding: 2px 8px; font-weight: 500;
+}
+#p9 .satisfaction-row { display: flex; flex-direction: column; gap: 10px; margin-top: 16px; }
+#p9 .sat-card { flex: 1; text-align: center; padding: 28px 12px; background: var(--white); border-radius: 0; border: 1px solid var(--border); }
+#p9 .sat-card .sat-num { font-family: var(--fh); font-size: 40px; font-weight: 300; color: var(--gold); line-height: 1; margin-bottom: 8px; }
+#p9 .sat-card .sat-label { font-size: 13px; color: var(--text-sub); line-height: 1.5; }
+#p9 .sat-card .sat-detail { font-size: 10px; color: var(--text-muted); margin-top: 6px; }
+#p9 .data-source { font-size: 9px; color: var(--text-muted); text-align: right; margin-top: 10px; }
+
+/* P9 Real Feedback section */
+#p9 .feedback-label {
+  font-size: 9px; font-weight: 600; letter-spacing: 2px; color: var(--text-muted);
+  text-align: center; margin: 28px 0 32px; text-transform: uppercase;
+}
+
+/* KakaoTalk Chat UI — Realistic */
+#p9 .kakao-row { display: grid; grid-template-columns: 1fr; gap: 8px; margin-bottom: 10px; align-items: stretch; }
+#p9 .kakao-row > div { display: flex; flex-direction: column; }
+#p9 .kakao-chat {
+  background: #b2c7d9; border-radius: 0; padding: 10px 10px 8px; overflow: hidden;
+  display: flex; flex-direction: column; flex: 1;
+  font-family: 'Pretendard Variable', -apple-system, 'Apple SD Gothic Neo', sans-serif;
+}
+#p9 .kakao-msg {
+  display: flex; gap: 6px; margin-bottom: 4px; align-items: flex-start;
+}
+#p9 .kakao-avatar {
+  width: 28px; height: 28px; border-radius: 8px; flex-shrink: 0;
+  overflow: hidden; background: #ddd;
+}
+#p9 .kakao-avatar img { width: 100%; height: 100%; object-fit: cover; }
+#p9 .kakao-avatar-placeholder {
+  width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
+  font-size: 14px; background: linear-gradient(135deg, #8b9dc3 0%, #6b7fa3 100%); color: #fff;
+}
+#p9 .kakao-body { flex: 1; min-width: 0; }
+#p9 .kakao-name {
+  font-size: 8.5px; font-weight: 600; color: #333; margin-bottom: 3px; line-height: 1;
+}
+#p9 .kakao-bubble-wrap {
+  display: flex; align-items: flex-end; gap: 3px; margin-bottom: 3px;
+}
+#p9 .kakao-bubble {
+  position: relative; background: #fff; border-radius: 0 8px 8px 8px;
+  padding: 5px 8px; font-size: 9.5px; line-height: 1.5; color: #333;
+  word-break: keep-all; max-width: 90%;
+}
+#p9 .kakao-bubble::before {
+  content: ''; position: absolute; top: 0; left: -5px;
+  width: 0; height: 0;
+  border-top: 0 solid transparent;
+  border-right: 6px solid #fff;
+  border-bottom: 6px solid transparent;
+}
+#p9 .kakao-bubble-cont {
+  display: flex; align-items: flex-end; gap: 3px; margin-bottom: 3px;
+  padding-left: 34px;
+}
+#p9 .kakao-bubble-cont .kakao-bubble { border-radius: 8px; }
+#p9 .kakao-bubble-cont .kakao-bubble::before { display: none; }
+#p9 .kakao-time {
+  font-size: 7px; color: rgba(0,0,0,0.55); white-space: nowrap; flex-shrink: 0;
+  line-height: 1; padding-bottom: 1px;
+}
+#p9 .kakao-from { display: none; }
+#p9 .kakao-title {
+  font-size: 8px; font-weight: 600; color: var(--text-muted); letter-spacing: 0.5px;
+  margin-bottom: 6px; font-family: 'Pretendard Variable', sans-serif;
+}
+
+/* Survey Form UI */
+#p9 .survey-row { display: grid; grid-template-columns: 1fr; gap: 8px; }
+#p9 .survey-card {
+  background: #fff; border: 1px solid #d5d0c8; border-radius: 0; padding: 12px 14px;
+  position: relative; overflow: hidden;
+}
+#p9 .survey-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: var(--gold);
+}
+#p9 .survey-q {
+  font-size: 9.5px; font-weight: 600; color: var(--text); line-height: 1.5;
+  margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid #eee;
+}
+#p9 .survey-answer { margin-bottom: 8px; }
+#p9 .survey-score {
+  font-family: 'Nanum Pen Script', cursive; font-size: 28px; color: #333;
+  font-weight: 400; display: inline-block;
+  padding: 0 12px 2px; line-height: 1;
+}
+#p9 .survey-checks { display: flex; gap: 16px; }
+#p9 .survey-check {
+  display: flex; align-items: center; gap: 4px; font-size: 10px; color: var(--text-sub);
+}
+#p9 .survey-check .box {
+  width: 13px; height: 13px; border: 1.5px solid #888; display: inline-flex;
+  align-items: center; justify-content: center; font-size: 10px; color: var(--gold-dark);
+}
+#p9 .survey-check .box.checked { border-color: var(--gold-dark); font-weight: 700; }
+#p9 .survey-comment-label { font-size: 8px; color: var(--text-muted); margin-bottom: 4px; }
+#p9 .survey-comment {
+  font-size: 14px; color: #444; line-height: 1.5;
+}
+#p9 .survey-card:nth-child(1) .survey-comment,
+#p9 .survey-card:nth-child(1) .survey-score { font-family: 'Nanum Pen Script', cursive; font-size: 15px; }
+#p9 .survey-card:nth-child(2) .survey-comment,
+#p9 .survey-card:nth-child(2) .survey-score { font-family: 'Hi Melody', cursive; font-size: 13px; letter-spacing: -0.5px; }
+#p9 .survey-card:nth-child(3) .survey-comment,
+#p9 .survey-card:nth-child(3) .survey-score { font-family: 'Gaegu', cursive; font-size: 16px; letter-spacing: -2px; }
+
+#p9 .closing-quote {
+  text-align: center; margin-top: 24px; padding: 20px 0 0;
+}
+#p9 .closing-quote .cq-highlight {
+  font-family: 'Arita Buri', Georgia, serif; font-size: 15px; font-weight: 300;
+  color: var(--gold-dark); letter-spacing: 0.5px; margin-bottom: 6px;
+}
+#p9 .closing-quote .cq-main {
+  font-size: 16px; font-weight: 300; color: var(--text);
+  line-height: 1.7; letter-spacing: -0.02em;
+}
+#p9 .closing-quote .cq-brand {
+  font-weight: 500; color: var(--gold-dark);
+}
+
+/* === P10: Pricing === */
+#p10 { background: var(--white); }
+#p10 .pi { padding: 32px 16px; }
+#p10 .price-table { width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 13px; }
+#p10 .price-table thead th {
+  background: var(--dark); color: var(--white); font-weight: 500;
+  padding: 12px 10px; text-align: center; font-size: 12px;
+}
+#p10 .price-table thead th:first-child { text-align: left; }
+#p10 .price-table thead th:last-child { }
+#p10 .price-table tbody td {
+  padding: 14px 10px; text-align: center; border-bottom: 1px solid var(--border);
+  color: var(--text-sub); font-size: 13px;
+}
+#p10 .price-table tbody td:first-child { text-align: left; font-weight: 500; color: var(--text); font-size: 13px; }
+#p10 .price-table tbody tr:last-child td { border-bottom: 2px solid var(--gold); }
+#p10 .price-table .cat-header { font-size: 10px; color: var(--gold-dark); font-weight: 600; letter-spacing: 0.05em; }
+#p10 .price-table .time-col { font-size: 11px; color: var(--text-muted); }
+#p10 .price-notes { font-size: 11px; color: var(--text-muted); line-height: 1.8; margin-bottom: 24px; padding-left: 12px; font-family: 'Gowun Batang', Georgia, serif; }
+#p10 .recommend-label { font-size: 11px; font-weight: 300; color: var(--text); margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+#p10 .recommend-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+#p10 .recommend-row { display: flex; flex-direction: column; gap: 0; flex: 1; border-top: 1px solid var(--border); }
+#p10 .rec-card {
+  flex: 1; padding: 20px 20px 18px; text-align: left;
+  display: flex; flex-direction: column;
+  border-right: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  position: relative;
+}
+#p10 .rec-card:first-child { border-left: 1px solid var(--border); }
+#p10 .rec-card.featured { border-top: 2px solid var(--gold); margin-top: -1px; }
+#p10 .rec-badge {
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--gold); color: #fff;
+  font-family: 'Inter Tight', sans-serif; font-size: 11px; font-weight: 600;
+  padding: 3px 18px; border-radius: 0; letter-spacing: 0.08em;
+  position: absolute; top: -10px; left: 50%; transform: translateX(-50%);
+}
+#p10 .rec-name { font-family: 'Inter Tight', sans-serif; font-size: 18px; font-weight: 600; color: var(--text); margin-bottom: 8px; }
+#p10 .rec-desc { font-size: 11px; color: var(--text-muted); line-height: 1.5; }
+#p10 .rec-top { min-height: 80px; display: flex; flex-direction: column; }
+#p10 .rec-price { font-size: 13px; font-weight: 600; color: var(--text); margin-top: auto; padding-top: 8px; }
+#p10 .rec-price span { font-size: 10px; font-weight: 400; color: var(--text-muted); }
+#p10 .rec-features { list-style: none; padding: 0; margin: 0; border-top: 1px solid #eee; padding-top: 12px; margin-top: 12px; }
+#p10 .rec-features li {
+  font-size: 10.5px; color: var(--text-sub); line-height: 1.4; padding: 3px 0;
+  padding-left: 12px; position: relative;
+}
+#p10 .rec-features li::before {
+  content: '·'; position: absolute; left: 0; color: var(--text-muted);
+}
+
+
+/* === P7: Portfolio === */
+#p7 { background: var(--dark); }
+#p7 .pi { padding: 20px 12px; }
+#p7 .section-header { margin-bottom: 12px; }
+#p7 .pf-cat { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+#p7 .pf-cat-label {
+  font-size: 9px; font-weight: 600; letter-spacing: 3px; color: var(--gold);
+  text-transform: uppercase; white-space: nowrap;
+}
+#p7 .pf-cat-line { flex: 1; height: 1px; background: rgba(200,165,73,0.25); }
+#p7 .pf-bento {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 90px; gap: 2px; margin-bottom: 10px;
+}
+#p7 .pf-bento .pf-hero { grid-column: span 2; grid-row: span 2; }
+#p7 .pf-flat {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 90px; gap: 2px;
+}
+#p7 .pf-card { position: relative; overflow: hidden; }
+#p7 .pf-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+#p7 .pf-card-ov {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.1) 45%, transparent 65%);
+}
+#p7 .pf-card-info { position: absolute; bottom: 0; left: 0; right: 0; padding: 5px 7px; }
+#p7 .pf-card-yr {
+  font-size: 9px; font-weight: 600; letter-spacing: 0.1em;
+  color: #fff; display: block; line-height: 1;
+  font-family: var(--fh); margin-bottom: 2px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+}
+#p7 .pf-card-cl {
+  font-size: 10px; font-weight: 500; color: #fff; display: block;
+  line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+}
+#p7 .pf-hero .pf-card-info { padding: 10px 14px; }
+#p7 .pf-hero .pf-card-yr { font-size: 11px; margin-bottom: 3px; font-weight: 600; }
+#p7 .pf-hero .pf-card-cl { font-size: 15px; font-weight: 500; white-space: normal; }
+#p7 .pf-hero .pf-card-desc {
+  font-size: 10px; color: rgba(255,255,255,0.8); margin-top: 2px;
+  display: block; font-family: 'Gowun Batang', Georgia, serif;
+}
+
+/* ========================================= */
+/* Mobile Responsive (browser only, not PDF) */
+/* ========================================= */
+@media screen and (max-width: 768px) {
+  body { background: var(--cream); }
+
+  /* Mobile/Desktop conditional line breaks */
+  br.d { display: none; }
+  br.m { display: inline; }
+
+  /* Page: full-width flow instead of fixed A4 */
+  .page {
+    width: 100%; height: auto; overflow: visible;
+    margin: 0; box-shadow: none;
+    border-bottom: 1px solid var(--border);
+  }
+  .page:last-child { border-bottom: none; }
+  .pi { padding: 32px 20px; }
+
+  /* Typography scale down */
+  .section-header { margin-bottom: 28px; }
+  .section-header .st { font-size: 24px; }
+  .section-header .sh-sub { font-size: 13px; }
+
+  /* P1: Cover — full viewport hero, centered */
+  #p1 { min-height: 100vh; overflow: hidden; position: relative; }
+  #p1 .cover-bg { position: absolute; inset: 0; }
+  #p1 .cover-content { padding: 0 24px; min-height: 100vh; }
+  #p1 .cover-logo { width: 90px; margin-bottom: 20px; }
+  #p1 .cover-title { font-size: 26px; letter-spacing: 0.12em; }
+  #p1 .cover-sub { font-size: 14px; }
+  #p1 .cover-year { bottom: 20px; right: 24px; font-size: 12px; }
+
+  /* P2: News grid — top 3 only, color images */
+  #p2 .section-header .st { font-size: 22px; }
+  #p2 .news-grid {
+    grid-template-columns: 1fr; grid-template-rows: auto;
+    row-gap: 12px; padding: 0;
+  }
+  #p2 .news-card { flex-direction: column; }
+  #p2 .news-card img { height: 140px; flex: none; opacity: 1; filter: none; }
+  #p2 .news-body { flex: none; padding: 16px; }
+  #p2 .news-title { font-size: 15px; }
+  #p2 .news-hide-mobile { display: none; }
+
+  /* P3: About — stack cards */
+  #p3 .intro-text { font-size: 14px; padding-left: 14px; line-height: 1.4; word-break: keep-all; }
+  #p3 .intro-company { font-size: 18px; display: block; margin-bottom: 12px; }
+  #p3 .intro-text .ip { display: block; margin-bottom: 12px; }
+  #p3 .intro-text .ip:last-child { margin-bottom: 0; }
+  #p3 .track-row { flex-direction: column; gap: 12px; margin-bottom: 20px; }
+  #p3 .track-card { width: 100%; }
+  #p3 .track-card img { height: 180px; }
+  #p3 .why-card { flex-direction: column; }
+  #p3 .why-thumb { width: 100%; height: 160px; }
+  #p3 .why-body { padding: 14px 16px; }
+  #p3 .why-num { font-size: 36px; }
+  #p3 .why-title { font-size: 16px; }
+  #p3 .why-desc { font-size: 13px; word-break: keep-all; text-wrap: balance; }
+
+  /* P4: Therapist — single column */
+  #p4 .therapist-top { grid-template-columns: 1fr; gap: 20px; }
+  #p4 .therapist-name { font-size: 24px; }
+  #p4 .therapist-photo { height: 250px; }
+  #p4 .exp-title { font-size: 18px; }
+  #p4 .activity-strip { flex-wrap: wrap; gap: 4px; min-height: auto; }
+  #p4 .activity-strip .act-card { flex: 1 1 45%; height: 140px; }
+
+  /* P5: Body Therapy */
+  #p5 .pg-text-band { flex-direction: column; padding: 24px 20px; gap: 16px; }
+  #p5 .pg-band-left { min-width: 0; }
+  #p5 .pg-band-sep { width: 100%; height: 1px; }
+  #p5 .pg-grid { grid-template-columns: 1fr 1fr; height: auto; gap: 4px; }
+  #p5 .pg-card { height: 200px; }
+
+  /* P6: Exercise & Custom */
+  #p6 .pg-text-band { flex-direction: column; padding: 24px 20px; gap: 16px; }
+  #p6 .pg-band-left { min-width: 0; }
+  #p6 .pg-band-sep { width: 100%; height: 1px; }
+  #p6 .pg-image-row { grid-template-columns: 1fr; height: auto; }
+  #p6 .pg-card { height: 200px; }
+
+  /* P8: Track Record */
+  #p8 .big-stats { grid-template-columns: 1fr 1fr; }
+  #p8 .big-stat { padding: 24px 8px; }
+  #p8 .big-stat .num { font-size: 36px; }
+  #p8 .big-stat .unit { font-size: 11px; }
+  #p8 .partner-layout { flex-direction: column; }
+  #p8 .partner-left { border-right: none; border-bottom: 1px solid var(--border); padding: 20px 0; }
+  #p8 .partner-right { flex: none; padding: 20px 0; }
+  #p8 .logo-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+
+  /* P9: Reviews */
+  #p9 .review-grid { grid-template-columns: 1fr; gap: 10px; }
+  #p9 .kakao-row { grid-template-columns: 1fr; gap: 12px; }
+  #p9 .survey-row { grid-template-columns: 1fr; gap: 12px; }
+  #p9 .satisfaction-row { flex-direction: column; gap: 10px; }
+  #p9 .sat-card { padding: 20px 12px; }
+  #p9 .sat-card .sat-num { font-size: 32px; }
+
+  /* P10: Pricing */
+  #p10 .pi { padding: 32px 16px; }
+  #p10 .price-table { font-size: 11px; }
+  #p10 .price-table thead th { padding: 10px 6px; font-size: 10px; }
+  #p10 .price-table tbody td { padding: 10px 6px; font-size: 11px; }
+  #p10 .recommend-row { flex-direction: column; }
+  #p10 .rec-card { border-left: 1px solid var(--border); }
+  #p10 .rec-card.featured { margin-top: 0; }
+
+  /* P11: Thank You — centered */
+  #p11 { min-height: 60vh; }
+  #p11 .thankyou-content { padding: 60px 24px; min-height: 60vh; }
+  #p11 .thankyou-main { font-size: 28px; }
+  #p11 .thankyou-phone { font-size: 18px; }
+
+  /* P7: Portfolio */
+  #p7 .pi { padding: 20px 12px; }
+  #p7 .pf-bento { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 110px; }
+  #p7 .pf-bento .pf-hero { grid-column: span 1; grid-row: span 1; }
+  #p7 .pf-flat { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 110px; }
+  #p7 .pf-hero .pf-card-cl { font-size: 11px; }
+  #p7 .pf-hero .pf-card-desc { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================ -->
+<div class="page" id="p1">
+  <div class="cover-bg">
+    <img src="images/hero/sub_vis02.jpg" alt="">
+    <div class="cover-overlay"></div>
+  </div>
+  <div class="cover-content">
+    <svg class="cover-logo" viewBox="0 0 144.9 35.9" xmlns="http://www.w3.org/2000/svg">
+      <g><g><g>
+        <path fill="#fff" d="M50.4,18.8c0,2.1.5,4.2,1.9,6.1h-1.3c-1.4-1.6-2-3.7-2-6.2v-.6c0-2.5.7-4.5,2-6.2h1.3c-1.3,1.8-1.9,3.9-1.9,6.1V18.8z"/>
+        <path fill="#fff" d="M58.2,24.5v-4.3h-5.1V19h11.6v1.2h-5.1v4.3H58.2z M58.9,15.6L58.9,15.6c-.2.3-.6.7-1.5,1.1-.7.4-1.7.8-2.8,1.3L54,16.9c1-.4,2-.8,2.9-1.3,1.1-.6,1.3-1.2,1.3-1.9h-3.6v-1.2h8.7v1.2h-3.7c0,.7.2,1.3,1.3,1.9.9.5,1.9.9,2.9,1.3L63.3,18c-1.1-.4-2.1-.9-2.8-1.3C59.5,16.3,59.1,15.9,58.9,15.6z"/>
+        <path fill="#fff" d="M67.4,18.1c0-2.2-.5-4.3-1.9-6.1h1.3c1.4,1.6,2,3.7,2,6.2v.6c0,2.5-.7,4.6-2,6.2h-1.3c1.4-1.9,1.9-4,1.9-6.1V18.1z"/>
+        <path fill="#fff" d="M77,16.4v1.4c0,2.4-1.3,3.7-3.2,3.7-1.9,0-3.2-1.2-3.2-3.7v-1.4c0-2.4,1.3-3.7,3.2-3.7C75.7,12.7,77,13.9,77,16.4z M75.7,17.6v-1c0-1.9-.9-2.6-1.9-2.6-1,0-1.9.7-1.9,2.6v1c0,1.9.9,2.6,1.9,2.6C74.8,20.2,75.7,19.5,75.7,17.6z M82.1,17.6h-2v6.9h-1.4V11.8h1.4v4.6h2V17.6z"/>
+        <path fill="#fff" d="M87.9,24.5v-4.2h-5.1v-1.2h11.6v1.2h-5.1v4.2H87.9z M92.8,14.8v.5c0,1.6-1.7,2.7-4.3,2.7-2.6,0-4.3-1.1-4.3-2.7v-.5c0-1.6,1.7-2.7,4.3-2.7C91.2,12.1,92.8,13.2,92.8,14.8z M91.5,15.3v-.4c0-.9-1.2-1.6-2.9-1.6s-2.9.6-2.9,1.6v.4c0,.9,1.2,1.6,2.9,1.6S91.5,16.2,91.5,15.3z"/>
+        <path fill="#fff" d="M106.9,18.4v1.1H95.3v-1.1H106.9z M96.9,17.6v-3.2h6.9v-1h-7v-1.1h8.3v3.2h-6.9v1h7.1v1.1H96.9z M105.2,24.5h-8.3v-4h8.3V24.5z M103.9,21.6h-5.6v1.8h5.6V21.6z"/>
+        <path fill="#fff" d="M114.4,17.4c-.7.1-1.6.1-2.5.2v1.7h-1.7v-1.7c-.8,0-1.6,0-2.5,0v-1.3c2.8,0,4.7,0,6.6-.2L114.4,17.4z M108.3,14.2v-.4c0-1.2,1.3-1.8,2.8-1.8s2.8.7,2.8,1.8v.4c0,1.2-1.3,1.8-2.8,1.8S108.3,15.3,108.3,14.2z M109.8,13.9v.1c0,.5.6.7,1.3.7.6,0,1.3-.2,1.3-.7v-.1c0-.5-.6-.7-1.3-.7C110.5,13.2,109.8,13.4,109.8,13.9z M118.9,19.7v3.1h-6.9v.6h7.2v1.3h-8.9v-3.1h6.9V21h-6.9v-1.3H118.9z M116.6,19.3H115v-.2h-2v-1.2h2v-5.9h1.6V19.3z M118.9,19.3h-1.6v-7.6h1.6V19.3z"/>
+        <path fill="#fff" d="M123,19.7h.9c1.3,0,2.9-.1,4.2-.3l.2,1.5c-1.3.2-3.2.3-4.8.3h-2.3v-8.4h1.8V19.7z M131,24.6h-1.7V11.8h1.7V24.6z"/>
+        <path fill="#fff" d="M144.5,21.5V23h-11.7v-1.5H144.5z M138.7,16.8c-.1.3-.6.7-1.3,1.1-.7.5-1.7,1.1-3,1.8l-.9-1.4c1-.6,2.1-1.2,2.9-1.8,1.1-.7,1.4-1.4,1.4-2.6v-1.4h1.8V14c0,1.2.3,1.9,1.4,2.6.8.5,1.9,1.2,2.9,1.8l-.8,1.3c-1.3-.7-2.3-1.3-3-1.8C139.3,17.5,138.8,17.1,138.7,16.8L138.7,16.8z"/>
+      </g></g></g>
+      <g><g><g>
+        <path fill="#fff" d="M6.6,5.5C5.3,6.1,4.9,6.9,3.8,7.7,5.3,8.1,6.1,6.1,8,5.6,7.5,5.6,7.1,5.7,6.6,5.5z"/>
+        <path fill="#fff" d="M5.5,4.7C3.5,5.9,2.9,7.1,1.6,8c1.6.5,2.8-1.9,4.6-2.8C5.9,5.2,5.7,4.9,5.5,4.7z"/>
+        <path fill="#fff" d="M2.3,6.7c2.4-2.7,6.3-4.9,10-4.7C9.9,2.7,7.9,4.4,5.8,4.5c1.2,1.4,2.7.5,4,0,1.8-.6,3.6.4,5.5,1.4l0,0c0,0,.3.2,1,.5.8.3,2,.7,4,1,2.3.4,5.5.9,10,.9,0,0-5.1,0-9.3-3.8-.8-.7-1.6-1.6-2.9-2.8S14.8-.1,12.6,0C8,.2,2.8,3.5,0,7.9.9,8.1,1.7,7.4,2.3,6.7z"/>
+      </g>
+      <path fill="#fff" d="M21,1.5c0,0,3.7.1,7.2,2.6s6.3,4.2,11.5,4c0,0-7.2.6-12.3-1.8C24.2,4.8,22.4,2.2,21,1.5z"/>
+      </g>
+      <g><g>
+        <path fill="#fff" d="M33.1,30.4c1.3-.6,1.7-1.4,2.9-2.2-1.5-.4-2.3,1.6-4.2,2.2C32.2,30.2,32.7,30.2,33.1,30.4z"/>
+        <path fill="#fff" d="M34.3,31.2c2-1.2,2.5-2.4,3.8-3.4-1.6-.5-2.8,1.9-4.6,2.8C33.8,30.7,34.1,31,34.3,31.2z"/>
+        <path fill="#fff" d="M37.5,29.1c-2.4,2.7-6.3,4.9-10,4.7,2.3-.7,4.3-2.4,6.4-2.5-1.2-1.4-2.7-.5-4,0-1.8.6-3.6-.4-5.5-1.4l0,0c0,0-.3-.2-1-.5-.8-.3-2-.7-4-1-2.3-.4-5.5-.9-10-.9,0,0,5.1,0,9.3,3.8.8.7,1.6,1.6,2.9,2.8,1.4,1.2,3.3,1.7,5.5,1.6,4.6-.2,9.8-3.5,12.6-7.9C38.8,27.7,38.1,28.5,37.5,29.1z"/>
+      </g>
+      <path fill="#fff" d="M18.8,34.4c0,0-3.7-.1-7.2-2.6s-6.3-4.2-11.5-4c0,0,7.2-.6,12.3,1.8C15.5,31.1,17.3,33.6,18.8,34.4z"/>
+      </g></g>
+      <g><g>
+        <path fill="#fff" d="M10.6,18.5H9.5c-.1,0-.2,0-.3-.1-.1-.1-.1-.1-.2-.2l-.4-1H6.4l-.4,1c0,.1-.1.1-.2.2-.1.1-.2.1-.3.1H4.5l2.3-6h1.4L10.6,18.5z M6.7,16.2h1.6l-.6-1.6c0-.1-.1-.2-.1-.4,0-.1-.1-.3-.1-.5,0,.2-.1.3-.1.5,0,.1-.1.3-.1.4L6.7,16.2z"/>
+        <path fill="#fff" d="M13.3,17.4c.2,0,.4,0,.5-.1s.3-.2.4-.3c.1-.1.2-.3.2-.4.1-.2.1-.4.1-.6v-3.6h1.4V16c0,.4-.1.7-.2,1-.1.3-.3.6-.5.8-.2.2-.5.4-.8.5-.3.1-.7.2-1.1.2-.4,0-.8-.1-1.1-.2-.3-.1-.6-.3-.8-.5-.2-.2-.4-.5-.5-.8-.1-.3-.2-.6-.2-1v-3.6h1.4V16c0,.2,0,.4.1.6s.1.3.2.4c.1.1.2.2.4.3S13.2,17.4,13.3,17.4z"/>
+        <path fill="#fff" d="M18.2,16.2v2.2h-1.4v-6h2c.4,0,.8,0,1.1.1.3.1.6.2.8.4.2.2.3.3.4.6s.1.5.1.7c0,.2,0,.4-.1.6-.1.2-.1.3-.2.5-.1.1-.2.3-.4.4-.2.1-.3.2-.5.3.1,0,.2.1.3.2s.2.2.2.3l1.3,2.1h-1.3c-.2,0-.4-.1-.5-.3l-1-1.7c0-.1-.1-.1-.2-.2-.1,0-.1,0-.2,0H18.2z M18.2,15.3h.6c.2,0,.4,0,.5-.1.1,0,.2-.1.3-.2s.1-.2.2-.3c0-.1.1-.2.1-.4,0-.3-.1-.5-.3-.6-.2-.1-.4-.2-.8-.2h-.6V15.3z"/>
+        <path fill="#fff" d="M24.5,17.4c.2,0,.4,0,.5-.1s.3-.2.4-.3c.1-.1.2-.3.2-.4.1-.2.1-.4.1-.6v-3.6h1.4V16c0,.4-.1.7-.2,1-.1.3-.3.6-.5.8-.2.2-.5.4-.8.5-.3.1-.7.2-1.1.2-.4,0-.8-.1-1.1-.2-.3-.1-.6-.3-.8-.5-.2-.2-.4-.5-.5-.8C22,16.7,22,16.4,22,16v-3.6h1.4V16c0,.2,0,.4.1.6s.1.3.2.4c.1.1.2.2.4.3S24.4,17.4,24.5,17.4z"/>
+        <path fill="#fff" d="M31.3,16c.1.1.1.2.1.3,0-.1.1-.2.1-.4.1-.1.1-.2.2-.3l1.5-3c0-.1.1-.1.1-.1,0,0,.1-.1.1-.1,0,0,.1,0,.1,0s.1,0,.2,0h1.1v6h-1.2V15c0-.2,0-.3,0-.5L32,17.6c0,.1-.1.2-.2.2-.1,0-.2.1-.3.1h-.2c-.1,0-.2,0-.3-.1-.1,0-.2-.1-.2-.2l-1.6-3.1c0,.1,0,.2,0,.3,0,.1,0,.2,0,.3v3.4H28v-6h1.1c.1,0,.1,0,.2,0,0,0,.1,0,.1,0,0,0,.1,0,.1.1,0,0,.1.1.1.1l1.5,3C31.2,15.8,31.2,15.9,31.3,16z"/>
+      </g>
+      <g>
+        <path fill="#fff" d="M11.2,21.7h.3c0,0,.1,0,.1,0s0,0,0,.1l.5,1.6c0,.1,0,.1,0,.2,0,.1,0,.1,0,.2,0-.1,0-.1,0-.2,0-.1,0-.1.1-.2l.5-1.6c0,0,0,0,0-.1,0,0,0,0,.1,0h.2c0,0,.1,0,.1,0,0,0,0,0,0,.1l.5,1.6c0,.1,0,.1,0,.2s0,.1,0,.2c0-.1,0-.1,0-.2,0-.1,0-.1,0-.2l.5-1.6c0,0,0,0,0-.1,0,0,0,0,.1,0h.3l-.8,2.5h-.3c0,0-.1,0-.1-.1l-.5-1.7c0,0,0-.1,0-.1,0,0,0-.1,0-.1,0,0,0,.1,0,.1,0,0,0,.1,0,.1l-.5,1.7c0,.1-.1.1-.1.1H12L11.2,21.7z"/>
+        <path fill="#fff" d="M16.1,21.7c.1,0,.3,0,.4.1.1,0,.2.1.3.2.1.1.2.2.2.3.1.1.1.3.1.5,0,.1,0,.1,0,.1s0,0-.1,0h-1.6c0,.2,0,.3.1.4,0,.1.1.2.2.3.1.1.1.1.2.2.1,0,.2.1.3.1.1,0,.2,0,.3,0,.1,0,.1-.1.2-.1.1,0,.1-.1.1-.1,0,0,.1,0,.1,0,0,0,.1,0,.1,0l.1.2c-.1.1-.1.1-.2.2-.1,0-.2.1-.2.1-.1,0-.2.1-.3.1-.1,0-.2,0-.3,0-.2,0-.3,0-.5-.1-.1-.1-.3-.1-.4-.3s-.2-.2-.2-.4C15,23.3,15,23.1,15,22.9c0-.2,0-.3.1-.5.1-.1.1-.3.2-.4s.2-.2.4-.3C15.8,21.7,15.9,21.7,16.1,21.7z M16.1,22c-.2,0-.4.1-.5.2-.1.1-.2.3-.2.5h1.3c0-.1,0-.2,0-.3s-.1-.2-.1-.2c-.1-.1-.1-.1-.2-.1C16.3,22,16.2,22,16.1,22z"/>
+        <path fill="#fff" d="M18.1,20.6v3.6h-.4v-3.6H18.1z"/>
+        <path fill="#fff" d="M19.2,20.6v3.6h-.4v-3.6H19.2z"/>
+        <path fill="#fff" d="M19.9,24.2v-2.5h.3c.1,0,.1,0,.1.1l0,.3c.1-.1.2-.2.4-.3.1-.1.3-.1.5-.1.1,0,.3,0,.4.1s.2.1.3.2c.1.1.1.2.2.3,0,.1.1.2.1.4v1.6h-.4v-1.6c0-.2,0-.3-.1-.4C21.3,22.1,21.1,22,21,22c-.1,0-.2,0-.4.1s-.2.1-.3.2v1.8H19.9z"/>
+        <path fill="#fff" d="M23.4,21.7c.1,0,.3,0,.4.1.1,0,.2.1.3.2.1.1.2.2.2.3.1.1.1.3.1.5,0,.1,0,.1,0,.1s0,0-.1,0h-1.6c0,.2,0,.3.1.4,0,.1.1.2.2.3.1.1.1.1.2.2.1,0,.2.1.3.1.1,0,.2,0,.3,0,.1,0,.1-.1.2-.1.1,0,.1-.1.1-.1,0,0,.1,0,.1,0,0,0,.1,0,.1,0l.1.2c-.1.1-.1.1-.2.2-.1,0-.2.1-.2.1-.1,0-.2.1-.3.1-.1,0-.2,0-.3,0-.2,0-.3,0-.5-.1-.1-.1-.3-.1-.4-.3s-.2-.2-.2-.4c-.1-.2-.1-.4-.1-.6,0-.2,0-.3.1-.5.1-.1.1-.3.2-.4s.2-.2.4-.3C23.1,21.7,23.3,21.7,23.4,21.7z M23.5,22c-.2,0-.4.1-.5.2-.1.1-.2.3-.2.5h1.3c0-.1,0-.2,0-.3s-.1-.2-.1-.2c-.1-.1-.1-.1-.2-.1C23.6,22,23.6,22,23.5,22z"/>
+        <path fill="#fff" d="M26.3,22.1C26.3,22.2,26.3,22.2,26.3,22.1c-.1.1-.1,0-.2,0s-.1,0-.1-.1c0,0-.1,0-.2-.1s-.1,0-.2,0c-.1,0-.1,0-.2,0-.1,0-.1,0-.1.1s-.1.1-.1.1c0,0,0,.1,0,.1,0,.1,0,.1.1.2,0,0,.1.1.1.1.1,0,.1.1.2.1.1,0,.2,0,.2.1.1,0,.2.1.2.1.1,0,.1.1.2.1.1,0,.1.1.1.2,0,.1.1.2.1.3,0,.1,0,.2-.1.3,0,.1-.1.2-.2.2s-.2.1-.3.2c-.1,0-.2.1-.4.1-.2,0-.3,0-.5-.1s-.3-.1-.4-.2l.1-.2c0,0,0,0,0,0,0,0,0,0,.1,0s.1,0,.1,0s.1,0,.1.1s.1.1.2.1c.1,0,.1,0,.2,0,.1,0,.2,0,.2,0,.1,0,.1-.1.2-.1s.1-.1.1-.1c0,0,0-.1,0-.2,0-.1,0-.1-.1-.2,0,0-.1-.1-.1-.1-.1,0-.1-.1-.2-.1-.1,0-.2,0-.2-.1-.1,0-.2-.1-.2-.1-.1,0-.1-.1-.2-.1-.1,0-.1-.1-.1-.2,0-.1-.1-.2-.1-.3,0-.1,0-.2.1-.3,0-.1.1-.2.2-.2s.2-.1.3-.2c.1,0,.2-.1.4-.1.2,0,.3,0,.4.1.1.1.2.1.3.2L26.3,22.1z"/>
+        <path fill="#fff" d="M28.3,22.1C28.3,22.2,28.3,22.2,28.3,22.1c-.1.1-.1,0-.2,0s-.1,0-.1-.1c0,0-.1,0-.2-.1s-.1,0-.2,0c-.1,0-.1,0-.2,0-.1,0-.1,0-.1.1s-.1.1-.1.1c0,0,0,.1,0,.1,0,.1,0,.1.1.2,0,0,.1.1.1.1.1,0,.1.1.2.1.1,0,.2,0,.2.1.1,0,.2.1.2.1.1,0,.1.1.2.1.1,0,.1.1.1.2,0,.1.1.2.1.3,0,.1,0,.2-.1.3,0,.1-.1.2-.2.2s-.2.1-.3.2c-.1,0-.2.1-.4.1-.2,0-.3,0-.5-.1s-.3-.1-.4-.2l.1-.2c0,0,0,0,0,0,0,0,0,0,.1,0s.1,0,.1,0s.1,0,.1.1s.1.1.2.1c.1,0,.1,0,.2,0,.1,0,.2,0,.2,0,.1,0,.1-.1.2-.1s.1-.1.1-.1c0,0,0-.1,0-.2,0-.1,0-.1-.1-.2,0,0-.1-.1-.1-.1-.1,0-.1-.1-.2-.1-.1,0-.2,0-.2-.1-.1,0-.2-.1-.2-.1-.1,0-.1-.1-.2-.1-.1,0-.1-.1-.1-.2,0-.1-.1-.2-.1-.3,0-.1,0-.2.1-.3,0-.1.1-.2.2-.2s.2-.1.3-.2c.1,0,.2-.1.4-.1.2,0,.3,0,.4.1.1.1.2.1.3.2L28.3,22.1z"/>
+      </g></g>
+    </svg>
+    <div class="cover-title">AURUM WELLNESS<br>SERVICE</div>
+    <div class="cover-line"></div>
+    <div class="cover-sub">아우름 웰니스 서비스 제안서</div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<div class="page light-page" id="p3">
+  <div class="pi">
+    <div class="section-header">
+      <div class="sl">ABOUT US</div>
+      <div class="sh-line"></div>
+      <div class="st">마사지를 넘어,<br>피지컬 케어와 힐링 프로그램으로</div>
+    </div>
+    <div class="intro-text">
+      <span class="intro-company">아우름웰니스는</span>
+      <span class="ip">마사지 테라피스트, 체형교정 전문가, 요가·필라테스 강사 등 피지컬 케어와 웰니스 분야의 전문가들이</span>
+      <span class="ip">맞춤형 테라피 서비스를 제공하는 <span class="intro-highlight">B2B 종합복지서비스 전문업체</span>입니다. 기업의 니즈에 맞춰 찾아가는 서비스로, 임직원 건강과 웰니스를 책임집니다.</span>
+    </div>
+
+    <div class="track-row">
+      <div class="track-card">
+        <img src="images/b2b/sub0201_3.jpg" alt="기업 복지 서비스">
+        <div class="track-body">
+          <div class="track-title">기업 임직원 복지 서비스</div>
+          <div class="track-desc">
+            정기적 사내 피지컬 케어, 체형교정 프로그램, 힐링 테라피 등
+            임직원의 건강과 업무 효율을 동시에 높이는 맞춤 복지를 제공합니다.
+          </div>
+          <div class="track-tags">
+            <span class="tag">체어 테라피</span>
+            <span class="tag">핸드 테라피</span>
+            <span class="tag">체형교정</span>
+            <span class="tag">테라피 클래스</span>
+          </div>
+        </div>
+      </div>
+      <div class="track-card">
+        <img src="images/b2b/sub0201_4.jpg" alt="VIP 브랜드 이벤트">
+        <div class="track-body">
+          <div class="track-title">VIP · 브랜드 이벤트</div>
+          <div class="track-desc">
+            프리미엄 골프대회, 신제품 런칭쇼, 백화점 VIP 고객 대상의
+            고품격 힐링 테라피로 브랜드 경험을 한 차원 높여드립니다.
+          </div>
+          <div class="track-tags">
+            <span class="tag">골프대회</span>
+            <span class="tag">런칭쇼</span>
+            <span class="tag">VIP 케어</span>
+            <span class="tag">세미나</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="why-row">
+      <div class="why-card">
+        <div class="why-thumb"><img src="images/b2b/why_01.jpg" alt="맞춤형 테라피"></div>
+        <div class="why-body">
+          <div class="why-num">01</div>
+          <div class="why-text">
+            <div class="why-title">맞춤형 테라피 서비스</div>
+            <div class="why-desc">원하는 시간과 장소에서 기업 니즈에 맞춘 테라피 제공</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-card">
+        <div class="why-thumb"><img src="images/b2b/why_02.jpg" alt="업무 집중력"></div>
+        <div class="why-body">
+          <div class="why-num">02</div>
+          <div class="why-text">
+            <div class="why-title">업무 집중력 향상</div>
+            <div class="why-desc">임직원 스트레스 해소로 업무 효율 및 기업 성장 도모</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-card">
+        <div class="why-thumb"><img src="images/b2b/why_03.jpg" alt="체감형 복지"></div>
+        <div class="why-body">
+          <div class="why-num">03</div>
+          <div class="why-text">
+            <div class="why-title">체감형 복지</div>
+            <div class="why-desc">높은 임직원 만족도와 애사심 고취 효과</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<div class="page light-page" id="p4">
+  <div class="pi">
+    <div class="section-header">
+      <div class="sl">LEAD THERAPIST</div>
+      <div class="sh-line"></div>
+      <div class="st">글로벌 기업이 선택한<br class="m"> 과학적 테라피<br class="d"> 아우름 웰니스</div>
+    </div>
+
+    <div class="therapist-top">
+      <!-- Left: Instructor -->
+      <div class="instructor-col">
+        <div class="col-label">Instructor</div>
+        <div class="therapist-name">김순재</div>
+        <div class="therapist-role">대표 강사 · 체육학 석사</div>
+        <div class="therapist-photo">
+          <img src="images/b2b/sub0201_1.png" alt="김순재 대표 테라피스트">
+        </div>
+        <ul class="cred-list">
+          <li>한국체육대학교 체육학 석사 (건강교육학 전공)</li>
+          <li>미용사 (피부) 국가자격</li>
+          <li>생활스포츠지도사 2급 (보디빌딩)</li>
+          <li>ACSM-Korea PFT (미국스포츠의학회 퍼스널 트레이너)</li>
+          <li>한국체육대학교 한국응용해부연구소 협력기관</li>
+          <li>한국응용의과학협회 정회원</li>
+          <li>이화여자대학교병원 카데바 해부 워크샵</li>
+          <li>FISAF KOREA Certified Instructor</li>
+          <li>FISAF KOREA Corrective/Medical Training Certificate</li>
+          <li>RTS(재활전문가) LV1, 2 Certificate</li>
+          <li>마사지 &amp; 바디워크 대체의학 / 마요테라피 수료</li>
+          <li>나레스트 뷰티 아카데미 Skin Care Certificate</li>
+          <li>키네시오 테이핑 Legacy Symposium Certificate</li>
+        </ul>
+      </div>
+
+      <!-- Right: Experience -->
+      <div class="experience-col">
+        <div class="col-label">Experience</div>
+        <div class="exp-title">강의 및 특강 경력</div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-company">네이버 그린웹서비스</div>
+            <div class="timeline-desc">임직원 상호테라피 클래스 (3회)</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-company">대림바스 X 아모레퍼시픽</div>
+            <div class="timeline-desc">핸드테라피 클래스 (4회)</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-company">WeWork / Fastfive</div>
+            <div class="timeline-desc">상호/핸드 테라피 클래스 (3회)</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-company">시셰이도</div>
+            <div class="timeline-desc">임직원 대상 핸드 테라피 클래스</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-company">서울대 어린이병원</div>
+            <div class="timeline-desc">핸드테라피 봉사 클래스</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-company">카카오 T 히어로즈</div>
+            <div class="timeline-desc">임직원 테라피 클래스</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-company">한국콘텐츠진흥원</div>
+            <div class="timeline-desc">임직원 건강관리 테라피</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-company">노인복지관 / 종합복지관</div>
+            <div class="timeline-desc">핸드테라피 클래스</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-company">치매예방협회</div>
+            <div class="timeline-desc">강사 대상 핸드테라피 클래스</div>
+          </div>
+        </div>
+        <div class="timeline-footer">
+          <span></span>상기 내용 외 다양한 강의 진행<span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Activity Strip: 4 images in a row -->
+    <div class="activity-strip">
+      <div class="act-card">
+        <img src="images/b2b/act_01.png" alt="기업 복지 현장">
+        <div class="act-label">기업 임직원 피지컬 케어</div>
+      </div>
+      <div class="act-card">
+        <img src="images/b2b/act_02.png" alt="테라피 클래스">
+        <div class="act-label">핸드테라피 클래스</div>
+      </div>
+      <div class="act-card">
+        <img src="images/b2b/act_03.png" alt="체어 테라피">
+        <div class="act-label">체어 테라피</div>
+      </div>
+      <div class="act-card">
+        <img src="images/b2b/act_04.png" alt="기업 특강">
+        <div class="act-label">기업 특강 진행</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- P7: PORTFOLIO                                                 -->
+<!-- ============================================================ -->
+<div class="page dark-page" id="p7">
+  <div class="pi">
+    <div class="section-header">
+      <div class="sl">PORTFOLIO</div>
+      <div class="sh-line"></div>
+      <div class="st">다양한 기업과 함께한 현장의 기록</div>
+    </div>
+
+    <div class="pf-cat">
+      <span class="pf-cat-label">Corporate Welfare</span>
+      <span class="pf-cat-line"></span>
+    </div>
+    <div class="pf-bento">
+      <div class="pf-card pf-hero">
+        <img src="images/portfolio/featured/p0520.jpg" alt="한화">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2022</span>
+          <span class="pf-card-cl">한화</span>
+        </div>
+      </div>
+      <div class="pf-card pf-hero">
+        <img src="images/portfolio/featured/p1012.jpg" alt="스마일게이트">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2023</span>
+          <span class="pf-card-cl">스마일게이트</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/bcg2024.jpg" alt="BCG">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2024</span>
+          <span class="pf-card-cl">BCG</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/nestle2025.jpg" alt="네슬레">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2025</span>
+          <span class="pf-card-cl">네슬레</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/lawmin2025.jpg" alt="법무부">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2025</span>
+          <span class="pf-card-cl">법무부</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/p0900.jpg" alt="SK텔레콤">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2023</span>
+          <span class="pf-card-cl">SK텔레콤</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/p0956.jpg" alt="기업은행">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2023</span>
+          <span class="pf-card-cl">기업은행</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/samsungfire2026.png" alt="삼성화재서비스">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2026</span>
+          <span class="pf-card-cl">삼성화재서비스</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/kto_seoul2022.jpg" alt="한국관광공사">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2022</span>
+          <span class="pf-card-cl">한국관광공사</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/booking2025.jpg" alt="부킹닷컴">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2025</span>
+          <span class="pf-card-cl">부킹닷컴</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/incheonairport2022.jpg" alt="인천공항공사">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2022</span>
+          <span class="pf-card-cl">인천공항공사</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/pg2025.jpg" alt="P&G">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2025</span>
+          <span class="pf-card-cl">P&G</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/p0082.jpg" alt="KB국민카드">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2019</span>
+          <span class="pf-card-cl">KB국민카드</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/wonju2024.jpg" alt="원주시청">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2024</span>
+          <span class="pf-card-cl">원주시청</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/sh_housing2024.jpg" alt="서울주택도시공사">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2024</span>
+          <span class="pf-card-cl">서울주택도시공사</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/p0975.jpg" alt="농수산식품공사">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2023</span>
+          <span class="pf-card-cl">농수산식품공사</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/socialent2025.jpg" alt="한국사회적기업진흥원">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2025</span>
+          <span class="pf-card-cl">한국사회적기업진흥원</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/yangju2025.jpg" alt="양주시청">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2025</span>
+          <span class="pf-card-cl">양주시청</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/jeongseon2025.jpg" alt="정선군청">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2025</span>
+          <span class="pf-card-cl">정선군청</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/contentslab2024.jpg" alt="콘텐츠랩블루">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2024</span>
+          <span class="pf-card-cl">콘텐츠랩블루</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/signature2025.jpg" alt="더시그니처">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2025</span>
+          <span class="pf-card-cl">더시그니처</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/zentherm2025.jpg" alt="젠썸">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2025</span>
+          <span class="pf-card-cl">젠썸</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="pf-cat">
+      <span class="pf-cat-label">Brand &middot; VIP Event</span>
+      <span class="pf-cat-line"></span>
+    </div>
+    <div class="pf-flat">
+      <div class="pf-card">
+        <img src="images/portfolio/featured/p3540.jpg" alt="BMW Golf Cup">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2024</span>
+          <span class="pf-card-cl">BMW Golf Cup</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/p2892.jpg" alt="페라리">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2020</span>
+          <span class="pf-card-cl">페라리</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/p3320.jpg" alt="람보르기니">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2023</span>
+          <span class="pf-card-cl">람보르기니</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/lgenergy2023.jpg" alt="LG에너지솔루션">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2023</span>
+          <span class="pf-card-cl">LG에너지솔루션</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/porsche2025.jpg" alt="포르쉐 골프컵">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2025</span>
+          <span class="pf-card-cl">포르쉐 골프컵</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/amore_hq2019.jpg" alt="아모레퍼시픽">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2019</span>
+          <span class="pf-card-cl">아모레퍼시픽</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/benz2022.jpg" alt="벤츠">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2022</span>
+          <span class="pf-card-cl">벤츠</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/shinhan2026.jpg" alt="신한은행">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2026</span>
+          <span class="pf-card-cl">신한은행</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/lexus2019.jpg" alt="렉서스">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2019</span>
+          <span class="pf-card-cl">렉서스</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/lottedept2019.jpg" alt="롯데백화점">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2019</span>
+          <span class="pf-card-cl">롯데백화점</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/hyundaidept2019.jpg" alt="현대백화점">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2019</span>
+          <span class="pf-card-cl">현대백화점</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/audi2024.jpg" alt="아우디 콰트로컵">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2024</span>
+          <span class="pf-card-cl">아우디 콰트로컵</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/loccitane2019.jpg" alt="록시땅">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2019</span>
+          <span class="pf-card-cl">록시땅</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/skhynix2018.jpg" alt="SK하이닉스">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2018</span>
+          <span class="pf-card-cl">SK하이닉스</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/canon2025.jpg" alt="캐논">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2025</span>
+          <span class="pf-card-cl">캐논</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <img src="images/portfolio/featured/samsung2018.jpg" alt="삼성전자">
+        <div class="pf-card-ov"></div>
+        <div class="pf-card-info">
+          <span class="pf-card-yr">2018</span>
+          <span class="pf-card-cl">삼성전자</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<div class="page light-page" id="p8">
+  <div class="pi">
+    <div class="section-header">
+      <div class="sl">TRACK RECORD</div>
+      <div class="sh-line"></div>
+      <div class="st">숫자가 증명하는 아우름웰니스의 실력</div>
+    </div>
+
+    <div class="big-stats">
+      <div class="big-stat">
+        <div class="num">15</div>
+        <div class="unit">Years · 업력</div>
+      </div>
+      <div class="big-stat">
+        <div class="num">200+</div>
+        <div class="unit">Clients · 기업 고객</div>
+      </div>
+      <div class="big-stat">
+        <div class="num">500+</div>
+        <div class="unit">Sessions · 현장 진행</div>
+      </div>
+      <div class="big-stat">
+        <div class="num">5,000+</div>
+        <div class="unit">Visitors · 누적 방문 고객</div>
+      </div>
+    </div>
+
+    <div class="partner-layout">
+      <div class="partner-left">
+        <div class="partner-label">PARTNERS</div>
+        <div class="partner-heading">주요 고객사</div>
+        <div class="chip-group">
+          <div class="chip-group-label">기업 임직원</div>
+          <div class="chip-list">
+            <span class="chip">삼성전자</span><span class="chip">삼성화재</span><span class="chip">삼성화재서비스</span><span class="chip">네이버</span><span class="chip">카카오</span><span class="chip">LG에너지솔루션</span><span class="chip">P&amp;G</span><span class="chip">BCG</span><span class="chip">SK하이닉스</span><span class="chip">KB국민카드</span><span class="chip">네슬레</span><span class="chip">스마일게이트</span><span class="chip">기업은행</span><span class="chip">한화</span><span class="chip">농수산식품공사</span><span class="chip">부킹닷컴</span><span class="chip">법무부</span><span class="chip">이마트</span><span class="chip">현대오일뱅크</span><span class="chip">워커힐</span><span class="chip">산업은행</span><span class="chip">국세청</span><span class="chip">금호석유화학</span><span class="chip">써모피셔</span><span class="chip">인천공항공사</span><span class="chip">한국관광공사</span><span class="chip">제주관광공사</span><span class="chip">서울주택도시공사</span><span class="chip">한국사회적기업진흥원</span><span class="chip">한국서부발전</span><span class="chip">콘텐츠랩블루</span><span class="chip">트랜스코스모스코리아</span><span class="chip">인천시청</span><span class="chip">원주시청</span><span class="chip">동두천시청</span><span class="chip">당진시청</span><span class="chip">양주시청</span><span class="chip">정선군청</span>
+          </div>
+        </div>
+        <div class="chip-group">
+          <div class="chip-group-label">공유오피스</div>
+          <div class="chip-list">
+            <span class="chip">WeWork</span><span class="chip">패스트파이브</span><span class="chip">스파크플러스</span><span class="chip">CEO SUITE</span>
+          </div>
+        </div>
+        <div class="chip-group">
+          <div class="chip-group-label">VIP · 브랜드</div>
+          <div class="chip-list">
+            <span class="chip">BMW</span><span class="chip">벤츠</span><span class="chip">포르쉐</span><span class="chip">아우디</span><span class="chip">페라리</span><span class="chip">람보르기니</span><span class="chip">렉서스</span><span class="chip">폭스바겐</span><span class="chip">기아자동차</span><span class="chip">신한은행</span><span class="chip">하나카드</span><span class="chip">한국투자증권</span><span class="chip">잭니클라우스</span><span class="chip">파라다이스카지노</span><span class="chip">록시땅</span><span class="chip">KLPGA</span><span class="chip">캐논</span><span class="chip">롯데백화점</span><span class="chip">현대백화점</span><span class="chip">롯데아울렛</span>
+          </div>
+        </div>
+        <div class="chip-group">
+          <div class="chip-group-label">신제품 · 세미나</div>
+          <div class="chip-list">
+            <span class="chip">아모레퍼시픽</span><span class="chip">모로칸오일</span><span class="chip">세타필</span><span class="chip">연세 메디치 페스티발</span><span class="chip">롯데재단</span><span class="chip">시셰이도</span><span class="chip">SK텔레콤</span><span class="chip">HD현대오일뱅크</span><span class="chip">한국산업은행</span><span class="chip">SONY</span><span class="chip">NHN</span><span class="chip">암웨이</span><span class="chip">레노보</span><span class="chip">맥도날드</span><span class="chip">메트라이프</span><span class="chip">페르노리카 코리아</span>
+          </div>
+        </div>
+      </div>
+      <div class="partner-right">
+        <div class="logo-grid">
+          <div class="logo-cell"><img src="images/logos/main9_2.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_3.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_4.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_5.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_6.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_7.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_8.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_9.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_10.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_11.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_12.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_13.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_14.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_15.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_16.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_17.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_18.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_19.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_20.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_21.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_22.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_23.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_24.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_25.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_26.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_27.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_28.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_29.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_30.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_31.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_32.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_33.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_34.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_35.jpg" alt=""></div>
+          <div class="logo-cell"><img src="images/logos/main9_36.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<div class="page light-page" id="p10">
+  <div class="pi">
+    <div class="section-header">
+      <div class="sl">PRICING</div>
+      <div class="sh-line"></div>
+      <div class="st">투명한 단가, 합리적인 서비스</div>
+    </div>
+
+    <table class="price-table">
+      <thead>
+        <tr>
+          <th style="width:28%">프로그램</th>
+          <th style="width:14%">인당 시간</th>
+          <th style="width:14%">2시간</th>
+          <th style="width:14%">3시간</th>
+          <th style="width:14%">4시간</th>
+          <th style="width:16%">추가 1시간</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="cat-header">피지컬 케어</span><br>핸드 마사지</td>
+          <td class="time-col">8~15분</td>
+          <td>200,000</td>
+          <td>250,000</td>
+          <td>300,000</td>
+          <td>50,000</td>
+        </tr>
+        <tr>
+          <td>스파인/릴렉스 체어</td>
+          <td class="time-col">10~30분</td>
+          <td>300,000</td>
+          <td>350,000</td>
+          <td>400,000</td>
+          <td>50,000</td>
+        </tr>
+        <tr>
+          <td>베드 테라피, 풋 테라피</td>
+          <td class="time-col">30분~1시간</td>
+          <td>350,000</td>
+          <td>400,000</td>
+          <td>450,000</td>
+          <td>50,000</td>
+        </tr>
+        <tr>
+          <td>클리니컬 테라피</td>
+          <td class="time-col">30분~1시간</td>
+          <td>500,000</td>
+          <td>600,000</td>
+          <td>700,000</td>
+          <td>100,000</td>
+        </tr>
+        <tr>
+          <td><span class="cat-header">교육 · 운동 · 맞춤</span><br>특강/요가/필라테스/메이크업</td>
+          <td class="time-col">1~3시간</td>
+          <td>300,000</td>
+          <td>400,000</td>
+          <td>600,000</td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="price-notes">
+      · 금액은 테라피스트/강사 1인당 비용, 부가세 불포함 기준 (단위: 원)<br>
+      · 시간은 식사시간 제외, 휴식시간 포함 기준<br>
+      · 재료비 포함, 교통비·출장비는 지역에 따라 추가 및 별도 협의<br>
+      · 상기 단가표 외 시간 협의 및 비용 조정 가능
+    </div>
+
+    <div class="recommend-label">추천 조합</div>
+    <div class="recommend-row">
+      <div class="rec-card">
+        <div class="rec-name">Basic</div>
+        <div class="rec-top">
+          <div class="rec-desc">소규모 팀을 위한 기본 구성.<br>가장 인기 있는 체어 테라피 단독 운영.</div>
+          <div class="rec-price">350,000원 <span>/ 3시간</span></div>
+        </div>
+        <ul class="rec-features">
+          <li>체어 테라피 3시간</li>
+          <li>테라피스트 1인 배치</li>
+          <li>약 8~12명 케어</li>
+          <li>10~30분 / 인당</li>
+        </ul>
+      </div>
+      <div class="rec-card">
+        <div class="rec-name">Standard</div>
+        <div class="rec-top">
+          <div class="rec-desc">체어와 핸드를 함께 운영하여<br>만족도 극대화.</div>
+          <div class="rec-price">700,000원 <span>/ 4시간</span></div>
+        </div>
+        <ul class="rec-features">
+          <li>체어 + 핸드 테라피 4시간</li>
+          <li>테라피스트 2인 배치</li>
+          <li>약 15~20명 케어</li>
+        </ul>
+      </div>
+      <div class="rec-card featured">
+        <div class="rec-badge">Popular</div>
+        <div class="rec-name">Premium</div>
+        <div class="rec-top">
+          <div class="rec-desc">VIP 행사 및 대규모 이벤트에 최적화된 프리미엄 구성.</div>
+          <div class="rec-price">별도 협의</div>
+        </div>
+        <ul class="rec-features">
+          <li>베드 + 체어 + 핸드 6시간</li>
+          <li>테라피스트 3인 이상</li>
+          <li>VIP 맞춤 프로그램</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<div class="page light-page" id="p5">
+  <div class="pi">
+    <div class="section-header">
+      <div class="sl">SERVICE PROGRAMS</div>
+      <div class="sh-line"></div>
+      <div class="st">기업 니즈에 따른 맞춤 테라피 서비스</div>
+    </div>
+
+    <!-- Dark text band -->
+    <div class="pg-text-band">
+      <div class="pg-band-left">
+        <div class="pg-band-label">PHYSICAL</div>
+        <div class="pg-band-title">피지컬 케어</div>
+        <div class="pg-band-divider"></div>
+      </div>
+      <div class="pg-band-sep"></div>
+      <div class="pg-band-desc">해부학에 기반한 전문 바디 테라피. 피부와 근육을 동시에 케어하며, 단순 뷰티 관리를 넘어 체형 교정까지 아우르는 통합 피지컬 케어 프로그램.</div>
+    </div>
+
+    <!-- 체어 테라피 + 릴렉스 테라피 rows -->
+    <div class="svc-rows">
+      <!-- 체어 테라피 -->
+      <div class="svc-row">
+        <div class="svc-row-main">
+          <img src="images/proposal/chair_therapy.png" alt="체어 테라피">
+          <div class="pg-overlay"></div>
+          <div class="pg-badge">
+            <div class="svc-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+            <div class="svc-badge-cat">BODY</div>
+            <div class="svc-badge-name">체어 테라피</div>
+            <div class="svc-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
+            <div class="svc-badge-en">Chair Therapy</div>
+          </div>
+        </div>
+        <div class="svc-row-thumbs">
+          <img src="images/proposal/thumbs/chair_1.jpg" alt="체어 현장1">
+          <img src="images/proposal/thumbs/chair_2.jpg" alt="체어 현장2">
+          <img src="images/proposal/thumbs/chair_3.png" alt="체어 현장3">
+          <img src="images/proposal/thumbs/chair_4.jpg" alt="체어 현장4">
+        </div>
+      </div>
+      <!-- 릴렉스 테라피 -->
+      <div class="svc-row">
+        <div class="svc-row-main">
+          <img src="images/proposal/relax_chair.png" alt="릴렉스 테라피">
+          <div class="pg-overlay"></div>
+          <div class="pg-badge">
+            <div class="svc-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+            <div class="svc-badge-cat">BODY</div>
+            <div class="svc-badge-name">릴렉스 테라피</div>
+            <div class="svc-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
+            <div class="svc-badge-en">Relax Chair Therapy</div>
+          </div>
+        </div>
+        <div class="svc-row-thumbs">
+          <img src="images/proposal/thumbs/relax_1.png" alt="릴렉스 현장1">
+          <img src="images/proposal/thumbs/relax_2.png" alt="릴렉스 현장2">
+          <img src="images/proposal/thumbs/relax_3.jpg" alt="릴렉스 현장3">
+          <img src="images/proposal/thumbs/relax_4.png" alt="릴렉스 현장4">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- P5b: SERVICE PROGRAMS 2 (핸드/풋/베드) -->
+<!-- ============================================================ -->
+<div class="page light-page" id="p5b">
+  <div class="pi">
+    <div class="svc-rows">
+      <!-- 핸드 테라피 -->
+      <div class="svc-row">
+        <div class="svc-row-main">
+          <img src="images/proposal/hand_therapy.png" alt="핸드 테라피">
+          <div class="pg-overlay"></div>
+          <div class="pg-badge">
+            <div class="svc-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+            <div class="svc-badge-cat">BODY</div>
+            <div class="svc-badge-name">핸드 테라피</div>
+            <div class="svc-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
+            <div class="svc-badge-en">Hand Therapy</div>
+          </div>
+        </div>
+        <div class="svc-row-thumbs">
+          <img src="images/proposal/thumbs/hand_new_1.jpg" alt="핸드 현장1">
+          <img src="images/proposal/thumbs/hand_new_2.png" alt="핸드 현장2">
+          <img src="images/proposal/thumbs/hand_new_3.png" alt="핸드 현장3">
+          <img src="images/proposal/thumbs/hand_new_4.png" alt="핸드 현장4">
+        </div>
+      </div>
+      <!-- 풋 테라피 -->
+      <div class="svc-row">
+        <div class="svc-row-main">
+          <img src="images/proposal/foot_therapy.png" alt="풋 테라피">
+          <div class="pg-overlay"></div>
+          <div class="pg-badge">
+            <div class="svc-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+            <div class="svc-badge-cat">BODY</div>
+            <div class="svc-badge-name">풋 테라피</div>
+            <div class="svc-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
+            <div class="svc-badge-en">Foot Therapy</div>
+          </div>
+        </div>
+        <div class="svc-row-thumbs">
+          <img src="images/proposal/thumbs/foot_1.jpg" alt="풋 현장1">
+          <img src="images/proposal/thumbs/foot_2.png" alt="풋 현장2">
+          <img src="images/proposal/thumbs/foot_3.png" alt="풋 현장3">
+          <img src="images/proposal/thumbs/foot_4.png" alt="풋 현장4">
+        </div>
+      </div>
+      <!-- 베드 테라피 -->
+      <div class="svc-row">
+        <div class="svc-row-main">
+          <img src="images/proposal/bed_therapy.png" alt="베드 테라피">
+          <div class="pg-overlay"></div>
+          <div class="pg-badge">
+            <div class="svc-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+            <div class="svc-badge-cat">BODY</div>
+            <div class="svc-badge-name">베드 테라피</div>
+            <div class="svc-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
+            <div class="svc-badge-en">Bed Therapy</div>
+          </div>
+        </div>
+        <div class="svc-row-thumbs">
+          <img src="images/proposal/thumbs/bed_1.png" alt="베드 현장1">
+          <img src="images/proposal/thumbs/bed_2.jpg" alt="베드 현장2">
+          <img src="images/proposal/thumbs/bed_3.png" alt="베드 현장3">
+          <img src="images/proposal/thumbs/bed_4_new.png" alt="베드 현장4">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<div class="page light-page" id="p6">
+  <div class="pi" style="gap: 2px;">
+    <!-- EXERCISE Section -->
+    <div class="pg-section">
+      <div class="pg-text-band">
+        <div class="pg-band-left">
+          <div class="pg-band-label">EXERCISE</div>
+          <div class="pg-band-title">운동 테라피</div>
+          <div class="pg-band-divider"></div>
+        </div>
+        <div class="pg-band-sep"></div>
+        <div class="pg-band-desc">스트레칭과 코어 중심 근육 단련으로 유연성을 향상시키고, 몸의 밸런스를 맞추어 체형 교정에 도움을 주는 프로그램.</div>
+      </div>
+      <div class="pg-image-row">
+        <div class="pg-card">
+          <img src="images/proposal/yoga.png" alt="요가 클래스">
+          <div class="pg-overlay"></div>
+          <div class="pg-badge">
+            <div class="pg-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+            <div class="pg-badge-cat">EXERCISE</div>
+            <div class="pg-badge-name">요가 클래스</div>
+            <div class="pg-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
+            <div class="pg-badge-en">Yoga Class</div>
+          </div>
+        </div>
+        <div class="pg-card">
+          <img src="images/proposal/pilates.png" alt="필라테스 클래스">
+          <div class="pg-overlay"></div>
+          <div class="pg-badge">
+            <div class="pg-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+            <div class="pg-badge-cat">EXERCISE</div>
+            <div class="pg-badge-name">필라테스 클래스</div>
+            <div class="pg-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
+            <div class="pg-badge-en">Pilates Class</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CUSTOM Section -->
+    <div class="pg-section">
+      <div class="pg-text-band">
+        <div class="pg-band-left">
+          <div class="pg-band-label">CUSTOM</div>
+          <div class="pg-band-title">맞춤 테라피</div>
+          <div class="pg-band-divider"></div>
+        </div>
+        <div class="pg-band-sep"></div>
+        <div class="pg-band-desc">직원 간 유대감을 높이는 상호 테라피 특강.<br>기업 니즈에 맞춘 맞춤형 프로그램.</div>
+      </div>
+      <div class="pg-image-row" style="grid-template-columns: 1fr; height: auto;">
+        <div class="pg-card" style="height: 180px;">
+          <img src="images/proposal/therapy_workshop.png" alt="테라피 특강" style="object-position: center 65%;">
+          <div class="pg-overlay"></div>
+          <div class="pg-badge">
+            <div class="pg-badge-deco"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+            <div class="pg-badge-cat">CUSTOM</div>
+            <div class="pg-badge-name">테라피 특강</div>
+            <div class="pg-badge-sep"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
+            <div class="pg-badge-en">Therapy Workshop</div>
+          </div>
+        </div>
+      </div>
+      <div class="pg-image-row" style="grid-template-columns: repeat(3, 1fr); height: auto; margin-top: 2px;">
+        <div class="pg-card" style="height: 200px;"><img src="images/proposal/workshop1.png" alt="특강 현장 1"><div class="pg-overlay"></div></div>
+        <div class="pg-card" style="height: 200px;"><img src="images/proposal/workshop2.jpg" alt="특강 현장 2"><div class="pg-overlay"></div></div>
+        <div class="pg-card" style="height: 200px;"><img src="images/proposal/workshop3.jpg" alt="특강 현장 3"><div class="pg-overlay"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<div class="page dark-page" id="p2">
+  <div class="pi">
+    <div class="section-header">
+      <div class="sl">WHY WELLNESS</div>
+      <div class="sh-line"></div>
+      <div class="st">기업 웰니스는 선택이 아닌 필수,<br>테라피가 그 핵심입니다</div>
+      <div class="sh-line"></div>
+      <div class="sh-sub">언론이 주목하는 기업 웰니스 트렌드</div>
+    </div>
+
+    <div class="news-grid">
+      <div class="news-card">
+        <img src="news/news1.png" alt="뉴스1">
+        <div class="news-body">
+          <div class="news-title">직원 위해 마사지사 6명 고용한 회사.<br class="m">MZ 몰린다</div>
+          <div class="news-src">머니투데이</div>
+        </div>
+      </div>
+      <div class="news-card">
+        <img src="news/news2.png" alt="뉴스2">
+        <div class="news-body">
+          <div class="news-title">'직장인 스트레스'…번아웃 위험군 늘어나고 있다</div>
+          <div class="news-src">잡코리아</div>
+        </div>
+      </div>
+      <div class="news-card">
+        <img src="news/news3.png" alt="뉴스3">
+        <div class="news-body">
+          <div class="news-title">웰니스 프로그램,<br>기업과 구성원을 건강하게</div>
+          <div class="news-src">LG경영연구원</div>
+        </div>
+      </div>
+      <div class="news-card news-hide-mobile">
+        <img src="news/news4.png" alt="뉴스4">
+        <div class="news-body">
+          <div class="news-title">웰니스 복지 : 건강에 대한 임직원의 관심 증대</div>
+          <div class="news-src">HR 인사이트</div>
+        </div>
+      </div>
+      <div class="news-card news-hide-mobile">
+        <img src="news/news5.png" alt="뉴스5">
+        <div class="news-body">
+          <div class="news-title">건강 지능이 경쟁력 된다,<br>몸 관리의 경영화</div>
+          <div class="news-src">이비즈타임즈</div>
+        </div>
+      </div>
+      <div class="news-card news-hide-mobile">
+        <img src="news/news6.png" alt="뉴스6">
+        <div class="news-body">
+          <div class="news-title">'번아웃',<br>혼자서 버티지 마세요</div>
+          <div class="news-src">중부일보</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<div class="page light-page" id="p9">
+  <div class="pi">
+    <div class="section-header">
+      <div class="sl">CLIENT REVIEWS</div>
+      <div class="sh-line"></div>
+      <div class="st">고객이 증명하는<br class="m"> 아우름웰니스의 전문성</div>
+    </div>
+
+    <div class="review-grid">
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="review-text">"매주 정기적으로 진행하는 체어테라피 덕분에 목 통증이 많이 줄었어요. 직원들이 가장 좋아하는 복지입니다."</div>
+        <div class="review-author">IT기업 인사담당자 정승* <span>· 네이버</span> <span class="review-tag">체어 테라피</span></div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="review-text">"핸드테라피가 이렇게 좋은 줄 몰랐어요. 짧은 시간에도 확실한 릴렉싱 효과가 있어서 행사 만족도가 높았습니다."</div>
+        <div class="review-author">마케팅팀 김예* <span>· 아모레퍼시픽</span> <span class="review-tag">핸드 테라피</span></div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="review-text">"체형교정 프로그램으로 오랜 거북목이 개선되었습니다. 전문 테라피스트의 실력이 정말 다르다는 걸 느꼈어요."</div>
+        <div class="review-author">입주기업 직원 박지* <span>· WeWork 선릉</span> <span class="review-tag">체형교정</span></div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="review-text">"100명 규모 골프대회 행사였는데, 준비부터 마무리까지 너무 깔끔하게 진행해주셔서 다음 행사도 바로 예약했습니다."</div>
+        <div class="review-author">이벤트팀 이수* <span>· BMW Korea</span> <span class="review-tag">VIP 골프대회</span></div>
+      </div>
+    </div>
+
+    <!-- Real Feedback: KakaoTalk -->
+    <div class="feedback-label">REAL FEEDBACK</div>
+
+    <div class="kakao-row">
+      <!-- Chat 1: 기업복지 담당자 -->
+      <div>
+        <div class="kakao-title">마사지 클래스 피드백</div>
+        <div class="kakao-chat">
+        <div class="kakao-msg">
+          <div class="kakao-avatar"><div class="kakao-avatar-placeholder" style="background:linear-gradient(135deg,#7986a8,#5c6a8a);">&#128100;</div></div>
+          <div class="kakao-body">
+            <div class="kakao-name">기업복지 담당자</div>
+            <div class="kakao-bubble-wrap">
+              <div class="kakao-bubble">정말 유익한 행사였습니다^^ 참가자들은 물론 저희 내부에서도 반응이 무척 좋았습니다~</div>
+              <div class="kakao-time">오후 6:44</div>
+            </div>
+          </div>
+        </div>
+        <div class="kakao-bubble-cont">
+          <div class="kakao-bubble">다음 클래스에도 재미있게 함께 진행할 수 있음 좋겠습니다~ 감사합니다^^</div>
+          <div class="kakao-time">오후 6:44</div>
+        </div>
+        <div class="kakao-from">마사지 클래스 피드백</div>
+      </div>
+      </div>
+
+      <!-- Chat 2: HR 매니저 -->
+      <div>
+        <div class="kakao-title">월간 정기 테라피 후기</div>
+        <div class="kakao-chat">
+        <div class="kakao-msg">
+          <div class="kakao-avatar"><div class="kakao-avatar-placeholder" style="background:linear-gradient(135deg,#a8947d,#8a7a66);">&#128100;</div></div>
+          <div class="kakao-body">
+            <div class="kakao-name">HR 매니저</div>
+            <div class="kakao-bubble-wrap">
+              <div class="kakao-bubble">덕분에 한 달 동안 즐거운 경험을 했습니다~ 좋은 기회를 마련해 주셔서 다시 한번 감사하단 인사드려요 :)</div>
+              <div class="kakao-time">오후 7:49</div>
+            </div>
+          </div>
+        </div>
+        <div class="kakao-bubble-cont">
+          <div class="kakao-bubble">특히 모든 직원분들을 친절히 대해 주셔서 아주 편안하게 진행했어요~ 감사드립니다.</div>
+          <div class="kakao-time">오후 7:49</div>
+        </div>
+        <div class="kakao-from">월간 정기 테라피 후기</div>
+      </div>
+      </div>
+
+      <!-- Chat 3: 공유오피스 매니저 -->
+      <div>
+        <div class="kakao-title">공유오피스 입점 서비스</div>
+        <div class="kakao-chat">
+        <div class="kakao-msg">
+          <div class="kakao-avatar"><div class="kakao-avatar-placeholder" style="background:linear-gradient(135deg,#8ba89e,#6a8a7e);">&#128100;</div></div>
+          <div class="kakao-body">
+            <div class="kakao-name">공유오피스 매니저</div>
+            <div class="kakao-bubble-wrap">
+              <div class="kakao-bubble">대표님, 한달동안 너무 잘 진행해주셔서 감사드립니다 :) 직원분들이 매우 흡족해하셔서 대표님 사업에 관심이시더라고요^^</div>
+              <div class="kakao-time">오후 9:02</div>
+            </div>
+          </div>
+        </div>
+        <div class="kakao-bubble-cont">
+          <div class="kakao-bubble">따로 여쭤주시는 분들은 제가 명함 건네드린다고 했습니다~</div>
+          <div class="kakao-time">오후 9:02</div>
+        </div>
+        <div class="kakao-from">공유오피스 입점 서비스</div>
+      </div>
+      </div>
+    </div>
+
+    <!-- Survey Forms -->
+    <div class="survey-row">
+      <!-- Survey 1: 만족도 점수 -->
+      <div class="survey-card">
+        <div class="survey-q">4. 피지컬케어 서비스가 얼마나 도움이 되셨습니까?<br><span style="font-size:8px;font-weight:400;color:var(--text-muted);">0(전혀 도움이 되지 않았다)부터 10(매우 도움이 되었다)까지의 숫자를 적어 주십시오.</span></div>
+        <div class="survey-answer">
+          <span class="survey-score">10</span>
+        </div>
+        <div class="survey-comment-label">기타 소감:</div>
+        <div class="survey-comment">최고입니다. 시간이 짧게 느껴지네요. 정기적으로 시행하기를 희망합니다!</div>
+      </div>
+
+      <!-- Survey 2: 추천 -->
+      <div class="survey-card">
+        <div class="survey-q">5. 피지컬케어 서비스를 동료에게 추천하시겠습니까?</div>
+        <div class="survey-answer">
+          <div class="survey-checks">
+            <div class="survey-check"><span class="box checked">&#10003;</span> 예</div>
+            <div class="survey-check"><span class="box"></span> 아니오</div>
+          </div>
+        </div>
+        <div class="survey-q" style="margin-top:8px;">6. 향후에도 피지컬케어를 받을 의향이 있다.</div>
+        <div class="survey-answer">
+          <div class="survey-checks">
+            <div class="survey-check"><span class="box checked">&#10003;</span> 예</div>
+            <div class="survey-check"><span class="box"></span> 아니오</div>
+          </div>
+        </div>
+        <div class="survey-comment-label">기타 소감:</div>
+        <div class="survey-comment">33년 인생 최고의 케어 였습니다</div>
+      </div>
+
+      <!-- Survey 3: 재참여 + 소감 -->
+      <div class="survey-card">
+        <div class="survey-q">4. 피지컬케어 서비스가 얼마나 도움이 되셨습니까?</div>
+        <div class="survey-answer">
+          <span class="survey-score">10</span>
+        </div>
+        <div class="survey-q" style="margin-top:8px;">5. 동료에게 추천하시겠습니까?</div>
+        <div class="survey-answer">
+          <div class="survey-checks">
+            <div class="survey-check"><span class="box checked">&#10003;</span> 예</div>
+            <div class="survey-check"><span class="box"></span> 아니오</div>
+          </div>
+        </div>
+        <div class="survey-comment-label">기타 소감:</div>
+        <div class="survey-comment">왼쪽 허리가 많이 아팠는데 짧은 시간에 많이 좋아진 것 같습니다</div>
+      </div>
+    </div>
+
+    <!-- Closing Quote -->
+    <div class="closing-quote">
+      <div class="cq-highlight">"33년 인생 최고의 케어"라는 극찬.</div>
+      <div class="cq-main">직원들이 다음 월요일을 기다리게 만드는 최고의 복지.<br><span class="cq-brand">'아우름 웰니스'</span>입니다.</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<div class="page" id="p11">
+  <div class="thankyou-content">
+    <svg class="thankyou-logo" viewBox="0 0 144.9 35.9" xmlns="http://www.w3.org/2000/svg">
+      <g><g><g>
+        <path fill="#fff" d="M50.4,18.8c0,2.1.5,4.2,1.9,6.1h-1.3c-1.4-1.6-2-3.7-2-6.2v-.6c0-2.5.7-4.5,2-6.2h1.3c-1.3,1.8-1.9,3.9-1.9,6.1V18.8z"/>
+        <path fill="#fff" d="M58.2,24.5v-4.3h-5.1V19h11.6v1.2h-5.1v4.3H58.2z M58.9,15.6L58.9,15.6c-.2.3-.6.7-1.5,1.1-.7.4-1.7.8-2.8,1.3L54,16.9c1-.4,2-.8,2.9-1.3,1.1-.6,1.3-1.2,1.3-1.9h-3.6v-1.2h8.7v1.2h-3.7c0,.7.2,1.3,1.3,1.9.9.5,1.9.9,2.9,1.3L63.3,18c-1.1-.4-2.1-.9-2.8-1.3C59.5,16.3,59.1,15.9,58.9,15.6z"/>
+        <path fill="#fff" d="M67.4,18.1c0-2.2-.5-4.3-1.9-6.1h1.3c1.4,1.6,2,3.7,2,6.2v.6c0,2.5-.7,4.6-2,6.2h-1.3c1.4-1.9,1.9-4,1.9-6.1V18.1z"/>
+        <path fill="#fff" d="M77,16.4v1.4c0,2.4-1.3,3.7-3.2,3.7-1.9,0-3.2-1.2-3.2-3.7v-1.4c0-2.4,1.3-3.7,3.2-3.7C75.7,12.7,77,13.9,77,16.4z M75.7,17.6v-1c0-1.9-.9-2.6-1.9-2.6-1,0-1.9.7-1.9,2.6v1c0,1.9.9,2.6,1.9,2.6C74.8,20.2,75.7,19.5,75.7,17.6z M82.1,17.6h-2v6.9h-1.4V11.8h1.4v4.6h2V17.6z"/>
+        <path fill="#fff" d="M87.9,24.5v-4.2h-5.1v-1.2h11.6v1.2h-5.1v4.2H87.9z M92.8,14.8v.5c0,1.6-1.7,2.7-4.3,2.7-2.6,0-4.3-1.1-4.3-2.7v-.5c0-1.6,1.7-2.7,4.3-2.7C91.2,12.1,92.8,13.2,92.8,14.8z M91.5,15.3v-.4c0-.9-1.2-1.6-2.9-1.6s-2.9.6-2.9,1.6v.4c0,.9,1.2,1.6,2.9,1.6S91.5,16.2,91.5,15.3z"/>
+        <path fill="#fff" d="M106.9,18.4v1.1H95.3v-1.1H106.9z M96.9,17.6v-3.2h6.9v-1h-7v-1.1h8.3v3.2h-6.9v1h7.1v1.1H96.9z M105.2,24.5h-8.3v-4h8.3V24.5z M103.9,21.6h-5.6v1.8h5.6V21.6z"/>
+        <path fill="#fff" d="M114.4,17.4c-.7.1-1.6.1-2.5.2v1.7h-1.7v-1.7c-.8,0-1.6,0-2.5,0v-1.3c2.8,0,4.7,0,6.6-.2L114.4,17.4z M108.3,14.2v-.4c0-1.2,1.3-1.8,2.8-1.8s2.8.7,2.8,1.8v.4c0,1.2-1.3,1.8-2.8,1.8S108.3,15.3,108.3,14.2z M109.8,13.9v.1c0,.5.6.7,1.3.7.6,0,1.3-.2,1.3-.7v-.1c0-.5-.6-.7-1.3-.7C110.5,13.2,109.8,13.4,109.8,13.9z M118.9,19.7v3.1h-6.9v.6h7.2v1.3h-8.9v-3.1h6.9V21h-6.9v-1.3H118.9z M116.6,19.3H115v-.2h-2v-1.2h2v-5.9h1.6V19.3z M118.9,19.3h-1.6v-7.6h1.6V19.3z"/>
+        <path fill="#fff" d="M123,19.7h.9c1.3,0,2.9-.1,4.2-.3l.2,1.5c-1.3.2-3.2.3-4.8.3h-2.3v-8.4h1.8V19.7z M131,24.6h-1.7V11.8h1.7V24.6z"/>
+        <path fill="#fff" d="M144.5,21.5V23h-11.7v-1.5H144.5z M138.7,16.8c-.1.3-.6.7-1.3,1.1-.7.5-1.7,1.1-3,1.8l-.9-1.4c1-.6,2.1-1.2,2.9-1.8,1.1-.7,1.4-1.4,1.4-2.6v-1.4h1.8V14c0,1.2.3,1.9,1.4,2.6.8.5,1.9,1.2,2.9,1.8l-.8,1.3c-1.3-.7-2.3-1.3-3-1.8C139.3,17.5,138.8,17.1,138.7,16.8L138.7,16.8z"/>
+      </g></g></g>
+      <g><g><g>
+        <path fill="#fff" d="M6.6,5.5C5.3,6.1,4.9,6.9,3.8,7.7,5.3,8.1,6.1,6.1,8,5.6,7.5,5.6,7.1,5.7,6.6,5.5z"/>
+        <path fill="#fff" d="M5.5,4.7C3.5,5.9,2.9,7.1,1.6,8c1.6.5,2.8-1.9,4.6-2.8C5.9,5.2,5.7,4.9,5.5,4.7z"/>
+        <path fill="#fff" d="M2.3,6.7c2.4-2.7,6.3-4.9,10-4.7C9.9,2.7,7.9,4.4,5.8,4.5c1.2,1.4,2.7.5,4,0,1.8-.6,3.6.4,5.5,1.4l0,0c0,0,.3.2,1,.5.8.3,2,.7,4,1,2.3.4,5.5.9,10,.9,0,0-5.1,0-9.3-3.8-.8-.7-1.6-1.6-2.9-2.8S14.8-.1,12.6,0C8,.2,2.8,3.5,0,7.9.9,8.1,1.7,7.4,2.3,6.7z"/>
+      </g>
+      <path fill="#fff" d="M21,1.5c0,0,3.7.1,7.2,2.6s6.3,4.2,11.5,4c0,0-7.2.6-12.3-1.8C24.2,4.8,22.4,2.2,21,1.5z"/>
+      </g>
+      <g><g>
+        <path fill="#fff" d="M33.1,30.4c1.3-.6,1.7-1.4,2.9-2.2-1.5-.4-2.3,1.6-4.2,2.2C32.2,30.2,32.7,30.2,33.1,30.4z"/>
+        <path fill="#fff" d="M34.3,31.2c2-1.2,2.5-2.4,3.8-3.4-1.6-.5-2.8,1.9-4.6,2.8C33.8,30.7,34.1,31,34.3,31.2z"/>
+        <path fill="#fff" d="M37.5,29.1c-2.4,2.7-6.3,4.9-10,4.7,2.3-.7,4.3-2.4,6.4-2.5-1.2-1.4-2.7-.5-4,0-1.8.6-3.6-.4-5.5-1.4l0,0c0,0-.3-.2-1-.5-.8-.3-2-.7-4-1-2.3-.4-5.5-.9-10-.9,0,0,5.1,0,9.3,3.8.8.7,1.6,1.6,2.9,2.8,1.4,1.2,3.3,1.7,5.5,1.6,4.6-.2,9.8-3.5,12.6-7.9C38.8,27.7,38.1,28.5,37.5,29.1z"/>
+      </g>
+      <path fill="#fff" d="M18.8,34.4c0,0-3.7-.1-7.2-2.6s-6.3-4.2-11.5-4c0,0,7.2-.6,12.3,1.8C15.5,31.1,17.3,33.6,18.8,34.4z"/>
+      </g></g>
+      <g><g>
+        <path fill="#fff" d="M10.6,18.5H9.5c-.1,0-.2,0-.3-.1-.1-.1-.1-.1-.2-.2l-.4-1H6.4l-.4,1c0,.1-.1.1-.2.2-.1.1-.2.1-.3.1H4.5l2.3-6h1.4L10.6,18.5z M6.7,16.2h1.6l-.6-1.6c0-.1-.1-.2-.1-.4,0-.1-.1-.3-.1-.5,0,.2-.1.3-.1.5,0,.1-.1.3-.1.4L6.7,16.2z"/>
+        <path fill="#fff" d="M13.3,17.4c.2,0,.4,0,.5-.1s.3-.2.4-.3c.1-.1.2-.3.2-.4.1-.2.1-.4.1-.6v-3.6h1.4V16c0,.4-.1.7-.2,1-.1.3-.3.6-.5.8-.2.2-.5.4-.8.5-.3.1-.7.2-1.1.2-.4,0-.8-.1-1.1-.2-.3-.1-.6-.3-.8-.5-.2-.2-.4-.5-.5-.8-.1-.3-.2-.6-.2-1v-3.6h1.4V16c0,.2,0,.4.1.6s.1.3.2.4c.1.1.2.2.4.3S13.2,17.4,13.3,17.4z"/>
+        <path fill="#fff" d="M18.2,16.2v2.2h-1.4v-6h2c.4,0,.8,0,1.1.1.3.1.6.2.8.4.2.2.3.3.4.6s.1.5.1.7c0,.2,0,.4-.1.6-.1.2-.1.3-.2.5-.1.1-.2.3-.4.4-.2.1-.3.2-.5.3.1,0,.2.1.3.2s.2.2.2.3l1.3,2.1h-1.3c-.2,0-.4-.1-.5-.3l-1-1.7c0-.1-.1-.1-.2-.2-.1,0-.1,0-.2,0H18.2z M18.2,15.3h.6c.2,0,.4,0,.5-.1.1,0,.2-.1.3-.2s.1-.2.2-.3c0-.1.1-.2.1-.4,0-.3-.1-.5-.3-.6-.2-.1-.4-.2-.8-.2h-.6V15.3z"/>
+        <path fill="#fff" d="M24.5,17.4c.2,0,.4,0,.5-.1s.3-.2.4-.3c.1-.1.2-.3.2-.4.1-.2.1-.4.1-.6v-3.6h1.4V16c0,.4-.1.7-.2,1-.1.3-.3.6-.5.8-.2.2-.5.4-.8.5-.3.1-.7.2-1.1.2-.4,0-.8-.1-1.1-.2-.3-.1-.6-.3-.8-.5-.2-.2-.4-.5-.5-.8C22,16.7,22,16.4,22,16v-3.6h1.4V16c0,.2,0,.4.1.6s.1.3.2.4c.1.1.2.2.4.3S24.4,17.4,24.5,17.4z"/>
+        <path fill="#fff" d="M31.3,16c.1.1.1.2.1.3,0-.1.1-.2.1-.4.1-.1.1-.2.2-.3l1.5-3c0-.1.1-.1.1-.1,0,0,.1-.1.1-.1,0,0,.1,0,.1,0s.1,0,.2,0h1.1v6h-1.2V15c0-.2,0-.3,0-.5L32,17.6c0,.1-.1.2-.2.2-.1,0-.2.1-.3.1h-.2c-.1,0-.2,0-.3-.1-.1,0-.2-.1-.2-.2l-1.6-3.1c0,.1,0,.2,0,.3,0,.1,0,.2,0,.3v3.4H28v-6h1.1c.1,0,.1,0,.2,0,0,0,.1,0,.1,0,0,0,.1,0,.1.1,0,0,.1.1.1.1l1.5,3C31.2,15.8,31.2,15.9,31.3,16z"/>
+      </g>
+      <g>
+        <path fill="#fff" d="M11.2,21.7h.3c0,0,.1,0,.1,0s0,0,0,.1l.5,1.6c0,.1,0,.1,0,.2,0,.1,0,.1,0,.2,0-.1,0-.1,0-.2,0-.1,0-.1.1-.2l.5-1.6c0,0,0,0,0-.1,0,0,0,0,.1,0h.2c0,0,.1,0,.1,0,0,0,0,0,0,.1l.5,1.6c0,.1,0,.1,0,.2s0,.1,0,.2c0-.1,0-.1,0-.2,0-.1,0-.1,0-.2l.5-1.6c0,0,0,0,0-.1,0,0,0,0,.1,0h.3l-.8,2.5h-.3c0,0-.1,0-.1-.1l-.5-1.7c0,0,0-.1,0-.1,0,0,0-.1,0-.1,0,0,0,.1,0,.1,0,0,0,.1,0,.1l-.5,1.7c0,.1-.1.1-.1.1H12L11.2,21.7z"/>
+        <path fill="#fff" d="M16.1,21.7c.1,0,.3,0,.4.1.1,0,.2.1.3.2.1.1.2.2.2.3.1.1.1.3.1.5,0,.1,0,.1,0,.1s0,0-.1,0h-1.6c0,.2,0,.3.1.4,0,.1.1.2.2.3.1.1.1.1.2.2.1,0,.2.1.3.1.1,0,.2,0,.3,0,.1,0,.1-.1.2-.1.1,0,.1-.1.1-.1,0,0,.1,0,.1,0,0,0,.1,0,.1,0l.1.2c-.1.1-.1.1-.2.2-.1,0-.2.1-.2.1-.1,0-.2.1-.3.1-.1,0-.2,0-.3,0-.2,0-.3,0-.5-.1-.1-.1-.3-.1-.4-.3s-.2-.2-.2-.4C15,23.3,15,23.1,15,22.9c0-.2,0-.3.1-.5.1-.1.1-.3.2-.4s.2-.2.4-.3C15.8,21.7,15.9,21.7,16.1,21.7z M16.1,22c-.2,0-.4.1-.5.2-.1.1-.2.3-.2.5h1.3c0-.1,0-.2,0-.3s-.1-.2-.1-.2c-.1-.1-.1-.1-.2-.1C16.3,22,16.2,22,16.1,22z"/>
+        <path fill="#fff" d="M18.1,20.6v3.6h-.4v-3.6H18.1z"/>
+        <path fill="#fff" d="M19.2,20.6v3.6h-.4v-3.6H19.2z"/>
+        <path fill="#fff" d="M19.9,24.2v-2.5h.3c.1,0,.1,0,.1.1l0,.3c.1-.1.2-.2.4-.3.1-.1.3-.1.5-.1.1,0,.3,0,.4.1s.2.1.3.2c.1.1.1.2.2.3,0,.1.1.2.1.4v1.6h-.4v-1.6c0-.2,0-.3-.1-.4C21.3,22.1,21.1,22,21,22c-.1,0-.2,0-.4.1s-.2.1-.3.2v1.8H19.9z"/>
+        <path fill="#fff" d="M23.4,21.7c.1,0,.3,0,.4.1.1,0,.2.1.3.2.1.1.2.2.2.3.1.1.1.3.1.5,0,.1,0,.1,0,.1s0,0-.1,0h-1.6c0,.2,0,.3.1.4,0,.1.1.2.2.3.1.1.1.1.2.2.1,0,.2.1.3.1.1,0,.2,0,.3,0,.1,0,.1-.1.2-.1.1,0,.1-.1.1-.1,0,0,.1,0,.1,0,0,0,.1,0,.1,0l.1.2c-.1.1-.1.1-.2.2-.1,0-.2.1-.2.1-.1,0-.2.1-.3.1-.1,0-.2,0-.3,0-.2,0-.3,0-.5-.1-.1-.1-.3-.1-.4-.3s-.2-.2-.2-.4c-.1-.2-.1-.4-.1-.6,0-.2,0-.3.1-.5.1-.1.1-.3.2-.4s.2-.2.4-.3C23.1,21.7,23.3,21.7,23.4,21.7z M23.5,22c-.2,0-.4.1-.5.2-.1.1-.2.3-.2.5h1.3c0-.1,0-.2,0-.3s-.1-.2-.1-.2c-.1-.1-.1-.1-.2-.1C23.6,22,23.6,22,23.5,22z"/>
+        <path fill="#fff" d="M26.3,22.1C26.3,22.2,26.3,22.2,26.3,22.1c-.1.1-.1,0-.2,0s-.1,0-.1-.1c0,0-.1,0-.2-.1s-.1,0-.2,0c-.1,0-.1,0-.2,0-.1,0-.1,0-.1.1s-.1.1-.1.1c0,0,0,.1,0,.1,0,.1,0,.1.1.2,0,0,.1.1.1.1.1,0,.1.1.2.1.1,0,.2,0,.2.1.1,0,.2.1.2.1.1,0,.1.1.2.1.1,0,.1.1.1.2,0,.1.1.2.1.3,0,.1,0,.2-.1.3,0,.1-.1.2-.2.2s-.2.1-.3.2c-.1,0-.2.1-.4.1-.2,0-.3,0-.5-.1s-.3-.1-.4-.2l.1-.2c0,0,0,0,0,0,0,0,0,0,.1,0s.1,0,.1,0s.1,0,.1.1s.1.1.2.1c.1,0,.1,0,.2,0,.1,0,.2,0,.2,0,.1,0,.1-.1.2-.1s.1-.1.1-.1c0,0,0-.1,0-.2,0-.1,0-.1-.1-.2,0,0-.1-.1-.1-.1-.1,0-.1-.1-.2-.1-.1,0-.2,0-.2-.1-.1,0-.2-.1-.2-.1-.1,0-.1-.1-.2-.1-.1,0-.1-.1-.1-.2,0-.1-.1-.2-.1-.3,0-.1,0-.2.1-.3,0-.1.1-.2.2-.2s.2-.1.3-.2c.1,0,.2-.1.4-.1.2,0,.3,0,.4.1.1.1.2.1.3.2L26.3,22.1z"/>
+        <path fill="#fff" d="M28.3,22.1C28.3,22.2,28.3,22.2,28.3,22.1c-.1.1-.1,0-.2,0s-.1,0-.1-.1c0,0-.1,0-.2-.1s-.1,0-.2,0c-.1,0-.1,0-.2,0-.1,0-.1,0-.1.1s-.1.1-.1.1c0,0,0,.1,0,.1,0,.1,0,.1.1.2,0,0,.1.1.1.1.1,0,.1.1.2.1.1,0,.2,0,.2.1.1,0,.2.1.2.1.1,0,.1.1.2.1.1,0,.1.1.1.2,0,.1.1.2.1.3,0,.1,0,.2-.1.3,0,.1-.1.2-.2.2s-.2.1-.3.2c-.1,0-.2.1-.4.1-.2,0-.3,0-.5-.1s-.3-.1-.4-.2l.1-.2c0,0,0,0,0,0,0,0,0,0,.1,0s.1,0,.1,0s.1,0,.1.1s.1.1,.2.1c.1,0,.1,0,.2,0,.1,0,.2,0,.2,0,.1,0,.1-.1.2-.1s.1-.1.1-.1c0,0,0-.1,0-.2,0-.1,0-.1-.1-.2,0,0-.1-.1-.1-.1-.1,0-.1-.1-.2-.1-.1,0-.2,0-.2-.1-.1,0-.2-.1-.2-.1-.1,0-.1-.1-.2-.1-.1,0-.1-.1-.1-.2,0-.1-.1-.2-.1-.3,0-.1,0-.2.1-.3,0-.1.1-.2.2-.2s.2-.1.3-.2c.1,0,.2-.1.4-.1.2,0,.3,0,.4.1.1.1.2.1.3.2L28.3,22.1z"/>
+      </g></g>
+    </svg>
+    <div class="thankyou-main">감사합니다</div>
+    <div class="thankyou-line"></div>
+    <div class="thankyou-phone">010-2981-9989</div>
+    <div class="thankyou-contact">
+      victsoon@naver.com<br>
+      인천광역시 부평구 부평대로 71, 3층<br>
+      <span class="gold">aurumwellness.co.kr</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

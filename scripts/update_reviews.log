@@ -1,0 +1,834 @@
+[2026-03-15 21:45:18] ==================================================
+[2026-03-15 21:45:18] Review update pipeline started
+[2026-03-15 21:45:18] Running scrape_reviews.py...
+[2026-03-15 21:45:59]   === Naver Review Scraper ===
+[2026-03-15 21:45:59]   Place ID: 1058592122
+[2026-03-15 21:45:59]   Reviews file: D:\아우름 웰니스\aurum_reviews\reviews_raw.json
+[2026-03-15 21:45:59]   Time: 2026-03-15 21:45:19
+[2026-03-15 21:45:59]   Existing reviews: 645
+[2026-03-15 21:45:59]   
+[2026-03-15 21:45:59]   --- Page 1 ---
+[2026-03-15 21:45:59]     Found 40 reviews, 0 new
+[2026-03-15 21:45:59]   
+[2026-03-15 21:45:59]   --- Page 2 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-15 21:45:59]     Found 40 reviews, 0 new
+[2026-03-15 21:45:59]   
+[2026-03-15 21:45:59]   --- Page 3 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-15 21:45:59]     Found 40 reviews, 0 new
+[2026-03-15 21:45:59]   
+[2026-03-15 21:45:59]   --- Page 4 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-15 21:45:59]     Found 40 reviews, 0 new
+[2026-03-15 21:45:59]   
+[2026-03-15 21:45:59]   --- Page 5 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-15 21:45:59]     Found 40 reviews, 0 new
+[2026-03-15 21:45:59]   
+[2026-03-15 21:45:59]   --- Page 6 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-15 21:45:59]     Found 40 reviews, 0 new
+[2026-03-15 21:45:59]   
+[2026-03-15 21:45:59]   --- Page 7 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-15 21:45:59]     Found 40 reviews, 0 new
+[2026-03-15 21:45:59]   
+[2026-03-15 21:45:59]   --- Page 8 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-15 21:45:59]     Found 40 reviews, 0 new
+[2026-03-15 21:45:59]   
+[2026-03-15 21:45:59]   --- Page 9 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-15 21:45:59]     No reviews returned (1 consecutive empty).
+[2026-03-15 21:45:59]     No next cursor, last page reached.
+[2026-03-15 21:45:59]   
+[2026-03-15 21:45:59]   === Total new reviews: 0 ===
+[2026-03-15 21:45:59]   
+[2026-03-15 21:45:59]   No new reviews to add.
+[2026-03-15 21:45:59] Running categorize_reviews.py...
+[2026-03-15 21:45:59] reviewData.ts changed, pushing to remote...
+[2026-03-15 21:46:02] Pushed successfully. Vercel will auto-deploy.
+[2026-03-15 21:46:02] Pipeline complete.
+[2026-03-16 09:00:01] ==================================================
+[2026-03-16 09:00:01] Review update pipeline started
+[2026-03-16 09:00:01] Running scrape_reviews.py...
+[2026-03-16 09:19:01]   === Naver Review Scraper ===
+[2026-03-16 09:19:01]   Place ID: 1058592122
+[2026-03-16 09:19:01]   Reviews file: D:\아우름 웰니스\aurum_reviews\reviews_raw.json
+[2026-03-16 09:19:01]   Time: 2026-03-16 09:00:02
+[2026-03-16 09:19:01]   Existing reviews: 630
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 1 ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 2 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 3 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 4 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 5 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 6 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 7 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 8 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 9 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 10 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 11 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 12 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 13 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 14 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 15 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 16 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 17 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 18 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 19 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 20 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 21 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 22 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 23 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 24 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 25 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 26 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 27 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 28 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 29 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 30 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 31 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 32 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 33 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 34 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 35 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 36 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 37 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 38 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 39 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 40 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 41 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 42 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 43 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 44 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 45 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 46 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 47 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 48 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 49 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 50 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 51 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 52 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 53 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 54 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 55 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 56 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 57 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 58 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 59 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 60 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 61 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 62 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 63 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 64 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 65 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 66 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 67 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 68 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 69 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 70 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 71 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 72 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 73 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 74 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 75 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 76 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 77 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 78 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 79 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 80 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 81 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 82 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 83 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 84 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 85 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 86 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 87 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 88 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 89 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 90 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 91 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 92 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 93 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 94 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 95 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 96 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 97 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 98 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 99 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 100 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 101 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 102 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 103 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 104 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 105 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 106 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 107 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 108 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 109 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 110 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 111 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 112 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 113 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 114 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 115 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 116 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 117 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 118 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 119 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 120 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 121 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 122 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 123 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 124 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 125 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 126 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 127 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 128 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 129 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 130 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 131 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 132 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 133 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 134 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 135 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 136 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 137 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 138 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 139 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 140 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 141 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 142 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 143 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 144 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 145 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 146 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 147 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 148 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 149 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 150 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 151 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 152 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 153 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 154 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 155 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 156 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 157 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 158 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 159 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 160 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 161 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 162 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 163 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 164 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 165 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 166 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 167 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 168 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 169 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 170 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 171 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 172 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 173 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 174 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 175 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 176 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 177 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 178 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 179 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 180 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 181 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 182 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 183 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 184 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 185 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 186 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 187 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 188 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 189 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 190 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 191 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 192 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 193 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 194 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 195 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 196 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 197 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 198 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 199 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 200 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 201 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 202 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 203 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 204 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 205 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 206 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 207 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 208 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 209 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 210 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 211 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 212 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 213 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 214 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 215 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 216 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 217 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 218 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 219 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 220 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 221 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 222 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 223 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 224 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 225 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 226 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 227 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 228 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 229 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 230 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 231 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 232 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 233 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 234 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 235 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 236 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 237 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 238 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 239 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 240 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 241 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 242 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 243 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 244 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 245 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 246 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 247 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 248 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 249 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 250 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 251 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 252 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 253 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     Found 40 reviews, 0 new
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   --- Page 254 (cursor=SnFpTTZOUkRYU3dLOHdjVmtUVzRjK3...) ---
+[2026-03-16 09:19:01]     No reviews returned (1 consecutive empty).
+[2026-03-16 09:19:01]     No next cursor, last page reached.
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   === Total new reviews: 0 ===
+[2026-03-16 09:19:01]   
+[2026-03-16 09:19:01]   No new reviews to add.
+[2026-03-16 09:19:01] Running categorize_reviews.py...
+[2026-03-16 09:19:02] No changes to reviewData.ts. Nothing to push.
+[2026-03-16 09:19:02] Pipeline complete.
+[2026-03-17 03:25:23] ==================================================
+[2026-03-17 03:25:23] Review update pipeline started
+[2026-03-17 03:25:23] Running scrape_reviews.py...
+[2026-03-17 03:33:59] ==================================================
+[2026-03-17 03:33:59] Review update pipeline started
+[2026-03-17 03:33:59] Running scrape_reviews.py...
+[2026-03-17 09:00:03] ==================================================
+[2026-03-17 09:00:03] Review update pipeline started
+[2026-03-17 09:00:03] Running scrape_reviews.py...
+[2026-03-18 09:00:02] ==================================================
+[2026-03-18 09:00:02] Review update pipeline started
+[2026-03-18 09:00:02] Running scrape_reviews.py...

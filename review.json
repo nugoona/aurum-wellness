@@ -1,0 +1,1892 @@
+[
+    {
+        "data": {
+            "visitorReviews": {
+                "items": [
+                    {
+                        "id": "69903a7ad80e7cd24b1cdb84",
+                        "rating": null,
+                        "author": {
+                            "id": "1bpqw",
+                            "nickname": "깜81",
+                            "from": "NAVER",
+                            "imageUrl": "https://phinf.pstatic.net/contact/20210502_212/1619932000808Wx487_JPEG/%B1%F4_cllei.jpg",
+                            "objectId": "5d33cc7db6220206af43ed79",
+                            "url": "https://m.place.naver.com/my/5d33cc7db6220206af43ed79/review?v=2",
+                            "borderImageUrl": "https://myplace-phinf.pstatic.net/20240130_261/1706598927925qRvGS_PNG/valentine_border.png",
+                            "__typename": "VisitorReviewAuthor"
+                        },
+                        "body": "이곳을 발견한 후로는 여기만 와요.\n저는 건식 60분 했는데, 압도 어떤지 계속 물어봐주시고 불편했던 부분을 잘 마사지해주십니다. 원래 원장님께 받다가 이번엔 단발머리 선생님께 받았는데 아팠던 곳이 풀렸어요 너무 신기해요.. 부평 마사지로 강추입니다. 내돈내산이구요 가격이 좀 비싸다고 생각할 수도 있는데 퀄리티 생각하면 저렴한거같아요.",
+                        "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAyMTRfMTg0/MDAxNzcxMDU5ODMyNTc3._WKM9a3ZvmU7fcXANQOVitdsyy8ZxYMMv5odxjF9lS4g.EzUfubznxNAlGM6aSYNKH89IhXiWimbOytBhPgzSvXAg.JPEG/47D2F786-9791-4C9D-B819-127113F872DF.jpeg",
+                        "media": [
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAyMTRfMTg0/MDAxNzcxMDU5ODMyNTc3._WKM9a3ZvmU7fcXANQOVitdsyy8ZxYMMv5odxjF9lS4g.EzUfubznxNAlGM6aSYNKH89IhXiWimbOytBhPgzSvXAg.JPEG/47D2F786-9791-4C9D-B819-127113F872DF.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "square",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            }
+                        ],
+                        "tags": null,
+                        "status": "ACTIVE",
+                        "visited": "2.13.금",
+                        "originType": "예약",
+                        "item": {
+                            "name": "편안함을 터치하세요 - 네이버예약",
+                            "code": null,
+                            "options": null,
+                            "__typename": "VisitorReviewItem"
+                        },
+                        "businessName": "아우르메 테라피 뷰티앤스파",
+                        "isFollowing": null,
+                        "visitCount": 4,
+                        "votedKeywords": [
+                            {
+                                "code": "effect_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/face_with_thumbsup20220119222236.png",
+                                "iconCode": "face_with_thumbsup",
+                                "name": "관리 효과가 좋아요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "care_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/woman_getting_hair_done20220119222234.png",
+                                "iconCode": "woman_getting_hair_done",
+                                "name": "맞춤 케어를 잘해줘요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "treatment_careful",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/magnifying_glass20220119222236.png",
+                                "iconCode": "magnifying_glass",
+                                "name": "시술이 꼼꼼해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "kind",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/beating_heart20220119222223.png",
+                                "iconCode": "beating_heart",
+                                "name": "친절해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "price_worthy",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/gem_stone20220119222239.png",
+                                "iconCode": "gem_stone",
+                                "name": "비싼 만큼 가치있어요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            }
+                        ],
+                        "__typename": "VisitorReview"
+                    },
+                    {
+                        "id": "696a45bce85e780c60b5e3d0",
+                        "rating": null,
+                        "author": {
+                            "id": "64BRy",
+                            "nickname": "담스02",
+                            "from": "NAVER",
+                            "imageUrl": "https://phinf.pstatic.net/contact/20190610_38/1560097593563G3tPF_JPEG/KakaoTalk_20190610_012610274.jpg",
+                            "objectId": "5d49a23e8f87a842bcad1e31",
+                            "url": "https://m.place.naver.com/my/5d49a23e8f87a842bcad1e31/review?v=2",
+                            "borderImageUrl": null,
+                            "__typename": "VisitorReviewAuthor"
+                        },
+                        "body": "부모님이랑 다닐 아로마마사지샵 찾는 중이었는데 드디어 정착할 수 있을 거 같아요 ㅠㅠ\n근육 풀어주시면서 체크해주시는데 온몸이 녹는 기분이었습니다 ! 두명 동시에도 가능하다고 하는데 엄마랑 또 가려구요 ❤️❤️ 완전 강추!!",
+                        "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMTZfMjQw/MDAxNzY4NTcyMzQ2MjAx.XDCft-qKfzRLu9PKLV6zdbNWGCgRwT918z2OorvxG-4g.N4IYxLCsUA1Un8eO9nnnyrb0kD4sIXADXebIQg03i4gg.JPEG/62651B8E-9780-4EDE-BAED-5ECF33D1D044.jpeg",
+                        "media": [
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMTZfMjQw/MDAxNzY4NTcyMzQ2MjAx.XDCft-qKfzRLu9PKLV6zdbNWGCgRwT918z2OorvxG-4g.N4IYxLCsUA1Un8eO9nnnyrb0kD4sIXADXebIQg03i4gg.JPEG/62651B8E-9780-4EDE-BAED-5ECF33D1D044.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMTZfNzIg/MDAxNzY4NTcyMzQ2MzQ1.FvgimQJEdGiGOG_qbBvY0zCFw5raa1eqDh1Vr1rkj98g.DH0eDIE1_eY57kV6pMw70VILjwImkVOLvr3qUxdOkdEg.JPEG/9268C577-7FFA-427D-8D7E-23F19C2BD32D.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMTZfNDEg/MDAxNzY4NTcyMzQ2NDEy.GiWA7HX25M3T9QRyYveieu0deiq0ASktuoaJ1JcwnrQg.9qcIrfsV184w4515gr_7pxvdGfW5NK1_D-Bvj4sgUVQg.JPEG/7AFBE9A3-01A3-441C-B3B6-2BE9E573F6B5.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMTZfMTU2/MDAxNzY4NTcyMzQ2NDc0.nlsngIS5eF1GUZ8EiE_WkcnD1XXCR5-5CVB8I8qQ85gg.wGU9wGk_i4OxTJ3VF0K12uL9WJR6c0grIJt_Je6VNsog.JPEG/6ADD8505-6F99-4F42-88AD-44611C1FEEEA.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMTZfMTc1/MDAxNzY4NTcyMzQ2Mjc3.Zd3OH8bS3XRGk4nctWECCNUfVn_yebWp3dB9cLJSCWAg.RNtqCmiqEgmkjTDMwmfxEEykFkftUqH_iUosvPMuSacg.JPEG/DB8305A0-7CEF-4834-8111-F15ECFB17B9E.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            }
+                        ],
+                        "tags": null,
+                        "status": "ACTIVE",
+                        "visited": "1.15.목",
+                        "originType": "예약",
+                        "item": {
+                            "name": "편안함을 터치하세요 - 네이버예약",
+                            "code": null,
+                            "options": null,
+                            "__typename": "VisitorReviewItem"
+                        },
+                        "businessName": "아우르메 테라피 뷰티앤스파",
+                        "isFollowing": null,
+                        "visitCount": 1,
+                        "votedKeywords": [
+                            {
+                                "code": "effect_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/face_with_thumbsup20220119222236.png",
+                                "iconCode": "face_with_thumbsup",
+                                "name": "관리 효과가 좋아요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "care_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/woman_getting_hair_done20220119222234.png",
+                                "iconCode": "woman_getting_hair_done",
+                                "name": "맞춤 케어를 잘해줘요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "luxurious",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/rose20220119222235.png",
+                                "iconCode": "rose",
+                                "name": "고급스러워요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "treatment_careful",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/magnifying_glass20220119222236.png",
+                                "iconCode": "magnifying_glass",
+                                "name": "시술이 꼼꼼해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "kind",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/beating_heart20220119222223.png",
+                                "iconCode": "beating_heart",
+                                "name": "친절해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            }
+                        ],
+                        "__typename": "VisitorReview"
+                    },
+                    {
+                        "id": "69646aa3aac6453baa708bd0",
+                        "rating": null,
+                        "author": {
+                            "id": "6ELHw",
+                            "nickname": "코리아날도",
+                            "from": "NAVER",
+                            "imageUrl": "https://phinf.pstatic.net/contact/20210107_50/161000142793849PFH_JPEG/128092971_3992492487431029_2920231632723469587_o.jpg",
+                            "objectId": "5f050abe44349fd753503f61",
+                            "url": "https://m.place.naver.com/my/5f050abe44349fd753503f61/review?v=2",
+                            "borderImageUrl": null,
+                            "__typename": "VisitorReviewAuthor"
+                        },
+                        "body": "아로마관리를 받으면서 이렇게 잠이 솔솔 온적 없었는데요 진짜 관리잘한다 입이 벌어질 정도 너무 기분좋은 힐링 시간이였네요",
+                        "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMTJfNjMg/MDAxNzY4MTg4NTc3ODY3.5lXsM3uj3rMYwRpPkg5-XeLSiRmTOuRBsufwGOygttEg.dxG7O_mP6NcBn8zmq9YI82wQkBnLYqjHwpozLRg2li0g.JPEG/20260109_180000.jpg.jpg",
+                        "media": [
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMTJfNjMg/MDAxNzY4MTg4NTc3ODY3.5lXsM3uj3rMYwRpPkg5-XeLSiRmTOuRBsufwGOygttEg.dxG7O_mP6NcBn8zmq9YI82wQkBnLYqjHwpozLRg2li0g.JPEG/20260109_180000.jpg.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "landscape",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMTJfMjU5/MDAxNzY4MTg4NTc3ODQ4.hXO2PmDCFrlxoJtikmsLFyX-IPUYlCRES1A-VDfiAFsg.oubMQq10VlmtrGjULRQZRcp24Qsh0jhfdh2Pk4BuUmog.JPEG/20260109_175924.jpg.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "landscape",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMTJfMjcz/MDAxNzY4MTg4NTc3ODY5.ukcP87-27RrVwTVGQ-ZM_K3EsellQWvkuMBqRe5Q3B4g.BZ3Te60TotqSXjhbKxwu8AI_amgBPKe9kDSKKmDjb3wg.JPEG/20260109_175922.jpg.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            }
+                        ],
+                        "tags": null,
+                        "status": "ACTIVE",
+                        "visited": "1.9.금",
+                        "originType": "예약",
+                        "item": {
+                            "name": "편안함을 터치하세요 - 네이버예약",
+                            "code": null,
+                            "options": null,
+                            "__typename": "VisitorReviewItem"
+                        },
+                        "businessName": "아우르메 테라피 뷰티앤스파",
+                        "isFollowing": null,
+                        "visitCount": 1,
+                        "votedKeywords": [
+                            {
+                                "code": "effect_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/face_with_thumbsup20220119222236.png",
+                                "iconCode": "face_with_thumbsup",
+                                "name": "관리 효과가 좋아요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "care_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/woman_getting_hair_done20220119222234.png",
+                                "iconCode": "woman_getting_hair_done",
+                                "name": "맞춤 케어를 잘해줘요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "luxurious",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/rose20220119222235.png",
+                                "iconCode": "rose",
+                                "name": "고급스러워요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "trendy",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/face_with_sunglasses20220119222235.png",
+                                "iconCode": "face_with_sunglasses",
+                                "name": "트렌디해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "treatment_careful",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/magnifying_glass20220119222236.png",
+                                "iconCode": "magnifying_glass",
+                                "name": "시술이 꼼꼼해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            }
+                        ],
+                        "__typename": "VisitorReview"
+                    },
+                    {
+                        "id": "6963b856446d8289c6c9ec5d",
+                        "rating": null,
+                        "author": {
+                            "id": "Q9KC",
+                            "nickname": "또용이이잇",
+                            "from": "NAVER",
+                            "imageUrl": "https://pup-review-phinf.pstatic.net/MjAyNjAyMjFfNTgg/MDAxNzcxNjgwNjg0OTc0.fZBAlqJMfm9P8m9MbPvLAh6zZxhOCOIbO4G2dnVJ4NAg.EpNDxlK6_0g-8GVytb3ZiXSXi52wbWHw3LkxEDBlqPcg.JPEG/IMG_0542.jpeg",
+                            "objectId": "5e3680f98f87a842bcbf55d1",
+                            "url": "https://m.place.naver.com/my/5e3680f98f87a842bcbf55d1/review?v=2",
+                            "borderImageUrl": "https://myplace-phinf.pstatic.net/20240130_261/1706598927925qRvGS_PNG/valentine_border.png",
+                            "__typename": "VisitorReviewAuthor"
+                        },
+                        "body": "바디관리 받으러 부평까지 옴..\n오늘 1:1맞춤케어로 아로마케어 받았는데\n너무 시원..! 경직되어 딱떡하게 뭉치고 아팠던 몸이\n아로마케어로 한결 가벼워져서 아주 만족스럽네요!\n\n감사합니다",
+                        "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMTFfMjgz/MDAxNzY4MTQyOTI4ODg1.Oy0GVv_9yhnVIdqUKdgfgclhe-sES1DjL9MrlYgilggg.nhVq-SlK9C8mkB-poAnlBfqYdlhQfsm7d5OL3tCR9OYg.JPEG/90956B06-AE05-48D0-B27C-E3561A1880D3.jpeg",
+                        "media": [
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMTFfMjgz/MDAxNzY4MTQyOTI4ODg1.Oy0GVv_9yhnVIdqUKdgfgclhe-sES1DjL9MrlYgilggg.nhVq-SlK9C8mkB-poAnlBfqYdlhQfsm7d5OL3tCR9OYg.JPEG/90956B06-AE05-48D0-B27C-E3561A1880D3.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMTFfNjcg/MDAxNzY4MTQyOTI4NTY2.6idBwxZ5aHmAofKPemyU7M3OFzzTcQWu2cTCOoStd3Mg.HMxFmNFOBj-QZIJMDleSyjG3lqfJ2kulJH4mfYFLQR0g.JPEG/823A99AF-37A5-453D-ACEF-C264139CC9CD.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "square",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMTFfMTU5/MDAxNzY4MTQyOTI1ODU4.jYyJn9-5HFn6i-QeQkPL-TkPZ6fvZPuh4JAJirKOb3Mg.k4cbo5Zebd7brmm6UQMuefbKWORXGhNhvsp9AX3ZHv4g.JPEG/0C650F6C-E673-42B8-91DF-F518D34EBE24.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMTFfMTg2/MDAxNzY4MTQyOTI1MDg1.Dnx9sxEKe1Rs4uq-PySwcVTq-0x8_IaJh3zsk-t6l18g.se5PVndaZ8GEN4xiMWRxUx93ugQF2qoYEebG9xbCECQg.JPEG/930FEB5A-D3E7-47A5-BE7C-5F19AC96EA78.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "video",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMTFfNiAg/MDAxNzY4MTQyOTI1MjU0.cA3OJuIek9qWIn8R33GMGggWicC1XoxKTLsf0OtBCOwg.JlwIfHH5JbbbbAxSFJm2Y-ldvLnTZ4GgsV7IPXCXETIg.JPEG/A43A49E5-16B5-444A-A9ED-0B7C9A4674AD.jpeg",
+                                "thumbnailRatio": "portrait",
+                                "videoId": "22D25E998CD98A860CF19B09557FB349DE0B",
+                                "videoUrl": "vod3://2040:V1249df422ed615f4ec17d5a51a836bafd2f24027a91d0846aadbf79dede39e656722d5a51a836bafd2f2@22D25E998CD98A860CF19B09557FB349DE0B?env=real#track=720",
+                                "trailerUrl": "https://a02-g-smp-vod.akamaized.net/pup_review/c/read/v2/VOD_ALPHA/pup_review/22D25E998CD98A860CF19B09557FB349DE0B/trailer/1768142932360/aa82715f-eefc-11f0-a1b9-a0369ffab670.mp4?hdnts=exp%3D1772296417%7Eacl%3D%2Fpup_review%2Fc%2Fread%2Fv2%2FVOD_ALPHA%2Fpup_review%2F22D25E998CD98A860CF19B09557FB349DE0B%2F*%7Ehmac%3Df2550f297138944a028db9c002b03020c22a29551feb1ed1c2a86dc73cf62854",
+                                "__typename": "VisitorReviewMedia"
+                            }
+                        ],
+                        "tags": null,
+                        "status": "ACTIVE",
+                        "visited": "1.9.금",
+                        "originType": "예약",
+                        "item": {
+                            "name": "편안함을 터치하세요 - 네이버예약",
+                            "code": null,
+                            "options": null,
+                            "__typename": "VisitorReviewItem"
+                        },
+                        "businessName": "아우르메 테라피 뷰티앤스파",
+                        "isFollowing": null,
+                        "visitCount": 1,
+                        "votedKeywords": [
+                            {
+                                "code": "effect_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/face_with_thumbsup20220119222236.png",
+                                "iconCode": "face_with_thumbsup",
+                                "name": "관리 효과가 좋아요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "care_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/woman_getting_hair_done20220119222234.png",
+                                "iconCode": "woman_getting_hair_done",
+                                "name": "맞춤 케어를 잘해줘요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "treatment_careful",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/magnifying_glass20220119222236.png",
+                                "iconCode": "magnifying_glass",
+                                "name": "시술이 꼼꼼해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "kind",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/beating_heart20220119222223.png",
+                                "iconCode": "beating_heart",
+                                "name": "친절해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "counsel_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/clipboard20220119222236.png",
+                                "iconCode": "clipboard",
+                                "name": "상담이 자세해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            }
+                        ],
+                        "__typename": "VisitorReview"
+                    },
+                    {
+                        "id": "6969fa623848f3fe47df6a92",
+                        "rating": null,
+                        "author": {
+                            "id": "4Sm78",
+                            "nickname": "구루미엄마",
+                            "from": "NAVER",
+                            "imageUrl": "https://myplace-phinf.pstatic.net/20220929_74/16644379944697Sjo6_JPEG/4978D4AB-2697-47EF-9E3C-D4776242E815.jpeg",
+                            "objectId": "5da430228f87a842bc79ad16",
+                            "url": "https://m.place.naver.com/my/5da430228f87a842bc79ad16/review?v=2",
+                            "borderImageUrl": null,
+                            "__typename": "VisitorReviewAuthor"
+                        },
+                        "body": "공간도 쾌적하고 무엇보다 마사지가 넘 시원했어요 전문가의 손길 🩷🩷 족욕해줘서 좋아용",
+                        "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMTZfMTUx/MDAxNzY4NTUzMDU1OTY0.OxKB0k2vi23uoGXnaWONRhNVTP7B2GH94kVZhQ9G5ckg.UQ-BalY3dl85oSiIz6R3Le3vO0hSH_7MX_TBdM8xAuQg.JPEG/20260107_185000.jpg.jpg",
+                        "media": [
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMTZfMTUx/MDAxNzY4NTUzMDU1OTY0.OxKB0k2vi23uoGXnaWONRhNVTP7B2GH94kVZhQ9G5ckg.UQ-BalY3dl85oSiIz6R3Le3vO0hSH_7MX_TBdM8xAuQg.JPEG/20260107_185000.jpg.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            }
+                        ],
+                        "tags": null,
+                        "status": "ACTIVE",
+                        "visited": "1.7.수",
+                        "originType": "예약",
+                        "item": {
+                            "name": "편안함을 터치하세요 - 네이버예약",
+                            "code": null,
+                            "options": null,
+                            "__typename": "VisitorReviewItem"
+                        },
+                        "businessName": "아우르메 테라피 뷰티앤스파",
+                        "isFollowing": null,
+                        "visitCount": 1,
+                        "votedKeywords": [
+                            {
+                                "code": "care_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/woman_getting_hair_done20220119222234.png",
+                                "iconCode": "woman_getting_hair_done",
+                                "name": "맞춤 케어를 잘해줘요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "treatment_careful",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/magnifying_glass20220119222236.png",
+                                "iconCode": "magnifying_glass",
+                                "name": "시술이 꼼꼼해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "mood_comfy",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/face_smiling20220119222244.png",
+                                "iconCode": "face_smiling",
+                                "name": "분위기가 편안해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "store_clean",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/sparkles20220119222028.png",
+                                "iconCode": "sparkles",
+                                "name": "매장이 청결해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "no_recommend",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/beating_heart20220119222223.png",
+                                "iconCode": "beating_heart",
+                                "name": "과도한 권유가 없어요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            }
+                        ],
+                        "__typename": "VisitorReview"
+                    },
+                    {
+                        "id": "695dcf0521f0f31d1b47348e",
+                        "rating": null,
+                        "author": {
+                            "id": "5kHEJ",
+                            "nickname": "임고미",
+                            "from": "NAVER",
+                            "imageUrl": "https://myplace-phinf.pstatic.net/20240511_144/1715395351498vHmtk_JPEG/IMG_2449.jpeg",
+                            "objectId": "5e92e00a8f87a842bc81d418",
+                            "url": "https://m.place.naver.com/my/5e92e00a8f87a842bc81d418/review?v=2",
+                            "borderImageUrl": "https://myplace-phinf.pstatic.net/20240130_261/1706598927925qRvGS_PNG/valentine_border.png",
+                            "__typename": "VisitorReviewAuthor"
+                        },
+                        "body": "말도 못하게 피로해서 목 어깨 묵직했는데 단번에 풀렸습니다 너무 좋아서 당장 10회 티켓팅 하고 싶지만 명절 성과금 받고 오려구요 👍🏻 전나영 테라피스트님 최고",
+                        "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMDdfNTYg/MDAxNzY3NzU1NTIzNTYy.52iWY-tMZ7pTYf54YXVYHE8L7-kdN57Pp-uhO6Y63MIg._EMWn_ZnalmBrbXG-xzMD8FypyvWXmdVOLutQLfOK8sg.JPEG/6FF30B9D-CD46-4CCA-8CC1-6DC5803008A6.jpeg",
+                        "media": [
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMDdfNTYg/MDAxNzY3NzU1NTIzNTYy.52iWY-tMZ7pTYf54YXVYHE8L7-kdN57Pp-uhO6Y63MIg._EMWn_ZnalmBrbXG-xzMD8FypyvWXmdVOLutQLfOK8sg.JPEG/6FF30B9D-CD46-4CCA-8CC1-6DC5803008A6.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            }
+                        ],
+                        "tags": null,
+                        "status": "ACTIVE",
+                        "visited": "1.5.월",
+                        "originType": "예약",
+                        "item": {
+                            "name": "편안함을 터치하세요 - 네이버예약",
+                            "code": null,
+                            "options": null,
+                            "__typename": "VisitorReviewItem"
+                        },
+                        "businessName": "아우르메 테라피 뷰티앤스파",
+                        "isFollowing": null,
+                        "visitCount": 1,
+                        "votedKeywords": [
+                            {
+                                "code": "effect_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/face_with_thumbsup20220119222236.png",
+                                "iconCode": "face_with_thumbsup",
+                                "name": "관리 효과가 좋아요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "care_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/woman_getting_hair_done20220119222234.png",
+                                "iconCode": "woman_getting_hair_done",
+                                "name": "맞춤 케어를 잘해줘요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "kind",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/beating_heart20220119222223.png",
+                                "iconCode": "beating_heart",
+                                "name": "친절해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "counsel_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/clipboard20220119222236.png",
+                                "iconCode": "clipboard",
+                                "name": "상담이 자세해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "mood_comfy",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/face_smiling20220119222244.png",
+                                "iconCode": "face_smiling",
+                                "name": "분위기가 편안해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            }
+                        ],
+                        "__typename": "VisitorReview"
+                    },
+                    {
+                        "id": "695b2098b0050bc0eeee19ea",
+                        "rating": null,
+                        "author": {
+                            "id": "1T7EW",
+                            "nickname": "carem",
+                            "from": "NAVER",
+                            "imageUrl": "https://myplace-phinf.pstatic.net/20230706_165/1688570700663YRRjH_JPEG/IMG_4329.jpeg",
+                            "objectId": "5dc6b34a8f87a842bc4e0bde",
+                            "url": "https://m.place.naver.com/my/5dc6b34a8f87a842bc4e0bde/review?v=2",
+                            "borderImageUrl": null,
+                            "__typename": "VisitorReviewAuthor"
+                        },
+                        "body": "처음 피부관리샵 방문이었는데 실장님께서 설명 꼼꼼히 너무 잘해주셨고 편안하게 관리받고 왔습니다\n받고나니 확실히 톤업되고 피부결이 정리되었어요\n역시 전문가는 다르네요 \n홈케어의 중요성도 잘 설명해주셔서 \n평소 습관이나 피부에 대한 관심이 더 생기게되네요\n자주오겠습니다❤️❤️",
+                        "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMDVfNDEg/MDAxNzY3NTc5Nzk3MTA1.4M572BMZlVjp3DWqfw4rjM-aXMEUBOh9bBk4fsqC4tMg.hZvki50TutwiGP0yTzt9n8qOiA0jAjyFCRlLXrR9Zuwg.JPEG/12784112-256A-43E8-BCF2-052F1CF59CA1.jpeg",
+                        "media": [
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMDVfNDEg/MDAxNzY3NTc5Nzk3MTA1.4M572BMZlVjp3DWqfw4rjM-aXMEUBOh9bBk4fsqC4tMg.hZvki50TutwiGP0yTzt9n8qOiA0jAjyFCRlLXrR9Zuwg.JPEG/12784112-256A-43E8-BCF2-052F1CF59CA1.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "square",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMDVfMjM4/MDAxNzY3NTc5Nzk4MDM5.84-aSBDdxR4_5-557zaEa52N-8Z3eiQkByYYXduWDt0g.tJLPda0ieEyfOhIKzP4zKA5j0HtaRNWb3Ox6UyPUJZMg.JPEG/1194E9AC-0025-4AF4-B124-B41759C1A70D.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "square",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMDVfNDkg/MDAxNzY3NTc5Nzk4MjE3.zgJjFm4spwcPIn_DIz3bgH_KUmErsAsMSneBCDuRyDAg.zGH8SNGyN-Y0CmADkjeVgMQxGazmWd8YMY5FK9WAhJMg.JPEG/4253B446-D44B-4BE4-A6D7-EA182BC38ACB.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMDVfMTM3/MDAxNzY3NTc5Nzk4MDcx.T2l0fl_2aPWbeljuU7EHHAeXNYQ66G97qF4NwhffdWkg.yL0vUPv21ttqd-18sLAaiXuF6tN1Y1pUQTXnKwrqb9kg.JPEG/F20D983A-8EF4-4AFC-B0A4-4EF015D07C98.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNjAxMDVfMjA5/MDAxNzY3NTc5Nzk3OTMx.vUYiyvVAfDPkFDry7kW3DpSSHuWOiXykZgcyqhu_pbIg.Bg72M7X4wQ7w00nxCIgBIBYcKxmL7UX2djMHYloPtT4g.JPEG/8B7C8015-7D61-4B50-AFCC-CE342F6D36E3.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            }
+                        ],
+                        "tags": null,
+                        "status": "ACTIVE",
+                        "visited": "1.4.일",
+                        "originType": "예약",
+                        "item": {
+                            "name": "편안함을 터치하세요 - 네이버예약",
+                            "code": null,
+                            "options": null,
+                            "__typename": "VisitorReviewItem"
+                        },
+                        "businessName": "아우르메 테라피 뷰티앤스파",
+                        "isFollowing": null,
+                        "visitCount": 1,
+                        "votedKeywords": [
+                            {
+                                "code": "effect_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/face_with_thumbsup20220119222236.png",
+                                "iconCode": "face_with_thumbsup",
+                                "name": "관리 효과가 좋아요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "care_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/woman_getting_hair_done20220119222234.png",
+                                "iconCode": "woman_getting_hair_done",
+                                "name": "맞춤 케어를 잘해줘요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "kind",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/beating_heart20220119222223.png",
+                                "iconCode": "beating_heart",
+                                "name": "친절해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "counsel_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/clipboard20220119222236.png",
+                                "iconCode": "clipboard",
+                                "name": "상담이 자세해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "store_clean",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/sparkles20220119222028.png",
+                                "iconCode": "sparkles",
+                                "name": "매장이 청결해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            }
+                        ],
+                        "__typename": "VisitorReview"
+                    },
+                    {
+                        "id": "6953d101aba239e6737d97df",
+                        "rating": null,
+                        "author": {
+                            "id": "5uwkm",
+                            "nickname": "팡팡팡팡1",
+                            "from": "NAVER",
+                            "imageUrl": null,
+                            "objectId": "5c0e3196c34e19c05c86dcb2",
+                            "url": "https://m.place.naver.com/my/5c0e3196c34e19c05c86dcb2/review?v=2",
+                            "borderImageUrl": "https://myplace-phinf.pstatic.net/20240130_261/1706598927925qRvGS_PNG/valentine_border.png",
+                            "__typename": "VisitorReviewAuthor"
+                        },
+                        "body": "여기 진짜 최고...\n마사지샵만 족히 100곳은 다녀봤는데 눈에 딱 띄게 효과가 좋은 곳은 몇 곳이 없는데 그 중 하나가 여기입니다 ㅋㅋ\n\n특히!! 나 요즘 얼굴 선이 쳐졌다, 얼굴 라인이 무너진다, 이목구비가 좀 달라진거 같다? 하시는 분들은 여기 가보세요. \n이런말 하면 오바 같다고 할 수도 있지만 볼 쪽이랑 코쪽이랑 근막을 제대로 풀어주시니까 리프팅 되는 느낌이 들어서 다 끝난 후 거울을 봤더니 1회 만으로도 라인 정리가 된게 눈에 보여요.\n\n다른 샵들과 비교해도 절대 비싼 금액이 아니고 합리적인 금액으로 효과는 다른 곳보다 배로 봐서 전 다시 재방문 할 예정입니다. 굿굿",
+                        "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMzBfMTUw/MDAxNzY3MTAwNTI2OTc0.Eqzvn7oyvGYbRqchi0WyEl64pWXA8MIsf8YO81pzqaIg.8sZ7L5gvFHqaVomkmB3KCX0cANm10V0fFCqBXCgNRZIg.JPEG/1000119592.jpg",
+                        "media": [
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMzBfMTUw/MDAxNzY3MTAwNTI2OTc0.Eqzvn7oyvGYbRqchi0WyEl64pWXA8MIsf8YO81pzqaIg.8sZ7L5gvFHqaVomkmB3KCX0cANm10V0fFCqBXCgNRZIg.JPEG/1000119592.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMzBfMjE4/MDAxNzY3MTAwNTI2OTQz.OStGyAfCLxHhHGujPa3uj-r-gUATfT_MDrVWaEV_GDIg.IVJPx5egZ7zdFJkxrZn5zdRnnQVpA1fS--VLn3B-lpUg.JPEG/1000119594.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            }
+                        ],
+                        "tags": null,
+                        "status": "ACTIVE",
+                        "visited": "25.12.30.화",
+                        "originType": "영수증",
+                        "item": null,
+                        "businessName": "아우르메 테라피 뷰티앤스파 마사지 인천부평점",
+                        "isFollowing": null,
+                        "visitCount": 1,
+                        "votedKeywords": [
+                            {
+                                "code": "effect_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/face_with_thumbsup20220119222236.png",
+                                "iconCode": "face_with_thumbsup",
+                                "name": "관리 효과가 좋아요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "care_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/woman_getting_hair_done20220119222234.png",
+                                "iconCode": "woman_getting_hair_done",
+                                "name": "맞춤 케어를 잘해줘요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "luxurious",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/rose20220119222235.png",
+                                "iconCode": "rose",
+                                "name": "고급스러워요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            }
+                        ],
+                        "__typename": "VisitorReview"
+                    },
+                    {
+                        "id": "69538191bc92b82a961a899e",
+                        "rating": null,
+                        "author": {
+                            "id": "2vdm2",
+                            "nickname": "챙이는 맛잘알",
+                            "from": "NAVER",
+                            "imageUrl": "https://myplace-phinf.pstatic.net/20230812_7/16917744682596CxCa_JPEG/IMG_2740.jpeg",
+                            "objectId": "5e5c7c0a8f87a842bca40d86",
+                            "url": "https://m.place.naver.com/my/5e5c7c0a8f87a842bca40d86/review?v=2",
+                            "borderImageUrl": null,
+                            "__typename": "VisitorReviewAuthor"
+                        },
+                        "body": "일단 족욕이 있는 샵이라는 게 큰 장점인것 같아요 가격도 착한데 관리가 정말 꼼꼼하고 얼굴 윤곽 마사지해주는데 압도 너무 좋아요 ! 가게 전반적인 분위기도 조용해서 저같은 I가 가기도 부담없습니다 ㅎㅎ",
+                        "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMzBfODIg/MDAxNzY3MDgwMzM1MTEx.Voo5VcaRe8oJvBKiLVk9T_zo9Ze4DLoyvP3p-28Hh6Ug.kzrfxwn6NP-8FiHI4jyEU7_QjI_DarRHI7wSz9es3bIg.JPEG/9D52F396-DB7E-4527-B1C6-39B1FC20A67B.jpeg",
+                        "media": [
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMzBfODIg/MDAxNzY3MDgwMzM1MTEx.Voo5VcaRe8oJvBKiLVk9T_zo9Ze4DLoyvP3p-28Hh6Ug.kzrfxwn6NP-8FiHI4jyEU7_QjI_DarRHI7wSz9es3bIg.JPEG/9D52F396-DB7E-4527-B1C6-39B1FC20A67B.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMzBfNzQg/MDAxNzY3MDgwMzM1NTQ5.hmtzRPMJJ-RVaVZmkVXocIEc7cyCGxjoPoOSvS3ZS88g.0LEdwICnYRiZbuHLTw4RnbEgHX6Nx0bZI21OnAGTfdkg.JPEG/656194D6-E071-4AA9-9F3B-2E70C10F9405.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            }
+                        ],
+                        "tags": null,
+                        "status": "ACTIVE",
+                        "visited": "25.12.29.월",
+                        "originType": "예약",
+                        "item": {
+                            "name": "편안함을 터치하세요 - 네이버예약",
+                            "code": null,
+                            "options": null,
+                            "__typename": "VisitorReviewItem"
+                        },
+                        "businessName": "아우르메 테라피 뷰티앤스파",
+                        "isFollowing": null,
+                        "visitCount": 1,
+                        "votedKeywords": [
+                            {
+                                "code": "effect_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/face_with_thumbsup20220119222236.png",
+                                "iconCode": "face_with_thumbsup",
+                                "name": "관리 효과가 좋아요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "care_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/woman_getting_hair_done20220119222234.png",
+                                "iconCode": "woman_getting_hair_done",
+                                "name": "맞춤 케어를 잘해줘요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "kind",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/beating_heart20220119222223.png",
+                                "iconCode": "beating_heart",
+                                "name": "친절해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "treatment_careful",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/magnifying_glass20220119222236.png",
+                                "iconCode": "magnifying_glass",
+                                "name": "시술이 꼼꼼해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "counsel_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/clipboard20220119222236.png",
+                                "iconCode": "clipboard",
+                                "name": "상담이 자세해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            }
+                        ],
+                        "__typename": "VisitorReview"
+                    },
+                    {
+                        "id": "6952b72d1d1435b6dc71cc7a",
+                        "rating": null,
+                        "author": {
+                            "id": "7iVSc",
+                            "nickname": "qnffnd34",
+                            "from": "NAVER",
+                            "imageUrl": "https://phinf.pstatic.net/contact/20170221_75/1487663592009DtRrB_JPEG/image.jpg",
+                            "objectId": "5d8052d18f87a842bcfb7617",
+                            "url": "https://m.place.naver.com/my/5d8052d18f87a842bcfb7617/review?v=2",
+                            "borderImageUrl": null,
+                            "__typename": "VisitorReviewAuthor"
+                        },
+                        "body": "넘시원하게 넘편하게 신랑이랑 커플마사지받고왔어요^^♡\n오랜만에 데이트하고 첨 받은마사진데넘편하게 잘받았어요\n꼼꼼하고 엄청잘 콕콕 찝어서 더시원했어요\n신랑도넘잘받았다고 해요^^",
+                        "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMzBfNzYg/MDAxNzY3MDI4NTIzMTQ0.k5L3JbUkfr-AaXsnBLq7W0ne2wN3lBFs3WxXW0jIWUcg.KUzumcWMlg0PP9cgbMQjODMkXr5atKMvleVjFDSjWRMg.JPEG/20251228_133838.jpg.jpg",
+                        "media": [
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMzBfNzYg/MDAxNzY3MDI4NTIzMTQ0.k5L3JbUkfr-AaXsnBLq7W0ne2wN3lBFs3WxXW0jIWUcg.KUzumcWMlg0PP9cgbMQjODMkXr5atKMvleVjFDSjWRMg.JPEG/20251228_133838.jpg.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMzBfNjEg/MDAxNzY3MDI4NTIzMTMy.yrTL3yYJA0lPI1LsX280S-u4lps5QB-na1TxIWp-hf8g.DILddClsxdCbKD0-Wnki83QQ5OWrOxoY1QRyqeBCZYUg.JPEG/20251228_133438.jpg.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMzBfMTg4/MDAxNzY3MDI4NTIzMjUx.XG1Ef-5Xgr_zKxiCCpOQY1fo0qWSC8BxLUagBlf6IZog.LIprN-hscv6hKwDB_MdA9TPONte83EWBw_HywIERIdIg.JPEG/20251228_133426.jpg.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMzBfMjkw/MDAxNzY3MDI4NTIzMjQz.xhWc7wbBADycmp8wdSkOCkVNHJ2ILlo5kY9YFAIR66Mg.4qMTZH2Qg53CsUJAPTmtvKkKXfiGkxdco5UQGY1QgVgg.JPEG/20251228_133419.jpg.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            }
+                        ],
+                        "tags": null,
+                        "status": "ACTIVE",
+                        "visited": "25.12.28.일",
+                        "originType": "예약",
+                        "item": {
+                            "name": "편안함을 터치하세요 - 네이버예약",
+                            "code": null,
+                            "options": null,
+                            "__typename": "VisitorReviewItem"
+                        },
+                        "businessName": "아우르메 테라피 뷰티앤스파",
+                        "isFollowing": null,
+                        "visitCount": 1,
+                        "votedKeywords": [
+                            {
+                                "code": "treatment_careful",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/magnifying_glass20220119222236.png",
+                                "iconCode": "magnifying_glass",
+                                "name": "시술이 꼼꼼해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "kind",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/beating_heart20220119222223.png",
+                                "iconCode": "beating_heart",
+                                "name": "친절해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "mood_comfy",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/face_smiling20220119222244.png",
+                                "iconCode": "face_smiling",
+                                "name": "분위기가 편안해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            }
+                        ],
+                        "__typename": "VisitorReview"
+                    },
+                    {
+                        "id": "69527cea8a7cda50d8a4986d",
+                        "rating": null,
+                        "author": {
+                            "id": "6sIb6",
+                            "nickname": "제이851",
+                            "from": "NAVER",
+                            "imageUrl": "https://phinf.pstatic.net/contact/20210923_270/1632369182988HaxqE_PNG/profileImage.png",
+                            "objectId": "5b84b96947d6f2423125259f",
+                            "url": "https://m.place.naver.com/my/5b84b96947d6f2423125259f/review?v=2",
+                            "borderImageUrl": "https://myplace-phinf.pstatic.net/20240130_261/1706598927925qRvGS_PNG/valentine_border.png",
+                            "__typename": "VisitorReviewAuthor"
+                        },
+                        "body": "얼굴관리 받는 내내 정말 힐링이었어요🩷 관리사 분도 너무 친절하시고 손 터치도 너무 부드럽고 좋아여🥹😭 따뜻한 베드에 누워 잔잔한 음악 들으면서 관리사 님의 얼굴과 데콜테 관리를 받으니 잠이 그냥 솔솔 오더라구요 ㅋㅋ 바디관리도 너무나 궁금한 곳입니다😍",
+                        "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMjlfMTI4/MDAxNzY3MDEzNjA4MjA1.dTWT6HcZK8kPmvnG5CadnKqqEINC0TZ1aUHZEp79r28g.MLZkIKHmmtStL6CICITHMyYhr8c01hzjyCCKNppd_bgg.JPEG/D65C5D7A-D7E1-4EAA-97C3-F687EEFD80BC.jpeg",
+                        "media": [
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMjlfMTI4/MDAxNzY3MDEzNjA4MjA1.dTWT6HcZK8kPmvnG5CadnKqqEINC0TZ1aUHZEp79r28g.MLZkIKHmmtStL6CICITHMyYhr8c01hzjyCCKNppd_bgg.JPEG/D65C5D7A-D7E1-4EAA-97C3-F687EEFD80BC.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "square",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMjlfMTQ5/MDAxNzY3MDEzNjA4MTg2.BCi1gO8cjb9s88HyxyOcR-55kUU2eQNZUPRMGryqETsg.E6faM_cPLG4UPQL_ZyeAb969BeZyBK8E8FSFtz04IWAg.JPEG/0E957783-FBB0-4011-A551-414A0AECF4AB.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "square",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            }
+                        ],
+                        "tags": null,
+                        "status": "ACTIVE",
+                        "visited": "25.12.23.화",
+                        "originType": "예약",
+                        "item": {
+                            "name": "편안함을 터치하세요 - 네이버예약",
+                            "code": null,
+                            "options": null,
+                            "__typename": "VisitorReviewItem"
+                        },
+                        "businessName": "아우르메 테라피 뷰티앤스파",
+                        "isFollowing": null,
+                        "visitCount": 1,
+                        "votedKeywords": [
+                            {
+                                "code": "effect_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/face_with_thumbsup20220119222236.png",
+                                "iconCode": "face_with_thumbsup",
+                                "name": "관리 효과가 좋아요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "care_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/woman_getting_hair_done20220119222234.png",
+                                "iconCode": "woman_getting_hair_done",
+                                "name": "맞춤 케어를 잘해줘요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "luxurious",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/rose20220119222235.png",
+                                "iconCode": "rose",
+                                "name": "고급스러워요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "kind",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/beating_heart20220119222223.png",
+                                "iconCode": "beating_heart",
+                                "name": "친절해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "treatment_careful",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/magnifying_glass20220119222236.png",
+                                "iconCode": "magnifying_glass",
+                                "name": "시술이 꼼꼼해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            }
+                        ],
+                        "__typename": "VisitorReview"
+                    },
+                    {
+                        "id": "694c115a4a31497f093cf5e6",
+                        "rating": null,
+                        "author": {
+                            "id": "crS7E",
+                            "nickname": "mo****",
+                            "from": "NAVER",
+                            "imageUrl": "https://phinf.pstatic.net/contact/20200209_137/1581200145545NOX8b_PNG/profileImage.png",
+                            "objectId": "6571854f57f79b1b2359256c",
+                            "url": "https://m.place.naver.com/my/657be44b73736e3dcf64fa53/review?v=2",
+                            "borderImageUrl": "https://myplace-phinf.pstatic.net/20240130_261/1706598927925qRvGS_PNG/valentine_border.png",
+                            "__typename": "VisitorReviewAuthor"
+                        },
+                        "body": "올때마다 친절하신 선생님❤️\n항상 관리도 꼼꼼하게 해주세요\n얼굴 마사지가 정말 이렇게 시원한줄 첨알앗어요\n안색도 밝아지니 완전 만족해요",
+                        "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMjVfNzIg/MDAxNzY2NTkyODU3MDUx.xXxA1q5ENOn9OJqjvFglxtjQyTA4f8tVHolpkU92YbMg.Iw4d8Ddd-2uCqeroI1Cc_oU7TRXj73clb7bqqIpBeHEg.JPEG/07076EEE-0EA4-4557-8D20-3D6EFF37666A.jpeg",
+                        "media": [
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMjVfNzIg/MDAxNzY2NTkyODU3MDUx.xXxA1q5ENOn9OJqjvFglxtjQyTA4f8tVHolpkU92YbMg.Iw4d8Ddd-2uCqeroI1Cc_oU7TRXj73clb7bqqIpBeHEg.JPEG/07076EEE-0EA4-4557-8D20-3D6EFF37666A.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMjVfMjQw/MDAxNzY2NTkyODU2ODcw.iuaOc7TqKkj5WRlMrXgJ489wTKK4f3Py08hkJu8Y4-Eg.CI-y_SJbiY4zoAlEY2Pl53jQEux6rBqsidSwtH2aY4Mg.JPEG/209883A1-4490-4BB1-BF65-6B2A21637EDA.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMjVfMjA1/MDAxNzY2NTkyODU3MDEy.ZRPHRd9b7PcGsHFx-mANwrB637janRFV8TesCXgmTccg.u8E8U7KetVpLdRfBwv2REEldOO0aUiKPTHp598bZkCcg.JPEG/09E3C7BC-CB63-47C1-BFA9-AF330A31E628.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            }
+                        ],
+                        "tags": null,
+                        "status": "ACTIVE",
+                        "visited": "25.12.17.수",
+                        "originType": "예약",
+                        "item": {
+                            "name": "편안함을 터치하세요 - 네이버예약",
+                            "code": null,
+                            "options": null,
+                            "__typename": "VisitorReviewItem"
+                        },
+                        "businessName": "아우르메 테라피 뷰티앤스파",
+                        "isFollowing": null,
+                        "visitCount": 2,
+                        "votedKeywords": [
+                            {
+                                "code": "effect_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/face_with_thumbsup20220119222236.png",
+                                "iconCode": "face_with_thumbsup",
+                                "name": "관리 효과가 좋아요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "care_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/woman_getting_hair_done20220119222234.png",
+                                "iconCode": "woman_getting_hair_done",
+                                "name": "맞춤 케어를 잘해줘요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "treatment_careful",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/magnifying_glass20220119222236.png",
+                                "iconCode": "magnifying_glass",
+                                "name": "시술이 꼼꼼해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "kind",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/beating_heart20220119222223.png",
+                                "iconCode": "beating_heart",
+                                "name": "친절해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            }
+                        ],
+                        "__typename": "VisitorReview"
+                    },
+                    {
+                        "id": "6930d658da1aaf2e54860aad",
+                        "rating": null,
+                        "author": {
+                            "id": "6VXVk",
+                            "nickname": "T걸",
+                            "from": "NAVER",
+                            "imageUrl": "https://phinf.pstatic.net/contact/20170901_138/1504223072104PhQSx_JPEG/%BF%F8%C7%C7%BD%BA.jpg",
+                            "objectId": "5bf8dec04aeffbc0c29a81b4",
+                            "url": "https://m.place.naver.com/my/5bf8dec04aeffbc0c29a81b4/review?v=2",
+                            "borderImageUrl": null,
+                            "__typename": "VisitorReviewAuthor"
+                        },
+                        "body": "아로마 마사지 받았는데, 개별룸이라 정말 프라이빗하고 조용하게 힐링할 수 있었어요.\n근육전문가 선생님이 해주셔서 굳어 있던 승모근이 바로 풀리는 느낌! 프랑스 스파 브랜드 딸고 공식 인증점이라 피부관리도 함께 받을 수 있어 믿음이 갔어요.\n공간이 쾌적해서 부평 실내데이트 코스로도 추천하고 싶어요.\n몸도 마음도 가벼워진 느낌이라 재방문의사 100%입니다 :)",
+                        "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMDRfMjY5/MDAxNzY0ODA4Mjc4Mzk4.UQoiDQbiohjJLDJHIJF_c4-U9yigrj45OxQa6XolQl0g.OiOZkVBTAWDKnUgr4CDm7gjBCKFZHuCoYiHNbfeUblsg.JPEG/20251202_105527.jpg.jpg",
+                        "media": [
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMDRfMjY5/MDAxNzY0ODA4Mjc4Mzk4.UQoiDQbiohjJLDJHIJF_c4-U9yigrj45OxQa6XolQl0g.OiOZkVBTAWDKnUgr4CDm7gjBCKFZHuCoYiHNbfeUblsg.JPEG/20251202_105527.jpg.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMDRfMTY1/MDAxNzY0ODA4Mjc4MTI4.ZB8AFrPhVyozBJCcH5EOQkbgxnN0FgI3E9YFe_8S0w4g.ThQqKLAGUYPTb-kFbsBWBBUS5aeRGOllz4fFMA23JGAg.JPEG/20251202_110319.jpg.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            }
+                        ],
+                        "tags": null,
+                        "status": "ACTIVE",
+                        "visited": "25.12.2.화",
+                        "originType": "예약",
+                        "item": {
+                            "name": "편안함을 터치하세요 - 네이버예약",
+                            "code": null,
+                            "options": null,
+                            "__typename": "VisitorReviewItem"
+                        },
+                        "businessName": "아우르메 테라피 뷰티앤스파",
+                        "isFollowing": null,
+                        "visitCount": 1,
+                        "votedKeywords": [
+                            {
+                                "code": "care_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/woman_getting_hair_done20220119222234.png",
+                                "iconCode": "woman_getting_hair_done",
+                                "name": "맞춤 케어를 잘해줘요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "treatment_careful",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/magnifying_glass20220119222236.png",
+                                "iconCode": "magnifying_glass",
+                                "name": "시술이 꼼꼼해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "mood_comfy",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/face_smiling20220119222244.png",
+                                "iconCode": "face_smiling",
+                                "name": "분위기가 편안해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            }
+                        ],
+                        "__typename": "VisitorReview"
+                    },
+                    {
+                        "id": "692e773ca6405a6c524857dd",
+                        "rating": null,
+                        "author": {
+                            "id": "2yvPZ",
+                            "nickname": "dudrud1396",
+                            "from": "NAVER",
+                            "imageUrl": "https://phinf.pstatic.net/contact/5/2012/2/26/dudrud1396_1330190193091.jpg",
+                            "objectId": "5f070878a36dc5e3fa5fd4f5",
+                            "url": "https://m.place.naver.com/my/5f070878a36dc5e3fa5fd4f5/review?v=2",
+                            "borderImageUrl": null,
+                            "__typename": "VisitorReviewAuthor"
+                        },
+                        "body": "부평 아우르메 테라피 뷰티앤스파에서 전신 아로마 마사지 받았어요~. 따뜻한 오일 향과 부드럽지만 깊이 있는 압으로 온몸 피로가 풀리고 근육이 가볍게 이완되는 느낌이었어요. 관리사분 손길도 섬세해서 마사지 내내 편안했고, 분위기도 조용해 완전 힐링하고 왔습니다. 다음에도 또 받고 싶은 곳이에요!",
+                        "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMDJfMjE2/MDAxNzY0NjUyODU4NDc4.DzZlX4pQn2uXNkncrYec_yZOPsIS5ZuSzoCaPEwcjSsg.fFYh_KepqAy9wWw_4g7oXkk5c3WtnnYxxfRJtMnvkpcg.JPEG/20251202_133000.jpg.jpg",
+                        "media": [
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMDJfMjE2/MDAxNzY0NjUyODU4NDc4.DzZlX4pQn2uXNkncrYec_yZOPsIS5ZuSzoCaPEwcjSsg.fFYh_KepqAy9wWw_4g7oXkk5c3WtnnYxxfRJtMnvkpcg.JPEG/20251202_133000.jpg.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMDJfMTYz/MDAxNzY0NjUyODU4NTU1.4THPYDxmxiHWpw8xS2f4AzN8zIRwT4yCxLoW-n_8yI4g.d5HABlRmA49NWxpSZTQWs-ANi-zIXa6-NA9g1QdPKTYg.JPEG/20251202_130910.jpg.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            }
+                        ],
+                        "tags": null,
+                        "status": "ACTIVE",
+                        "visited": "25.12.1.월",
+                        "originType": "영수증",
+                        "item": null,
+                        "businessName": "아우르메 테라피 뷰티앤스파 마사지 인천부평점",
+                        "isFollowing": null,
+                        "visitCount": 1,
+                        "votedKeywords": [
+                            {
+                                "code": "effect_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/face_with_thumbsup20220119222236.png",
+                                "iconCode": "face_with_thumbsup",
+                                "name": "관리 효과가 좋아요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "care_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/woman_getting_hair_done20220119222234.png",
+                                "iconCode": "woman_getting_hair_done",
+                                "name": "맞춤 케어를 잘해줘요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "treatment_careful",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/magnifying_glass20220119222236.png",
+                                "iconCode": "magnifying_glass",
+                                "name": "시술이 꼼꼼해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "kind",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/beating_heart20220119222223.png",
+                                "iconCode": "beating_heart",
+                                "name": "친절해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            }
+                        ],
+                        "__typename": "VisitorReview"
+                    },
+                    {
+                        "id": "692916cbebc48dc5c04daf62",
+                        "rating": null,
+                        "author": {
+                            "id": "5AuUM",
+                            "nickname": "민짜짜리",
+                            "from": "NAVER",
+                            "imageUrl": null,
+                            "objectId": "5e2fbf238f87a842bcd50a42",
+                            "url": "https://m.place.naver.com/my/5e2fbf238f87a842bcd50a42/review?v=2",
+                            "borderImageUrl": null,
+                            "__typename": "VisitorReviewAuthor"
+                        },
+                        "body": "족욕하는 동안 아늑한 분위기에 조용한 음악까지.. 이미 힐링 완료ㅠㅠ 매장 인테리어도 고급지고 깔끔해서 넘 좋았어용\n\n아로마 마사지를 받는데, 처음 예진표에 적은 부위들을 집중적으로 시원하게 풀어주셨고, 압도 딱! 좋고 건조했던 피부가 오일로 보습되는 느낌\n\n게다가 서비스로 핫스톤 마사지까지 해주셨는데\n따뜻한 돌로 뭉친 곳을 지그시 눌러주니 몸이 녹아내려서 진짜 잠들 뻔했어요ㅋㅋㅋ 겨울에 받기 너무 좋을 것 같아요👍🏻",
+                        "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTExMjhfMjU2/MDAxNzY0MzAwNDg4ODM4.TAD8QswvD4Yso8pHcAF2wtv_MmrFlprJPk8gkAcM1Jog.17vhiiDm4rhGdxTdgy0UNIVkIgWJJ3R8cDmwUDqEcXgg.JPEG/68008E3C-2957-4B49-B018-3F2E6CD0B529.jpeg",
+                        "media": [
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTExMjhfMjU2/MDAxNzY0MzAwNDg4ODM4.TAD8QswvD4Yso8pHcAF2wtv_MmrFlprJPk8gkAcM1Jog.17vhiiDm4rhGdxTdgy0UNIVkIgWJJ3R8cDmwUDqEcXgg.JPEG/68008E3C-2957-4B49-B018-3F2E6CD0B529.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTExMjhfMTUw/MDAxNzY0MzAwNDg4OTcx.ULTljnFJogWtgv7X_qTJbFElwAbCyZ9kwa8gZ23i91sg.EG9BPItjBLrLDIJJPiUdHc8nZQU-uop9zBKvU8hI1xwg.JPEG/CE1E8F51-88D0-489C-8B84-C3001027883A.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTExMjhfNDAg/MDAxNzY0MzAwNDg4NTE4.yB7S-HpyBYUbD25ESS5KXA9wxOXE4JdZo-D6IuaoOqIg.EBbsWLYDX25zii1wznEAFBcf1yMckAS4rgGLkzLBHGwg.JPEG/F3AFE44D-5AF3-4356-A175-D65AB9EC81F7.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTExMjhfMTUg/MDAxNzY0MzAwNDg5MjE4.W2av5PIaEl7789hg9MAFAGrOKqlIZczTud03l86KLRcg.EKunrujLcDQmuPKTdLF16KuaKXKxciwTCkrsjaL0szEg.JPEG/168DAA2B-B6D0-44A1-8CF1-E3ED460516BC.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTExMjhfMTQz/MDAxNzY0MzAwNDg5MDA4.tGzi28KBmQvrAl1ZqPkJMku10NXxqtMUKJOPNSqbm_Ig.2HH5QXWQ8SZL5IUOw6egFMoTd0GS5BUz6k4coi1SV7cg.JPEG/13AEDA7B-0FD9-41E5-81A0-BF2F96359426.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTExMjhfOTIg/MDAxNzY0MzAwNDg5OTMy.QrnHWfOVLE_pAychEdT9sAyItYlIaQg4p8raHwC1GRAg.vkUvYrZ-_pLJlQz7LFc0aTgy83hUqvbF6xgSL1jyaoog.JPEG/4577E5CB-E521-4084-9877-ED3FC40FAB04.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            }
+                        ],
+                        "tags": null,
+                        "status": "ACTIVE",
+                        "visited": "25.11.27.목",
+                        "originType": "예약",
+                        "item": {
+                            "name": "편안함을 터치하세요 - 네이버예약",
+                            "code": null,
+                            "options": null,
+                            "__typename": "VisitorReviewItem"
+                        },
+                        "businessName": "아우르메 테라피 뷰티앤스파",
+                        "isFollowing": null,
+                        "visitCount": 1,
+                        "votedKeywords": [
+                            {
+                                "code": "effect_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/face_with_thumbsup20220119222236.png",
+                                "iconCode": "face_with_thumbsup",
+                                "name": "관리 효과가 좋아요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "care_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/woman_getting_hair_done20220119222234.png",
+                                "iconCode": "woman_getting_hair_done",
+                                "name": "맞춤 케어를 잘해줘요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "luxurious",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/rose20220119222235.png",
+                                "iconCode": "rose",
+                                "name": "고급스러워요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "treatment_careful",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/magnifying_glass20220119222236.png",
+                                "iconCode": "magnifying_glass",
+                                "name": "시술이 꼼꼼해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            }
+                        ],
+                        "__typename": "VisitorReview"
+                    },
+                    {
+                        "id": "692fb549c62231ce3cd77b52",
+                        "rating": null,
+                        "author": {
+                            "id": "82Pvt",
+                            "nickname": "sbg****",
+                            "from": "NAVER",
+                            "imageUrl": null,
+                            "objectId": "622780bf4f4bb2b7e1895466",
+                            "url": "https://m.place.naver.com/my/622780bf4f4bb2b7e1895466/review?v=2",
+                            "borderImageUrl": null,
+                            "__typename": "VisitorReviewAuthor"
+                        },
+                        "body": "부평 아우르메 테라피에서 얼굴 마사지를 받았는데 전체적으로 만족도가 높았습니다.\n\n관리 전 따뜻한 티와 다과, 족욕으로 몸과 마음이 먼저 편안해졌고, 딸고 공식 인증점답게 얼굴 근육을 따라가는 마사지가 정말 섬세했습니다. \n\n특히 저는 턱쪽 근육이 풀리면서 얼굴 쳐짐이 완화되었고, 관리 후에는 얼굴이 훨씬 촉촉해지고 정리된 느낌이 들었습니다. \n\n개별룸에서 조용하게 받을 수 있어 힐링하기에도 좋아요! 추천합니댜!!",
+                        "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMDNfMjU2/MDAxNzY0NzM0Mjc5OTAy.WqbG9XcxRuNt-sV8WudqVHz-ELDHmZyu39BCxIp7jYcg.EbS61JfXrmyTBJg78ueP1_Zxrc76j6EBIchv9_RPVlAg.JPEG/813F042E-7844-422B-B91A-85558CF04C97.jpeg",
+                        "media": [
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMDNfMjU2/MDAxNzY0NzM0Mjc5OTAy.WqbG9XcxRuNt-sV8WudqVHz-ELDHmZyu39BCxIp7jYcg.EbS61JfXrmyTBJg78ueP1_Zxrc76j6EBIchv9_RPVlAg.JPEG/813F042E-7844-422B-B91A-85558CF04C97.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMDNfODgg/MDAxNzY0NzM0Mjc5OTcx.MwYPBqA3jQhWPFfGORm05EdG2t-kBxtuWS4fROVbdggg.8jqZy7TnImaFpMaSP_dEX3yuTERkGVDoXF7cTNjLLDcg.JPEG/B5A8EBAA-8DE5-4F9A-A018-2308B4E5FF31.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMDNfMjMw/MDAxNzY0NzM0MjgwMjcz.NdkbZfnA2ZwGCyQM-Gc9YZOPq58oj1VmYpL8_pUaF9gg.7cQR45urWkXcBdApVaw526mYE11B3PTQxWoGMoea5xEg.JPEG/1F5C5FA3-2A31-4D54-8820-EDB35ACDF9B6.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            }
+                        ],
+                        "tags": null,
+                        "status": "ACTIVE",
+                        "visited": "25.11.27.목",
+                        "originType": "예약",
+                        "item": {
+                            "name": "편안함을 터치하세요 - 네이버예약",
+                            "code": null,
+                            "options": null,
+                            "__typename": "VisitorReviewItem"
+                        },
+                        "businessName": "아우르메 테라피 뷰티앤스파",
+                        "isFollowing": null,
+                        "visitCount": 1,
+                        "votedKeywords": [
+                            {
+                                "code": "effect_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/face_with_thumbsup20220119222236.png",
+                                "iconCode": "face_with_thumbsup",
+                                "name": "관리 효과가 좋아요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "care_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/woman_getting_hair_done20220119222234.png",
+                                "iconCode": "woman_getting_hair_done",
+                                "name": "맞춤 케어를 잘해줘요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "kind",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/beating_heart20220119222223.png",
+                                "iconCode": "beating_heart",
+                                "name": "친절해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "mood_comfy",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/face_smiling20220119222244.png",
+                                "iconCode": "face_smiling",
+                                "name": "분위기가 편안해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "product_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/lotion_bottle20220119222239.png",
+                                "iconCode": "lotion_bottle",
+                                "name": "좋은 제품을 사용해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            }
+                        ],
+                        "__typename": "VisitorReview"
+                    },
+                    {
+                        "id": "692c2466c09ceeb39c05e9f6",
+                        "rating": null,
+                        "author": {
+                            "id": "c2mkz",
+                            "nickname": "keh****",
+                            "from": "NAVER",
+                            "imageUrl": null,
+                            "objectId": "60bb0e1faa305099f56573ba",
+                            "url": "https://m.place.naver.com/my/60bb0e1faa305099f56573ba/review?v=2",
+                            "borderImageUrl": null,
+                            "__typename": "VisitorReviewAuthor"
+                        },
+                        "body": "위치 접근성도 좋고 \n샵분위기도 좋아요 :)\n전문가 손길에 녹아 드는 느낌이에요\n이색데이트로도 좋을것 같네요🎄💗",
+                        "thumbnail": null,
+                        "media": [
+                            {
+                                "type": "video",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTExMzBfMTAw/MDAxNzY0NTAwNTc5ODI0.qEV6lkfXD4mm0wUh3LQ1RSLQvFdFjF0L0tXuVIut-z0g.U6jEZW5dBdYQHCb49fe87gNfpVdBzKM0SgIxgXieKrYg.JPEG/B8696209-2A16-4E1C-B941-8A60B8884719.jpeg",
+                                "thumbnailRatio": "portrait",
+                                "videoId": "D57EC04459031CE566BA9184082DE711080D",
+                                "videoUrl": "vod3://2040:V1284c9b1d7d287e825cfe77b8bf50c06662720385716ea919523edd888be69428ae8e77b8bf50c066627@D57EC04459031CE566BA9184082DE711080D?env=real#track=720",
+                                "trailerUrl": "https://a02-g-smp-vod.akamaized.net/pup_review/c/read/v2/VOD_ALPHA/pup_review/D57EC04459031CE566BA9184082DE711080D/trailer/1764500581411/270d2f8b-cddc-11f0-bcfa-80615f0c4698.mp4?hdnts=exp%3D1772296418%7Eacl%3D%2Fpup_review%2Fc%2Fread%2Fv2%2FVOD_ALPHA%2Fpup_review%2FD57EC04459031CE566BA9184082DE711080D%2F*%7Ehmac%3D93122964f6e641e471bdaf065f925e52dbade26e992d19965ac036b4a0c2c966",
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTExMzBfNTAg/MDAxNzY0NTAwNTgwNjA2.uPFvjroRUEx5MNMGnDH4qjDqqTySFkTsOAKLf9l22PQg.0qBBkWWwC9TXx2mbdLv1BNmAWWO9ZQ-xOrctYV5b0pcg.JPEG/BF4F0AEC-DB16-43D9-B7C0-B4A74F9A2521.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "square",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTExMzBfMTUg/MDAxNzY0NTAwNTgwNzQ0.y_XiQK8TPQVzOi_EPQhI2o076jKXR9PgcAbp0lmETigg.h79FQZbS_qx-r0yrFrmXQG7fOqVtXxuWRICpWigBgTMg.JPEG/16EABAE1-1A29-45B2-A661-F949CA0465FE.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "square",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTExMzBfNjIg/MDAxNzY0NTAwNTgwMzU2.9LYJeCmbx7H6Oyu3TTPAxfN590vt0CeHcIGqam4eM3cg.ikFXAwbFisPGav7jWAuStiffRZXUd98x6-wx47LwUtsg.JPEG/6D080F4D-FC2C-41DE-B14F-8180065E7C31.jpeg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "square",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            }
+                        ],
+                        "tags": null,
+                        "status": "ACTIVE",
+                        "visited": "25.11.25.화",
+                        "originType": "예약",
+                        "item": {
+                            "name": "편안함을 터치하세요 - 네이버예약",
+                            "code": null,
+                            "options": null,
+                            "__typename": "VisitorReviewItem"
+                        },
+                        "businessName": "아우르메 테라피 뷰티앤스파",
+                        "isFollowing": null,
+                        "visitCount": 1,
+                        "votedKeywords": [
+                            {
+                                "code": "effect_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/face_with_thumbsup20220119222236.png",
+                                "iconCode": "face_with_thumbsup",
+                                "name": "관리 효과가 좋아요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "kind",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/beating_heart20220119222223.png",
+                                "iconCode": "beating_heart",
+                                "name": "친절해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "price_reasonable",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/coin20220119222025.png",
+                                "iconCode": "coin",
+                                "name": "가격이 합리적이에요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "tool_clean",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/sparkles20220119222028.png",
+                                "iconCode": "sparkles",
+                                "name": "기구가 청결해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "store_clean",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/sparkles20220119222028.png",
+                                "iconCode": "sparkles",
+                                "name": "매장이 청결해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            }
+                        ],
+                        "__typename": "VisitorReview"
+                    },
+                    {
+                        "id": "69302aa891ec6918b2ba72ed",
+                        "rating": null,
+                        "author": {
+                            "id": "1bprF",
+                            "nickname": "콩콩콩81",
+                            "from": "NAVER",
+                            "imageUrl": "https://phinf.pstatic.net/contact/20170622_79/14980982076035FgJ6_JPEG/dunbo_of_steel-wallpaper-1920x1080.jpg",
+                            "objectId": "5eff3a7380dd0fa8cd657131",
+                            "url": "https://m.place.naver.com/my/5eff3a7380dd0fa8cd657131/review?v=2",
+                            "borderImageUrl": "https://myplace-phinf.pstatic.net/20240130_261/1706598927925qRvGS_PNG/valentine_border.png",
+                            "__typename": "VisitorReviewAuthor"
+                        },
+                        "body": "수부지가 심해서 예민하기까지 했는데\n아우르메 테라피에서 제대로 관리 받으면서\n촉촉 뽀송해졌습니다 ㅎㅎ\n부평역 근처라 가기도 쉬웠고, 너무 친절하게 상담해주시고\n맞춤케어까지 진짜 대박이네요!\n부평 남자 피부관리로 추천드립니다!",
+                        "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMDNfMjEg/MDAxNzY0NzY0MzI1ODIy.ur3jqL78LCr5lnPY4ZYM9UNJjCKsiCTVTcKT8a7wJewg.Fj4ilr-Fn90wZqp5PLTAEMfiEOPru4HXuko7eGWxJn0g.JPEG/1000023222.jpg.jpg",
+                        "media": [
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMDNfMjEg/MDAxNzY0NzY0MzI1ODIy.ur3jqL78LCr5lnPY4ZYM9UNJjCKsiCTVTcKT8a7wJewg.Fj4ilr-Fn90wZqp5PLTAEMfiEOPru4HXuko7eGWxJn0g.JPEG/1000023222.jpg.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "square",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMDNfMzEg/MDAxNzY0NzY0MzI2Mjc1.HsF1G1ph3FkQoG69ay0Dfur8HMVuVcS70U8okcKAHBUg.7OH_6zALgkDRVPooqoUJDUMtyoYkC7dreuEIZimeQocg.JPEG/1000023166.jpg.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "square",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMDNfMTU5/MDAxNzY0NzY0MzI1NjA0.2kvF3tG9-1XT3Mz9_EcRizWZLEALIhsummescBX1QYIg.sLfD__MT-x1uCA873G5FdSoicXqo59s_Rk2rrK9nX6Qg.JPEG/1000023163.jpg.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "square",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTEyMDNfODcg/MDAxNzY0NzY0MzI2NTcy.H0FPApuAt0GCKeCVDgzpc-UJnMuI4K4KNY_HylZ1C28g.K_jZY5G1mxrlZ1JKj6Q6YwmH8h9tkNyuKFY4AvtVAswg.JPEG/1000023148.jpg.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            }
+                        ],
+                        "tags": null,
+                        "status": "ACTIVE",
+                        "visited": "25.11.24.월",
+                        "originType": "예약",
+                        "item": {
+                            "name": "편안함을 터치하세요 - 네이버예약",
+                            "code": null,
+                            "options": null,
+                            "__typename": "VisitorReviewItem"
+                        },
+                        "businessName": "아우르메 테라피 뷰티앤스파",
+                        "isFollowing": null,
+                        "visitCount": 1,
+                        "votedKeywords": [
+                            {
+                                "code": "effect_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/face_with_thumbsup20220119222236.png",
+                                "iconCode": "face_with_thumbsup",
+                                "name": "관리 효과가 좋아요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "care_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/woman_getting_hair_done20220119222234.png",
+                                "iconCode": "woman_getting_hair_done",
+                                "name": "맞춤 케어를 잘해줘요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "luxurious",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/rose20220119222235.png",
+                                "iconCode": "rose",
+                                "name": "고급스러워요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "kind",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/beating_heart20220119222223.png",
+                                "iconCode": "beating_heart",
+                                "name": "친절해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "treatment_careful",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/magnifying_glass20220119222236.png",
+                                "iconCode": "magnifying_glass",
+                                "name": "시술이 꼼꼼해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            }
+                        ],
+                        "__typename": "VisitorReview"
+                    },
+                    {
+                        "id": "691f21336f832f04b7f6ecbb",
+                        "rating": null,
+                        "author": {
+                            "id": "1cV8z",
+                            "nickname": "쥬1291",
+                            "from": "NAVER",
+                            "imageUrl": "https://phinf.pstatic.net/contact/20210829_158/1630216991367mC1DC_JPEG/20201002_155426_188.jpg",
+                            "objectId": "5b7e5d91176b1c14c3ee3651",
+                            "url": "https://m.place.naver.com/my/5b7e5d91176b1c14c3ee3651/review?v=2",
+                            "borderImageUrl": "https://myplace-phinf.pstatic.net/20240130_261/1706598927925qRvGS_PNG/valentine_border.png",
+                            "__typename": "VisitorReviewAuthor"
+                        },
+                        "body": "어우 넘 전문가의 손길이 느껴짐\n진짜 시원시원 게다가 아로마마사지인데도\n샵이 진짜 청결함 ㅜㅜ늠  좋아",
+                        "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTExMjBfMjc0/MDAxNzYzNjQ3NzkzNTc4.ZdgZrvgyZwgufn0QnyTfCwaE-3eAd0OIVzO2fcbJ3Wog.d6dK5cF-L8n2hK7o0fV8CRImKbBe-BNYaoliDoUsAN8g.JPEG/20251119_194646.jpg.jpg",
+                        "media": [
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTExMjBfMjc0/MDAxNzYzNjQ3NzkzNTc4.ZdgZrvgyZwgufn0QnyTfCwaE-3eAd0OIVzO2fcbJ3Wog.d6dK5cF-L8n2hK7o0fV8CRImKbBe-BNYaoliDoUsAN8g.JPEG/20251119_194646.jpg.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            }
+                        ],
+                        "tags": null,
+                        "status": "ACTIVE",
+                        "visited": "25.11.19.수",
+                        "originType": "예약",
+                        "item": {
+                            "name": "편안함을 터치하세요 - 네이버예약",
+                            "code": null,
+                            "options": null,
+                            "__typename": "VisitorReviewItem"
+                        },
+                        "businessName": "아우르메 테라피 뷰티앤스파",
+                        "isFollowing": null,
+                        "visitCount": 2,
+                        "votedKeywords": [
+                            {
+                                "code": "care_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/woman_getting_hair_done20220119222234.png",
+                                "iconCode": "woman_getting_hair_done",
+                                "name": "맞춤 케어를 잘해줘요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "kind",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/beating_heart20220119222223.png",
+                                "iconCode": "beating_heart",
+                                "name": "친절해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "store_clean",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/sparkles20220119222028.png",
+                                "iconCode": "sparkles",
+                                "name": "매장이 청결해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            }
+                        ],
+                        "__typename": "VisitorReview"
+                    },
+                    {
+                        "id": "691e7fc058aa564431c67a36",
+                        "rating": null,
+                        "author": {
+                            "id": "1kle1",
+                            "nickname": "251465",
+                            "from": "NAVER",
+                            "imageUrl": null,
+                            "objectId": "5d721a868f87a842bca8da4c",
+                            "url": "https://m.place.naver.com/my/5d721a868f87a842bca8da4c/review?v=2",
+                            "borderImageUrl": "https://myplace-phinf.pstatic.net/20240130_261/1706598927925qRvGS_PNG/valentine_border.png",
+                            "__typename": "VisitorReviewAuthor"
+                        },
+                        "body": "상담도 정말 꼼꼼히 해주시고, 어떤 부분이 안좋은지 알아서 진행해 주셨어요! 피부 호강하고 갑니다🫶",
+                        "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTExMjBfNzEg/MDAxNzYzNjA2NDYxMDAy.rtkUDx0fMjRcW-B0JJc-2dnw16h89_PTFh09WGGoWSUg.Y3Xw7z4zCn06X2uagYDAh1tQ7KLh10Bsu_MDzr5rGA4g.JPEG/20251119_103035.jpg.jpg",
+                        "media": [
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTExMjBfNzEg/MDAxNzYzNjA2NDYxMDAy.rtkUDx0fMjRcW-B0JJc-2dnw16h89_PTFh09WGGoWSUg.Y3Xw7z4zCn06X2uagYDAh1tQ7KLh10Bsu_MDzr5rGA4g.JPEG/20251119_103035.jpg.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTExMjBfNiAg/MDAxNzYzNjA2NDYxNDk4.eEhZpsCF9yYaelB78xzETsonhGXlFTB1UEn7W9z5JF4g.K2btwB8Qb6YOt9mBagh3pucQytbzQMxMm9rrjyEcsPIg.JPEG/20251119_103050.jpg.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTExMjBfMTMz/MDAxNzYzNjA2NDYxMDE0.Zc4c_iR0XpnfrKXQa_3SsCHWtX2r3EoIWCMHhebp17gg.m3zUu0d9fsXROLaNruJC0wQ-6xXpoomWLLEmxQVQ33Mg.JPEG/20251119_104117.jpg.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTExMjBfODUg/MDAxNzYzNjA2NDYxMTM1.MDmR9Q4q7pl0LZVBIq8Aiwk6AiqWugIXPsH6B1UVdHog.X1OAHfEAR_doqYHIlhRkuGYVloK6iWW1oFwjYP3RP4wg.JPEG/20251119_104144.jpg.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTExMjBfMjM1/MDAxNzYzNjA2NDYxNTAx.l43V9iJUdnRWxXvwAOSfVUhz13ck6X3fvtYxhd0Kk3gg.HtmruUMfwevAbpvCj2ujN9BVv9lzo9Vn5T20MRUWybsg.JPEG/20251119_105705.jpg.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            },
+                            {
+                                "type": "image",
+                                "thumbnail": "https://pup-review-phinf.pstatic.net/MjAyNTExMjBfMTMx/MDAxNzYzNjA2NDYyNDI3.XKnOh-FKNrzqdONm2xrjKTqkhkcpEJYOIT7HzOKZXtAg.ONauo13qel_-wH94hhT8duq2dyJHVvoUvwV1L8-_I50g.JPEG/20251119_105739.jpg.jpg?type=w1500_60_sharpen",
+                                "thumbnailRatio": "portrait",
+                                "videoId": null,
+                                "videoUrl": null,
+                                "trailerUrl": null,
+                                "__typename": "VisitorReviewMedia"
+                            }
+                        ],
+                        "tags": null,
+                        "status": "ACTIVE",
+                        "visited": "25.11.19.수",
+                        "originType": "예약",
+                        "item": {
+                            "name": "편안함을 터치하세요 - 네이버예약",
+                            "code": null,
+                            "options": null,
+                            "__typename": "VisitorReviewItem"
+                        },
+                        "businessName": "아우르메 테라피 뷰티앤스파",
+                        "isFollowing": null,
+                        "visitCount": 1,
+                        "votedKeywords": [
+                            {
+                                "code": "effect_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/face_with_thumbsup20220119222236.png",
+                                "iconCode": "face_with_thumbsup",
+                                "name": "관리 효과가 좋아요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "care_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/woman_getting_hair_done20220119222234.png",
+                                "iconCode": "woman_getting_hair_done",
+                                "name": "맞춤 케어를 잘해줘요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "luxurious",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/rose20220119222235.png",
+                                "iconCode": "rose",
+                                "name": "고급스러워요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "kind",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/beating_heart20220119222223.png",
+                                "iconCode": "beating_heart",
+                                "name": "친절해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            },
+                            {
+                                "code": "counsel_good",
+                                "iconUrl": "https://ssl.pstatic.net/static/pup/emoji/clipboard20220119222236.png",
+                                "iconCode": "clipboard",
+                                "name": "상담이 자세해요",
+                                "__typename": "VisitorReviewVotedKeyword"
+                            }
+                        ],
+                        "__typename": "VisitorReview"
+                    }
+                ],
+                "starDistribution": null,
+                "hideProductSelectBox": null,
+                "total": 137,
+                "__typename": "VisitorReviewsResult"
+            }
+        }
+    },
+    {
+        "data": {
+            "followingReviews": {
+                "reviews": [],
+                "reactionTypes": [],
+                "__typename": "FollowingReviewsResult"
+            }
+        }
+    },
+    {
+        "data": {
+            "visitorReviews": {
+                "total": 0,
+                "items": [],
+                "__typename": "VisitorReviewsResult"
+            }
+        }
+    },
+    {
+        "data": {
+            "themeLists": {
+                "themeLists": [],
+                "total": 0,
+                "__typename": "ThemeListsResult"
+            }
+        }
+    }
+]
