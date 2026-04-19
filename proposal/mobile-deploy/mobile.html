@@ -412,6 +412,7 @@ br.d { display: inline; }
 /* === P11: Thank You === */
 #p11 {
   background: var(--dark);
+  min-height: auto;
 }
 #p11 .thankyou-content {
   height: auto; min-height: 60vh;
@@ -569,13 +570,17 @@ br.d { display: inline; }
   width: 100%; height: 100%; object-fit: cover; display: block;
 }
 #p3 .why-body {
-  flex: 1; padding: 14px 18px; display: flex; align-items: center; gap: 14px;
+  flex: 1; padding: 16px 18px; display: flex; flex-direction: column; gap: 6px;
   position: relative;
 }
-#p3 .why-num {
-  font-family: var(--fh); font-size: 44px; font-weight: 300; color: rgba(200,165,73,0.25);
-  line-height: 1; flex-shrink: 0;
+#p3 .why-header {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 4px;
 }
+#p3 .why-num {
+  font-family: var(--fh); font-size: 13px; font-weight: 500;
+  color: var(--gold); letter-spacing: 0.2em; line-height: 1; flex-shrink: 0;
+}
+#p3 .why-num-line { flex: 1; height: 1px; background: rgba(200,165,73,0.3); }
 #p3 .why-text { flex: 1; }
 #p3 .why-title { font-size: 18px; font-weight: 500; color: #000000; margin-bottom: 4px; }
 #p3 .why-desc { font-size: 14px; color: var(--text-muted); line-height: 1.5; font-family: 'Gowun Batang', Georgia, serif; }
@@ -1053,7 +1058,7 @@ br.d { display: inline; }
   #p3 .why-card { flex-direction: column; }
   #p3 .why-thumb { width: 100%; height: 160px; }
   #p3 .why-body { padding: 14px 16px; }
-  #p3 .why-num { font-size: 36px; }
+  #p3 .why-num { font-size: 12px; letter-spacing: 0.2em; }
   #p3 .why-title { font-size: 16px; }
   #p3 .why-desc { font-size: 13px; word-break: keep-all; text-wrap: balance; }
 
@@ -1298,31 +1303,34 @@ br.d { display: inline; }
       <div class="why-card">
         <div class="why-thumb"><img src="images/b2b/why_01.jpg" alt="맞춤형 테라피"></div>
         <div class="why-body">
-          <div class="why-num">01</div>
-          <div class="why-text">
-            <div class="why-title">맞춤형 테라피 서비스</div>
-            <div class="why-desc">원하는 시간과 장소에서 기업 니즈에 맞춘 테라피 제공</div>
+          <div class="why-header">
+            <div class="why-num">01</div>
+            <div class="why-num-line"></div>
           </div>
+          <div class="why-title">맞춤형 테라피 서비스</div>
+          <div class="why-desc">원하는 시간과 장소에서 기업 니즈에 맞춘 테라피 제공</div>
         </div>
       </div>
       <div class="why-card">
         <div class="why-thumb"><img src="images/b2b/why_02.jpg" alt="업무 집중력"></div>
         <div class="why-body">
-          <div class="why-num">02</div>
-          <div class="why-text">
-            <div class="why-title">업무 집중력 향상</div>
-            <div class="why-desc">임직원 스트레스 해소로 업무 효율 및 기업 성장 도모</div>
+          <div class="why-header">
+            <div class="why-num">02</div>
+            <div class="why-num-line"></div>
           </div>
+          <div class="why-title">업무 집중력 향상</div>
+          <div class="why-desc">임직원 스트레스 해소로 업무 효율 및 기업 성장 도모</div>
         </div>
       </div>
       <div class="why-card">
         <div class="why-thumb"><img src="images/b2b/why_03.jpg" alt="체감형 복지"></div>
         <div class="why-body">
-          <div class="why-num">03</div>
-          <div class="why-text">
-            <div class="why-title">체감형 복지</div>
-            <div class="why-desc">높은 임직원 만족도와 애사심 고취 효과</div>
+          <div class="why-header">
+            <div class="why-num">03</div>
+            <div class="why-num-line"></div>
           </div>
+          <div class="why-title">체감형 복지</div>
+          <div class="why-desc">높은 임직원 만족도와 애사심 고취 효과</div>
         </div>
       </div>
     </div>
