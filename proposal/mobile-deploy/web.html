@@ -325,11 +325,12 @@ br.d { display: inline; }
   font-size: 15px; font-weight: 300; color: var(--gold-dark); margin-bottom: 10px;
 }
 #p4 .therapist-photo {
-  height: 400px; overflow: hidden; margin-top: 10px;
+  max-width: 360px; aspect-ratio: 3 / 5;
+  margin: 10px auto 0; overflow: hidden;
   border: 1px solid var(--border); background: var(--cream);
 }
 #p4 .therapist-photo img {
-  width: 100%; height: 100%; object-fit: cover; object-position: center 15%;
+  width: 100%; height: 100%; object-fit: contain;
 }
 #p4 .therapist-quote {
   font-size: 14px; font-weight: 400; color: var(--text-sub); line-height: 1.6;
