@@ -221,6 +221,91 @@ br.m { display: none; }
   text-shadow: 0 1px 4px rgba(0,0,0,0.7);
 }
 
+/* === P1b: Our Commitment (Manifesto Triptych) === */
+#p1b { background: var(--cream); min-height: auto; }
+#p1b .section-header { margin-bottom: 48px; }
+#p1b .section-header .st { font-size: 38px; line-height: 1.3; }
+#p1b .section-header .sh-sub {
+  font-size: 16px; font-weight: 400; margin-top: 14px;
+  font-family: 'Gowun Batang', Georgia, serif; line-height: 1.7;
+  color: var(--text-sub); max-width: 620px; text-wrap: pretty;
+}
+#p1b .manifesto-grid {
+  display: grid; grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px; margin-bottom: 40px;
+}
+#p1b .m-card { display: flex; flex-direction: column; }
+#p1b .m-image {
+  position: relative; height: 360px; overflow: hidden;
+  background: #f3efe8; margin-bottom: 18px;
+}
+#p1b .m-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+#p1b .m-image::before {
+  content: ''; position: absolute; top: 12px; left: 12px;
+  width: 28px; height: 28px;
+  border-top: 1px solid var(--gold); border-left: 1px solid var(--gold);
+  z-index: 2; pointer-events: none;
+}
+#p1b .m-image::after {
+  content: ''; position: absolute; bottom: 12px; right: 12px;
+  width: 28px; height: 28px;
+  border-bottom: 1px solid var(--gold); border-right: 1px solid var(--gold);
+  z-index: 2; pointer-events: none;
+}
+#p1b .m-header { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+#p1b .m-num {
+  font-family: var(--fh); font-size: 16px; font-weight: 400;
+  color: var(--gold); letter-spacing: 0.15em;
+}
+#p1b .m-num-line { flex: 1; height: 1px; background: rgba(200,165,73,0.25); }
+#p1b .m-eng {
+  font-family: var(--fh); font-size: 13px; font-weight: 400; font-style: italic;
+  color: var(--gold-dark); letter-spacing: 0.1em;
+  margin-bottom: 10px; text-transform: uppercase;
+}
+#p1b .m-deny {
+  font-size: 14px; color: var(--text-muted); line-height: 1.55;
+  padding-left: 12px; border-left: 2px solid var(--border);
+  margin-bottom: 10px; font-family: 'Gowun Batang', Georgia, serif;
+}
+#p1b .m-affirm {
+  font-size: 20px; font-weight: 300; color: var(--text);
+  line-height: 1.5; letter-spacing: -0.03em;
+  font-family: 'Arita Buri', serif; text-wrap: pretty;
+}
+#p1b .m-affirm strong {
+  font-weight: 500;
+  background: linear-gradient(to top, rgba(200,165,73,0.12) 45%, transparent 45%);
+  padding: 0 2px;
+}
+#p1b .closing {
+  text-align: center; padding: 32px 24px 8px;
+  border-top: 1px solid rgba(200,165,73,0.25); position: relative;
+}
+#p1b .closing::before {
+  content: ''; position: absolute; left: 50%; top: -1px;
+  transform: translateX(-50%); width: 48px; height: 2px; background: var(--gold);
+}
+#p1b .closing-label {
+  font-family: var(--fh); font-size: 12px; font-weight: 500;
+  letter-spacing: 0.3em; color: var(--gold); text-transform: uppercase;
+  margin-bottom: 14px;
+}
+#p1b .closing-main {
+  font-family: 'Arita Buri', serif; font-size: 24px; font-weight: 300;
+  color: var(--text); line-height: 1.55; letter-spacing: -0.035em;
+  max-width: 900px; margin: 0 auto; text-wrap: pretty;
+}
+#p1b .closing-main .brand {
+  font-family: var(--fh); font-weight: 400; font-style: italic;
+  color: var(--gold-dark); font-size: 30px; letter-spacing: 0.02em;
+  display: block; margin-bottom: 8px;
+}
+#p1b .closing-main strong { font-weight: 500; color: var(--text); }
+
+/* Helper: desktop-only break (br.m already exists as mobile-only) */
+br.d { display: inline; }
+
 /* === P4: Lead Therapist (2-col: Instructor | Experience) === */
 #p4 { background: var(--cream); }
 #p4 .therapist-top {
@@ -908,6 +993,26 @@ br.m { display: none; }
   .section-header .st { font-size: 24px; }
   .section-header .sh-sub { font-size: 13px; }
 
+  /* P1b mobile */
+  #p1b .section-header .st { font-size: 22px; }
+  #p1b .section-header .sh-sub { font-size: 13px; margin-top: 10px; line-height: 1.6; }
+  #p1b .manifesto-grid { grid-template-columns: 1fr; gap: 28px; margin-bottom: 28px; }
+  #p1b .m-image { height: 220px; margin-bottom: 12px; }
+  #p1b .m-image::before, #p1b .m-image::after { width: 22px; height: 22px; }
+  #p1b .m-image::before { top: 10px; left: 10px; }
+  #p1b .m-image::after { bottom: 10px; right: 10px; }
+  #p1b .m-header { gap: 10px; margin-bottom: 8px; }
+  #p1b .m-num { font-size: 13px; }
+  #p1b .m-eng { font-size: 11px; margin-bottom: 8px; }
+  #p1b .m-deny { font-size: 12px; padding-left: 10px; margin-bottom: 8px; line-height: 1.5; }
+  #p1b .m-affirm { font-size: 16px; line-height: 1.5; }
+  #p1b .closing { padding: 24px 12px 4px; }
+  #p1b .closing::before { width: 36px; }
+  #p1b .closing-label { font-size: 10px; letter-spacing: 0.24em; margin-bottom: 12px; }
+  #p1b .closing-main { font-size: 15px; line-height: 1.55; }
+  #p1b .closing-main .brand { font-size: 19px; margin-bottom: 6px; }
+  br.d { display: none; }
+
   /* P1: Cover — full viewport hero, centered */
   #p1 { min-height: 100vh; overflow: hidden; position: relative; }
   #p1 .cover-bg { position: absolute; inset: 0; }
@@ -1065,6 +1170,70 @@ br.m { display: none; }
     <div class="cover-title">AURUM WELLNESS<br>SERVICE</div>
     <div class="cover-line"></div>
     <div class="cover-sub">아우름 웰니스 서비스 제안서</div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<div class="page light-page" id="p1b">
+  <div class="pi">
+    <div class="section-header">
+      <div class="sl">Our Commitment</div>
+      <div class="sh-line"></div>
+      <div class="st">우리가 '하지 않는 것'부터,<br>분명히 말씀드립니다</div>
+      <div class="sh-sub">선택은 집중의 다른 이름입니다.<br>세 가지를 비워, 한 가지를 채웁니다.</div>
+    </div>
+
+    <div class="manifesto-grid">
+
+      <div class="m-card">
+        <div class="m-image">
+          <img src="images/philosophy/01-linen.webp" alt="한 가지에 집중하는 손" loading="lazy">
+        </div>
+        <div class="m-header">
+          <div class="m-num">01</div>
+          <div class="m-num-line"></div>
+        </div>
+        <div class="m-eng">Not Multi, But Specialist</div>
+        <div class="m-deny">저희는 여러 가지를 함께 하는 곳이 아닙니다.</div>
+        <div class="m-affirm">오직 <strong>피지컬 케어</strong>, 한 가지에 집중합니다.</div>
+      </div>
+
+      <div class="m-card">
+        <div class="m-image">
+          <img src="images/philosophy/02-teaching.webp" alt="직접 교육하고 운영하는 전문가" loading="lazy">
+        </div>
+        <div class="m-header">
+          <div class="m-num">02</div>
+          <div class="m-num-line"></div>
+        </div>
+        <div class="m-eng">Not Platform, But Operator</div>
+        <div class="m-deny">저희는 사람을 중개하는 플랫폼이 아닙니다.</div>
+        <div class="m-affirm">테라피스트를 <strong>직접 교육</strong>하고, <strong>직접 운영</strong>합니다.</div>
+      </div>
+
+      <div class="m-card">
+        <div class="m-image">
+          <img src="images/philosophy/03-manual.webp" alt="피지컬 케어를 설계하는 전문 그룹" loading="lazy">
+        </div>
+        <div class="m-header">
+          <div class="m-num">03</div>
+          <div class="m-num-line"></div>
+        </div>
+        <div class="m-eng">Not Deliverer, But Designer</div>
+        <div class="m-deny">정해진 시술만 제공하는 업체가 아닙니다.</div>
+        <div class="m-affirm">피지컬 케어를 <strong>직접 설계</strong>하는 전문가 그룹입니다.</div>
+      </div>
+
+    </div>
+
+    <div class="closing">
+      <div class="closing-label">The Designation</div>
+      <div class="closing-main">
+        <span class="brand">AURUM WELLNESS</span>
+        마사지 기반 <strong>피지컬 케어를 설계하는</strong><br>전문 테라피스트 그룹입니다.
+      </div>
+    </div>
+
   </div>
 </div>
 
