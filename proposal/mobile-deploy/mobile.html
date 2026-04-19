@@ -542,11 +542,16 @@ br.d { display: inline; }
 #p3 .track-body { padding: 16px 18px; flex: 1; display: flex; flex-direction: column; }
 #p3 .track-title { font-size: 17px; font-weight: 500; color: var(--text); margin-bottom: 6px; }
 #p3 .track-desc { font-size: 13px; color: var(--text-muted); line-height: 1.4; margin-bottom: 10px; font-family: 'Gowun Batang', Georgia, serif; }
-#p3 .track-tags { display: flex; flex-wrap: nowrap; gap: 0; margin-top: auto; width: 100%; }
+#p3 .track-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; width: 100%; }
 #p3 .track-tags .tag {
-  border: 1px solid #ffffff; color: #ffffff; background: var(--dark);
-  border-radius: 0; padding: 3px 0; font-size: 10px; font-weight: 300; white-space: nowrap;
-  flex: 1; text-align: center;
+  display: inline-flex; align-items: center;
+  font-family: var(--fh);
+  font-size: 11px; font-weight: 400; letter-spacing: -0.01em;
+  color: var(--text-sub);
+  background: rgba(200,165,73,0.06);
+  border: 1px solid rgba(200,165,73,0.3);
+  border-radius: 0; padding: 4px 10px;
+  white-space: nowrap;
 }
 
 /* Why cards — left gold accent + watermark number */
