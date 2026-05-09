@@ -90,7 +90,7 @@ export const REVIEW_DATA: ReviewData[] = [
     category: "건식 스포츠 마사지",
     media: ["https://pup-review-phinf.pstatic.net/MjAyNjAzMTdfOTcg/MDAxNzczNzM1NjE5NzEz.OmdY-OCQ7BqNplQ63mlhOsbY1habFguKpMrbMzfqDesg.8JbUDhMSBVqKIeXoWc5FcBpJOCtslKHWJ-MYnNsgiEIg.JPEG/20260313_161052.jpg.jpg?type=w1500_60_sharpen", "https://pup-review-phinf.pstatic.net/MjAyNjAzMTdfMjQg/MDAxNzczNzM1NjE5Nzkw.JCj3b7Got3A0NliuBEN6absOqA6OPd5da1Dux_vwt0Ag.C5Mm7lztfsdquOoRxGE9DP7qo1AwaepxTvZZl32QwbMg.JPEG/20260313_161043.jpg.jpg?type=w1500_60_sharpen"],
     votedKeywords: ["맞춤 케어를 잘해줘요", "시술이 꼼꼼해요", "친절해요", "가격이 합리적이에요", "매장이 청결해요"],
-    reply: "",
+    reply: "안녕하세요 고객님.  \n아로마 전신 관리 전 잠깐 들어간 건식 관리까지 시원하게 느끼셨다니 다행입니다. 몸 상태에 따라 필요한 자극을 먼저 정리해주면 이후 아로마 관리의 이완감도 훨씬 깊어지거든요. 만족스럽게 받아주셨다는 말씀과 함께 단골 예정이라는 표현까지 남겨주셔서 정말 힘이 됩니다. 앞으로도 오실 때마다 “잘 받고 간다”는 느낌이 자연스럽게 남을 수 있도록 꾸준히 집중하겠습니다.  \n감사합니다.",
   },
   {
     id: 'dom_12',
@@ -112,7 +112,7 @@ export const REVIEW_DATA: ReviewData[] = [
     category: "부분 집중 케어",
     media: ["https://pup-review-phinf.pstatic.net/MjAyNjAzMjZfMjkg/MDAxNzc0NTI4MzQ2Mjg2.X8V5g6X4V84toWQGJ-vBxDBL5WFSwdd_znc4y9YCtlUg.1psm6929-AN40IuuVtZYgis5-wNDwIP3cb8dxOO9-PUg.JPEG/1167146A-EA4E-4CEE-AB36-AE9357536161.jpeg?type=w1500_60_sharpen", "https://pup-review-phinf.pstatic.net/MjAyNjAzMjZfMjUw/MDAxNzc0NTI4MzQ2NDM5.ONJ8OrQm31wk-Qcw07ssPTI3w-uMd8yq5fbWbRAWykQg.UA7XKoX04sEqtS3dUMFHvlbp6LAHVyaUJmypwcRFxUsg.JPEG/836B0E86-41A4-44E5-9666-8FB5B74E2B99.jpeg?type=w1500_60_sharpen"],
     votedKeywords: ["관리 효과가 좋아요", "시술이 꼼꼼해요", "친절해요", "분위기가 편안해요", "매장이 청결해요"],
-    reply: "",
+    reply: "안녕하세요 고객님.  \n근육 뭉침으로 불편함이 꽤 있으셨을 텐데, 관리 후 몸이 한결 가벼워졌다고 느끼셨다니 다행입니다. 압 체크를 자주 드리는 이유도 몸 상태에 맞는 자극을 편안하게 이어가기 위해서인데, 그 부분까지 좋게 느껴주셔서 감사합니다. 다음에는 남편분과 함께 2인룸에서 조금 더 여유롭게 쉬어가실 수 있도록 준비해두겠습니다.  \n감사합니다.",
   },
   {
     id: 'dom_16',
@@ -137,6 +137,17 @@ export const REVIEW_DATA: ReviewData[] = [
     reply: "안녕하세요 고객님.  \n부모님과 함께 다닐 곳을 고르신다는 건 기준이 더 까다로울 수밖에 없다고 생각합니다. 그 선택의 과정 끝에 저희를 신뢰해 주셔서 의미 있게 느껴집니다. 편안함 속에서도 몸 상태를 놓치지 않도록 확인하며 진행한 부분이 잘 전달된 것 같아 다행이고, 두 분이 함께 오셔도 각자의 컨디션에 맞춰 차분히 관리해 드릴 수 있습니다. 다음 방문도 부담 없이 계획해 주세요.  \n감사합니다.",
   },
   {
+    id: 'dom_32',
+    body: "하정쌤과 이지연 테라피스트님께 받았습니다. 지난번 하정쌤이 팅팅부은 제 다리 부종을 다 풀어주셔서 죽겠다 하며 들어가 이제 살겠다 하고 나왔는데, 이번에도 잘 풀어주셨어요. 짝궁이 이지연 테라피스트님께 처음 받았는데 너무 시원했다고 좋았다고 엄청 만족하네요!!! 생각도 못하고 있던 생일할인까지 받았어요...ㅎㅎ 저도 몰랐는데 짝궁이 자기 친구가 인천갈 일 있다고 추천해줄 곳 있냐 물어서 여길 추천해줬다고....ㅋㅋㅋㅋㅋㅋㅋ 엄청 시원했다고 했대요ㅋㅋㅋㅋㅋㅋㅋ 하하 역시 제 픽이란ㅎㅎㅎ 제가 마사지샵 한 곳을 계속 다니는 게 흔한 일이 아니었는데.... 아우르메 알고나서는 다른 곳은 잘 못가겠어요 더 자주가고싶은데 가까우면 얼마나 좋을까요ㅠㅠ",
+    nickname: "Wwng",
+    visited: "2026.5.4",
+    visitCount: 12,
+    category: "아로마 스웨디시",
+    media: [],
+    votedKeywords: ["관리 효과가 좋아요", "맞춤 케어를 잘해줘요", "시술이 꼼꼼해요", "친절해요", "분위기가 편안해요"],
+    reply: "안녕하세요 고객님.  \n매번 넘 정성스럽고 감동적인 리뷰 넘 감사드립니다  😊 이번에도 다리 부종이 잘 풀리셨다니 다행입니다. 짝궁분도 이지연 테라피스트 케어를 만족스럽게 받으셨다니 저희도 기분 좋게 읽었습니다. 이렇게 한 분 만족이 또 다른 추천으로 이어지는 걸 보면 참 신기하면서도 감사한 마음이 들어요. 한 곳을 오래 다니는 스타일이 아니셨는데 계속 찾아주시고, 이제는 “제 픽”이라고까지 말씀해주시니 괜히 더 책임감 생깁니다. 거리가 조금만 더 가까웠으면 저희도 좋았을 텐데요 😊 그래도 오시는 길이 아깝지 않도록 다음에도 제대로 풀어드리겠습니다.  \n감사합니다.",
+  },
+  {
     id: 'dom_3',
     body: "친절하시고 차분하게 설명을 잘해주시고 젤 중요한 부분인 관리받는 느낌도 시원했어요~ 다음엔 전신관리 받아보려고 또 예약하고 왔어용😁",
     nickname: "Ssssssssssssssssssso",
@@ -145,7 +156,7 @@ export const REVIEW_DATA: ReviewData[] = [
     category: "아로마 스웨디시",
     media: ["https://pup-review-phinf.pstatic.net/MjAyNjA0MDhfNjgg/MDAxNzc1NjQ4ODk5ODgz.lVNHtL6Hnj9uZKY4_rb3m3CdVWi0h8Z8Xk-sAdKoyOwg.CHVLsbDabEinL-BPZAfURA3oMd79t-HveI76u3rxEtMg.JPEG/0842E850-0EAF-45FA-8E61-40A7A526A128.jpeg?type=w1500_60_sharpen", "https://pup-review-phinf.pstatic.net/MjAyNjA0MDhfMTIw/MDAxNzc1NjQ4ODk5OTk0.IXRbRHUy8zBng9fRa0NOvyELwDrNA_eitw1uqrBu3xQg.E-dFO-w5FK4YFddqCrNjMy9F2TFo5TyGPYYrVZGGa9Yg.JPEG/99906604-777F-4516-A1CE-B1339386120E.jpeg?type=w1500_60_sharpen"],
     votedKeywords: ["친절해요", "분위기가 편안해요", "가격이 합리적이에요", "과도한 권유가 없어요", "맞춤 케어를 잘해줘요"],
-    reply: "",
+    reply: "안녕하세요 고객님.  \n설명 과정부터 관리받는 순간까지 편안하게 느끼셨다니 다행입니다. 아무리 좋은 관리라도 고객님이 현재 상태를 이해하고 편하게 받아들이실 수 있어야 만족으로 이어진다고 생각하고 있어요. 무엇보다 “시원했다”는 느낌이 제대로 남으셨다니 가장 반가운 부분입니다 😊 다음에는 전신 관리로 지금보다 더 깊은 이완감 느끼실 수 있도록 잘 준비해두겠습니다.  \n감사합니다.",
   },
   {
     id: 'dom_6',
@@ -156,7 +167,7 @@ export const REVIEW_DATA: ReviewData[] = [
     category: "아로마 스웨디시",
     media: ["https://pup-review-phinf.pstatic.net/MjAyNjA0MDJfMTYg/MDAxNzc1MTAzNTI0NDQ2.EuVhCNAT6pBmHJXcpefQSnHj23dLBff1KVEugiDKcdMg.OK32ZrTIf4ZunYlom_y_MYTkcuJt_GBdwVsSupzH7oIg.JPEG/20260401_120841.jpg.jpg?type=w1500_60_sharpen"],
     votedKeywords: ["시술이 꼼꼼해요", "친절해요", "분위기가 편안해요", "맞춤 케어를 잘해줘요", "고급스러워요"],
-    reply: "",
+    reply: "안녕하세요 고객님.  \n전나영 테라피스트의 오일 테라피를 만족스럽게 받아주셔서 감사합니다. 단순히 부드럽기만 한 관리가 아니라, 필요한 부분을 섬세하면서도 정확하게 풀어드리는 점이 나영 테라피스트의 강점인데 그 부분을 제대로 느껴주신 것 같아 더욱 기쁩니다. “손이 야무지다”는 표현에 저희도 웃음이 났네요 😊 다음 방문에도 지금처럼 편안하면서도 깊이 있는 관리로 도와드리겠습니다.  \n감사합니다.",
   },
   {
     id: 'dom_10',
@@ -178,7 +189,7 @@ export const REVIEW_DATA: ReviewData[] = [
     category: "아로마 스웨디시",
     media: [],
     votedKeywords: ["관리 효과가 좋아요", "맞춤 케어를 잘해줘요", "고급스러워요", "가격이 합리적이에요"],
-    reply: "",
+    reply: "안녕하세요 고객님.  \n8년이라는 시간 동안 꾸준히 함께해주시고, 이제는 가족분들까지 함께 다니고 계시다는 말씀에 정말 큰 책임감과 감사함을 느낍니다. 몸 상태의 흐름을 오래 지켜보며 관리해드릴 수 있다는 건 저희에게도 참 의미 있는 일이에요. 원장과 김하정 테라피스트의 케어를 모두 믿고 맡겨주셔서 감사드리고, “병원보다 더 만족스럽다”는 표현은 그만큼 회복감을 느끼셨다는 뜻 같아 더욱 마음에 남습니다. 앞으로도 오래 편하게 찾으실 수 있는 곳으로 자리 지키겠습니다. 이지연 테라피스트도 기억해 주세요~^^\n감사합니다.",
   },
   {
     id: 'dom_11',
@@ -200,7 +211,7 @@ export const REVIEW_DATA: ReviewData[] = [
     category: "아로마 스웨디시",
     media: [],
     votedKeywords: ["관리 효과가 좋아요", "맞춤 케어를 잘해줘요", "친절해요", "상담이 자세해요", "과도한 권유가 없어요"],
-    reply: "",
+    reply: "안녕하세요 고객님.  \n확장 이전 전부터 4년째 꾸준히 함께해주고 계시다니 정말 감사한 마음입니다. 운동을 하시는 분들은 단순히 “시원한 마사지”보다 몸의 사용 패턴과 회복 흐름을 이해하는 관리가 중요하다는 걸 잘 아시죠. 그래서 해부학적인 이해를 바탕으로 현재 몸 상태를 읽고 접근하는 부분을 좋게 봐주셔서 더욱 의미 있게 느껴집니다. 최근 운동 중량까지 올리셨다면 몸의 부담도 커졌을 텐데, 오랜만의 관리가 개운함으로 이어졌다니 다행입니다. 앞으로도 운동 루틴의 회복 파트너처럼 함께하겠습니다.  \n감사합니다.",
   },
   {
     id: 'dom_13',
