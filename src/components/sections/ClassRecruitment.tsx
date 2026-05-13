@@ -200,7 +200,7 @@ export default function ClassRecruitment() {
                 010-2981-9989
               </a>
               <a
-                href="https://pf.kakao.com/_PtxcxbK"
+                href="https://pf.kakao.com/_AaZxgn"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.ctaKakao}

@@ -113,7 +113,7 @@ const jsonLd = {
   sameAs: [
     'https://www.instagram.com/victsoon',
     'https://blog.naver.com/victsoon',
-    'https://pf.kakao.com/_PtxcxbK',
+    'https://pf.kakao.com/_AaZxgn',
   ],
 };
 

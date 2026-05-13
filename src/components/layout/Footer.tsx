@@ -18,7 +18,7 @@ const SOCIALS = [
   },
   {
     label: 'KakaoTalk',
-    href: 'https://pf.kakao.com/_PtxcxbK',
+    href: 'https://pf.kakao.com/_AaZxgn',
     src: '/images/icon-kakaotalk.png',
   },
 ];

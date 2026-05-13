@@ -36,7 +36,7 @@ export default function DarkCTA({
               {phoneLabel}
             </a>
             <a
-              href="https://pf.kakao.com/_PtxcxbK"
+              href="https://pf.kakao.com/_AaZxgn"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn--white-outline btn--fullwidth-mobile"
@@ -53,7 +53,7 @@ export default function DarkCTA({
               <span>010-2981-9989</span>
             </a>
             <a
-              href="https://pf.kakao.com/_PtxcxbK"
+              href="https://pf.kakao.com/_AaZxgn"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.kakaoBtn}
