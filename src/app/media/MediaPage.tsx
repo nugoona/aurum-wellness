@@ -287,7 +287,7 @@ export default function MediaPage() {
       <section className={styles.hero}>
         <video
           className={styles.heroBg}
-          src="/videos/media/미디어_배경_영상.mp4"
+          src={MEDIA.backgroundVideo}
           poster="/videos/media/미디어_배경_영상.jpg"
           autoPlay
           muted

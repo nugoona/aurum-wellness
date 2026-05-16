@@ -3,7 +3,12 @@
    ============================================
    파일명은 한글로 — 사용자 다운로드 시 의미 있는 이름.
    향후 YouTube 업로드 후 youtubeId 필드로 교체 가능.
+
+   영상 호스팅: Cloudflare R2 (단일 파일 한도 25MB인 Pages 우회)
+   추후 커스텀 도메인(media.aurumwellness.co.kr 등) 연결 시 이 한 줄만 교체.
 */
+
+const MEDIA_CDN = 'https://pub-61fcf50edf094214ab1e52d6168a8110.r2.dev';
 
 export interface MediaVideo {
   /** YouTube ID — 업로드 후 채움 */
@@ -25,8 +30,11 @@ export interface MediaVideo {
 }
 
 export const MEDIA = {
+  // Hero 자동재생 배경 (음소거 루프)
+  backgroundVideo: `${MEDIA_CDN}/미디어_배경_영상.mp4`,
+
   hero: {
-    mp4Src: '/videos/media/아우르메_브랜드_영상.mp4',
+    mp4Src: `${MEDIA_CDN}/아우르메_브랜드_영상.mp4`,
     poster: '/videos/media/아우르메_브랜드_영상.jpg',
     orientation: '16:9' as const,
     duration: '01:17',
@@ -37,7 +45,7 @@ export const MEDIA = {
   // Section 02 — 동등 페어 (좌우)
   voices: [
     {
-      mp4Src: '/videos/media/아우르메_샵_소개.mp4',
+      mp4Src: `${MEDIA_CDN}/아우르메_샵_소개.mp4`,
       poster: '/videos/media/아우르메_샵_소개.jpg',
       orientation: '9:16' as const,
       duration: '00:32',
@@ -46,7 +54,7 @@ export const MEDIA = {
       quote: '고객분들의 컨디션과 상황에 다 맞춰서 가장 필요한 부분을 해결하기 위해 노력합니다.',
     },
     {
-      mp4Src: '/videos/media/김준경_실장_인터뷰.mp4',
+      mp4Src: `${MEDIA_CDN}/김준경_실장_인터뷰.mp4`,
       poster: '/videos/media/김준경_실장_인터뷰.jpg',
       orientation: '9:16' as const,
       duration: '00:37',
@@ -59,7 +67,7 @@ export const MEDIA = {
   // Section 03 — Philosophy 4편
   philosophy: [
     {
-      mp4Src: '/videos/media/마사지로_병을_고친다.mp4',
+      mp4Src: `${MEDIA_CDN}/마사지로_병을_고친다.mp4`,
       poster: '/videos/media/마사지로_병을_고친다.jpg',
       orientation: '9:16' as const,
       duration: '00:14',
@@ -68,7 +76,7 @@ export const MEDIA = {
       quote: '여기가 병원이 아니잖아요. 저희는 근육을 이완시키고 심신을 안정시킴으로써 좋은 효과를 기대할 수 있는 거죠.',
     },
     {
-      mp4Src: '/videos/media/아픈_마사지가_좋다고요.mp4',
+      mp4Src: `${MEDIA_CDN}/아픈_마사지가_좋다고요.mp4`,
       poster: '/videos/media/아픈_마사지가_좋다고요.jpg',
       orientation: '9:16' as const,
       duration: '00:17',
@@ -77,7 +85,7 @@ export const MEDIA = {
       quote: '내 돈 내고 와서 받는 건데 아프면 싫잖아요. 고객이 갖고 있는 그 정도의 깊이만큼 들어가서 풀어내는 거죠.',
     },
     {
-      mp4Src: '/videos/media/함께_즐기는_케어.mp4',
+      mp4Src: `${MEDIA_CDN}/함께_즐기는_케어.mp4`,
       poster: '/videos/media/함께_즐기는_케어.jpg',
       orientation: '9:16' as const,
       duration: '00:17',
@@ -86,7 +94,7 @@ export const MEDIA = {
       quote: '아파서 오시는 것뿐만 아니라 — 마사지는 즐길 수 있는 거예요. 가족, 연인과 충분히.',
     },
     {
-      mp4Src: '/videos/media/인천_유일_딸고_공식.mp4',
+      mp4Src: `${MEDIA_CDN}/인천_유일_딸고_공식.mp4`,
       poster: '/videos/media/인천_유일_딸고_공식.jpg',
       orientation: '9:16' as const,
       duration: '00:16',
@@ -98,7 +106,7 @@ export const MEDIA = {
 
   // Section 04 — Stillness
   stillness: {
-    mp4Src: '/videos/media/아로마_테라피.mp4',
+    mp4Src: `${MEDIA_CDN}/아로마_테라피.mp4`,
     poster: '/videos/media/아로마_테라피.jpg',
     orientation: '16:9' as const,
     duration: '03:58',

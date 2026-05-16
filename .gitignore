@@ -18,3 +18,7 @@ next-env.d.ts
 
 # auto-collect logs
 scripts/update_reviews.log
+
+# 영상 자산 — Cloudflare R2에 호스팅 (Pages 25MB 단일파일 한도 우회)
+# 로컬에선 public/videos/media/*.mp4 유지 가능, git 추적만 제외
+public/videos/media/*.mp4
