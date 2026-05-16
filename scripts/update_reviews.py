@@ -72,9 +72,19 @@ def git_push():
         check=True,
     )
 
-    # Pull --rebase before push to avoid losing remote commits (e.g. concurrent
-    # auto-runs from a stale clone). On conflict, prefer ours since reviewData.ts
-    # was just regenerated from the source of truth (reviews_raw.json).
+    # Stash any other unstaged tracked changes so git pull --rebase doesn't
+    # abort with "You have unstaged changes." Untracked files are unaffected.
+    # Root cause of the 2026-05-12 push failure.
+    stash = subprocess.run(
+        ['git', 'stash', 'push', '-u', '--keep-index', '-m', 'auto-review-update-tmp'],
+        cwd=REPO_DIR,
+        capture_output=True,
+        text=True,
+    )
+    stashed = stash.returncode == 0 and 'No local changes to save' not in stash.stdout
+
+    # Pull --rebase before push to avoid losing remote commits. On conflict,
+    # prefer ours since reviewData.ts was just regenerated from source of truth.
     pull = subprocess.run(
         ['git', 'pull', '--rebase', '-X', 'ours', 'origin', 'main'],
         cwd=REPO_DIR,
@@ -84,6 +94,8 @@ def git_push():
     if pull.returncode != 0:
         log(f"  [ERROR] git pull --rebase failed: {pull.stderr}")
         subprocess.run(['git', 'rebase', '--abort'], cwd=REPO_DIR)
+        if stashed:
+            subprocess.run(['git', 'stash', 'pop'], cwd=REPO_DIR)
         return False
 
     result = subprocess.run(
@@ -92,6 +104,16 @@ def git_push():
         capture_output=True,
         text=True,
     )
+    if stashed:
+        pop = subprocess.run(
+            ['git', 'stash', 'pop'],
+            cwd=REPO_DIR,
+            capture_output=True,
+            text=True,
+        )
+        if pop.returncode != 0:
+            log(f"  [WARN] git stash pop failed (changes remain in stash): {pop.stderr}")
+
     if result.returncode != 0:
         log(f"  [ERROR] git push failed: {result.stderr}")
         return False

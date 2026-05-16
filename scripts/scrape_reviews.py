@@ -282,6 +282,13 @@ def scrape_new_reviews() -> tuple[list[dict], list[tuple[int, dict]]]:
             msg += f", {page_updated} reply updates"
         print(msg)
 
+        # Early stop: latest-sort means once a page has no new reviews,
+        # every subsequent page is also already-known. No point paginating
+        # through 30+ pages of duplicates.
+        if page_new == 0:
+            print("  No new reviews on this page — stopping (latest-sort).")
+            break
+
         if not next_cursor:
             print("  No next cursor, last page reached.")
             break
