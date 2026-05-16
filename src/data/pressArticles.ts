@@ -23,7 +23,7 @@ export const PRESS_ARTICLES: PressArticle[] = [
     outletEn: 'BESTTIMES',
     headline:
       '아우르메테라피 뷰티앤스파 인천부평점, 2025 부평구 우수 뷰티·바디케어로 선정',
-    url: 'https://m.besttimes.co.kr/5770',
+    url: 'https://www.besttimes.co.kr/5770',
     date: '2026-01-12',
     thumbnail: '/press/besttimes.jpg',
     featured: true,
