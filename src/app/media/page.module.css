@@ -1,0 +1,1295 @@
+/* ============================================
+   MEDIA — 럭셔리 매거진 페이지
+   ────────────────────────────────────────────
+   디자인 원칙
+   · 색은 globals.css 변수만 사용 (hex 금지)
+   · border-radius 최대 2px (원형 버튼만 50%)
+   · 한글 텍스트 그대로 유지, 번역 X
+   · 호버 카드 리프트 X — 골드 헤어라인 리빌 O
+   · 골드 마름모, 골드 헤어라인이 페이지 전반의 공통 오너먼트
+   ============================================ */
+
+.page {
+  position: relative;
+  background: var(--off-white);
+  color: var(--text-primary);
+  overflow: hidden;
+}
+
+/* ============================================
+   섹션 공통 컨테이너
+   ============================================ */
+.sectionContainer {
+  max-width: var(--max-wide);
+  margin: 0 auto;
+  padding: 0 var(--content-px);
+}
+
+/* ============================================
+   에디토리얼 섹션 헤드
+   · 좌측 컬럼: 골드 마름모 → 한글 타이틀 → 한글 보조
+   · 우측: 옵션 액션
+   · 하단: 회색 1px + 좌측 56px 골드 헤어라인 오버레이
+   ============================================ */
+.sectionHead {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 6px 0 24px;
+  margin-bottom: clamp(40px, 4vw, 64px);
+  border-bottom: 1px solid var(--gray-200);
+  position: relative;
+}
+
+.sectionRule {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 56px;
+  height: 1px;
+  background: var(--gold);
+  transform-origin: left center;
+  display: block;
+}
+
+.sectionHeadMain {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+}
+
+.sectionHeadAction {
+  flex: 0 0 auto;
+  align-self: flex-end;
+  margin-bottom: 6px;
+}
+
+/* 골드 마름모 — 4px 회전 정사각형. 페이지 전반에서 재사용. */
+.goldMark {
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  transform: rotate(45deg);
+  display: inline-block;
+  margin-bottom: 6px;
+  flex-shrink: 0;
+}
+
+.sectionTitleKo {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: clamp(24px, 2.8vw, 36px);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.sectionSubKo {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: clamp(13px, 1.1vw, 15px);
+  color: var(--text-muted);
+  letter-spacing: -0.005em;
+  position: relative;
+  padding-left: 22px;
+  margin: 0;
+}
+
+/* 보조 라벨 앞 짧은 골드 틱 */
+.sectionSubKo::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 14px;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.7;
+}
+
+@media (max-width: 767px) {
+  .sectionHead {
+    padding: 6px 0 20px;
+    margin-bottom: clamp(28px, 4vw, 44px);
+  }
+  .sectionTitleKo {
+    font-size: 22px;
+  }
+}
+
+/* ============================================
+   HERO — 영상 bg (TV in grassland) + 상단 텍스트 + TV 위 플레이 버튼
+   ============================================ */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - var(--header-height));
+  overflow: hidden;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* 상단만 살짝 어둡게 — 텍스트 가독성 (티비는 가리지 않음) */
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 35%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.heroTopText {
+  position: absolute;
+  top: clamp(80px, 11vh, 140px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 0 var(--content-px);
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  max-width: 720px;
+}
+
+.heroLabel {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+
+.heroTitle {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-size: clamp(28px, 3.8vw, 42px);
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  color: #fff;
+  margin: 0;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+
+/* TV 위 플레이 버튼 — 영상 안 TV 위치(약 50%, 69%)에 절대 배치 */
+.heroTvPlayBtn {
+  position: absolute;
+  top: 69%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.heroTvPlayCircle {
+  width: clamp(56px, 5.5vw, 76px);
+  height: clamp(56px, 5.5vw, 76px);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 32px -8px rgba(0, 0, 0, 0.55);
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), background 0.3s ease;
+  position: relative;
+}
+
+.heroTvPlayCircle::before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  border: 1px solid var(--gold);
+  opacity: 0.45;
+  transition: inset 0.7s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.7s ease;
+  pointer-events: none;
+}
+
+.heroTvPlayBtn:hover .heroTvPlayCircle {
+  transform: scale(1.06);
+  background: #fff;
+}
+
+.heroTvPlayBtn:hover .heroTvPlayCircle::before {
+  inset: -16px;
+  opacity: 0;
+}
+
+.heroTvPlayCircle svg {
+  width: 38%;
+  height: 38%;
+  fill: var(--gold-dark);
+  margin-left: 6%;
+}
+
+@media (max-width: 767px) {
+  /* 모바일 hero 절대 높이 축소 → TV 다 보임 */
+  .hero {
+    min-height: 0;
+    height: 70vh;
+    max-height: 720px;
+  }
+  .heroTopText {
+    top: clamp(40px, 6vh, 70px);
+    gap: 8px;
+  }
+  .heroTitle {
+    font-size: 26px;
+  }
+  /* TV 위치 모바일에서 살짝 위로 (TV 시각 중앙) */
+  .heroTvPlayBtn {
+    top: 62%;
+  }
+}
+
+/* ============================================
+   02 · VOICES — 비대칭 에디토리얼 페어
+   · 데스크탑: 한 voice = 작은 세로 영상 + 옆 텍스트 컬럼
+   · 짝수번째 페어는 좌우 반전
+   · 영상은 max-w 300px로 캡 (히어로 직후 thumbnail 크기 제어)
+   ============================================ */
+.voices {
+  padding: clamp(72px, 9vw, 120px) 0 clamp(64px, 8vw, 104px);
+}
+
+.voicesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 5vw, 80px);
+  align-items: start;
+}
+
+.voiceCard {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.voiceVideo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5; /* 9:16에서 4:5로 — 세로 줄이고 카드 폭 가득 채움 */
+  background: var(--gray-200);
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.voiceVideo video,
+.voiceVideo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 실장님 카드 (2번째) — 상단 일부 + 하단 자막 둘 다 보이게 살짝만 아래로 */
+.voiceCard:nth-child(2) .voiceVideo img {
+  object-position: center 70%;
+}
+
+.voiceText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 520px;
+}
+
+.voiceMark {
+  margin-bottom: 0;
+}
+
+.voiceTitleKo {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: clamp(22px, 2.4vw, 30px);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.voiceQuote {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: clamp(16px, 1.4vw, 19px);
+  line-height: 1.75;
+  color: var(--text-body);
+  letter-spacing: -0.005em;
+  border-left: 1px solid var(--gold);
+  padding-left: 22px;
+  word-break: keep-all;
+  margin: 0;
+  max-width: 480px;
+}
+
+@media (max-width: 767px) {
+  /* 모바일은 컴팩트 2x 그리드 + 9:16 유지 (모바일 폭 좁아서 세로형이 자연스러움) */
+  .voicesGrid {
+    gap: 10px;
+  }
+  .voiceCard {
+    gap: 8px;
+  }
+  .voiceVideo {
+    aspect-ratio: 9 / 16;
+  }
+  .voiceMark {
+    display: none;
+  }
+  .voiceTitleKo {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  .voiceQuote {
+    display: none;
+  }
+}
+
+/* ============================================
+   03 · PHILOSOPHY — 4-up + 미세 스태거
+   · 짝수 카드는 살짝 아래로 (매거진 리듬)
+   · 타이틀 앞 짧은 골드 헤어라인 (10px)
+   ============================================ */
+.philosophy {
+  padding: clamp(72px, 9vw, 120px) 0;
+  background: var(--cream);
+  position: relative;
+}
+
+.philosophyGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(24px, 2.8vw, 40px);
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.philoCard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.philoVideo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  background: var(--gray-200);
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.philoVideo video,
+.philoVideo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.philoText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 4px 2px;
+}
+
+.philoTitleKo {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: clamp(15px, 1.3vw, 18px);
+  line-height: 1.3;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  margin: 0;
+  position: relative;
+  padding-left: 18px;
+}
+
+.philoTitleKo::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 10px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.philoQuote {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  letter-spacing: -0.005em;
+  word-break: keep-all;
+  margin: 0;
+  padding-left: 18px;
+}
+
+@media (max-width: 1100px) {
+  .philosophyGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .philosophyGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .philoCard {
+    gap: 8px;
+  }
+  .philoText {
+    padding: 2px 2px 0;
+    gap: 4px;
+  }
+  .philoTitleKo {
+    font-size: 13px;
+    line-height: 1.3;
+    padding-left: 12px;
+  }
+  .philoTitleKo::before {
+    width: 7px;
+  }
+  .philoQuote {
+    display: none;
+  }
+}
+
+/* ============================================
+   04 · STILLNESS — 다크 시네마 슬랩
+   · 21:9 letterbox, 안에 16:9 영상
+   · 캡션 좌측에 짧은 골드 헤어라인
+   ============================================ */
+.stillness {
+  background: var(--dark);
+  color: #fff;
+  padding: clamp(72px, 9vw, 120px) 0;
+}
+
+.stillnessInner {
+  max-width: var(--max-wide);
+  margin: 0 auto;
+  padding: 0 var(--content-px);
+}
+
+.stillnessHead {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 6px 0 24px;
+  margin-bottom: clamp(36px, 4vw, 56px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  position: relative;
+}
+
+/* 다크 헤드 — 좌측 골드 헤어라인 (sectionRule을 이 안에서도 재사용 가능) */
+.stillnessHead .sectionRule {
+  background: var(--gold);
+}
+
+.stillnessHead .sectionHeadMain {
+  color: #fff;
+}
+
+.stillnessTitleKo {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: clamp(24px, 2.8vw, 36px);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin: 0;
+}
+
+.stillnessSubKo {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: clamp(13px, 1.1vw, 15px);
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: -0.005em;
+  position: relative;
+  padding-left: 22px;
+  margin: 0;
+}
+
+.stillnessSubKo::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 14px;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.8;
+}
+
+.stillnessStage {
+  position: relative;
+  width: 100%;
+  max-width: 900px; /* 더 작게 → 픽셀 밀도 ↑ */
+  margin: 0 auto;
+  aspect-ratio: 21 / 9;
+  background: #000;
+  overflow: hidden;
+}
+
+/* 캡션 row — 좌측 짧은 골드 룰 + 본문 */
+.stillnessCaptionRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-top: clamp(28px, 3vw, 44px);
+  max-width: 760px;
+}
+
+.stillnessCaptionRule {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 1px;
+  background: var(--gold);
+  margin-top: 16px;
+}
+
+.stillnessPoetic {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: clamp(15px, 1.3vw, 17px);
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: -0.005em;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  /* 모바일은 21:9가 너무 얇으니 16:9로 보강 */
+  .stillnessStage {
+    aspect-ratio: 16 / 9;
+  }
+  .stillnessCaptionRow {
+    gap: 16px;
+  }
+  .stillnessCaptionRule {
+    width: 24px;
+    margin-top: 12px;
+  }
+}
+
+/* ============================================
+   05 · BLOG (아우름 웰니스 현장)
+   · 좌측 컬러 바 ❌
+   · 카테고리는 미니 마름모 + 카테고리 라벨
+   · hover: bottom gold scaleX 리빌 + 미세 줌 + 화살표 슬라이드
+   ============================================ */
+.blog {
+  padding: clamp(72px, 9vw, 120px) 0;
+}
+
+.blogInner {
+  max-width: var(--max-wide);
+  margin: 0 auto;
+  padding: 0 var(--content-px);
+}
+
+.blogHeadAction,
+.blogReadMore,
+.pressReadMore {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  white-space: nowrap;
+  transition: color 0.25s ease, gap 0.25s ease;
+}
+
+.blogHeadAction:hover,
+.blogCard:hover .blogReadMore,
+.pressCard:hover .pressReadMore {
+  color: var(--gold);
+  gap: 12px;
+}
+
+.actionArrow {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.blogHeadAction:hover .actionArrow,
+.blogCard:hover .actionArrow,
+.pressCard:hover .actionArrow {
+  transform: translateX(4px);
+}
+
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(20px, 3vw, 40px);
+}
+
+.blogCard {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 2px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--text-primary);
+  position: relative;
+  transition: border-color 0.3s ease, box-shadow 0.4s ease;
+}
+
+/* hover bottom gold 리빌 — scaleX */
+.blogCard::after,
+.pressCard::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  z-index: 2;
+}
+
+.blogCard:hover,
+.pressCard:hover {
+  border-color: var(--gold-light);
+  box-shadow: 0 18px 40px -22px rgba(0, 0, 0, 0.16);
+}
+
+.blogCard:hover::after,
+.pressCard:hover::after {
+  transform: scaleX(1);
+}
+
+.blogThumb {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--gray-100);
+  overflow: hidden;
+}
+
+.blogThumb img,
+.pressThumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.blogCard:hover .blogThumb img,
+.pressCard:hover .pressThumb img {
+  transform: scale(1.04);
+}
+
+.blogBody {
+  padding: 22px 24px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+.blogMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.blogCategory {
+  color: var(--cat-color, var(--gold-dark));
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.blogCategoryDot {
+  width: 5px;
+  height: 5px;
+  background: var(--cat-color, var(--gold));
+  transform: rotate(45deg);
+  display: inline-block;
+}
+
+.blogDate {
+  color: var(--text-muted);
+  text-transform: none;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+.blogTitle {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: clamp(15px, 1.3vw, 17px);
+  line-height: 1.55;
+  letter-spacing: -0.005em;
+  color: var(--text-primary);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: keep-all;
+  margin: 0;
+}
+
+.blogReadMore {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--gray-200);
+  align-self: stretch;
+  justify-content: flex-start;
+}
+
+@media (max-width: 900px) {
+  .blogGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* ============================================
+   06 · YOUTUBE — the 手作 (준비중)
+   · 9:16 Shorts 썸네일 5개
+   · 채널 개설 전 placeholder UI
+   ============================================ */
+.youtube {
+  padding: clamp(72px, 9vw, 120px) 0;
+}
+
+.youtubeInner {
+  max-width: var(--max-wide);
+  margin: 0 auto;
+  padding: 0 var(--content-px);
+}
+
+/* 섹션 헤드 — 타이틀 + 채널명 태그 + 준비중 뱃지 한 줄 */
+.youtubeTitleRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.youtubeChannelTag {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(16px, 1.6vw, 20px);
+  color: var(--gold-dark);
+  letter-spacing: 0.01em;
+}
+
+.youtubeStatusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  padding: 4px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+  background: var(--dark);
+}
+
+.youtubeStatusBadge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  animation: youtubePulse 1.6s ease-in-out infinite;
+}
+
+@keyframes youtubePulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.75); }
+}
+
+/* 4-column grid 데스크탑 → 2x2 모바일 */
+.youtubeGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(16px, 1.8vw, 28px);
+}
+
+.youtubeCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  cursor: default; /* 준비중 — 클릭 비활성 */
+  user-select: none;
+}
+
+.youtubeThumb {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16; /* YouTube Shorts 표준 */
+  background: var(--gray-200);
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+/* 준비중 — 약간 어둡게 덮어서 비활성 느낌 */
+.youtubeThumbOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.25) 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* 중앙 플레이 아이콘 — 작고 절제된 (활성 영상 아님) */
+.youtubePlayIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: clamp(40px, 4.5vw, 56px);
+  height: clamp(40px, 4.5vw, 56px);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+}
+
+.youtubePlayIcon svg {
+  width: 38%;
+  height: 38%;
+  fill: rgba(255, 255, 255, 0.95);
+  margin-left: 6%;
+}
+
+/* 준비중 뱃지 — 우상단 */
+.youtubeReadyBadge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 4;
+  font-family: var(--font-ui);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  padding: 4px 9px;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.78);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.youtubeTitleCard {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: clamp(13px, 1.1vw, 15px);
+  line-height: 1.4;
+  color: var(--text-body);
+  letter-spacing: -0.005em;
+  margin: 0;
+  padding: 0 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: keep-all;
+}
+
+@media (max-width: 767px) {
+  /* 모바일: 2x2 그리드 (4개 → 2행 2열) */
+  .youtubeGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .youtubeReadyBadge {
+    top: 6px;
+    right: 6px;
+    font-size: 9px;
+    padding: 3px 7px;
+    letter-spacing: 0.16em;
+  }
+  .youtubeTitleCard {
+    font-size: 12px;
+  }
+}
+
+/* ============================================
+   07 · PRESS — Featured (가로 split) + 보조 grid
+   ============================================ */
+.press {
+  padding: clamp(72px, 9vw, 120px) 0;
+  background: var(--cream);
+}
+
+.pressInner {
+  max-width: var(--max-wide);
+  margin: 0 auto;
+  padding: 0 var(--content-px);
+}
+
+.pressCard {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 2px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--text-primary);
+  position: relative;
+  transition: border-color 0.3s ease, box-shadow 0.4s ease;
+}
+
+/* Featured — 가로 split */
+.pressFeatured {
+  flex-direction: row;
+  margin-bottom: clamp(24px, 3vw, 40px);
+  min-height: 320px;
+}
+
+.pressFeatured .pressThumb {
+  flex: 0 0 55%;
+  aspect-ratio: auto;
+}
+
+.pressFeatured .pressBody {
+  flex: 1;
+  padding: clamp(32px, 4vw, 56px);
+  justify-content: center;
+  gap: 18px;
+}
+
+.pressThumb {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--gray-100);
+  overflow: hidden;
+}
+
+.pressBody {
+  padding: 22px 24px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+.pressOutletRow {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+}
+
+.pressOutlet {
+  color: var(--gold-dark);
+  font-weight: 500;
+  position: relative;
+  padding-left: 14px;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* 매체명 앞 미니 마름모 */
+.pressOutlet::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -2px;
+  width: 5px;
+  height: 5px;
+  background: var(--gold);
+  transform: rotate(45deg);
+}
+
+.pressOutletEn {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--gold);
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.pressDate {
+  margin-left: auto;
+  color: var(--text-muted);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
+.pressHeadline {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: clamp(15px, 1.3vw, 17px);
+  line-height: 1.55;
+  letter-spacing: -0.005em;
+  color: var(--text-primary);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: keep-all;
+  margin: 0;
+}
+
+.pressHeadlineLarge {
+  font-size: clamp(22px, 2.4vw, 30px);
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  -webkit-line-clamp: 3;
+}
+
+.pressReadMore {
+  margin-top: 8px;
+  align-self: flex-start;
+}
+
+.pressGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(20px, 3vw, 40px);
+}
+
+@media (max-width: 767px) {
+  .pressFeatured {
+    flex-direction: column;
+    min-height: auto;
+    margin-bottom: 20px;
+  }
+  .pressFeatured .pressThumb {
+    flex: none;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+  .pressFeatured .pressBody {
+    padding: 22px 24px 22px;
+  }
+  .pressGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .pressHeadlineLarge {
+    -webkit-line-clamp: 4;
+  }
+}
+
+/* ============================================
+   PLAY 버튼 (포스터 오버레이)
+   · 동심 골드 링 — hover 시 확장 페이드
+   ============================================ */
+.playBtn {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  border: none;
+  z-index: 3;
+  transition: background 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.playBtn:hover {
+  background: rgba(0, 0, 0, 0.22);
+}
+
+.playBtnCircle {
+  width: clamp(52px, 6.5vw, 72px);
+  height: clamp(52px, 6.5vw, 72px);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 32px -8px rgba(0, 0, 0, 0.45);
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), background 0.3s ease;
+  position: relative;
+}
+
+.playBtnCircle::before {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 1px solid var(--gold);
+  opacity: 0;
+  transition: inset 0.55s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.playBtn:hover .playBtnCircle {
+  transform: scale(1.06);
+  background: #fff;
+}
+
+.playBtn:hover .playBtnCircle::before {
+  inset: -12px;
+  opacity: 0.55;
+}
+
+.playBtnCircle svg {
+  width: 38%;
+  height: 38%;
+  fill: var(--gold-dark);
+  margin-left: 6%;
+}
+
+/* ============================================
+   모달 비디오 플레이어 (Lightbox) — 기능 그대로
+   ============================================ */
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(8, 8, 8, 0.94);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  animation: modalFade 0.25s ease-out;
+  cursor: zoom-out;
+}
+
+@keyframes modalFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modalInner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.modalInner video {
+  display: block;
+  background: #000;
+  outline: none;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.modalLandscape video {
+  width: min(75vw, 1100px); /* 더 작게 — 픽셀 밀도 ↑ */
+  max-height: 78vh;
+  aspect-ratio: 16 / 9;
+}
+
+.modalPortrait video {
+  width: auto;
+  height: min(85vh, 960px);
+  aspect-ratio: 9 / 16;
+}
+
+.modalClose {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+  backdrop-filter: blur(8px);
+}
+
+.modalClose:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: scale(1.05);
+}
+
+.modalClose svg {
+  width: 22px;
+  height: 22px;
+}
+
+@media (max-width: 767px) {
+  .modalBackdrop {
+    padding: 0;
+  }
+  .modalLandscape video {
+    width: 100vw;
+    max-height: 100vh;
+  }
+  .modalPortrait video {
+    height: 100vh;
+    max-width: 100vw;
+  }
+  .modalClose {
+    top: 12px;
+    right: 12px;
+    background: rgba(0, 0, 0, 0.55);
+  }
+}

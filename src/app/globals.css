@@ -367,6 +367,15 @@ h1, h2, h3, h4, h5, h6, p, blockquote {
   }
 }
 
+/* --- Page-scoped scroll snap (added by client component via body.media-snap class) --- */
+@media (max-width: 767px) {
+  html.media-snap {
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: var(--header-height);
+    scroll-behavior: smooth;
+  }
+}
+
 /* --- Cinematic Animations --- */
 @keyframes kenBurns {
   0% { transform: scale(1); }

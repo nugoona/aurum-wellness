@@ -13,6 +13,7 @@ const NAV_ITEMS = [
   { href: '/b2b', label: 'B2B 웰니스' },
   { href: '/class', label: '클래스/특강' },
   { href: '/therapy', label: 'AURUME THERAPY', enFont: true },
+  { href: '/media', label: '미디어' },
 ] as const;
 
 export default function Header() {
@@ -21,8 +22,8 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
-    // /class 페이지는 항상 scrolled 상태 (투명 헤더 없음)
-    if (pathname === '/class') {
+    // /class, /media 페이지는 항상 scrolled 상태 (투명 헤더 시 글자 안 보임)
+    if (pathname === '/class' || pathname === '/media') {
       setScrolled(true);
       return;
     }

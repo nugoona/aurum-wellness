@@ -198,9 +198,9 @@ export const TEAM_CEO: TeamMember = {
 };
 
 export const TEAM_THERAPISTS: TeamMember[] = [
-  { name: '김하정', role: '테라피스트', image: '/images/therapy/staff_hajung.jpg' },
+  { name: '김준경', role: '실장 테라피스트', image: '/images/therapy/staff_junkyung.jpg' },
   { name: '이지연', role: '테라피스트', image: '/images/therapy/staff_jiyeon.jpg' },
-  { name: '김준경', role: '테라피스트', image: '/images/therapy/staff_junkyung.jpg' },
+  { name: '김하정', role: '테라피스트', image: '/images/therapy/staff_hajung.jpg' },
   { name: '전나영', role: '테라피스트', image: '/images/therapy/staff_nayoung.jpg' },
 ];
 
