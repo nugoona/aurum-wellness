@@ -396,7 +396,6 @@ export default function MediaPage() {
             <div className={styles.sectionHeadMain}>
               <GoldMark />
               <h2 className={styles.stillnessTitleKo}>아로마 테라피</h2>
-              <p className={styles.stillnessSubKo}>오프닝 리추얼 — 약 4분</p>
             </div>
             <span className={styles.sectionRule} aria-hidden="true" />
           </header>
