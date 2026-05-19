@@ -104,9 +104,12 @@ function VideoModal({
           poster={video.poster}
           autoPlay
           controls
+          controlsList="nodownload noremoteplayback noplaybackrate"
+          disablePictureInPicture
           playsInline
           preload="auto"
           aria-label={video.alt}
+          onContextMenu={(e) => e.preventDefault()}
         />
       </div>
     </div>
@@ -282,7 +285,14 @@ export default function MediaPage() {
   }, []);
 
   return (
-    <div ref={pageRef} className={styles.page}>
+    <div
+      ref={pageRef}
+      className={styles.page}
+      onContextMenu={(e) => {
+        const t = e.target as HTMLElement;
+        if (t.tagName === 'IMG' || t.tagName === 'VIDEO') e.preventDefault();
+      }}
+    >
       {/* ============== 01 · HERO — 영상 bg + TV 위 플레이 버튼 ============== */}
       <section className={styles.hero}>
         <video
@@ -295,6 +305,8 @@ export default function MediaPage() {
           playsInline
           preload="metadata"
           aria-hidden="true"
+          controlsList="nodownload noremoteplayback"
+          disablePictureInPicture
         />
         <div className={styles.heroOverlay} aria-hidden="true" />
 

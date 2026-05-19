@@ -16,6 +16,15 @@
   overflow: hidden;
 }
 
+/* 다운로드/드래그 저장 차단 — 미디어 자산 보호 (deterrent 수준) */
+.page img,
+.page video {
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  pointer-events: auto;
+}
+
 /* ============================================
    섹션 공통 컨테이너
    ============================================ */
