@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import styles from './ClassStickyBar.module.css';
 
 const OPEN_DATE = new Date('2026-04-17T10:00:00');
-const PROMO_END = new Date('2026-05-29T23:59:59');
+const PROMO_END = new Date('2026-05-18T23:59:59');
 
 function getTimeLeft() {
   const now = new Date();

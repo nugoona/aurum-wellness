@@ -6,7 +6,7 @@ import { X, ArrowRight } from 'lucide-react';
 import styles from './ClassPromoPopup.module.css';
 
 const STORAGE_KEY = 'classPromoPopupDismissed';
-const PROMO_END = new Date('2026-05-29T23:59:59');
+const PROMO_END = new Date('2026-05-18T23:59:59');
 
 export default function ClassPromoPopup() {
   const [visible, setVisible] = useState(false);
