@@ -10,7 +10,7 @@ import random
 random.seed(42)  # Reproducible
 
 # Read raw reviews
-raw_path = os.path.abspath("D:/아우름 웰니스/aurum_reviews/reviews_raw.json")
+raw_path = os.path.abspath("D:/업체영상/아우름웰니스/aurum_reviews/reviews_raw.json")
 with open(raw_path, 'r', encoding='utf-8') as f:
     data = json.load(f)
 
