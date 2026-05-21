@@ -17,13 +17,76 @@ import {
 import { REVIEW_DATA, REVIEW_CATEGORIES } from '@/data/reviewData';
 
 export const metadata = {
-  title: '아우르메 테라피',
-  description: '전문성과 품격을 동시에 갖춘 뷰티 & 웰니스 테라피. 아로마 스웨디시, 건식 스포츠 테라피, 경락 윤곽 관리, 딸고(THALGO) 인증 트리트먼트.',
+  title: { absolute: '부평 마사지 · 웰니스 테라피 | 아우르메 테라피' },
+  description:
+    '인천 부평 웰니스 테라피 — 아로마 스웨디시, 건식 스포츠 테라피, 경락 윤곽 관리, 딸고(THALGO) 인증 트리트먼트. 부평구 부평문화로, 9년 4,000회 현장 경력의 전문 테라피스트.',
+  keywords:
+    '부평 마사지, 인천 부평 마사지, 부평 테라피, 부평 스웨디시, 부평 스포츠마사지, 부평 경락, 인천 마사지, 아우르메 테라피',
+  alternates: { canonical: 'https://www.aurumwellness.co.kr/therapy' },
+  openGraph: {
+    title: '부평 마사지 · 웰니스 테라피 | 아우르메 테라피',
+    description:
+      '인천 부평 웰니스 테라피. 아로마 스웨디시, 스포츠 테라피, 딸고 인증 트리트먼트.',
+    url: 'https://www.aurumwellness.co.kr/therapy',
+    type: 'website',
+  },
+};
+
+// 매장 검색용 소비자 엔티티 — 루트의 ProfessionalService(B2B)와 분리
+const therapyJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'HealthAndBeautyBusiness',
+  name: '아우르메 테라피',
+  alternateName: 'AURUME THERAPY',
+  description:
+    '인천 부평 웰니스 테라피 — 아로마 스웨디시, 건식 스포츠 테라피, 경락 윤곽 관리, 딸고(THALGO) 인증 트리트먼트.',
+  url: 'https://www.aurumwellness.co.kr/therapy',
+  telephone: '+82-10-2981-9989',
+  image: 'https://www.aurumwellness.co.kr/og-image.png',
+  priceRange: '₩₩',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '부평문화로 56, 3층',
+    addressLocality: '부평구',
+    addressRegion: '인천광역시',
+    postalCode: '21389',
+    addressCountry: 'KR',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 37.4907,
+    longitude: 126.7234,
+  },
+  areaServed: ['인천광역시 부평구', '인천광역시', '부천시'],
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      opens: '10:00',
+      closes: '21:00',
+    },
+  ],
+  sameAs: [
+    'https://map.naver.com/p/entry/place/1058592122',
+    'https://blog.naver.com/victsoon',
+    'https://www.instagram.com/victsoon',
+  ],
+  // 아우르메 테라피(모회사)가 B2B 브랜드 아우름웰니스를 산하에 둠
+  subOrganization: {
+    '@type': 'Organization',
+    name: '아우름웰니스',
+    url: 'https://www.aurumwellness.co.kr',
+  },
 };
 
 export default function TherapyPage() {
   return (
     <>
+      {/* JSON-LD structured data — static trusted content only */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(therapyJsonLd) }}
+      />
       <Hero
         image="/images/hero/vis.jpg"
         label="AURUME THERAPY"

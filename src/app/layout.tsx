@@ -115,6 +115,12 @@ const jsonLd = {
     'https://blog.naver.com/victsoon',
     'https://pf.kakao.com/_AaZxgn',
   ],
+  // 아우름웰니스(B2B 브랜드)의 모회사 = 아우르메 테라피 매장
+  parentOrganization: {
+    '@type': 'Organization',
+    name: '아우르메 테라피',
+    url: 'https://www.aurumwellness.co.kr/therapy',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
