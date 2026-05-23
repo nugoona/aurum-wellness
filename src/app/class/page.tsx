@@ -5,7 +5,7 @@ import ClassTypes from '@/components/sections/ClassTypes';
 import ClassReviews from '@/components/sections/ClassReviews';
 import ClassRecruitment from '@/components/sections/ClassRecruitment';
 import DarkCTA from '@/components/sections/DarkCTA';
-import { INSTRUCTOR, TIMELINE, TIMELINE_IMAGES, CLASSES, REVIEWS } from '@/data/classData';
+import { INSTRUCTOR, TIMELINE, TIMELINE_IMAGES, CLASSES, REVIEWS, LV1_COURSE, LV2_COURSE } from '@/data/classData';
 
 export const metadata = {
   title: '아우름웰니스',
@@ -15,7 +15,7 @@ export const metadata = {
 export default function ClassPage() {
   return (
     <>
-      <ClassStickyBar />
+      <ClassStickyBar courses={[LV1_COURSE, LV2_COURSE]} />
       <Hero
         image="/images/hero/class_hero.jpg"
         label="THERAPY CLASS"
@@ -32,7 +32,8 @@ export default function ClassPage() {
         timelineImages={TIMELINE_IMAGES}
       />
       <ClassTypes classes={CLASSES} />
-      <ClassRecruitment />
+      <ClassRecruitment course={LV1_COURSE} />
+      <ClassRecruitment course={LV2_COURSE} />
       <ClassReviews reviews={REVIEWS} />
       <DarkCTA
         title="클래스 수강에 관심이 있으신가요?"

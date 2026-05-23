@@ -4,55 +4,31 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Phone, MessageCircle } from 'lucide-react';
 import ScrollReveal from '@/components/ui/ScrollReveal';
+import type { ClassCourse } from '@/data/classData';
 import styles from './ClassRecruitment.module.css';
 
-const OPEN_DATE = new Date('2026-04-17T00:00:00');
-const PROMO_END = new Date('2026-05-18T23:59:59');
+interface Props {
+  course: ClassCourse;
+}
 
-function getDday() {
-  const now = new Date();
-  const diff = OPEN_DATE.getTime() - now.getTime();
+function getDday(openDate: Date) {
+  const diff = openDate.getTime() - Date.now();
   return Math.ceil(diff / (1000 * 60 * 60 * 24));
 }
 
-const CURRICULUM = [
-  {
-    num: '01',
-    title: '마사지의 이해',
-    desc: '마사지의 역사와 원리, 5단계 기본 원칙 (점·누르기·선·문지르기·반복)을 체계적으로 학습합니다.',
-    image: '/images/class-lv1/01_lecture_portrait.webp',
-  },
-  {
-    num: '02',
-    title: '기초 표면 해부학',
-    desc: '근골격계 구조를 이해하고, 주요 근육과 뼈의 위치를 촉진으로 파악하는 능력을 기릅니다.',
-    image: '/images/class-lv1/03_anatomy_portrait.webp',
-  },
-  {
-    num: '03',
-    title: '건식 기본 테크닉',
-    desc: '부위별 건식 마사지 실습. 목·어깨·등·팔·손 순서로 올바른 자세와 손의 감각을 익힙니다.',
-    image: '/images/class-lv1/04_technique_portrait.webp',
-  },
-];
+export default function ClassRecruitment({ course }: Props) {
+  const openDate = new Date(`${course.openDate}T00:00:00`);
+  const promoEnd = new Date(`${course.promoEnd}T23:59:59`);
 
-const TARGETS = [
-  { image: '/images/class-lv1/07_need_square.webp', strong: '마사지에 관심 있는 모든 분들', desc: '전공 무관, 누구나 시작 가능' },
-  { image: '/images/class-lv1/02_practice_square.webp', strong: '초보자 및 기본기가 필요한 경력자', desc: '스킨케어 및 미용 전문가 포함' },
-  { image: '/images/class-lv1/08_fitness_square.webp', strong: '피트니스 · 운동 · 재활 전문가', desc: '물리치료사 등 보건 전문가' },
-  { image: '/images/class-lv1/06_graduation_square.webp', strong: '창업 · 이직을 생각하는 분들', desc: '미래의 먹거리를 찾는 모든 분들' },
-];
-
-export default function ClassRecruitment() {
   const [dday, setDday] = useState<number | null>(null);
   const [expired, setExpired] = useState(false);
 
   useEffect(() => {
-    if (new Date() > PROMO_END) { setExpired(true); return; }
-    setDday(getDday());
-    const timer = setInterval(() => setDday(getDday()), 60000);
+    if (new Date() > promoEnd) { setExpired(true); return; }
+    setDday(getDday(openDate));
+    const timer = setInterval(() => setDday(getDday(openDate)), 60000);
     return () => clearInterval(timer);
-  }, []);
+  }, [course.openDate, course.promoEnd]);
 
   const ddayLabel = dday !== null
     ? dday > 0 ? `D-${dday}` : dday === 0 ? 'D-DAY' : '진행중'
@@ -60,8 +36,10 @@ export default function ClassRecruitment() {
 
   if (expired) return null;
 
+  const { schedule, curriculum, targets, pricing } = course;
+
   return (
-    <section className={styles.section} id="recruitment">
+    <section className={styles.section} id={`recruitment-${course.id}`}>
       <div className={styles.container}>
 
         {/* ─── 헤더 ─── */}
@@ -71,10 +49,10 @@ export default function ClassRecruitment() {
             {ddayLabel && <span className={styles.dday}>{ddayLabel}</span>}
           </div>
           <h2 className={styles.title}>
-            기초 건식 근골격케어 입문
-            <span className={styles.titleEn}>Therapy Class Lv.1</span>
+            {course.titleKo}
+            <span className={styles.titleEn}>{course.titleEn}</span>
           </h2>
-          <p className={styles.subtitle}>모든 수기 관리의 확실한 출발점</p>
+          <p className={styles.subtitle}>{course.subtitle}</p>
         </ScrollReveal>
 
         {/* ─── 일정 정보 가로 바 ─── */}
@@ -82,27 +60,27 @@ export default function ClassRecruitment() {
           <div className={styles.infoRow}>
             <div className={styles.infoItem}>
               <span className={styles.infoLabel}>일정</span>
-              <span className={styles.infoValue}>2026.4.17 ~ 5.29</span>
+              <span className={styles.infoValue}>{schedule.period}</span>
             </div>
             <div className={styles.infoDivider} />
             <div className={styles.infoItem}>
               <span className={styles.infoLabel}>요일</span>
-              <span className={styles.infoValue}>매주 금요일</span>
+              <span className={styles.infoValue}>{schedule.dayOfWeek}</span>
             </div>
             <div className={styles.infoDivider} />
             <div className={styles.infoItem}>
               <span className={styles.infoLabel}>시간</span>
-              <span className={styles.infoValue}>10:00 ~ 17:00</span>
+              <span className={styles.infoValue}>{schedule.time}</span>
             </div>
             <div className={styles.infoDivider} />
             <div className={styles.infoItem}>
               <span className={styles.infoLabel}>기간</span>
-              <span className={styles.infoValue}>7주 · 21강</span>
+              <span className={styles.infoValue}>{schedule.duration}</span>
             </div>
             <div className={styles.infoDivider} />
             <div className={styles.infoItem}>
               <span className={styles.infoLabel}>장소</span>
-              <span className={styles.infoValue}>인천 부평구 부평문화로 56, 3층</span>
+              <span className={styles.infoValue}>{schedule.location}</span>
             </div>
           </div>
         </ScrollReveal>
@@ -114,7 +92,7 @@ export default function ClassRecruitment() {
             <h3 className={styles.sectionTitle}>주요 수업 주제</h3>
           </ScrollReveal>
           <div className={styles.curriculumGrid}>
-            {CURRICULUM.map((item, i) => (
+            {curriculum.map((item, i) => (
               <ScrollReveal key={i} delay={i * 0.1}>
                 <div className={styles.currCard}>
                   <Image
@@ -142,7 +120,7 @@ export default function ClassRecruitment() {
             <h3 className={styles.sectionTitle}>이런 분들께 추천드립니다</h3>
           </ScrollReveal>
           <div className={styles.targetGrid}>
-            {TARGETS.map((t, i) => (
+            {targets.map((t, i) => (
               <ScrollReveal key={i} delay={i * 0.08}>
                 <div className={styles.targetCard}>
                   <Image
@@ -162,36 +140,66 @@ export default function ClassRecruitment() {
           </div>
         </div>
 
-        {/* ─── 가격 (쿠폰 스타일) ─── */}
+        {/* ─── 가격 ─── */}
         <div className={styles.priceArea}>
-          <ScrollReveal>
-            <span className={styles.sectionLabel}>Tuition</span>
-            <h3 className={styles.priceHeadline}>2인 동반 추가 할인</h3>
-            <p className={styles.priceSubheadline}>Buddy Discount</p>
-          </ScrollReveal>
-          <ScrollReveal delay={0.1}>
-            <div className={styles.priceCards}>
-              <div className={styles.priceCard}>
-                <span className={styles.priceCardTag}>1인</span>
-                <div className={styles.priceCardLevel}>Lv.1</div>
-                <div className={styles.priceCardAmount}>
-                  79<span className={styles.priceCardUnit}>만원</span>
-                </div>
-                <p className={styles.priceCardNote}>카드 결제 시 VAT 별도</p>
-              </div>
+          {pricing.type === 'buddy' ? (
+            <>
+              <ScrollReveal>
+                <span className={styles.sectionLabel}>Tuition</span>
+                <h3 className={styles.priceHeadline}>{pricing.headline}</h3>
+                <p className={styles.priceSubheadline}>{pricing.subheadline}</p>
+              </ScrollReveal>
+              <ScrollReveal delay={0.1}>
+                <div className={styles.priceCards}>
+                  <div className={styles.priceCard}>
+                    <span className={styles.priceCardTag}>{pricing.single.tag}</span>
+                    <div className={styles.priceCardLevel}>{pricing.single.level}</div>
+                    <div className={styles.priceCardAmount}>
+                      {pricing.single.amount}<span className={styles.priceCardUnit}>{pricing.single.unit}</span>
+                    </div>
+                    {pricing.single.note && (
+                      <p className={styles.priceCardNote}>{pricing.single.note}</p>
+                    )}
+                  </div>
 
-              <span className={styles.priceArrow}>→</span>
+                  <span className={styles.priceArrow}>→</span>
 
-              <div className={`${styles.priceCard} ${styles.priceCardFeatured}`}>
-                <span className={styles.priceCardTag}>동반 할인</span>
-                <div className={styles.priceCardLevel}>Lv.1</div>
-                <div className={`${styles.priceCardAmount} ${styles.priceCardHighlight}`}>
-                  70<span className={styles.priceCardUnit}>만원</span>
+                  <div className={`${styles.priceCard} ${styles.priceCardFeatured}`}>
+                    <span className={styles.priceCardTag}>{pricing.buddy.tag}</span>
+                    <div className={styles.priceCardLevel}>{pricing.buddy.level}</div>
+                    <div className={`${styles.priceCardAmount} ${styles.priceCardHighlight}`}>
+                      {pricing.buddy.amount}<span className={styles.priceCardUnit}>{pricing.buddy.unit}</span>
+                    </div>
+                    <span className={styles.priceCardSave}>{pricing.buddy.saveLabel}</span>
+                  </div>
                 </div>
-                <span className={styles.priceCardSave}>9만원 할인</span>
-              </div>
-            </div>
-          </ScrollReveal>
+              </ScrollReveal>
+            </>
+          ) : (
+            <>
+              <ScrollReveal>
+                <span className={styles.sectionLabel}>Tuition</span>
+                <h3 className={styles.priceHeadline}>수강료 안내</h3>
+                <p className={styles.priceSubheadline}>Tuition</p>
+              </ScrollReveal>
+              <ScrollReveal delay={0.1}>
+                <div className={styles.priceCardsSingle}>
+                  <div className={`${styles.priceCard} ${styles.priceCardFeatured}`}>
+                    {pricing.tag && (
+                      <span className={styles.priceCardTag}>{pricing.tag}</span>
+                    )}
+                    <div className={styles.priceCardLevel}>{pricing.level}</div>
+                    <div className={`${styles.priceCardAmount} ${styles.priceCardHighlight}`}>
+                      {pricing.amount}<span className={styles.priceCardUnit}>{pricing.unit}</span>
+                    </div>
+                    {pricing.note && (
+                      <p className={styles.priceCardNote}>{pricing.note}</p>
+                    )}
+                  </div>
+                </div>
+              </ScrollReveal>
+            </>
+          )}
 
           <ScrollReveal delay={0.2}>
             <div className={styles.ctaRow}>

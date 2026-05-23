@@ -1,18 +1,28 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { createPortal } from 'react-dom';
 import { X, ArrowRight } from 'lucide-react';
+import type { ClassCourse } from '@/data/classData';
 import styles from './ClassPromoPopup.module.css';
 
 const STORAGE_KEY = 'classPromoPopupDismissed';
-const PROMO_END = new Date('2026-05-18T23:59:59');
 
-export default function ClassPromoPopup() {
+interface Props {
+  courses: ClassCourse[];
+}
+
+function getActiveCourses(courses: ClassCourse[]): ClassCourse[] {
+  const now = Date.now();
+  return courses.filter(c => new Date(`${c.promoEnd}T23:59:59`).getTime() > now);
+}
+
+export default function ClassPromoPopup({ courses }: Props) {
   const [visible, setVisible] = useState(false);
+  const activeCourses = useMemo(() => getActiveCourses(courses), [courses]);
 
   useEffect(() => {
-    if (new Date() > PROMO_END) return;
+    if (activeCourses.length === 0) return;
 
     const dismissed = localStorage.getItem(STORAGE_KEY);
     if (dismissed) {
@@ -22,7 +32,7 @@ export default function ClassPromoPopup() {
     }
 
     setVisible(true);
-  }, []);
+  }, [activeCourses.length]);
 
   const close = () => setVisible(false);
 
@@ -31,55 +41,60 @@ export default function ClassPromoPopup() {
     setVisible(false);
   };
 
-  if (!visible) return null;
+  if (!visible || activeCourses.length === 0) return null;
+
+  const isDual = activeCourses.length > 1;
+  const headerLabel = isDual
+    ? `Aurum Academy — ${activeCourses.length}개 정규 코스 모집중`
+    : 'Aurum Academy — 정규 과정 모집';
 
   return createPortal(
     <div className={styles.overlay} onClick={close}>
-      <div className={styles.modal} onClick={e => e.stopPropagation()}>
-        <div className={styles.imageArea}>
-          <div
-            className={styles.bgImage}
-            style={{ backgroundImage: 'url(/images/class-lv1/01_lecture_square.webp)' }}
-          />
-          <button className={styles.closeBtn} onClick={close} aria-label="닫기">
-            <X size={16} />
-          </button>
+      <div
+        className={`${styles.modal} ${isDual ? styles.modalDual : ''}`}
+        onClick={e => e.stopPropagation()}
+      >
+        <button className={styles.closeBtn} onClick={close} aria-label="닫기">
+          <X size={16} />
+        </button>
+
+        <div className={styles.header}>
+          <span className={styles.hook}>{headerLabel}</span>
+          <h2 className={styles.heading}>
+            여름 정규 과정<br />함께 모집합니다
+          </h2>
+          <p className={styles.subheading}>관심 있는 과정을 선택해 자세히 살펴보세요</p>
         </div>
 
-        <div className={styles.content}>
-          <span className={styles.hook}>Aurum Academy — 4월 개강</span>
-
-          <h2 className={styles.title}>
-            기초 건식 근골격케어
-            <span className={styles.titleEn}>Therapy Class Lv.1</span>
-          </h2>
-
-          <p className={styles.subtitle}>
-            모든 수기 관리의 확실한 출발점
-          </p>
-
-          <div className={styles.infoArea}>
-            <div className={styles.infoRow}>
-              <span className={styles.infoLabel}>일정</span>
-              <span className={styles.infoValue}>
-                4.17(금) ~ 5.29
-                <span className={styles.inlineBadge}>매주 금요일</span>
-                <span className={styles.inlineBadge}>7주</span>
-              </span>
-            </div>
-            <div className={styles.infoRow}>
-              <span className={styles.infoLabel}>시간</span>
-              <span className={styles.infoValue}>오전 10시 ~ 오후 5시</span>
-            </div>
-            <div className={styles.infoRow}>
-              <span className={styles.infoLabel}>장소</span>
-              <span className={styles.infoValue}>인천 1호선 부평시장역 근처</span>
-            </div>
-          </div>
-
-          <a href="/class#recruitment" className={styles.cta} onClick={close}>
-            자세히 보기 <ArrowRight size={15} />
-          </a>
+        <div className={styles.cardList}>
+          {activeCourses.map(course => {
+            const firstImage = course.curriculum[0]?.image;
+            return (
+              <a
+                key={course.id}
+                href={`/class#recruitment-${course.id}`}
+                className={styles.courseCard}
+                onClick={close}
+              >
+                {firstImage && (
+                  <div
+                    className={styles.cardImage}
+                    style={{ backgroundImage: `url(${firstImage})` }}
+                  />
+                )}
+                <div className={styles.cardBody}>
+                  <span className={styles.cardLevel}>{course.level}</span>
+                  <h3 className={styles.cardTitle}>{course.titleKo}</h3>
+                  <div className={styles.cardMeta}>
+                    <span>{course.schedule.period}</span>
+                    <span className={styles.dot}>·</span>
+                    <span>{course.schedule.dayOfWeek}</span>
+                  </div>
+                </div>
+                <ArrowRight size={18} className={styles.cardArrow} />
+              </a>
+            );
+          })}
         </div>
 
         <label className={styles.dismiss}>

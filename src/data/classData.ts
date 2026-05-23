@@ -145,6 +145,161 @@ export const CLASS_LEVELS: ClassLevel[] = [
   },
 ];
 
+/* ───────────────────────────────────────────────
+ * 모집 공지 (ClassRecruitment 컴포넌트용)
+ * ─────────────────────────────────────────────── */
+
+export interface CurriculumItem {
+  num: string;
+  title: string;
+  desc: string;
+  image: string;
+}
+
+export interface TargetItem {
+  image: string;
+  strong: string;
+  desc: string;
+}
+
+export type ClassPricing =
+  | {
+      type: 'single';
+      level: string;        // 'Lv.2'
+      amount: number;       // 56
+      unit: string;         // '만원'
+      tag?: string;         // '1인'
+      note?: string;        // '카드 결제 시 VAT 별도'
+    }
+  | {
+      type: 'buddy';
+      headline: string;       // '2인 동반 추가 할인'
+      subheadline: string;    // 'Buddy Discount'
+      single: { level: string; amount: number; unit: string; tag: string; note?: string };
+      buddy: { level: string; amount: number; unit: string; tag: string; saveLabel: string };
+    };
+
+export interface ClassCourse {
+  id: string;                   // 'lv1' | 'lv2'
+  level: string;                // 'Lv.1'
+  titleKo: string;
+  titleEn: string;
+  subtitle: string;
+  openDate: string;             // 'YYYY-MM-DD' (D-day 기준)
+  promoEnd: string;             // 'YYYY-MM-DD' (지나면 hide)
+  schedule: {
+    period: string;             // '2026.7.8 ~ 8.19'
+    dayOfWeek: string;          // '매주 수요일' / '매주 목요일 (7/30 휴강)'
+    time: string;
+    duration: string;
+    location: string;
+  };
+  curriculum: CurriculumItem[];
+  targets: TargetItem[];
+  pricing: ClassPricing;
+}
+
+export const LV1_COURSE: ClassCourse = {
+  id: 'lv1',
+  level: 'Lv.1',
+  titleKo: '기초 건식 근골격케어 입문',
+  titleEn: 'Therapy Class Lv.1',
+  subtitle: '모든 수기 관리의 확실한 출발점',
+  openDate: '2026-07-08',
+  promoEnd: '2026-08-19',
+  schedule: {
+    period: '2026.7.8 ~ 8.19',
+    dayOfWeek: '매주 수요일',
+    time: '10:00 ~ 17:00',
+    duration: '7주 · 21강',
+    location: '인천 부평구 부평문화로 56, 3층',
+  },
+  curriculum: [
+    {
+      num: '01',
+      title: '마사지의 이해',
+      desc: '마사지의 역사와 원리, 5단계 기본 원칙 (점·누르기·선·문지르기·반복)을 체계적으로 학습합니다.',
+      image: '/images/class-lv1/01_lecture_portrait.webp',
+    },
+    {
+      num: '02',
+      title: '기초 표면 해부학',
+      desc: '근골격계 구조를 이해하고, 주요 근육과 뼈의 위치를 촉진으로 파악하는 능력을 기릅니다.',
+      image: '/images/class-lv1/03_anatomy_portrait.webp',
+    },
+    {
+      num: '03',
+      title: '건식 기본 테크닉',
+      desc: '부위별 건식 마사지 실습. 목·어깨·등·팔·손 순서로 올바른 자세와 손의 감각을 익힙니다.',
+      image: '/images/class-lv1/04_technique_portrait.webp',
+    },
+  ],
+  targets: [
+    { image: '/images/class-lv1/07_need_square.webp', strong: '마사지에 관심 있는 모든 분들', desc: '전공 무관, 누구나 시작 가능' },
+    { image: '/images/class-lv1/02_practice_square.webp', strong: '초보자 및 기본기가 필요한 경력자', desc: '스킨케어 및 미용 전문가 포함' },
+    { image: '/images/class-lv1/08_fitness_square.webp', strong: '피트니스 · 운동 · 재활 전문가', desc: '물리치료사 등 보건 전문가' },
+    { image: '/images/class-lv1/06_graduation_square.webp', strong: '창업 · 이직을 생각하는 분들', desc: '미래의 먹거리를 찾는 모든 분들' },
+  ],
+  pricing: {
+    type: 'buddy',
+    headline: '2인 동반 추가 할인',
+    subheadline: 'Buddy Discount',
+    single: { level: 'Lv.1', amount: 79, unit: '만원', tag: '1인', note: '카드 결제 시 VAT 별도' },
+    buddy:  { level: 'Lv.1', amount: 70, unit: '만원', tag: '동반 할인', saveLabel: '9만원 할인' },
+  },
+};
+
+export const LV2_COURSE: ClassCourse = {
+  id: 'lv2',
+  level: 'Lv.2',
+  titleKo: '습식 스웨디시 마사지 심화',
+  titleEn: 'Therapy Class Lv.2 — Swedish Massage',
+  subtitle: '손의 언어로, 신경계의 리듬을 회복한다',
+  openDate: '2026-07-09',
+  promoEnd: '2026-08-06',
+  schedule: {
+    period: '2026.7.9 ~ 8.6',
+    dayOfWeek: '매주 목요일 (7/30 휴강)',
+    time: '10:00 ~ 17:00',
+    duration: '4주 · 15강',
+    location: '인천 부평구 부평문화로 56, 3층',
+  },
+  curriculum: [
+    {
+      num: '01',
+      title: '스웨디시의 본질과 기본기',
+      desc: '5대 기법(Effleurage·Petrissage·Friction·Tapotement·Vibration)과 인체 정렬, 체중 이동, Resting Touch까지 — 모든 수기 관리의 출발점이 되는 손의 감각을 정립합니다.',
+      image: '/images/class-lv2/01_stroke_portrait.webp',
+    },
+    {
+      num: '02',
+      title: '부위별 심화 테크닉',
+      desc: '등·둔부·다리·발·목·어깨·얼굴·복부·팔까지, 근막경선(SBL/SFL)에 따라 전신을 통합적으로 다루는 부위별 루틴을 익힙니다.',
+      image: '/images/class-lv2/02_fascia_portrait.webp',
+    },
+    {
+      num: '03',
+      title: '통합 시퀀스 (Prone ↔ Supine Flow)',
+      desc: '엎드림→누움 전환, 호흡·리듬·드레이핑을 하나로 엮어 60/90분 풀바디 세션을 완성합니다.',
+      image: '/images/class-lv2/03_flow_portrait.webp',
+    },
+  ],
+  targets: [
+    { image: '/images/class-lv2/target_01_square.webp', strong: 'Lv.1 수료생 및 기초 경력자', desc: '다음 단계로 나아가고자 하는 모든 분' },
+    { image: '/images/class-lv2/target_02_square.webp', strong: '현직 테라피스트 · 스웨디시 종사자', desc: '임상 보수교육이 필요한 전문가' },
+    { image: '/images/class-lv2/target_03_square.webp', strong: '스웨디시 샵 창업 · 이직 준비자', desc: '현장에서 즉시 적용 가능한 시퀀스' },
+    { image: '/images/class-lv2/target_04_square.webp', strong: '피부미용 · 웰니스 업계 종사자', desc: '수기 케어 영역 확장이 필요한 분' },
+  ],
+  pricing: {
+    type: 'single',
+    level: 'Lv.2',
+    amount: 56,
+    unit: '만원',
+    tag: '1인',
+    note: '카드 결제 시 VAT 별도',
+  },
+};
+
 export interface ClassReview {
   name: string;
   age: number;
