@@ -291,12 +291,11 @@ export const LV2_COURSE: ClassCourse = {
     { image: '/images/class-lv2/target_04_square.webp', strong: '피부미용 · 웰니스 업계 종사자', desc: '수기 케어 영역 확장이 필요한 분' },
   ],
   pricing: {
-    type: 'single',
-    level: 'Lv.2',
-    amount: 56,
-    unit: '만원',
-    tag: '1인',
-    note: '카드 결제 시 VAT 별도',
+    type: 'buddy',
+    headline: '2인 동반 추가 할인',
+    subheadline: 'Buddy Discount',
+    single: { level: 'Lv.2', amount: 56, unit: '만원', tag: '1인', note: '카드 결제 시 VAT 별도' },
+    buddy:  { level: 'Lv.2', amount: 50, unit: '만원', tag: '동반 할인', saveLabel: '6만원 할인' },
   },
 };
 
