@@ -68,7 +68,7 @@ export default function ClassPromoPopup({ courses }: Props) {
 
         <div className={styles.cardList}>
           {activeCourses.map(course => {
-            const firstImage = course.curriculum[0]?.image;
+            const firstImage = course.coverImage ?? course.curriculum[0]?.image;
             return (
               <a
                 key={course.id}

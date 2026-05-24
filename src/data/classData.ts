@@ -185,6 +185,7 @@ export interface ClassCourse {
   titleKo: string;
   titleEn: string;
   subtitle: string;
+  coverImage?: string;          // 팝업 카드용 hero. 없으면 curriculum[0].image로 폴백
   openDate: string;             // 'YYYY-MM-DD' (D-day 기준)
   promoEnd: string;             // 'YYYY-MM-DD' (지나면 hide)
   schedule: {
@@ -205,6 +206,7 @@ export const LV1_COURSE: ClassCourse = {
   titleKo: '기초 건식 근골격케어 입문',
   titleEn: 'Therapy Class Lv.1',
   subtitle: '모든 수기 관리의 확실한 출발점',
+  coverImage: '/images/class-lv1/cover_hands_on.png',
   openDate: '2026-07-08',
   promoEnd: '2026-08-19',
   schedule: {
