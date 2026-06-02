@@ -220,7 +220,7 @@ export const LV1_COURSE: ClassCourse = {
     {
       num: '01',
       title: '마사지의 이해',
-      desc: '마사지의 역사와 원리, 그리고 아우름의 5단계 원칙(촉진·체중압·지속압·이완·이동)을 체계적으로 학습합니다.',
+      desc: '마사지의 역사와 원리, 그리고 아우름의 5 스텝(촉진·체중압·지속압·이완·이동)을 체계적으로 학습합니다.',
       image: '/images/class-lv1/01_lecture_portrait.webp',
     },
     {
