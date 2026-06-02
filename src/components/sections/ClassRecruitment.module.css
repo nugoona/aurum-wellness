@@ -3,6 +3,8 @@
   padding: var(--section-py) 0;
   background: var(--dark, #2c2c2c);
   color: #fff;
+  /* 고정 헤더 + sticky 카운트다운 바에 가리지 않도록 앵커 착지 보정 (같은 페이지 내 클릭용) */
+  scroll-margin-top: calc(var(--header-height, 80px) + 56px);
 }
 
 .container {

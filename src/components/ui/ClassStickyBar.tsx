@@ -65,7 +65,7 @@ export default function ClassStickyBar({ courses }: Props) {
   const openSubtitle = `${openDateObj.getMonth() + 1}.${openDateObj.getDate()}(${dayLabels[openDateObj.getDay()]}) 오전 10시 개강`;
 
   return (
-    <a href={`#recruitment-${activeCourse.id}`} className={styles.bar}>
+    <a href={`#recruitment-${activeCourse.id}`} className={styles.bar} data-sticky-bar>
       <div className={styles.left}>
         <span className={styles.badge}>{isLive ? '진행중' : '모집중'}</span>
         <div className={styles.titleGroup}>
