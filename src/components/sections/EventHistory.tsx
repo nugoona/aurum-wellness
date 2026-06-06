@@ -57,7 +57,6 @@ export default function EventHistory() {
                   <div className={styles.yearBlock}>
                     <div className={styles.yearCol}>
                       <span className={styles.year}>{year}</span>
-                      <span className={styles.eventCount}>{events.length}건</span>
                     </div>
                     <div className={styles.line} />
                     <div className={styles.eventsCol}>
