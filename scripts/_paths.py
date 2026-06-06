@@ -9,4 +9,6 @@ _paths.py — 리뷰 파이프라인 공용 경로 단일 소스(Single Source o
 import os
 
 # 네이버 원시 리뷰 누적 저장소 (스크래퍼의 증분 누적 대상 = 절대 비우면 안 됨)
-REVIEWS_PATH = os.path.abspath(r"D:/업체영상/아우름웰니스/aurum_reviews/reviews_raw.json")
+# 2026-06-06: 영상폴더(D:/업체영상/...) 밑에서 안정 위치로 이전.
+#   영상폴더는 정리·동기화 대상이라 누적 저장소로 부적절 → 시스템 드라이브 전용 폴더로.
+REVIEWS_PATH = os.path.abspath(r"C:/Users/oscar/automation/aurum_reviews/reviews_raw.json")
