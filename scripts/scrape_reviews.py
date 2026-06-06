@@ -18,8 +18,9 @@ from datetime import datetime, timezone
 
 import requests
 
+from _paths import REVIEWS_PATH  # 경로 단일 소스 (드리프트로 인한 데이터 손실 방지)
+
 PLACE_ID = "1058592122"
-REVIEWS_PATH = os.path.abspath("D:/업체영상/아우름웰니스/aurum_reviews/reviews_raw.json")
 
 MOBILE_UA = (
     "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) "

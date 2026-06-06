@@ -17,9 +17,10 @@ import re
 import hashlib
 from datetime import datetime, timezone
 
+from _paths import REVIEWS_PATH as RAW_PATH  # 경로 단일 소스 (scrape와 동일 위치 보장)
+
 REPO_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REVIEW_DATA_TS = os.path.join(REPO_DIR, 'src', 'data', 'reviewData.ts')
-RAW_PATH = os.path.abspath("D:/아우름 웰니스/aurum_reviews/reviews_raw.json")
 
 
 def fingerprint(body, nickname, visited):
