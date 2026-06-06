@@ -16,8 +16,10 @@ next-env.d.ts
 .env.production
 .vercel
 
-# auto-collect logs
+# auto-collect 런타임 산출물 (커밋 금지)
 scripts/update_reviews.log
+scripts/last_success.txt
+scripts/__pycache__/
 
 # 영상 자산 — Cloudflare R2에 호스팅 (Pages 25MB 단일파일 한도 우회)
 # 로컬에선 public/videos/media/*.mp4 유지 가능, git 추적만 제외
