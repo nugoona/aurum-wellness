@@ -12,10 +12,19 @@ import sys
 import subprocess
 from datetime import datetime
 
+import _notify
+
 SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_DIR = os.path.dirname(SCRIPTS_DIR)
 REVIEW_DATA_PATH = os.path.join(REPO_DIR, 'src', 'data', 'reviewData.ts')
 LOG_FILE = os.path.join(SCRIPTS_DIR, 'update_reviews.log')
+# 성공 시각 기록 — Watchdog이 8일 이상 미갱신을 감지해 알림한다(M2 재발방지)
+HEARTBEAT_FILE = os.path.join(SCRIPTS_DIR, 'last_success.txt')
+
+
+def write_heartbeat():
+    with open(HEARTBEAT_FILE, 'w', encoding='utf-8') as f:
+        f.write(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
 
 
 def log(msg: str):
@@ -130,27 +139,40 @@ def main():
     # Step 1: Scrape new reviews
     if not run_script('scrape_reviews.py'):
         log("Scraping failed, aborting.")
+        _notify.send('🚨 <b>아우르메 리뷰 자동수집 실패</b>\n단계: 네이버 리뷰 스크래핑(scrape_reviews.py)\n로그: <code>aurum/scripts/update_reviews.log</code>')
         return 1
 
     # Step 2: Categorize and generate reviewData.ts
     if not run_script('categorize_reviews.py'):
         log("Categorization failed, aborting.")
+        _notify.send('🚨 <b>아우르메 리뷰 자동수집 실패</b>\n단계: 분류/생성(categorize_reviews.py)\n로그: <code>aurum/scripts/update_reviews.log</code>')
         return 1
 
     # Step 3: Check for changes and push
     if git_has_changes():
         log("reviewData.ts changed, pushing to remote...")
         if git_push():
-            log("Pushed successfully. Vercel will auto-deploy.")
+            log("Pushed successfully. Cloudflare Pages will auto-deploy.")
+            _notify.send('✅ <b>아우르메 리뷰 업데이트 배포</b>\n새 리뷰/답글이 반영되어 푸시했습니다. Cloudflare Pages 자동배포.')
         else:
             log("Push failed.")
+            _notify.send('🚨 <b>아우르메 리뷰 자동수집 실패</b>\n단계: git push(원격 반영)\n로그: <code>aurum/scripts/update_reviews.log</code>')
             return 1
     else:
         log("No changes to reviewData.ts. Nothing to push.")
 
+    write_heartbeat()  # 정상 완료 — Watchdog용 생존 신호
     log("Pipeline complete.")
     return 0
 
 
 if __name__ == '__main__':
-    sys.exit(main())
+    try:
+        sys.exit(main())
+    except Exception as e:
+        try:
+            log(f"[FATAL] 예외로 종료: {e!r}")
+        except Exception:
+            pass
+        _notify.send(f'🚨 <b>아우르메 리뷰 자동수집 크래시</b>\n예외: <code>{e!r}</code>\n로그: <code>aurum/scripts/update_reviews.log</code>')
+        sys.exit(1)
