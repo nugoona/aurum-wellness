@@ -17,7 +17,19 @@ export interface FeaturedEvent {
 export const EVENT_HISTORY: Record<string, EventRecord[]> = {
   '2026': [
     { client: '삼성화재서비스', category: '기업 복지' },
+    { client: 'DLA Piper', category: '기업 복지' },
+    { client: '서울주택도시공사', category: '기업 복지' },
+    { client: '법무부 산하기관', category: '기업 복지' },
+    { client: '한국우편사업진흥원', category: '기업 복지' },
+    { client: '대륭건설', category: '기업 복지' },
+    { client: '한국관광공사', category: '기업 복지' },
+    { client: '세종병원', category: '기업 복지' },
+    { client: '한강 웰니스 위크', category: '기업 복지' },
     { client: '신한은행', category: 'VIP 행사' },
+    { client: '한국투자증권', category: 'VIP 행사' },
+    { client: 'LG에너지솔루션', category: 'VIP 행사' },
+    { client: 'BMW코리아', category: 'VIP 행사' },
+    { client: 'NHN', category: 'VIP 행사' },
   ],
   '2025': [
     { client: 'P&G', category: '기업 복지' },
