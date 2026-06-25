@@ -44,6 +44,8 @@ def run_script(name: str) -> bool:
         capture_output=True,
         text=True,
         encoding='utf-8',
+        errors='replace',  # 자식 출력에 비-utf8 바이트(cp949 등) 섞여도 reader 스레드가 죽지 않게
+        env={**os.environ, 'PYTHONIOENCODING': 'utf-8'},  # 자식이 utf-8로 출력하도록
     )
     if result.stdout:
         for line in result.stdout.strip().split('\n'):
