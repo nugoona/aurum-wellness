@@ -2007,6 +2007,17 @@ export const REVIEW_DATA: ReviewData[] = [
     reply: "헉... 이런 과분한 댓글을...... 허리통증으로 워낙 오래 고생하셨기에, 테라피가 좀 더 긍정적으로 다가왔나봐요. 말씀드렸듯이, 통증 치료를 위한  병원, 도수치료, 마사지, 운동 등은 개인의 선택이지만, 어떤 방법이든 스스로에게 관심을 기울이는게 가장 중요할 듯 합니다. 치유는 내 몸이 하는거니까요. 저희는 그 방법이 마사지와 운동요법이구요. 꾸준히 관리 받고 운동 하셔서 지금보다 개선되길 바라며, 다음주에 또 뵙겠습니다. 감사합니다~",
   },
   {
+    id: 'dom_642',
+    body: "오랜만에 방문했는데 정말 아픈곳이 다풀리고 다리도 가벼워지고 정말 저절로 너무 신기하다란 말이 나올 정도에요~~ 하정테라피스트님 친절하시고 아프고 불편한 부분 말 안해도 딱 아시는 전문가👍🏻 저한텐 병원처럼 치료효과가 바로 있어 소중한곳이에요~ 또 뵐게요😊",
+    nickname: "zza****",
+    visited: "2026.6.13",
+    visitCount: 5,
+    category: "부분 집중 케어",
+    media: ["https://pup-review-phinf.pstatic.net/MjAyNjA2MTRfMjE2/MDAxNzgxNDA5NDEwMjkz.zLHyN37zAV_9VS0_AIFjfNn1HRG7IA97IAE4DpOhapgg.lMBIXXfeaC77QxOIUqVyp00h3r7iNk8avUJFx1wR0wgg.JPEG/2989D6A4-EB00-4F73-9ED4-F8A8E2585ACF.jpeg?type=w1500_60_sharpen"],
+    votedKeywords: ["관리 효과가 좋아요", "맞춤 케어를 잘해줘요", "시술이 꼼꼼해요", "친절해요", "상담이 자세해요"],
+    reply: "",
+  },
+  {
     id: 'dom_2',
     body: "김준경 실장님 정말 잘하시네요. 목 어깨가 아파서 말씀드렸더니 정말 꼼꼼하게 관리해주셨어요. 제가 압을 세게 받는 편인데도 부족함없이 시원하고 좋았습니다. 부평역 근처 여기저기 다녀봤는데 드디어 찾았네요.",
     nickname: "음메음메13",
