@@ -71,6 +71,23 @@
 }
 
 /* ─── 일정 정보 가로 바 ─── */
+.film {
+  margin-top: 44px;
+}
+
+.closed {
+  margin-top: 40px;
+  padding: 28px 32px;
+  text-align: center;
+  font-family: var(--font-ui);
+  font-size: var(--text-body-lg);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .infoStack {
   margin-top: 40px;
   display: flex;

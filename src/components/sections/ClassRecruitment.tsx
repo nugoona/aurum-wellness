@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Phone, MessageCircle } from 'lucide-react';
 import ScrollReveal from '@/components/ui/ScrollReveal';
+import CourseFilm from '@/components/ui/CourseFilm';
 import type { ClassCourse } from '@/data/classData';
 import styles from './ClassRecruitment.module.css';
 
@@ -34,8 +35,6 @@ export default function ClassRecruitment({ course }: Props) {
     ? dday > 0 ? `D-${dday}` : dday === 0 ? 'D-DAY' : '진행중'
     : '';
 
-  if (expired) return null;
-
   const { schedule, curriculum, targets, pricing } = course;
 
   // 같은 과정에 기수가 둘이면 A반/B반으로 동일 디자인 일정 바를 두 줄 노출
@@ -53,8 +52,8 @@ export default function ClassRecruitment({ course }: Props) {
         {/* ─── 헤더 ─── */}
         <ScrollReveal>
           <div className={styles.header}>
-            <span className={styles.headerLabel}>Now Recruiting</span>
-            {ddayLabel && <span className={styles.dday}>{ddayLabel}</span>}
+            <span className={styles.headerLabel}>{expired ? 'Aurum Academy' : 'Now Recruiting'}</span>
+            {!expired && ddayLabel && <span className={styles.dday}>{ddayLabel}</span>}
           </div>
           <h2 className={styles.title}>
             {course.titleKo}
@@ -63,7 +62,25 @@ export default function ClassRecruitment({ course }: Props) {
           <p className={styles.subtitle}>{course.subtitle}</p>
         </ScrollReveal>
 
-        {/* ─── 일정 정보 가로 바 (기수 둘이면 A반/B반 2줄) ─── */}
+        {/* ─── 과정 홍보영상 (스크롤 시 음소거 자동재생) ─── */}
+        {course.youtubeId && course.videoPoster && (
+          <ScrollReveal delay={0.05}>
+            <div className={styles.film}>
+              <CourseFilm
+                youtubeId={course.youtubeId}
+                poster={course.videoPoster}
+                title={course.titleKo}
+              />
+            </div>
+          </ScrollReveal>
+        )}
+
+        {/* ─── 일정 정보 ─── */}
+        {expired ? (
+          <ScrollReveal delay={0.1}>
+            <div className={styles.closed}>현재는 수강 기간이 아닙니다</div>
+          </ScrollReveal>
+        ) : (
         <ScrollReveal delay={0.1}>
           <div className={styles.infoStack}>
             {cohorts.map((c, i) => (
@@ -100,6 +117,7 @@ export default function ClassRecruitment({ course }: Props) {
             ))}
           </div>
         </ScrollReveal>
+        )}
 
         {/* ─── 커리큘럼 ─── */}
         <div className={styles.currSection}>

@@ -1,4 +1,5 @@
 import Hero from '@/components/sections/Hero';
+import FilmSection from '@/components/sections/FilmSection';
 import FacilityGallery from '@/components/sections/FacilityGallery';
 import ProgramGrid from '@/components/sections/ProgramGrid';
 import Reviews from '@/components/sections/Reviews';
@@ -93,6 +94,13 @@ export default function TherapyPage() {
         title={'전문성과 품격을\n동시에 갖춘 테라피'}
         subtitle="단순히 근육을 푸는 마사지가 아닌, 몸의 구조를 이해하고 설계하는 웰니스 뷰티 테라피"
         fullHeight
+      />
+      <FilmSection
+        label="AURUME THERAPY"
+        heading="아우르메 테라피 소개"
+        subtitle="몸의 구조를 이해하고 설계하는 부평 웰니스 테라피 — 영상으로 만나보세요"
+        youtubeId="zIKkbQxxyZk"
+        poster="https://i.ytimg.com/vi/zIKkbQxxyZk/maxresdefault.jpg"
       />
       <ProgramGrid categories={PROGRAM_CATEGORIES} />
       <Reviews reviews={REVIEW_DATA} categories={REVIEW_CATEGORIES} />

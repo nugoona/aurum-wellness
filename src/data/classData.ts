@@ -192,6 +192,8 @@ export interface ClassCourse {
   titleEn: string;
   subtitle: string;
   coverImage?: string;          // 팝업 카드용 hero. 없으면 curriculum[0].image로 폴백
+  youtubeId?: string;           // 과정 홍보영상 (모집 섹션에 임베드, 스크롤 자동재생)
+  videoPoster?: string;         // 영상 포스터(facade)
   openDate: string;             // 'YYYY-MM-DD' (D-day 기준)
   promoEnd: string;             // 'YYYY-MM-DD' (지나면 hide)
   schedule: {
@@ -213,6 +215,8 @@ export const LV1_COURSE: ClassCourse = {
   titleEn: 'Therapy Class Lv.1',
   subtitle: '모든 수기 관리의 확실한 출발점',
   coverImage: '/images/class-lv1/cover_hands_on.png',
+  youtubeId: '34vmntTP7BE',
+  videoPoster: '/videos/media/건식_아카데미_홍보.jpg',
   openDate: '2026-07-08',
   promoEnd: '2026-08-19',
   schedule: {
@@ -263,6 +267,8 @@ export const LV2_COURSE: ClassCourse = {
   titleKo: '습식 스웨디시 마사지 심화',
   titleEn: 'Therapy Class Lv.2 — Swedish Massage',
   subtitle: '손의 언어로, 신경계의 리듬을 회복한다',
+  youtubeId: 'qPBM87IxX4o',
+  videoPoster: '/videos/media/아로마_아카데미_홍보.jpg',
   extraCohort: {
     label: '금요일반 추가 모집',
     period: '2026.7.24 ~ 8.14',

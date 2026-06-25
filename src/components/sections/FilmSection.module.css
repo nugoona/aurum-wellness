@@ -1,0 +1,39 @@
+.section {
+  background: var(--off-white);
+  padding: var(--section-py) var(--content-px);
+}
+
+.container {
+  max-width: var(--max-wide);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.label {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.heading {
+  font-family: var(--font-heading);
+  font-size: var(--text-h2);
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-top: 12px;
+}
+
+.subtitle {
+  font-family: var(--font-body);
+  font-size: var(--text-body-lg);
+  color: var(--text-muted);
+  margin-top: 14px;
+}
+
+.player {
+  margin-top: 56px;
+}
