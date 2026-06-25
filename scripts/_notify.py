@@ -22,7 +22,9 @@ def _load_env_shared() -> dict:
     for path in _ENV_CANDIDATES:
         if path and os.path.isfile(path):
             env = {}
-            with open(path, encoding='utf-8') as f:
+            # errors='replace': .env.shared에 깨진 바이트(예: 2026-06-19 self-heal 섹션 손상)가 있어도
+            # 알림이 죽지 않도록. 실제 KEY=VALUE는 ASCII라 영향 없음.
+            with open(path, encoding='utf-8', errors='replace') as f:
                 for line in f:
                     line = line.strip()
                     if not line or line.startswith('#') or '=' not in line:

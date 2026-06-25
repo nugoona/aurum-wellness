@@ -9,8 +9,10 @@ import random
 
 random.seed(42)  # Reproducible
 
-# Read raw reviews
-raw_path = os.path.abspath("D:/업체영상/아우름웰니스/aurum_reviews/reviews_raw.json")
+# Read raw reviews — 경로 단일 소스(_paths) 사용. scrape_reviews.py와 동일 위치를 읽어야 함.
+# (2026-06 복구 때 저장소를 옮겼으나 여기만 옛 경로(D:/업체영상)가 남아 categorize가 실패하던 버그 수정)
+from _paths import REVIEWS_PATH
+raw_path = REVIEWS_PATH
 with open(raw_path, 'r', encoding='utf-8') as f:
     data = json.load(f)
 
