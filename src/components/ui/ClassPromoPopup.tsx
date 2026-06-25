@@ -72,7 +72,7 @@ export default function ClassPromoPopup({ courses }: Props) {
             return (
               <a
                 key={course.id}
-                href={`/class#recruitment-${course.id}`}
+                href={`/class#recruitment-${course.linkId ?? course.id}`}
                 className={styles.courseCard}
                 onClick={close}
               >

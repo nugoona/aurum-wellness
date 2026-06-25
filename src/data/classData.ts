@@ -181,6 +181,12 @@ export type ClassPricing =
 
 export interface ClassCourse {
   id: string;                   // 'lv1' | 'lv2'
+  linkId?: string;              // 팝업 카드 앵커 대상(없으면 id). 추가기수가 기존 섹션으로 연결될 때 사용
+  extraCohort?: {               // 같은 과정의 추가 기수(중복 섹션 없이 일정만 표기)
+    label: string;
+    period: string;
+    dayOfWeek: string;
+  };
   level: string;                // 'Lv.1'
   titleKo: string;
   titleEn: string;
@@ -257,6 +263,11 @@ export const LV2_COURSE: ClassCourse = {
   titleKo: '습식 스웨디시 마사지 심화',
   titleEn: 'Therapy Class Lv.2 — Swedish Massage',
   subtitle: '손의 언어로, 신경계의 리듬을 회복한다',
+  extraCohort: {
+    label: '금요일반 추가 모집',
+    period: '2026.7.24 ~ 8.14',
+    dayOfWeek: '매주 금요일',
+  },
   openDate: '2026-07-09',
   promoEnd: '2026-08-06',
   schedule: {
@@ -298,6 +309,23 @@ export const LV2_COURSE: ClassCourse = {
     subheadline: 'Buddy Discount',
     single: { level: 'Lv.2', amount: 56, unit: '만원', tag: '1인', note: '카드 결제 시 VAT 별도' },
     buddy:  { level: 'Lv.2', amount: 50, unit: '만원', tag: '동반 할인', saveLabel: '6만원 할인' },
+  },
+};
+
+/* Lv.2 추가 기수 — 금요일반. 내용(커리큘럼·대상·수강료)은 LV2_COURSE와 100% 동일,
+ * 일정·커버·id만 분기. classData 단일 소스 유지를 위해 스프레드로 재사용한다. */
+export const LV2_FRI_COURSE: ClassCourse = {
+  ...LV2_COURSE,
+  id: 'lv2-fri',
+  linkId: 'lv2',          // 팝업 새 배너 카드는 기존 Lv.2 모집 섹션으로 연결(중복 섹션 X)
+  extraCohort: undefined, // 추가기수 카드 자신은 보조 표기 불필요
+  coverImage: '/images/class-lv2/cover_lv2_fri.webp',
+  openDate: '2026-07-24',
+  promoEnd: '2026-08-14',
+  schedule: {
+    ...LV2_COURSE.schedule,
+    period: '2026.7.24 ~ 8.14',
+    dayOfWeek: '매주 금요일',
   },
 };
 

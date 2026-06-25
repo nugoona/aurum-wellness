@@ -5,12 +5,12 @@ import ThreePathwaysV2 from '@/components/sections/ThreePathwaysV2';
 import TrustEvidenceV2 from '@/components/sections/TrustEvidenceV2';
 import SocialProofV2 from '@/components/sections/SocialProofV2';
 import CTACinematicV2 from '@/components/sections/CTACinematicV2';
-import { LV1_COURSE, LV2_COURSE } from '@/data/classData';
+import { LV1_COURSE, LV2_COURSE, LV2_FRI_COURSE } from '@/data/classData';
 
 export default function HomePage() {
   return (
     <>
-      <ClassPromoPopup courses={[LV1_COURSE, LV2_COURSE]} />
+      <ClassPromoPopup courses={[LV1_COURSE, LV2_COURSE, LV2_FRI_COURSE]} />
       <CinematicHeroV2 />
       <ThreePathwaysV2 />
       <FounderStoryV2 />

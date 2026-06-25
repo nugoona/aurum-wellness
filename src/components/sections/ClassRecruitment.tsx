@@ -38,6 +38,14 @@ export default function ClassRecruitment({ course }: Props) {
 
   const { schedule, curriculum, targets, pricing } = course;
 
+  // 같은 과정에 기수가 둘이면 A반/B반으로 동일 디자인 일정 바를 두 줄 노출
+  const cohorts: { tag: string | null; period: string; dayOfWeek: string }[] = course.extraCohort
+    ? [
+        { tag: 'A반', period: schedule.period, dayOfWeek: schedule.dayOfWeek },
+        { tag: 'B반', period: course.extraCohort.period, dayOfWeek: course.extraCohort.dayOfWeek },
+      ]
+    : [{ tag: null, period: schedule.period, dayOfWeek: schedule.dayOfWeek }];
+
   return (
     <section className={styles.section} id={`recruitment-${course.id}`}>
       <div className={styles.container}>
@@ -55,33 +63,41 @@ export default function ClassRecruitment({ course }: Props) {
           <p className={styles.subtitle}>{course.subtitle}</p>
         </ScrollReveal>
 
-        {/* ─── 일정 정보 가로 바 ─── */}
+        {/* ─── 일정 정보 가로 바 (기수 둘이면 A반/B반 2줄) ─── */}
         <ScrollReveal delay={0.1}>
-          <div className={styles.infoRow}>
-            <div className={styles.infoItem}>
-              <span className={styles.infoLabel}>일정</span>
-              <span className={styles.infoValue}>{schedule.period}</span>
-            </div>
-            <div className={styles.infoDivider} />
-            <div className={styles.infoItem}>
-              <span className={styles.infoLabel}>요일</span>
-              <span className={styles.infoValue}>{schedule.dayOfWeek}</span>
-            </div>
-            <div className={styles.infoDivider} />
-            <div className={styles.infoItem}>
-              <span className={styles.infoLabel}>시간</span>
-              <span className={styles.infoValue}>{schedule.time}</span>
-            </div>
-            <div className={styles.infoDivider} />
-            <div className={styles.infoItem}>
-              <span className={styles.infoLabel}>기간</span>
-              <span className={styles.infoValue}>{schedule.duration}</span>
-            </div>
-            <div className={styles.infoDivider} />
-            <div className={styles.infoItem}>
-              <span className={styles.infoLabel}>장소</span>
-              <span className={styles.infoValue}>{schedule.location}</span>
-            </div>
+          <div className={styles.infoStack}>
+            {cohorts.map((c, i) => (
+              <div
+                className={`${styles.infoRow} ${cohorts.length > 1 ? styles.infoRowGrid : ''}`}
+                key={i}
+              >
+                {c.tag && <span className={styles.classTag}>{c.tag}</span>}
+                <div className={styles.infoItem}>
+                  <span className={styles.infoLabel}>일정</span>
+                  <span className={styles.infoValue}>{c.period}</span>
+                </div>
+                <div className={styles.infoDivider} />
+                <div className={styles.infoItem}>
+                  <span className={styles.infoLabel}>요일</span>
+                  <span className={styles.infoValue}>{c.dayOfWeek}</span>
+                </div>
+                <div className={styles.infoDivider} />
+                <div className={styles.infoItem}>
+                  <span className={styles.infoLabel}>시간</span>
+                  <span className={styles.infoValue}>{schedule.time}</span>
+                </div>
+                <div className={styles.infoDivider} />
+                <div className={styles.infoItem}>
+                  <span className={styles.infoLabel}>기간</span>
+                  <span className={styles.infoValue}>{schedule.duration}</span>
+                </div>
+                <div className={styles.infoDivider} />
+                <div className={styles.infoItem}>
+                  <span className={styles.infoLabel}>장소</span>
+                  <span className={styles.infoValue}>{schedule.location}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </ScrollReveal>
 

@@ -71,16 +71,41 @@
 }
 
 /* ─── 일정 정보 가로 바 ─── */
+.infoStack {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .infoRow {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 24px;
-  margin-top: 40px;
   padding: 24px 32px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.08);
   flex-wrap: wrap;
+}
+
+/* A반/B반 2줄일 때 칸 너비를 위·아래 동일하게 고정 (세로 정렬) */
+.infoRowGrid {
+  display: grid;
+  grid-template-columns: 64px 1.3fr 1px 1.9fr 1px 1fr 1px 1fr 1px 2fr;
+  align-items: center;
+  column-gap: 14px;
+}
+
+.classTag {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--gray-900);
+  background: var(--gold);
+  padding: 7px 16px;
+  border-radius: 2px;
 }
 
 .infoItem {
@@ -430,6 +455,9 @@
     gap: 16px;
     padding: 20px 24px;
   }
+  .infoRowGrid {
+    column-gap: 10px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -437,6 +465,11 @@
     grid-template-columns: 1fr;
   }
   .infoRow {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .infoRowGrid {
+    display: flex;
     flex-direction: column;
     gap: 16px;
   }
