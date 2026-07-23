@@ -14,13 +14,24 @@ import {
   formatEventDate,
 } from '@/data/blogPosts';
 import { PRESS_ARTICLES, formatPressDate } from '@/data/pressArticles';
-import {
-  YOUTUBE_VIDEOS,
-  YOUTUBE_CHANNEL_NAME,
-  YOUTUBE_CHANNEL_URL,
-} from '@/data/youtubeVideos';
 
 gsap.registerPlugin(ScrollTrigger);
+
+/* 섹션 06 가로 레일 그룹 — 아우르메 테라피(시연) · 아우름 아카데미(셀프 케어) */
+const REEL_GROUPS = [
+  {
+    key: 'therapy',
+    title: '아우르메 테라피',
+    subtitle: '손끝으로 전하는 케어 — 짧은 시연 영상',
+    items: MEDIA.therapyReel,
+  },
+  {
+    key: 'academy',
+    title: '아우름 아카데미',
+    subtitle: '집에서 따라 하는 셀프 케어 클래스',
+    items: MEDIA.academyReel,
+  },
+];
 
 /* ─────────────────────────────────────────────────────────────
    디자인 노트 — 럭셔리 매거진 페이지
@@ -505,63 +516,35 @@ export default function MediaPage() {
         </section>
       )}
 
-      {/* ============== 06 · 아우르메 유튜브 (the 手作) — 준비중 ============== */}
-      {YOUTUBE_VIDEOS.length > 0 && (
-        <section className={styles.youtube}>
-          <div className={styles.youtubeInner}>
-            <header className={styles.sectionHead}>
-              <div className={styles.sectionHeadMain}>
-                <GoldMark />
-                <div className={styles.youtubeTitleRow}>
-                  <h2 className={styles.sectionTitleKo}>아우르메 유튜브</h2>
-                  <span className={styles.youtubeChannelTag}>{YOUTUBE_CHANNEL_NAME}</span>
-                  <span className={styles.youtubeStatusBadge}>준비중</span>
-                </div>
-                <p className={styles.sectionSubKo}>
-                  손으로 만드는 케어, 짧은 영상으로 곧 만나보세요
-                </p>
-              </div>
-              <span className={styles.sectionRule} aria-hidden="true" />
-            </header>
-
-            <div className={styles.youtubeGrid}>
-              {YOUTUBE_VIDEOS.map((v) => (
-                <article
-                  key={v.id}
-                  className={styles.youtubeCard}
-                  aria-label={`${v.title} (준비중)`}
-                >
-                  <div className={styles.youtubeThumb}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={v.thumbnail}
-                      alt={v.title}
-                      loading="lazy"
-                      decoding="async"
-                      style={{
-                        position: 'absolute',
-                        inset: 0,
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'cover',
-                        display: 'block',
-                      }}
-                    />
-                    <div className={styles.youtubeThumbOverlay} aria-hidden="true" />
-                    <span className={styles.youtubePlayIcon} aria-hidden="true">
-                      <svg viewBox="0 0 24 24">
-                        <path d="M7 5 v14 l13 -7 z" />
-                      </svg>
-                    </span>
-                    <span className={styles.youtubeReadyBadge}>준비중</span>
+      {/* ============== 06 · 짧은 케어 영상 — 가로 레일 2그룹 (테라피 · 아카데미) ============== */}
+      <section className={styles.reels}>
+        <div className={styles.reelsInner}>
+          {REEL_GROUPS.map((group) => (
+            <div key={group.key} className={styles.reelGroup}>
+              <SectionHead title={group.title} subtitle={group.subtitle} />
+              <div className={styles.reel}>
+                {group.items.map((v, idx) => (
+                  <div key={idx} className={styles.reelItem}>
+                    <div className={styles.reelCard}>
+                      <PosterCard
+                        src={v.mp4Src!}
+                        poster={v.poster}
+                        alt={v.titleKo}
+                        orientation={v.orientation}
+                        onPlay={openVideo}
+                      />
+                      <span className={styles.reelDuration} aria-hidden="true">
+                        {v.duration}
+                      </span>
+                    </div>
+                    <p className={styles.reelCaption}>{v.titleKo}</p>
                   </div>
-                  <h3 className={styles.youtubeTitleCard}>{v.title}</h3>
-                </article>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
-      )}
+          ))}
+        </div>
+      </section>
 
       {/* ============== 07 · 언론 보도 ============== */}
       {PRESS_ARTICLES.length > 0 && (() => {

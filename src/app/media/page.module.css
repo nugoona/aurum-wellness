@@ -1302,3 +1302,112 @@
     background: rgba(0, 0, 0, 0.55);
   }
 }
+
+/* ============================================
+   06 · 짧은 케어 영상 — 가로 레일 (테라피 · 아카데미)
+   세로 9:16 다수 → 그룹별 가로 스크롤 한 줄. 모바일 세로 부담 최소화.
+   ============================================ */
+.reels {
+  padding: clamp(72px, 9vw, 120px) 0;
+}
+
+.reelsInner {
+  max-width: var(--max-wide);
+  margin: 0 auto;
+  padding: 0 var(--content-px);
+}
+
+.reelGroup + .reelGroup {
+  margin-top: clamp(48px, 6vw, 84px);
+}
+
+/* 가로 스크롤 트랙 — 컨테이너 좌우 패딩을 넘어 끝까지 흐르게 */
+.reel {
+  display: flex;
+  gap: clamp(12px, 1.4vw, 20px);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gold) transparent;
+  padding: 6px 4px 20px;
+  margin-top: clamp(24px, 3vw, 36px);
+}
+
+.reel::-webkit-scrollbar {
+  height: 6px;
+}
+.reel::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--gold) 55%, transparent);
+  border-radius: 999px;
+}
+.reel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.reelItem {
+  flex: 0 0 clamp(140px, 15vw, 168px);
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reelCard {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  background: var(--gray-200);
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0 6px 22px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* 작은 카드에 맞춰 플레이 버튼 축소 (기본 52~72px → 40px) */
+.reelCard .playBtnCircle {
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 4px 16px -6px rgba(0, 0, 0, 0.45);
+}
+.reelCard .playBtnCircle svg {
+  width: 15px;
+  height: 15px;
+}
+
+/* 길이 배지 — 우하단 */
+.reelDuration {
+  position: absolute;
+  right: 7px;
+  bottom: 7px;
+  z-index: 2;
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2px 7px;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.reelCaption {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--text-body);
+  letter-spacing: -0.01em;
+  text-align: center;
+  padding: 0 2px;
+}
+
+@media (max-width: 768px) {
+  .reelItem {
+    /* 카드 2.4장 정도 보이며 다음 카드가 살짝 걸침(peek) */
+    flex-basis: 38vw;
+  }
+  .reelCaption {
+    font-size: 11.5px;
+  }
+}

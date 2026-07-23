@@ -113,4 +113,36 @@ export const MEDIA = {
     titleKo: 'Opening Ritual',
     titleEn: "L'art du toucher",
   },
+
+  // Section 06 — 가로 레일 A · 아우르메 테라피 (케어 시연 9편, 9:16 / '오프닝 리추얼'은 STILLNESS 중복이라 제외 2026-07-23)
+  // R2 업로드 = 사장님 직접(파일명 = 이 mp4Src 그대로). 포스터 = 로컬 추출(각 영상 40% 프레임).
+  therapyReel: [
+    { mp4Src: `${MEDIA_CDN}/테라피_등어깨_통합케어.mp4`, poster: '/videos/media/테라피_등어깨_통합케어.jpg', orientation: '9:16' as const, duration: '00:22', titleKo: '등·어깨 통합 케어' },
+    { mp4Src: `${MEDIA_CDN}/테라피_등_핫스톤.mp4`, poster: '/videos/media/테라피_등_핫스톤.jpg', orientation: '9:16' as const, duration: '00:28', titleKo: '등 핫스톤 케어' },
+    { mp4Src: `${MEDIA_CDN}/테라피_목케어_1.mp4`, poster: '/videos/media/테라피_목케어_1.jpg', orientation: '9:16' as const, duration: '00:46', titleKo: '목 케어 ①' },
+    { mp4Src: `${MEDIA_CDN}/테라피_목케어_2.mp4`, poster: '/videos/media/테라피_목케어_2.jpg', orientation: '9:16' as const, duration: '00:30', titleKo: '목 케어 ②' },
+    { mp4Src: `${MEDIA_CDN}/테라피_어깨.mp4`, poster: '/videos/media/테라피_어깨.jpg', orientation: '9:16' as const, duration: '00:17', titleKo: '어깨 케어' },
+    { mp4Src: `${MEDIA_CDN}/테라피_연인가족_맞춤.mp4`, poster: '/videos/media/테라피_연인가족_맞춤.jpg', orientation: '9:16' as const, duration: '00:20', titleKo: '연인·가족과 즐기는 맞춤 마사지' },
+    { mp4Src: `${MEDIA_CDN}/테라피_종아리.mp4`, poster: '/videos/media/테라피_종아리.jpg', orientation: '9:16' as const, duration: '00:27', titleKo: '종아리 케어' },
+    { mp4Src: `${MEDIA_CDN}/테라피_하체_핫스톤.mp4`, poster: '/videos/media/테라피_하체_핫스톤.jpg', orientation: '9:16' as const, duration: '00:19', titleKo: '하체 핫스톤 케어' },
+    { mp4Src: `${MEDIA_CDN}/테라피_허벅지.mp4`, poster: '/videos/media/테라피_허벅지.jpg', orientation: '9:16' as const, duration: '00:13', titleKo: '허벅지 케어' },
+  ],
+
+  // Section 06 — 가로 레일 B · 아우름 아카데미 (셀프 케어 클래스 14편, 9:16)
+  academyReel: [
+    { mp4Src: `${MEDIA_CDN}/아카데미_01.mp4`, poster: '/videos/media/아카데미_01.jpg', orientation: '9:16' as const, duration: '00:13', titleKo: '한쪽 힘만 빼도 압이 세진다' },
+    { mp4Src: `${MEDIA_CDN}/아카데미_02.mp4`, poster: '/videos/media/아카데미_02.jpg', orientation: '9:16' as const, duration: '00:10', titleKo: '손가락 힘으로 누르지 마세요' },
+    { mp4Src: `${MEDIA_CDN}/아카데미_03.mp4`, poster: '/videos/media/아카데미_03.jpg', orientation: '9:16' as const, duration: '00:15', titleKo: '흉추와 경추 구별 방법' },
+    { mp4Src: `${MEDIA_CDN}/아카데미_04.mp4`, poster: '/videos/media/아카데미_04.jpg', orientation: '9:16' as const, duration: '00:20', titleKo: '촉진은 살짝 잡고 좌우 비교' },
+    { mp4Src: `${MEDIA_CDN}/아카데미_05.mp4`, poster: '/videos/media/아카데미_05.jpg', orientation: '9:16' as const, duration: '00:18', titleKo: '목 통증의 핵심, 흉쇄유돌근 찾기' },
+    { mp4Src: `${MEDIA_CDN}/아카데미_06.mp4`, poster: '/videos/media/아카데미_06.jpg', orientation: '9:16' as const, duration: '00:23', titleKo: '흉쇄유돌근 푸는 법' },
+    { mp4Src: `${MEDIA_CDN}/아카데미_07.mp4`, poster: '/videos/media/아카데미_07.jpg', orientation: '9:16' as const, duration: '00:24', titleKo: '발바닥 아플 때 더 효과를 보려면' },
+    { mp4Src: `${MEDIA_CDN}/아카데미_08.mp4`, poster: '/videos/media/아카데미_08.jpg', orientation: '9:16' as const, duration: '00:17', titleKo: '종아리 깊은 근육 푸는 법' },
+    { mp4Src: `${MEDIA_CDN}/아카데미_09.mp4`, poster: '/videos/media/아카데미_09.jpg', orientation: '9:16' as const, duration: '00:16', titleKo: '목은 세게 누르면 안 돼요' },
+    { mp4Src: `${MEDIA_CDN}/아카데미_10.mp4`, poster: '/videos/media/아카데미_10.jpg', orientation: '9:16' as const, duration: '00:14', titleKo: '뼈를 누르면 아프기만 합니다' },
+    { mp4Src: `${MEDIA_CDN}/아카데미_11.mp4`, poster: '/videos/media/아카데미_11.jpg', orientation: '9:16' as const, duration: '00:16', titleKo: '소화에 도움되는 배 마사지' },
+    { mp4Src: `${MEDIA_CDN}/아카데미_12.mp4`, poster: '/videos/media/아카데미_12.jpg', orientation: '9:16' as const, duration: '00:14', titleKo: '스트레칭은 최소 15초 이상' },
+    { mp4Src: `${MEDIA_CDN}/아카데미_13.mp4`, poster: '/videos/media/아카데미_13.jpg', orientation: '9:16' as const, duration: '00:20', titleKo: '눈이 밝아지는 목 뒤 그 지점' },
+    { mp4Src: `${MEDIA_CDN}/아카데미_14.mp4`, poster: '/videos/media/아카데미_14.jpg', orientation: '9:16' as const, duration: '00:16', titleKo: '몸을 안정화시키는 흔들기' },
+  ],
 };
