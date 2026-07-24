@@ -48,6 +48,10 @@ export default function ClassPromoPopup({ courses }: Props) {
     ? `Aurum Academy — ${activeCourses.length}개 정규 코스 모집중`
     : 'Aurum Academy — 정규 과정 모집';
 
+  // 단독 모집일 때는 개강일을 헤드라인으로 끌어올린다
+  const solo = activeCourses[0];
+  const [, soloMonth, soloDay] = solo.openDate.split('-').map(Number);
+
   return createPortal(
     <div className={styles.overlay} onClick={close}>
       <div
@@ -61,9 +65,17 @@ export default function ClassPromoPopup({ courses }: Props) {
         <div className={styles.header}>
           <span className={styles.hook}>{headerLabel}</span>
           <h2 className={styles.heading}>
-            여름 정규 과정<br />함께 모집합니다
+            {isDual ? (
+              <>여름 정규 과정<br />함께 모집합니다</>
+            ) : (
+              <>{soloMonth}월 {soloDay}일 개강<br />{solo.level} 정규 과정 모집</>
+            )}
           </h2>
-          <p className={styles.subheading}>관심 있는 과정을 선택해 자세히 살펴보세요</p>
+          <p className={styles.subheading}>
+            {isDual
+              ? '관심 있는 과정을 선택해 자세히 살펴보세요'
+              : `${solo.schedule.dayOfWeek} · ${solo.schedule.time}`}
+          </p>
         </div>
 
         <div className={styles.cardList}>

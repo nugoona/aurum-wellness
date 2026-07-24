@@ -5,7 +5,9 @@ import ClassTypes from '@/components/sections/ClassTypes';
 import ClassReviews from '@/components/sections/ClassReviews';
 import ClassRecruitment from '@/components/sections/ClassRecruitment';
 import DarkCTA from '@/components/sections/DarkCTA';
-import { INSTRUCTOR, TIMELINE, TIMELINE_IMAGES, CLASSES, REVIEWS, LV1_COURSE, LV2_COURSE } from '@/data/classData';
+/* LV2_COURSE / LV2_FRI_COURSE 는 데이터만 보존하고 노출 중단 (2026-08-06 Lv.1 단독 모집 요청).
+ * 재모집 시 아래 import 와 <ClassRecruitment course={LV2_COURSE} /> 한 줄만 되살리면 된다. */
+import { INSTRUCTOR, TIMELINE, TIMELINE_IMAGES, CLASSES, REVIEWS, LV1_COURSE } from '@/data/classData';
 
 export const metadata = {
   title: '아우름웰니스',
@@ -15,7 +17,7 @@ export const metadata = {
 export default function ClassPage() {
   return (
     <>
-      <ClassStickyBar courses={[LV1_COURSE, LV2_COURSE]} />
+      <ClassStickyBar courses={[LV1_COURSE]} />
       <Hero
         image="/images/hero/class_hero.jpg"
         label="THERAPY CLASS"
@@ -33,7 +35,6 @@ export default function ClassPage() {
       />
       <ClassTypes classes={CLASSES} />
       <ClassRecruitment course={LV1_COURSE} />
-      <ClassRecruitment course={LV2_COURSE} />
       <ClassReviews reviews={REVIEWS} />
       <DarkCTA
         title="클래스 수강에 관심이 있으신가요?"
