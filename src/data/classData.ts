@@ -214,7 +214,7 @@ export const LV1_COURSE: ClassCourse = {
   titleKo: '기초 건식 근골격케어 입문',
   titleEn: 'Therapy Class Lv.1',
   subtitle: '모든 수기 관리의 확실한 출발점',
-  coverImage: '/images/class-lv1/cover_academy_lv1_2026h2.jpg',
+  coverImage: '/images/class-lv1/cover_academy_lv1_2026h2.png',
   youtubeId: '34vmntTP7BE',
   videoPoster: '/videos/media/건식_아카데미_홍보.jpg',
   openDate: '2026-08-06',
