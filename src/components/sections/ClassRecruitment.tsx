@@ -242,7 +242,7 @@ export default function ClassRecruitment({ course }: Props) {
                 010-2981-9989
               </a>
               <a
-                href="https://pf.kakao.com/_AaZxgn"
+                href="https://pf.kakao.com/_RGSxnX"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.ctaKakao}

@@ -113,7 +113,7 @@ const jsonLd = {
   sameAs: [
     'https://www.instagram.com/victsoon',
     'https://blog.naver.com/victsoon',
-    'https://pf.kakao.com/_AaZxgn',
+    'https://pf.kakao.com/_RGSxnX',
   ],
   // 아우름웰니스(B2B 브랜드)의 모회사 = 아우르메 테라피 매장
   parentOrganization: {

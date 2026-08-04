@@ -5,7 +5,11 @@ import styles from './Footer.module.css';
 
 const NAVER_MAP_URL = 'https://map.naver.com/p/entry/place/1058592122';
 
-const SOCIALS = [
+/* 카카오 채널은 브랜드별로 다르다 — 아우름웰니스(B2B·아카데미) / 아우르메 테라피(부평 매장) */
+const KAKAO_WELLNESS = 'https://pf.kakao.com/_RGSxnX';
+const KAKAO_THERAPY = 'https://pf.kakao.com/_AaZxgn';
+
+const socialsFor = (kakaoHref: string) => [
   {
     label: 'Instagram',
     href: 'https://www.instagram.com/victsoon',
@@ -18,7 +22,7 @@ const SOCIALS = [
   },
   {
     label: 'KakaoTalk',
-    href: 'https://pf.kakao.com/_AaZxgn',
+    href: kakaoHref,
     src: '/images/icon-kakaotalk.png',
   },
 ];
@@ -27,6 +31,7 @@ export default function Footer() {
   const pathname = usePathname();
   const isTherapy = pathname === '/therapy';
   const logoText = isTherapy ? 'AURUME THERAPY' : 'AURUME WELLNESS';
+  const socials = socialsFor(isTherapy ? KAKAO_THERAPY : KAKAO_WELLNESS);
 
   return (
     <footer className={styles.footer}>
@@ -61,7 +66,7 @@ export default function Footer() {
             <span className={styles.bizNum}>사업자번호 124-88-02938</span>
           </p>
           <div className={styles.socials}>
-            {SOCIALS.map((s) => (
+            {socials.map((s) => (
               <a
                 key={s.label}
                 href={s.href}
