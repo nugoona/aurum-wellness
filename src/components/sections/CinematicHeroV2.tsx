@@ -221,7 +221,11 @@ export default function CinematicHeroV2() {
       });
     }, section);
 
-    return () => ctx.revert();
+    return () => {
+      ctx.revert();
+      // 언마운트 시 전역 플래그 정리 — 남으면 다른 페이지 헤더가 투명으로 고착된다
+      document.documentElement.removeAttribute('data-hero-pinned');
+    };
   }, [switchVideo]);
 
   return (

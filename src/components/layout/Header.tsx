@@ -28,7 +28,10 @@ export default function Header() {
       return;
     }
     const onScroll = () => {
-      const heroPinned = document.documentElement.hasAttribute('data-hero-pinned');
+      // 시네마틱 히어로는 메인('/')에만 있다. 다른 경로에서 이 플래그가 남아 있으면
+      // (히어로 핀 상태에서 페이지를 옮긴 경우) 헤더가 투명으로 고착되므로 무시한다.
+      const heroPinned =
+        pathname === '/' && document.documentElement.hasAttribute('data-hero-pinned');
       setScrolled(!heroPinned && window.scrollY > 80);
     };
     window.addEventListener('scroll', onScroll, { passive: true });
