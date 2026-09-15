@@ -218,7 +218,8 @@ export const LV1_COURSE: ClassCourse = {
   youtubeId: '34vmntTP7BE',
   videoPoster: '/videos/media/건식_아카데미_홍보.jpg',
   openDate: '2026-08-06',
-  promoEnd: '2026-09-17',
+  // 2026-09-15 요청: 모집 안내 조기 종료. 실제 수업 일정은 아래 원래 값 유지.
+  promoEnd: '2026-09-14',
   schedule: {
     period: '2026.8.6 ~ 9.17',
     dayOfWeek: '매주 목요일 (8/27 휴강)',
