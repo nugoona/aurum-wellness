@@ -24,7 +24,7 @@ export const REVIEW_DATA: ReviewData[] = [
     category: "딸고 케어",
     media: ["https://pup-review-phinf.pstatic.net/MjAyNjA5MThfNjkg/MDAxNzg5NzM1NzU4MDM5.d5_9z7lWN4wl2oj6fnLJ0oXh10rNJQYLWRvtO9pUHiog.dIDC9FVNbgGnPcxTgLHHPb36sfFF70J5LhA9OtJmdawg.JPEG/51706.jpg.jpg?type=w1500_60_sharpen", "https://pup-review-phinf.pstatic.net/MjAyNjA5MThfMjQ4/MDAxNzg5NzM1NzU3ODc0.-6PST0TwQ7Hccgx0K2OW2nB19dg1sm79JZbKoP-sx9Mg.2FXMr4oELgr0-HBLMShvjc8vgOLX6mWmUnUNXLfC7-sg.JPEG/51705.jpg.jpg?type=w1500_60_sharpen", "https://pup-review-phinf.pstatic.net/MjAyNjA5MThfMTEy/MDAxNzg5NzM1NzU3Njg0.TlM7qWztlFeoYmQ-4qnEaAkcc6UqQ6Nwo--kRh4qTfAg.D70oJqjNIby6ECnVSIL5heTgy4GLTmSHGi8SQC7ePz8g.JPEG/51700.jpg.jpg?type=w1500_60_sharpen", "https://pup-review-phinf.pstatic.net/MjAyNjA5MThfNTEg/MDAxNzg5NzM1NzU3OTIw.ownAjUUlw-Sp6s3TMqF9tMw9rPTCohFOvf3daeBljP8g.th1NerhFKpePspIdJ0TZGI_oHtNJ1R-VtdS6v6OY1NEg.JPEG/51701.jpg.jpg?type=w1500_60_sharpen", "https://pup-review-phinf.pstatic.net/MjAyNjA5MThfMzQg/MDAxNzg5NzM1NzU3OTcy.XSFaw3g3rhIlPOaXdlplaS_a1MtRWSTEHo8Z__fWRokg.0rAQxaoeUMZEv1yFSkf5OsKWXp9PX9qeBo6Qa50dDkIg.JPEG/51702.jpg.jpg?type=w1500_60_sharpen", "https://pup-review-phinf.pstatic.net/MjAyNjA5MThfNDgg/MDAxNzg5NzM1NzU5MDc5.bVNVbQsdsRJdY6_zxlpY49eUJLbpkxeM3lvIlTuZpq4g.704YFSahGQoP8tHCUr9yOA3PqqP72jnSyEYxOQq-B_Eg.JPEG/51709.jpg.jpg?type=w1500_60_sharpen", "https://pup-review-phinf.pstatic.net/MjAyNjA5MThfMTAz/MDAxNzg5NzM1NzU5MzU4.q66QIvB-WsOOP2kLCK7BQ4iE58zKqnaMDnw_ihE4ezsg.0Wd1kwElM3vVv06xaViILwWNsxsP0D7WkT91K5Hzqu4g.JPEG/51707.jpg.jpg?type=w1500_60_sharpen", "https://pup-review-phinf.pstatic.net/MjAyNjA5MThfMjIx/MDAxNzg5NzM1NzU5NTk4.kZFvUBraGSpH_3fqIyuRwyemHlF_pp1Iy_Lb2Av2ZBIg.31atZtShzUXHkHmmyS8SI1Z5GXf3NHuwvjvg3HMtJ3wg.JPEG/51708.jpg.jpg?type=w1500_60_sharpen", "https://pup-review-phinf.pstatic.net/MjAyNjA5MThfMTkg/MDAxNzg5NzM1NzU5OTU4.uNVOCoDL15ROB24Qjj5p_hGy3IcHdXcBVvl3NXwax00g.qhw850KU1-PgfTvgM3ziCo18soxCXUoIY-dSLW1hDFMg.JPEG/51703.jpg.jpg?type=w1500_60_sharpen", "https://pup-review-phinf.pstatic.net/MjAyNjA5MThfMjkz/MDAxNzg5NzM1NzU5OTgx.wpvTHKus0ofuJm-Huyf150O455o5RvV714451lgdhqEg.kmNJR64vdr_jBmXgVmtJgAILjoG3C1RMSDaw-b56g5og.JPEG/51704.jpg.jpg?type=w1500_60_sharpen"],
     votedKeywords: ["관리 효과가 좋아요", "고급스러워요", "친절해요", "상담이 자세해요", "매장이 청결해요"],
-    reply: "",
+    reply: "안녕하세요 고객님. 😊\n\n지난번에 이어 같은 프로그램으로 다시 찾아주셨다는 것부터 이미 큰 칭찬이라 생각합니다. 🙏\n특히 두 번째 방문에서도 처음과 다르지 않게 만족하고 돌아가셨다니 저희가 더 뿌듯하네요.\n\n딸고 일 퍼시픽은 스크럽부터 아로마 테라피, 보습까지 천천히 이어지는 프로그램이라 몸이 지치고 제대로 쉬고 싶은 날 특히 잘 어울리는 관리예요. 🌿 육아로 쌓인 피로를 잠시 내려놓고 이번에도 100분 동안 푹 쉬셨길 바랍니다.\n\n같은 코스를 세 번째 선택하셔도 “역시 잘 왔다”는 생각 드실 수 있게 변함없이 잘 준비해두겠습니다ㅎㅎ \n\n😄 정성스러운 재방문 후기 정말 감사합니다!",
   },
   {
     id: 'dom_658',
@@ -332,7 +332,7 @@ export const REVIEW_DATA: ReviewData[] = [
     category: "경락 윤곽 관리",
     media: [],
     votedKeywords: ["관리 효과가 좋아요", "맞춤 케어를 잘해줘요", "유지력이 좋아요", "시술이 꼼꼼해요", "친절해요"],
-    reply: "",
+    reply: "안녕하세요 고객님. 😊\n정성 가득한 리뷰에 저희 아우르메 식구 모두 감동했어요!!\n\n7월부터 매주 꾸준히 찾아주셔서 이제는 저희도 조금씩 달라지는 모습을 함께 지켜보는 기분이에요. 운동과 식단도 병행하고 계신 만큼 관리가 좋은 시너지가 된 것 같아 저희도 정말 뿌듯합니다. 💪✨\n\n아우르메는 정해진 순서대로 반복하기보다 그날그날 몸의 컨디션을 살펴 필요한 부분에 조금 더 집중하는 편인데, 그 차이를 알아봐 주셔서 더 감사해요. \n\n스컬프와 경락을 함께 이어오면서 상체와 얼굴 라인 모두 만족스러운 방향으로 자리 잡고 있다니 관리하는 저희도 신이 납니다ㅎㅎ 😊\n\n조금 늦게 만난 게 아쉽다고 하셨지만, 앞으로 오래 뵈면 되죠. \n🌿 꾸준히 믿고 맡겨주셔서 정말 감사합니다!",
   },
   {
     id: 'dom_74',
@@ -552,7 +552,7 @@ export const REVIEW_DATA: ReviewData[] = [
     category: "피부 관리",
     media: ["https://pup-review-phinf.pstatic.net/MjAyNjA5MjBfMjE1/MDAxNzg5ODg2MTM1MTAw.b65zS2ZRyVcgPDOMzC9JsEkS1-c3DZbqCOUG6r52bbEg.OvvXT-F0AJOnh0B4Vonbhr8TVTNK9Qzx-qBDdh3clfQg.JPEG/20260916_184738.heic.jpg?type=w1500_60_sharpen"],
     votedKeywords: ["관리 효과가 좋아요", "맞춤 케어를 잘해줘요", "친절해요", "시술이 꼼꼼해요", "가격이 합리적이에요"],
-    reply: "",
+    reply: "안녕하세요 고객님. 😊\n\n종종 찾아주시고 이것 저것 많이 여쭤도 보시면서 아우르메의 케어를 즐겨 주시는 듯해 항상 감사히 생각하고 있습니다~🤭 \n\n시간 나실 때마다 꾸준히 찾아주시는 것도 감사한데, 이렇게 마음까지 담아 응원해주시니 직원들과 함께 기분 좋게 읽었습니다.\n\n페이셜부터 바디까지 두루 맡겨주시는 만큼 오실 때마다 그날의 피부와 몸 컨디션에 맞춰 꼼꼼하게 챙겨드릴게요. \n관리받는 시간이 일상에서 잠깐이라도 제대로 쉬어가는 시간이 되었으면 좋겠습니다. 🌿\n\n오래오래 번창하라고 해주셨으니 저희도 오래오래 잘 버텨(?) 보겠습니다ㅎㅎ 😄 다음에도 반갑게 뵐게요. 감사합니다! 🤍",
   },
   {
     id: 'dom_656',
@@ -2114,7 +2114,7 @@ export const REVIEW_DATA: ReviewData[] = [
     category: "부분 집중 케어",
     media: [],
     votedKeywords: ["관리 효과가 좋아요", "맞춤 케어를 잘해줘요", "상담이 자세해요", "비싼 만큼 가치있어요"],
-    reply: "",
+    reply: "안녕하세요 고객님. 😊\n\n몸이 정말 지칠 때마다 믿고 찾아주시고, 관리 후에는 한결 편안하게 돌아가실 수 있다니 저희도 참 보람됩니다. 🙏\n\n특히 통증이나 불편함이 있는 분들은 무조건 강한 압으로 관리하기보다 그날의 몸 상태와 반응을 계속 확인하면서 필요한 곳을 찾아가는 과정이 중요하다고 생각해요. \n그런 부분을 믿고 맡겨주셔서 더욱 감사합니다. 🌿\n\n다만 너무 힘들어져서 몸이 “이제 아우르메 가야겠다” 할 때까지 버티지는 마세요ㅎㅎ \n😄 다음에도 오시면 꼼꼼하게 살펴보고 편안하게 관리해드리겠습니다. 감사합니다!",
   },
   {
     id: 'dom_653',
