@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>p3 재디자인 목업 (모바일)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
+<style>
+@font-face {
+  font-family: 'Arita Buri';
+  src: url('https://cdn.jsdelivr.net/gh/taevel02/typeface-arita/Arita-buriL.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Arita Buri';
+  src: url('https://cdn.jsdelivr.net/gh/taevel02/typeface-arita/Arita-buriM.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --gold: #c8a549;
+  --gold-dark: #a08636;
+  --gold-soft: rgba(200,165,73,0.1);
+  --gold-line: rgba(200,165,73,0.3);
+  --gold-chip-bg: rgba(200,165,73,0.06);
+  --text: #1a1a1a;
+  --text-sub: #3a3a3a;
+  --text-muted: #6a6a6a;
+  --cream: #f9f7f4;
+  --cream-deep: #f3efe8;
+  --border: #e0ddd8;
+  --white: #ffffff;
+  --fh: 'Cormorant Garamond', serif;
+  --fb: 'Arita Buri', Georgia, serif;
+  --fq: 'Gowun Batang', Georgia, serif;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  font-family: var(--fb);
+  color: var(--text);
+  word-break: keep-all;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 16px 60px;
+}
+
+/* === Mockup Intro === */
+.mk-intro {
+  padding: 28px 8px 20px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+.mk-intro h1 {
+  font-family: var(--fb);
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+.mk-intro p {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-family: var(--fq);
+}
+.mk-intro a { color: var(--gold-dark); text-decoration: underline; }
+
+/* === Change marker === */
+.mk-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--fh);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  background: var(--gold-soft);
+  padding: 4px 10px;
+  margin-bottom: 12px;
+}
+.mk-mark::before {
+  content: '';
+  width: 12px; height: 1px; background: var(--gold);
+}
+.mk-note {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-family: var(--fq);
+  margin-top: 10px;
+  margin-bottom: 28px;
+  padding: 10px 12px;
+  background: var(--cream-deep);
+  border-left: 2px solid var(--gold);
+  line-height: 1.6;
+}
+.mk-note strong { color: var(--text); font-weight: 500; }
+
+/* === Section Header (matches #p1b pattern) === */
+.section-header { text-align: center; margin-bottom: 26px; display: flex; flex-direction: column; align-items: center; }
+.section-header .sl {
+  font-family: var(--fh);
+  font-size: 11px; font-weight: 500; color: var(--gold-dark);
+  letter-spacing: 0.3em; text-transform: uppercase;
+}
+.section-header .sh-line { width: 60px; height: 1px; background: var(--gold); margin: 10px 0; }
+.section-header .st {
+  font-family: var(--fb);
+  font-size: 22px; font-weight: 300; line-height: 1.35;
+  letter-spacing: -0.04em;
+  color: var(--text);
+}
+.section-header .sh-sub {
+  font-size: 13px;
+  font-family: var(--fq);
+  color: var(--text-sub);
+  line-height: 1.6;
+  margin-top: 10px;
+  max-width: 360px;
+}
+
+/* === Intro text === */
+.intro-text {
+  padding-left: 10px;
+  border-left: 2px solid var(--gold-line);
+  margin-bottom: 28px;
+}
+.intro-company {
+  display: block;
+  font-family: var(--fb);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+.ip {
+  display: block;
+  font-size: 13px;
+  font-family: var(--fq);
+  color: var(--text-sub);
+  line-height: 1.65;
+}
+.intro-highlight {
+  background: linear-gradient(to top, var(--gold-soft) 45%, transparent 45%);
+  font-weight: 500;
+  color: var(--text);
+  padding: 0 2px;
+}
+
+/* === Track cards (A: redesigned tags) === */
+.track-row { display: flex; flex-direction: column; gap: 16px; margin-bottom: 32px; }
+.track-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.track-img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: var(--cream-deep);
+}
+.track-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* gold corner ornament like #p1b */
+.track-img::before {
+  content: '';
+  position: absolute;
+  bottom: 10px; right: 10px;
+  width: 22px; height: 22px;
+  border-bottom: 1px solid var(--gold);
+  border-right: 1px solid var(--gold);
+  z-index: 2; pointer-events: none;
+}
+.track-body { padding: 16px 18px 18px; }
+.track-eyebrow {
+  font-family: var(--fh);
+  font-size: 11px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--gold-dark);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.track-title {
+  font-family: var(--fb);
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+.track-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.55;
+  font-family: var(--fq);
+  margin-bottom: 14px;
+}
+
+/* A: new tag chips — gold border, cream-bg, serif caps */
+.track-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.track-tags .tag {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--fb);
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--text-sub);
+  background: var(--gold-chip-bg);
+  border: 1px solid var(--gold-line);
+  padding: 4px 10px;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+/* === Why cards (C: new number treatment) === */
+.why-row { display: flex; flex-direction: column; gap: 14px; }
+.why-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.why-thumb {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background: var(--cream-deep);
+}
+.why-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* C: number header with horizontal line, like #p1b m-header */
+.why-body { padding: 16px 18px 20px; }
+.why-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.why-num {
+  font-family: var(--fh);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gold);
+  letter-spacing: 0.2em;
+  line-height: 1;
+}
+.why-num-line {
+  flex: 1;
+  height: 1px;
+  background: var(--gold-line);
+}
+.why-eng {
+  font-family: var(--fh);
+  font-size: 11px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--gold-dark);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.why-title {
+  font-family: var(--fb);
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 6px;
+  line-height: 1.35;
+}
+.why-desc {
+  font-size: 13px;
+  font-family: var(--fq);
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* === Footer === */
+.mk-foot {
+  margin-top: 36px;
+  padding: 16px 8px 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 11px;
+  font-family: var(--fq);
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+.mk-foot a {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 16px;
+  border: 1px solid var(--gold-line);
+  color: var(--gold-dark);
+  text-decoration: none;
+  font-family: var(--fh);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <div class="mk-intro">
+    <h1>p3 재디자인 목업 (모바일)</h1>
+    <p>
+      기존 p3 섹션의 이슈 3가지 중 <strong>A (태그)</strong> + <strong>C (번호 처리)</strong>를 적용한 안.<br>
+      이미지(B)는 별도 교체 필요 — 현재는 기존 이미지 그대로.<br>
+      <a href="mobile.html#p3">현재 라이브 비교</a>
+    </p>
+  </div>
+
+  <!-- Section Header -->
+  <div class="section-header">
+    <div class="sl">About Us</div>
+    <div class="sh-line"></div>
+    <div class="st">마사지를 넘어,<br>피지컬 케어와 힐링으로</div>
+  </div>
+
+  <!-- Intro text -->
+  <div class="intro-text">
+    <span class="intro-company">아우름 웰니스는</span>
+    <span class="ip">마사지 테라피스트, 체형교정 전문가, 요가·필라테스 강사 등 피지컬 케어와 웰니스 분야의 전문가들이 맞춤형 테라피 서비스를 제공하는 <span class="intro-highlight">B2B 종합복지서비스 전문업체</span>입니다.</span>
+  </div>
+
+  <!-- A: Track cards with new tag style -->
+  <div class="mk-mark">A — Tag chips</div>
+
+  <div class="track-row">
+    <div class="track-card">
+      <div class="track-img"><img src="images/b2b/sub0201_3.jpg" alt="기업 복지 서비스"></div>
+      <div class="track-body">
+        <div class="track-eyebrow">Corporate Wellness</div>
+        <div class="track-title">기업 임직원 복지 서비스</div>
+        <div class="track-desc">
+          정기적 사내 피지컬 케어, 체형교정 프로그램, 힐링 테라피 등 임직원의 건강과 업무 효율을 동시에 높이는 맞춤 복지.
+        </div>
+        <div class="track-tags">
+          <span class="tag">스파인 체어 테라피</span>
+          <span class="tag">핸드마사지 테라피</span>
+          <span class="tag">체형교정</span>
+          <span class="tag">테라피 클래스</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="track-card">
+      <div class="track-img"><img src="images/b2b/sub0201_4.jpg" alt="VIP 브랜드 이벤트"></div>
+      <div class="track-body">
+        <div class="track-eyebrow">VIP · Brand Event</div>
+        <div class="track-title">VIP · 브랜드 이벤트</div>
+        <div class="track-desc">
+          프리미엄 골프대회, 신제품 런칭쇼, 백화점 VIP 고객 대상의 고품격 힐링 테라피로 브랜드 경험을 한 차원 높임.
+        </div>
+        <div class="track-tags">
+          <span class="tag">골프대회</span>
+          <span class="tag">런칭쇼</span>
+          <span class="tag">VIP 케어</span>
+          <span class="tag">세미나</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mk-note">
+    <strong>변경점 (A):</strong> 다크 배경 + 흰 글씨 + 4칸 균등분할 → 골드 라인 테두리 · cream 칩 · <em>serif</em> 영문 스타일.<br>
+    전체 에디토리얼 톤과 통일. 글자수에 따라 2열로 자연스럽게 wrap.
+  </div>
+
+  <!-- C: Why cards with #p1b-style number treatment -->
+  <div class="mk-mark">C — Number treatment</div>
+
+  <div class="why-row">
+    <div class="why-card">
+      <div class="why-thumb"><img src="images/b2b/why_01.jpg" alt="맞춤형 테라피"></div>
+      <div class="why-body">
+        <div class="why-header">
+          <div class="why-num">01</div>
+          <div class="why-num-line"></div>
+        </div>
+        <div class="why-eng">Tailored Therapy</div>
+        <div class="why-title">맞춤형 테라피 서비스</div>
+        <div class="why-desc">원하는 시간과 장소에서 기업 니즈에 맞춘 테라피를 제공합니다.</div>
+      </div>
+    </div>
+
+    <div class="why-card">
+      <div class="why-thumb"><img src="images/b2b/why_02.jpg" alt="업무 집중력"></div>
+      <div class="why-body">
+        <div class="why-header">
+          <div class="why-num">02</div>
+          <div class="why-num-line"></div>
+        </div>
+        <div class="why-eng">Focus & Productivity</div>
+        <div class="why-title">업무 집중력 향상</div>
+        <div class="why-desc">임직원 스트레스 해소로 업무 효율 및 기업 성장을 도모합니다.</div>
+      </div>
+    </div>
+
+    <div class="why-card">
+      <div class="why-thumb"><img src="images/b2b/why_03.jpg" alt="체감형 복지"></div>
+      <div class="why-body">
+        <div class="why-header">
+          <div class="why-num">03</div>
+          <div class="why-num-line"></div>
+        </div>
+        <div class="why-eng">Tangible Benefits</div>
+        <div class="why-title">체감형 복지</div>
+        <div class="why-desc">높은 임직원 만족도와 기업 애사심 고취 효과를 제공합니다.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mk-note">
+    <strong>변경점 (C):</strong> 좌측 대형 골드 워터마크 숫자 (44px) → 상단 "<em>01 ———</em>" 라인 스타일.<br>
+    #p1b "Our Commitment" 섹션과 동일한 번호 처리 → 연속 섹션으로서 일관성.<br>
+    추가: 영문 부제(<em>Tailored Therapy</em>)로 에디토리얼 톤 보강.
+  </div>
+
+  <div class="mk-foot">
+    현재 라이브 → <a href="mobile.html#p3">mobile.html#p3</a><br>
+    이 목업 → mockup-p3-redesign.html
+  </div>
+
+</div>
+
+</body>
+</html>
